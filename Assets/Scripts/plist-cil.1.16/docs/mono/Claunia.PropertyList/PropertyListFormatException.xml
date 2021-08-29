@@ -1,0 +1,39 @@
+<Type Name="PropertyListFormatException" FullName="Claunia.PropertyList.PropertyListFormatException">
+  <TypeSignature Language="C#" Value="public class PropertyListFormatException : Claunia.PropertyList.PropertyListException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyListFormatException extends Claunia.PropertyList.PropertyListException" />
+  <AssemblyInfo>
+    <AssemblyName>plist-cil</AssemblyName>
+    <AssemblyVersion>1.16.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Claunia.PropertyList.PropertyListException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A PropertyListFormatException is thrown by the various property list format parsers
+            when an error in the format of the given property list is encountered.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyListFormatException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">A message containing information about the nature of the exception.</param>
+        <summary>
+            Creates a new exception with the given message.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

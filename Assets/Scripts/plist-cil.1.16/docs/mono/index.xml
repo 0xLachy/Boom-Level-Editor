@@ -1,0 +1,71 @@
+<Overview>
+  <Assemblies>
+    <Assembly Name="plist-cil" Version="1.16.0.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 0d 78 59 4a 13 48 82 ee 35 9a 2b 75 22 bf 23 f0 15 12 ea 44 a8 ef dc d7 cd 7f eb 6c 77 3c 38 09 4f 29 4c f4 30 02 2e cf 16 02 af 8a 21 86 9a b4 77 a8 8c a8 bf 5f d4 a9 29 aa 0b 5a ec 6a 9d 09 36 84 70 ee 6e 71 cd a0 f8 1a 2a 66 b8 8b d3 84 77 a7 2c 77 33 21 76 f4 3a 04 47 3c 83 3e 0f 0b 85 8b 0e ec cd f1 a8 cb e6 67 6d 94 b2 75 62 48 82 8d 4b 46 7f 56 aa da 0c e3 17 81 b0 52 cd bd ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("Claunia.com")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration("Release")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("© 2015-2017 Natalia Portillo")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("MIT licensed C#/.NET parser and writer for Apple and GnuStep Property Lists, supporting ASCII, Binary and Xml formats, based on Java's dd-plist.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyFileVersion("1.16.0.0")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("1.16")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct("plist-cil")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("plist-cil")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Resources.NeutralResourcesLanguage("en-US")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.0", FrameworkDisplayName=".NET Framework 4")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+  </Assemblies>
+  <Remarks>To be added.</Remarks>
+  <Copyright>To be added.</Copyright>
+  <Types>
+    <Namespace Name="Claunia.PropertyList">
+      <Type Name="ASCIIPropertyListParser" Kind="Class" />
+      <Type Name="BinaryPropertyListParser" Kind="Class" />
+      <Type Name="BinaryPropertyListWriter" Kind="Class" />
+      <Type Name="NSArray" Kind="Class" />
+      <Type Name="NSData" Kind="Class" />
+      <Type Name="NSDate" Kind="Class" />
+      <Type Name="NSDictionary" Kind="Class" />
+      <Type Name="NSNumber" Kind="Class" />
+      <Type Name="NSObject" Kind="Class" />
+      <Type Name="NSSet" Kind="Class" />
+      <Type Name="NSString" Kind="Class" />
+      <Type Name="PropertyListException" Kind="Class" />
+      <Type Name="PropertyListFormatException" Kind="Class" />
+      <Type Name="PropertyListParser" Kind="Class" />
+      <Type Name="UID" Kind="Class" />
+      <Type Name="XmlPropertyListParser" Kind="Class" />
+    </Namespace>
+  </Types>
+  <Title>plist-cil</Title>
+</Overview>
