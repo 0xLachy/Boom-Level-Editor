@@ -64,8 +64,8 @@ public class PlhsGenerator : MonoBehaviour
     {
         var bezier = new NSDictionary();
         var spriteShapeController = gameObject.GetComponent<SpriteShapeController>();
-        
-        if (gameObject.name.Substring(0,7) == "EgyptBG"){
+        if (gameObject.name.StartsWith("EgyptBG"))
+        {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
             bezier.Add("IsSenzor", false);
             bezier.Add("Tag", 24);
@@ -73,7 +73,8 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Image", "EgyptGroundBG.png");
             bezier.Add("PhysicType", 3);
         }
-        else if (gameObject.name.Substring(0,11) == "EgyptGround"){
+        else if (gameObject.name.StartsWith("EgyptGround"))
+        {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
             bezier.Add("IsSenzor", false);
             bezier.Add("Tag", 24);
@@ -81,7 +82,8 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Image", "EgyptGround.png");
             bezier.Add("PhysicType", 0);
         }
-        else if (gameObject.name.Substring(0,12) == "JungleGround"){
+        else if (gameObject.name.StartsWith("JungleGround"))
+        {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
             bezier.Add("IsSenzor", false);
             bezier.Add("Tag", 24);
@@ -89,22 +91,22 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Image", "JungleGround.png");
             bezier.Add("PhysicType", 0);
         }
-       else if (gameObject.name.Substring(0,5) != "Water"){
-            bezier.Add("TagName", "LHTAG_STONE_GROUND");
-            bezier.Add("IsSenzor", false);
-            bezier.Add("Tag", 24);
-            bezier.Add("Friction", 1.0);
-            bezier.Add("Image", spriteShapeController.spriteShape.fillTexture.name + ".png");
-            bezier.Add("PhysicType", 0);
-
-        }
-        else
+        else if (gameObject.name.StartsWith("Water"))
         {
             bezier.Add("TagName", "LHTAG_WATER");
             bezier.Add("IsSenzor", true);
             bezier.Add("Tag", 13);
             bezier.Add("Friction", 0.2);
             bezier.Add("Image", "WaterFill.png");
+            bezier.Add("PhysicType", 0);
+        }
+        else
+        {
+            bezier.Add("TagName", "LHTAG_STONE_GROUND");
+            bezier.Add("IsSenzor", false);
+            bezier.Add("Tag", 24);
+            bezier.Add("Friction", 1.0);
+            bezier.Add("Image", spriteShapeController.spriteShape.fillTexture.name + ".png");
             bezier.Add("PhysicType", 0);
         }
 
@@ -153,13 +155,14 @@ public class PlhsGenerator : MonoBehaviour
         bezier.Add("LineWidth", 1.0);
         bezier.Add("ZOrder", (int) gameObject.transform.position.z);
         bezier.Add("Category", 1);
-        
+
         // Add curves for collisions
         var curves = new NSArray();
         for (var i = 1; i < spline.GetPointCount(); i++)
         {
             curves.Add(PointsToCurve(points[i - 1], points[i]));
         }
+
         // Connect last point with first
         curves.Add(PointsToCurve(points[points.Length - 1], points[0]));
         Debug.Log(triangles.Length);
@@ -172,12 +175,12 @@ public class PlhsGenerator : MonoBehaviour
 
     private static NSDictionary PointsToCurve(Vector2 startPoint, Vector2 endPoint)
     {
-        var controlPoint = new NSArray(2) { (startPoint.x + endPoint.x) / 2, (startPoint.y + endPoint.y) / 2 };
+        var controlPoint = new NSArray(2) {(startPoint.x + endPoint.x) / 2, (startPoint.y + endPoint.y) / 2};
         var dict = new NSDictionary();
         dict.Add("EndControlPoint", controlPoint);
         dict.Add("StartControlPoint", controlPoint);
-        dict.Add("EndPoint", new NSArray(2) { endPoint.x, endPoint.y });
-        dict.Add("StartPoint", new NSArray(2) { startPoint.x, startPoint.y });
+        dict.Add("EndPoint", new NSArray(2) {endPoint.x, endPoint.y});
+        dict.Add("StartPoint", new NSArray(2) {startPoint.x, startPoint.y});
         return dict;
     }
 
@@ -187,7 +190,7 @@ public class PlhsGenerator : MonoBehaviour
         dict.Add("ScreenSize", 1);
         dict.Add("PanValue",
             new NSArray()
-                {Camera.main.transform.position.x * multiplier, -Camera.main.transform.position.y * multiplier});
+                {1000, 500});
         dict.Add("SafeFrame", new NSArray() {480.0, 320.0});
         dict.Add("ZoomValue", 1.0);
         dict.Add("GameWorld", GetCameraBounds());
@@ -199,11 +202,12 @@ public class PlhsGenerator : MonoBehaviour
     private static NSArray GetCameraBounds()
     {
         var arr = new NSArray();
-        float camSize = Camera.main.orthographicSize;
-        arr.Add((Camera.main.transform.position.x - camSize / 2) * multiplier);
-        arr.Add((-Camera.main.transform.position.y - camSize / 2) * multiplier);
-        arr.Add((Camera.main.transform.position.x + camSize / 2) * multiplier);
-        arr.Add((-Camera.main.transform.position.y + camSize / 2) * multiplier + 500);
+        GameObject gameWorld = GameObject.Find("GameWorld");
+        RectTransform rectTransform = gameWorld.GetComponent<RectTransform>();
+        arr.Add(rectTransform.position.x * multiplier);
+        arr.Add((-rectTransform.position.y - rectTransform.sizeDelta.y) * multiplier);
+        arr.Add(rectTransform.sizeDelta.x * multiplier);
+        arr.Add(rectTransform.sizeDelta.y * multiplier);
         return arr;
     }
 
@@ -214,7 +218,7 @@ public class PlhsGenerator : MonoBehaviour
         SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
         Sprite sprite = sr.sprite;
 
-        if (sprite.name.Length < 5 || sprite.name.Substring(0,5) != "water") //fudge cos error on 'box'
+        if (sprite.name.Length < 5 || sprite.name.Substring(0, 5) != "water") //fudge cos error on 'box'
         {
             genProps.Add("TagName", "DEFAULT");
             genProps.Add("Tag", 0);
@@ -226,6 +230,7 @@ public class PlhsGenerator : MonoBehaviour
             genProps.Add("Tag", 13);
             genProps.Add("Opacity", 0.8);
         }
+
         genProps.Add("Color", new NSArray(4) {1.0, 1.0, 1.0, 0.0});
         genProps.Add("UV", new NSArray(4) {0.0, 0.0, 0.0, 0.0});
 
@@ -249,7 +254,6 @@ public class PlhsGenerator : MonoBehaviour
         var anim = gameObject.GetComponent<BoomAnimation>();
         if (anim != null)
         {
-            //BoomAnimation anim = animations[sprite.name];
             genProps.Add("AnimRepetitions", anim.AnimRepetitions);
             genProps.Add("AnimAtStart", anim.AnimAtStart);
             genProps.Add("AnimSpeed", anim.AnimSpeed);
@@ -258,7 +262,9 @@ public class PlhsGenerator : MonoBehaviour
         }
         else
         {
-            if (sprite.name.Length < 5 || sprite.name.Substring(0,5) != "water"){ //fudge cos error on 'box'
+            if (sprite.name.Length < 5 || sprite.name.Substring(0, 5) != "water")
+            {
+                //fudge cos error on 'box'
                 genProps.Add("AnimRepetitions", 0);
                 genProps.Add("AnimAtStart", false);
                 genProps.Add("AnimSpeed", 0.0);
@@ -273,7 +279,6 @@ public class PlhsGenerator : MonoBehaviour
                 genProps.Add("AnimName", "Water");
                 genProps.Add("AnimLoop", true);
             }
-
         }
 
         dict.Add("GeneralProperties", genProps);

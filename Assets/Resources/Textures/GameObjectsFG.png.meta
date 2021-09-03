@@ -1,165 +1,375 @@
 fileFormatVersion: 2
-guid: 2e4ec3c82103d5d4f8c5385b2f766c85
+guid: a3ea11ee7628d8d4dbc55ec0e091bc4e
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: wood_flat_xxxxl
-    21300002: rock_curve_eight_m
-    21300004: rock_flat_xxxxl
-    21300006: plastic_curve_eighth_m
-    21300008: plastic_flat_xxxxl
-    21300010: ice_flat_xxxxl
-    21300012: rock_hump_xs
-    21300014: wood_flat_xxxl
-    21300016: sandstone_flat_xxl
-    21300018: wood_curve_eighth_m
-    21300020: rock_cube_xl
-    21300022: wood_ramp_l_right
-    21300024: rock_flat_xxxl
-    21300026: ice_flat_xxl
-    21300028: plastic_flat_xxxl
-    21300030: plastic_curve_eighth_xxl
-    21300032: rock_curve_fourth_xl
-    21300034: ice_flat_xxxl
-    21300036: wood_curve_fourth_xxl
-    21300038: plastic_curve_fourth_xxl
-    21300040: ice_curve_eighth_xxl
-    21300042: wood_pyramid_xl
-    21300044: rock_pyramid_xl
-    21300046: wood_ramp_l_left
-    21300048: sandstone_flat_xl
-    21300050: wood_bump_l
-    21300052: wood_pie_quarter_xl
-    21300054: wood_pyramid_s
-    21300056: Tracks_28
-    21300058: rock_flat_xl
-    21300060: wood_pie_quarter_l
-    21300062: rock_ramp_l_right
-    21300064: rock_cube_l
-    21300066: rock_ramp_m_left
-    21300068: rock_curve_fourth_s
-    21300070: wood_pyramid_l
-    21300072: rock_cube_s
-    21300074: sandstone_curve_fourth_xxl
-    21300076: ice_curve_fourth_xxl
-    21300078: Tracks_39
-    21300080: wood_cube_l
-    21300082: rock_pie_quarter_l
-    21300084: wood_ramp_m_left
-    21300086: plastic_curve_fourth_s
-    21300088: sandstone_curve_sixteenth_xxl
-    21300090: ice_curve_fourth_s
-    21300092: rock_pyramid_l
-    21300094: rock_bump_l
-    21300096: wood_bump_s
-    21300098: rock_pyramid_s
-    21300100: rock_ramp_l_left
-    21300102: rock_ramp_m_right
-    21300104: rock_bump_s
-    21300106: wood_cube_xl
-    21300108: wood_curve_eighth_xl
-    21300110: sandstone_curve_eighth_xl
-    21300112: ice_curve_eighth_m
-    21300114: sandstone_flat_l
-    21300116: plastic_curve_eighth_xl
-    21300118: rock_flat_s
-    21300120: wood_ramp_m_right
-    21300122: rock_curve_eighth_xl
-    21300124: ice_curve_eighth_xl
-    21300126: rock_pie_quarter_s
-    21300128: wood_pie_quarter_m
-    21300130: plastic_curve_sixteenth_xxl
-    21300132: plastic_flat_s
-    21300134: rock_curve_sixteenth_xxl
-    21300136: sandstone_curve_sixteenth_xl
-    21300138: rock_curve_fourth_xxl
-    21300140: rock_flat_xxl
-    21300142: wood_hump_xs
-    21300144: ice_curve_sixteenth_xxl
-    21300146: rock_curve_sixteenth_xl
-    21300148: wood_curve_eighth_xxl
-    21300150: sandstone_curve_fourth_xl
-    21300152: plastic_curve_fourth_xl
-    21300154: rock_ramp_s_right
-    21300156: wood_hump_s
-    21300158: plastic_curve_sixteenth_xl
-    21300160: plastic_flat_l
-    21300162: ice_cube_m
-    21300164: rock_ramp_s_left
-    21300166: wood_pyramid_m
-    21300168: rock_pyramid_m
-    21300170: plastic_flat_m
-    21300172: wood_curve_fourth_m
-    21300174: rock_pie_quarter_m
-    21300176: plastic_curve_fourth_m
-    21300178: wood_curve_sixteenth_m
-    21300180: ice_flat_m
-    21300182: sandstone_curve_eighth_xxl
-    21300184: ice_curve_sixteenth_xl
-    21300186: rock_curve_sixteenth_s
-    21300188: ice_flat_l
-    21300190: wood_ramp_xxs_right
-    21300192: rock_flat_xs
-    21300194: wood_hump_l
-    21300196: wood_ramp_xxs_left
-    21300198: plastic_flat_xs
-    21300200: rock_pie_quarter_xl
-    21300202: ice_curve_fourth_xl
-    21300204: wood_cube_m
-    21300206: rock_curve_fourth_m
-    21300208: plastic_cube_m
-    21300210: rock_hump_l
-    21300212: rock_ramp_xxs_right
-    21300214: ice_flat_xs
-    21300216: wood_bump_m
-    21300218: wood_pie_quarter_s
-    21300220: rock_ramp_xxs_left
-    21300222: rock_pyramid_xs
-    21300224: rock_bump_xs
-    21300226: rock_curve_eighth_xxl
-    21300228: rock_bump_m
-    21300230: wood_curve_fourth_s
-    21300232: ice_flat_s
-    21300234: wood_curve_eighth_s
-    21300236: sandstone_cube_m
-    21300238: rock_cube_m
-    21300240: ice_curve_fourth_m
-    21300242: wood_ramp_xs_left
-    21300244: wood_cube_s
-    21300246: plastic_curve_sixteenth_m
-    21300248: rock_curve_eighth_s
-    21300250: wood_flat_xs
-    21300252: wood_flat_m
-    21300254: ice_curve_sixteenth_m
-    21300256: plastic_curve_eighth_s
-    21300258: rock_pie_quarter_xs
-    21300260: wood_flat_xxl
-    21300262: rock_ramp_xs_right
-    21300264: wood_curve_sixteenth_xl
-    21300266: ice_curve_eighth_s
-    21300268: ice_curve_sixteenth_s
-    21300270: plastic_flat_xxl
-    21300272: wood_ramp_s_right
-    21300274: wood_ramp_s_left
-    21300276: wood_curve_sixteenth_xxl
-    21300278: plastic_flat_xl
-    21300280: rock_flat_l
-    21300282: wood_ramp_xs_right
-    21300284: wood_flat_s
-    21300286: rock_ramp_xs_left
-    21300288: plastic_curve_sixteenth_s
-    21300290: wood_pie_quarter_xs
-    21300292: wood_flat_xl
-    21300294: wood_flat_l
-    21300296: rock_curve_sixteenth_m
-    21300298: ice_flat_xl
-    21300300: wood_hump_m
-    21300302: rock_hump_m
-    21300304: rock_hump_s
-    21300306: wood_pyramid_xs
-    21300308: wood_bump_xs
-    21300310: rock_flat_m
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: city_flat_xxl
+  - first:
+      213: 21300002
+    second: flipper_left
+  - first:
+      213: 21300004
+    second: water_8
+  - first:
+      213: 21300006
+    second: snow_vertical_m
+  - first:
+      213: 21300008
+    second: cloud_3
+  - first:
+      213: 21300010
+    second: flipper_right
+  - first:
+      213: 21300012
+    second: water_7
+  - first:
+      213: 21300014
+    second: water_6
+  - first:
+      213: 21300016
+    second: jungle_vertical_m
+  - first:
+      213: 21300018
+    second: water_5
+  - first:
+      213: 21300020
+    second: water_3
+  - first:
+      213: 21300022
+    second: cloud_1
+  - first:
+      213: 21300024
+    second: water_4
+  - first:
+      213: 21300026
+    second: water_15
+  - first:
+      213: 21300028
+    second: water_11
+  - first:
+      213: 21300030
+    second: oil-well
+  - first:
+      213: 21300032
+    second: water_2
+  - first:
+      213: 21300034
+    second: water_14
+  - first:
+      213: 21300036
+    second: snow_right_end_m
+  - first:
+      213: 21300038
+    second: water_10
+  - first:
+      213: 21300040
+    second: snow_left_end_m
+  - first:
+      213: 21300042
+    second: water_17
+  - first:
+      213: 21300044
+    second: water_13
+  - first:
+      213: 21300046
+    second: water_1
+  - first:
+      213: 21300048
+    second: water_16
+  - first:
+      213: 21300050
+    second: city_right_end
+  - first:
+      213: 21300052
+    second: bumper_bg
+  - first:
+      213: 21300054
+    second: pinky_poff_15
+  - first:
+      213: 21300056
+    second: pinky_poff_16
+  - first:
+      213: 21300058
+    second: jungle_flat_l
+  - first:
+      213: 21300060
+    second: GameObjectsFG_30
+  - first:
+      213: 21300062
+    second: GameObjectsFG_31
+  - first:
+      213: 21300064
+    second: GameObjectsFG_32
+  - first:
+      213: 21300066
+    second: GameObjectsFG_33
+  - first:
+      213: 21300068
+    second: GameObjectsFG_34
+  - first:
+      213: 21300070
+    second: GameObjectsFG_35
+  - first:
+      213: 21300072
+    second: boost_tunnel_fg
+  - first:
+      213: 21300074
+    second: bumper_on
+  - first:
+      213: 21300076
+    second: GameObjectsFG_38
+  - first:
+      213: 21300078
+    second: GameObjectsFG_39
+  - first:
+      213: 21300080
+    second: GameObjectsFG_40
+  - first:
+      213: 21300082
+    second: GameObjectsFG_41
+  - first:
+      213: 21300084
+    second: trampoline_layer_3
+  - first:
+      213: 21300086
+    second: GameObjectsFG_43
+  - first:
+      213: 21300088
+    second: GameObjectsFG_44
+  - first:
+      213: 21300090
+    second: GameObjectsFG_45
+  - first:
+      213: 21300092
+    second: GameObjectsFG_46
+  - first:
+      213: 21300094
+    second: GameObjectsFG_47
+  - first:
+      213: 21300096
+    second: GameObjectsFG_48
+  - first:
+      213: 21300098
+    second: rocket_2_4
+  - first:
+      213: 21300100
+    second: rocket_2_3
+  - first:
+      213: 21300102
+    second: trampoline_layer_2
+  - first:
+      213: 21300104
+    second: GameObjectsFG_52
+  - first:
+      213: 21300106
+    second: GameObjectsFG_53
+  - first:
+      213: 21300108
+    second: GameObjectsFG_54
+  - first:
+      213: 21300110
+    second: factory_bit_cube_passthrough
+  - first:
+      213: 21300112
+    second: GameObjectsFG_56
+  - first:
+      213: 21300114
+    second: GameObjectsFG_57
+  - first:
+      213: 21300116
+    second: bumper_off
+  - first:
+      213: 21300118
+    second: GameObjectsFG_59
+  - first:
+      213: 21300120
+    second: GameObjectsFG_60
+  - first:
+      213: 21300122
+    second: GameObjectsFG_61
+  - first:
+      213: 21300124
+    second: GameObjectsFG_62
+  - first:
+      213: 21300126
+    second: GameObjectsFG_63
+  - first:
+      213: 21300128
+    second: cloud_2
+  - first:
+      213: 21300130
+    second: spring_board_spring
+  - first:
+      213: 21300132
+    second: rope_bridgge_connection
+  - first:
+      213: 21300134
+    second: GameObjectsFG_67
+  - first:
+      213: 21300136
+    second: GameObjectsFG_68
+  - first:
+      213: 21300138
+    second: GameObjectsFG_69
+  - first:
+      213: 21300140
+    second: GameObjectsFG_70
+  - first:
+      213: 21300142
+    second: spring_board_box
+  - first:
+      213: 21300144
+    second: water_12
+  - first:
+      213: 21300146
+    second: egypt_right_end
+  - first:
+      213: 21300148
+    second: GameObjectsFG_74
+  - first:
+      213: 21300150
+    second: GameObjectsFG_75
+  - first:
+      213: 21300152
+    second: GameObjectsFG_76
+  - first:
+      213: 21300154
+    second: GameObjectsFG_77
+  - first:
+      213: 21300156
+    second: GameObjectsFG_78
+  - first:
+      213: 21300158
+    second: GameObjectsFG_79
+  - first:
+      213: 21300160
+    second: GameObjectsFG_80
+  - first:
+      213: 21300162
+    second: GameObjectsFG_81
+  - first:
+      213: 21300164
+    second: GameObjectsFG_82
+  - first:
+      213: 21300166
+    second: rope_bridge_cracked
+  - first:
+      213: 21300168
+    second: cloud_curve_fourth_xl
+  - first:
+      213: 21300170
+    second: boost_tunnel_top
+  - first:
+      213: 21300172
+    second: GameObjectsFG_86
+  - first:
+      213: 21300174
+    second: GameObjectsFG_87
+  - first:
+      213: 21300176
+    second: rope_bridge_base
+  - first:
+      213: 21300178
+    second: GameObjectsFG_89
+  - first:
+      213: 21300180
+    second: GameObjectsFG_90
+  - first:
+      213: 21300182
+    second: snow_vertical_stop
+  - first:
+      213: 21300184
+    second: jungle_vertical_stop
+  - first:
+      213: 21300186
+    second: GameObjectsFG_93
+  - first:
+      213: 21300188
+    second: GameObjectsFG_94
+  - first:
+      213: 21300190
+    second: GameObjectsFG_95
+  - first:
+      213: 21300192
+    second: GameObjectsFG_96
+  - first:
+      213: 21300194
+    second: GameObjectsFG_97
+  - first:
+      213: 21300196
+    second: GameObjectsFG_98
+  - first:
+      213: 21300198
+    second: snow_down_right
+  - first:
+      213: 21300200
+    second: snow_down_left
+  - first:
+      213: 21300202
+    second: GameObjectsFG_101
+  - first:
+      213: 21300204
+    second: GameObjectsFG_102
+  - first:
+      213: 21300206
+    second: GameObjectsFG_103
+  - first:
+      213: 21300208
+    second: GameObjectsFG_104
+  - first:
+      213: 21300210
+    second: water_9
+  - first:
+      213: 21300212
+    second: jungle_right_end_m
+  - first:
+      213: 21300214
+    second: snow_flat_l
+  - first:
+      213: 21300216
+    second: jungle_left_end_m
+  - first:
+      213: 21300218
+    second: egypt_left_end
+  - first:
+      213: 21300220
+    second: rocket_2_2
+  - first:
+      213: 21300222
+    second: rocket_2_1
+  - first:
+      213: 21300224
+    second: factory_cover_flat
+  - first:
+      213: 21300226
+    second: cloud_flat_l
+  - first:
+      213: 21300228
+    second: snow_left_end_s
+  - first:
+      213: 21300230
+    second: egypt_flat_l
+  - first:
+      213: 21300232
+    second: snow_flat_m
+  - first:
+      213: 21300234
+    second: city_flat_l
+  - first:
+      213: 21300236
+    second: city_left_end
+  - first:
+      213: 21300238
+    second: spring_board_glow
+  - first:
+      213: 21300240
+    second: spring_board
+  - first:
+      213: 21300242
+    second: snow_right_end_s
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -179,6 +389,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -213,8 +424,10 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -225,7 +438,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -236,17 +450,18 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wood_flat_xxxxl
+      name: city_flat_xxl
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1832
-        width: 1924
-        height: 34
+        x: 4
+        y: 988
+        width: 824
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,19 +469,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b0363c9e1924bf458dc0f252453368b
+      spriteID: 231c0a45c9cff144cb2cb1b9d3a6e16b
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_curve_eight_m
+      name: flipper_left
       rect:
         serializedVersion: 2
-        x: 1928
-        y: 1804
-        width: 90
-        height: 62
+        x: 850
+        y: 888
+        width: 360
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,538 +490,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f7746c6541aea64b922de9184e67da7
+      spriteID: 18fb5ad87fce38e408f4102a0c3b248d
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_flat_xxxxl
+      name: water_8
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1796
-        width: 1924
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f4d0e83afa67fc42879bb7aa3296fe4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_curve_eighth_m
-      rect:
-        serializedVersion: 2
-        x: 1928
-        y: 1740
-        width: 90
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd7a803c3890b8646b98b6474f4499bf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_flat_xxxxl
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 1760
-        width: 1924
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d13bf3f1faabfb4bac62f625c07c88d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_flat_xxxxl
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 1724
-        width: 1924
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6624743bdee67e84aaa09e93080d40f2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_hump_xs
-      rect:
-        serializedVersion: 2
-        x: 1928
-        y: 1724
-        width: 34
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 934f6902e80d4e3429fed792911317ec
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_flat_xxxl
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 1688
-        width: 964
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: faf51af919a93494284828379e5137ec
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sandstone_flat_xxl
-      rect:
-        serializedVersion: 2
-        x: 968
-        y: 1688
-        width: 484
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a39c8278b411b143868c0aec00b60cf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_curve_eighth_m
-      rect:
-        serializedVersion: 2
-        x: 1454
-        y: 1660
-        width: 90
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13ef9c1141b5d264a8e35ff46416f06c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_cube_xl
-      rect:
-        serializedVersion: 2
-        x: 1566
-        y: 1478
-        width: 244
-        height: 244
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 525797b80e450a946a734d87a0e26d33
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_ramp_l_right
-      rect:
-        serializedVersion: 2
-        x: 1812
-        y: 1538
-        width: 184
-        height: 184
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9142224df29786f4d90409f63f3b7703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_flat_xxxl
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 1652
-        width: 964
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7a8cbf6921003d4794005f98211279c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_flat_xxl
-      rect:
-        serializedVersion: 2
-        x: 968
-        y: 1652
-        width: 484
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 323d2e60bbbdc65458da78cce0207e1d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_flat_xxxl
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 1616
-        width: 964
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f34db1ea381127f4e9de6972a74331fc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_curve_eighth_xxl
-      rect:
-        serializedVersion: 2
-        x: 974
-        y: 1484
-        width: 344
-        height: 166
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12cbf56040222744392080b97f17d61f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_curve_fourth_xl
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 1406
-        width: 244
-        height: 244
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f130ab2a62f47034cafed287c88cde8b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_flat_xxxl
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 1580
-        width: 964
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c02b06a709189b845acd0a4a3d0caa3f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_curve_fourth_xxl
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 1094
-        width: 484
-        height: 484
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 028e073fad898d546a7d0fd30afde0bd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_curve_fourth_xxl
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 1097
-        width: 484
-        height: 484
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2a5744806ca9954e88fbba434d956be
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_curve_eighth_xxl
-      rect:
-        serializedVersion: 2
-        x: 974
-        y: 1316
-        width: 344
-        height: 166
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 430ed386e74baa54dbb16cafeed4fa56
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_pyramid_xl
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 1278
-        width: 244
-        height: 126
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f89060ddefa35b4f9775e1e632fd76d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_pyramid_xl
-      rect:
-        serializedVersion: 2
-        x: 1566
-        y: 1350
-        width: 244
-        height: 126
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc5143b54ecf3a54da0c44e28d7e985e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_ramp_l_left
-      rect:
-        serializedVersion: 2
-        x: 1812
-        y: 1352
-        width: 184
-        height: 184
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd27e663bb5cd424296cd47badd40350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sandstone_flat_xl
-      rect:
-        serializedVersion: 2
-        x: 1569
-        y: 1314
-        width: 244
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 940709dad1a08cb479098e6082c54ca0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_bump_l
-      rect:
-        serializedVersion: 2
-        x: 1812
-        y: 1256
-        width: 184
-        height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad6faed98070305409d212db147fadec
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_pie_quarter_xl
-      rect:
-        serializedVersion: 2
-        x: 974
-        y: 1070
-        width: 244
-        height: 244
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d7ecaa21daf12646a5122bf84444b03
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_pyramid_s
-      rect:
-        serializedVersion: 2
-        x: 1220
-        y: 1281
-        width: 64
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c94c824b416430b419aca199614b3676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tracks_28
-      rect:
-        serializedVersion: 2
-        x: 1286
-        y: 1278
-        width: 30
+        x: 1214
+        y: 980
+        width: 260
         height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -814,19 +511,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 524661e3a853a9a40acb894698b8d4e0
+      spriteID: 5c1316639a81a094f95f571161352b55
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_flat_xl
+      name: snow_vertical_m
       rect:
         serializedVersion: 2
-        x: 1566
-        y: 1278
-        width: 244
-        height: 34
+        x: 1478
+        y: 944
+        width: 14
+        height: 72
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -834,19 +532,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b3af3f88163d194994afdb85a000ae8
+      spriteID: cd33aee895e8a5a47b68bb934397875f
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wood_pie_quarter_l
+      name: cloud_3
       rect:
         serializedVersion: 2
-        x: 1220
-        y: 1092
-        width: 184
-        height: 184
+        x: 9
+        y: 840
+        width: 468
+        height: 140
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -854,19 +553,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4149e47c20ff1c4baea7a149a1802bc
+      spriteID: 54ad58341f18fe3418d3a6a710a604fd
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_ramp_l_right
+      name: flipper_right
       rect:
         serializedVersion: 2
-        x: 1406
-        y: 1092
-        width: 184
-        height: 184
+        x: 486
+        y: 856
+        width: 360
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -874,19 +574,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd46e2d4dedf9c346bf4c3d3cedf00a4
+      spriteID: 89dc03c16fdc7e84e932917c5d84a22b
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_cube_l
+      name: water_7
       rect:
         serializedVersion: 2
-        x: 1592
-        y: 1095
-        width: 184
-        height: 184
+        x: 1214
+        y: 940
+        width: 260
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -894,19 +595,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c2cbd9125ae328438227a486c145559
+      spriteID: 2828c0a6c5513314a800d212fe59047c
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_ramp_m_left
+      name: water_6
       rect:
         serializedVersion: 2
-        x: 1778
-        y: 1130
-        width: 183
-        height: 124
+        x: 1214
+        y: 900
+        width: 260
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -914,259 +616,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaac9b8ac4c04af4e81bcb36c3660f74
+      spriteID: 898ebeefa88b9124588d68fff291001c
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_curve_fourth_s
+      name: jungle_vertical_m
       rect:
         serializedVersion: 2
-        x: 1966
-        y: 1190
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31b5e1c191f8da84bae0445456d6db4d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_pyramid_l
-      rect:
-        serializedVersion: 2
-        x: 1780
-        y: 1032
-        width: 184
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a03088d99432e44fa3b94bb76d560fc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_cube_s
-      rect:
-        serializedVersion: 2
-        x: 1966
-        y: 1124
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c5ff09179360864595469e939439940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sandstone_curve_fourth_xxl
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 608
-        width: 484
-        height: 484
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc19ca308db3670439c1a739cf1a33b5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_curve_fourth_xxl
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 608
-        width: 484
-        height: 484
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18930ad7ab142e04d854a0b1719c9082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tracks_39
-      rect:
-        serializedVersion: 2
-        x: 974
-        y: 824
-        width: 244
-        height: 244
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3bf82fbab3506f4992b9cf02c5cf4de
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_cube_l
-      rect:
-        serializedVersion: 2
-        x: 1220
-        y: 906
-        width: 184
-        height: 184
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 180ef750c771bbc4abb7f8f0816c7092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_pie_quarter_l
-      rect:
-        serializedVersion: 2
-        x: 1406
-        y: 906
-        width: 184
-        height: 184
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ef21de5a55a4854cb6c8f305113664e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_ramp_m_left
-      rect:
-        serializedVersion: 2
-        x: 1589
-        y: 971
-        width: 183
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f7929d64964da647bbf387a13719cc8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_curve_fourth_s
-      rect:
-        serializedVersion: 2
-        x: 1966
-        y: 1058
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 525666d4b307aa3488f96073324ea15f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sandstone_curve_sixteenth_xxl
-      rect:
-        serializedVersion: 2
-        x: 1780
-        y: 960
-        width: 190
-        height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 642a3d46886cdd74db42b0d2c8ffd02e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_curve_fourth_s
-      rect:
-        serializedVersion: 2
-        x: 1972
-        y: 992
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30037fa430cdd284fa0af9f46251341c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_pyramid_l
-      rect:
-        serializedVersion: 2
-        x: 1594
+        x: 1478
         y: 868
-        width: 184
-        height: 96
+        width: 14
+        height: 72
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1174,19 +637,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95f09f142a2b36440bb39746e0734b6f
+      spriteID: 55808981f0d0dda41a33b5ccd371f979
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_bump_l
+      name: water_5
       rect:
         serializedVersion: 2
-        x: 1780
-        y: 864
-        width: 184
-        height: 94
+        x: 850
+        y: 848
+        width: 260
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1194,19 +658,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b6d999967acdfb48b1265390e29833a
+      spriteID: 3cc870d31c09b4645b30706b5f61a385
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wood_bump_s
+      name: water_3
       rect:
         serializedVersion: 2
-        x: 1972
-        y: 954
-        width: 64
-        height: 33
+        x: 1214
+        y: 860
+        width: 260
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1214,19 +679,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5acab5c718e8e744aa2d9cbf362dc074
+      spriteID: 19831babd4ea56942a20e8f9b72efb90
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_pyramid_s
+      name: cloud_1
       rect:
         serializedVersion: 2
-        x: 1966
-        y: 919
-        width: 64
-        height: 30
+        x: 10
+        y: 667
+        width: 423
+        height: 161
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1234,19 +700,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5093e9063acc9e4c8494f0fc02ed95f
+      spriteID: c04df6f59386d654ca6e1c851bce2da7
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_ramp_l_left
+      name: water_4
       rect:
         serializedVersion: 2
-        x: 1220
-        y: 720
-        width: 184
-        height: 184
+        x: 486
+        y: 816
+        width: 260
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1254,858 +721,145 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8ba7b2972edec24e930d20c87284378
+      spriteID: 7ce2472472a648e4f995aaa7fa696685
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_ramp_m_right
+      name: water_15
       rect:
         serializedVersion: 2
-        x: 1409
+        x: 750
+        y: 808
+        width: 260
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c8ffbb9ad94954495482b1290a1580
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_11
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 820
+        width: 260
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d4375ab3731624d9241c6a5101f213
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oil-well
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 824
+        width: 69
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79815a6a09d6708459c3f1abd74f8340
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 776
+        width: 260
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3f3262429c1cd42b82976d7fa4e05e
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_14
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 768
+        width: 260
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5faf97be8bdbb8f409cb7d309b14ce84
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_right_end_m
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 733
+        width: 66
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4535bec3af6b1644b5535de29f948dd
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_10
+      rect:
+        serializedVersion: 2
+        x: 1038
         y: 780
-        width: 183
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d87629207aedb043bc0bfa615972b8e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_bump_s
-      rect:
-        serializedVersion: 2
-        x: 1966
-        y: 878
-        width: 64
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7f38bb773db4ea4091e7e0e3e5836fd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_cube_xl
-      rect:
-        serializedVersion: 2
-        x: 974
-        y: 578
-        width: 244
-        height: 244
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82d25e61b1a57e944ab5493f62653be0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_curve_eighth_xl
-      rect:
-        serializedVersion: 2
-        x: 1594
-        y: 770
-        width: 174
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82f817429f2719444998d82add1fac64
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sandstone_curve_eighth_xl
-      rect:
-        serializedVersion: 2
-        x: 1770
-        y: 766
-        width: 174
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 102ee22c5e28ec8418d385a2c6a540fe
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_curve_eighth_m
-      rect:
-        serializedVersion: 2
-        x: 1946
-        y: 800
-        width: 90
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72906c85326af1244b1e42a4159bed0e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sandstone_flat_l
-      rect:
-        serializedVersion: 2
-        x: 1406
-        y: 744
-        width: 184
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8258df8dd0b67e43b62905ef9b5e7cb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_curve_eighth_xl
-      rect:
-        serializedVersion: 2
-        x: 1592
-        y: 672
-        width: 174
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e827d0f274a1007429f5b3b37c3834e0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_flat_s
-      rect:
-        serializedVersion: 2
-        x: 1946
-        y: 764
-        width: 64
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e442bbfc3e61f24abd44e7b9b82cc75
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_ramp_m_right
-      rect:
-        serializedVersion: 2
-        x: 1223
-        y: 594
-        width: 183
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8a25ee638810db4ab9a31bf5ae4a786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_curve_eighth_xl
-      rect:
-        serializedVersion: 2
-        x: 1408
-        y: 646
-        width: 174
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a640bc6fab9ecc4888eb717ea328633
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_curve_eighth_xl
-      rect:
-        serializedVersion: 2
-        x: 1768
-        y: 668
-        width: 174
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad5fc15ed12308a43bae53af15a5f721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_pie_quarter_s
-      rect:
-        serializedVersion: 2
-        x: 1944
-        y: 698
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bde62de69f59ed4bb5f6a17353ce408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_pie_quarter_m
-      rect:
-        serializedVersion: 2
-        x: 1600
-        y: 546
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f6557fe9e445ab458f064f5611837bb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_curve_sixteenth_xxl
-      rect:
-        serializedVersion: 2
-        x: 1726
-        y: 596
-        width: 190
-        height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70d67fd3cd95f8f49915e744cba654a6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_flat_s
-      rect:
-        serializedVersion: 2
-        x: 1944
-        y: 662
-        width: 64
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 400eb6f9e16ba444f90c4375f2b44ed1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_curve_sixteenth_xxl
-      rect:
-        serializedVersion: 2
-        x: 1408
-        y: 574
-        width: 190
-        height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ed8630169948404b814f532939dc43c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sandstone_curve_sixteenth_xl
-      rect:
-        serializedVersion: 2
-        x: 1918
-        y: 612
-        width: 98
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a35da345259a0d5449d992fb2754a6ec
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_curve_fourth_xxl
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 122
-        width: 484
-        height: 484
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac545a988ed438b448c2688b4ab7988c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_flat_xxl
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 572
-        width: 484
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9fd1964d1124ed48ab3eb3a67f984a4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_hump_xs
-      rect:
-        serializedVersion: 2
-        x: 1220
-        y: 578
-        width: 34
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6ed7c5a534c13645b522a720f515a13
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_curve_sixteenth_xxl
-      rect:
-        serializedVersion: 2
-        x: 1726
-        y: 524
-        width: 190
-        height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1fe22db32b8c7d48aaaaf05192c9cd3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_curve_sixteenth_xl
-      rect:
-        serializedVersion: 2
-        x: 1918
-        y: 558
-        width: 98
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8960ab598bdb80f4b9b98da6e88f9b55
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_curve_eighth_xxl
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 404
-        width: 344
-        height: 166
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e93f087665e8e8043a24662385508c6b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sandstone_curve_fourth_xl
-      rect:
-        serializedVersion: 2
-        x: 834
-        y: 326
-        width: 244
-        height: 244
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7127f269673ffbf41bd11658282b8322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_curve_fourth_xl
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 332
-        width: 244
-        height: 244
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6ca3ae126fee574f95867b5b3691273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_ramp_s_right
-      rect:
-        serializedVersion: 2
-        x: 1329
-        y: 508
-        width: 183
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f13a7ca9a58aed14399b4c22d8ff0fe2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_hump_s
-      rect:
-        serializedVersion: 2
-        x: 1514
-        y: 552
-        width: 64
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3ccf82bbf8730142b071cd3f3c59fe4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_curve_sixteenth_xl
-      rect:
-        serializedVersion: 2
-        x: 1918
-        y: 506
-        width: 98
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f6f69c55785b2f4aa31c6ade5f7a94c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_flat_l
-      rect:
-        serializedVersion: 2
-        x: 1514
-        y: 510
-        width: 184
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 848cb60b601f13841aee1caaf132da8d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_cube_m
-      rect:
-        serializedVersion: 2
-        x: 1766
-        y: 398
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a378cbdf62bc5e4f99b849129985f52
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_ramp_s_left
-      rect:
-        serializedVersion: 2
-        x: 1326
-        y: 442
-        width: 183
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3dacb982619bf384da57b6a6106580aa
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_pyramid_m
-      rect:
-        serializedVersion: 2
-        x: 1514
-        y: 442
-        width: 124
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae737c1b244f29149880efe32f898041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_pyramid_m
-      rect:
-        serializedVersion: 2
-        x: 1640
-        y: 442
-        width: 124
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53cf9516699dafb4fbadadbc378b1b9c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_flat_m
-      rect:
-        serializedVersion: 2
-        x: 1892
-        y: 470
-        width: 124
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae59f66d8e488e44e837d7cdca3d7acc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_curve_fourth_m
-      rect:
-        serializedVersion: 2
-        x: 1326
-        y: 316
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f9ab428bb421074ebb18e63e6332664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_pie_quarter_m
-      rect:
-        serializedVersion: 2
-        x: 1452
-        y: 316
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eec9846a5f73eaf48bea4aadcee10eb4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_curve_fourth_m
-      rect:
-        serializedVersion: 2
-        x: 1578
-        y: 316
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66e581d2b5eed6d49aa445c58538eaf5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_curve_sixteenth_m
-      rect:
-        serializedVersion: 2
-        x: 1704
-        y: 398
-        width: 52
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4811c4131d54eaf499e7a5fb57e0020c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_flat_m
-      rect:
-        serializedVersion: 2
-        x: 1892
-        y: 434
-        width: 124
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bdaf3755cde5f1488dbfcb8e75485bc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sandstone_curve_eighth_xxl
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 239
-        width: 344
-        height: 166
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7871679cc37f8024d9248fe893bc5399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_curve_sixteenth_xl
-      rect:
-        serializedVersion: 2
-        x: 1892
-        y: 382
-        width: 98
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f18f075b96ef91a42b08fc417fd263e8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_curve_sixteenth_s
-      rect:
-        serializedVersion: 2
-        x: 1992
-        y: 396
-        width: 30
+        width: 260
         height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2114,1138 +868,418 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b7405d70d6bd0646a4cd67ef950f9ea
+      spriteID: e2e3cb207eaa6de44b5907a893458f0b
+      internalID: 21300038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ice_flat_l
-      rect:
-        serializedVersion: 2
-        x: 1704
-        y: 362
-        width: 184
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b33440fe8f0d444dbcbc590c6b83977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_ramp_xxs_right
-      rect:
-        serializedVersion: 2
-        x: 1893
-        y: 346
-        width: 91
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef5e0c87e25834947b3647b6538899b4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_flat_xs
-      rect:
-        serializedVersion: 2
-        x: 1992
-        y: 360
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4e59e38730a1844581d75ca7bfbadc9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_hump_l
-      rect:
-        serializedVersion: 2
-        x: 1704
-        y: 332
-        width: 184
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06761657dc7d0ee4aa5e9c5b510cd521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_ramp_xxs_left
-      rect:
-        serializedVersion: 2
-        x: 1890
-        y: 310
-        width: 91
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d37c2fd70505b6343ae6326f009b9bc6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_flat_xs
-      rect:
-        serializedVersion: 2
-        x: 1986
-        y: 324
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8758f3e2bf578f147bf0ed44aee9abeb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_pie_quarter_xl
-      rect:
-        serializedVersion: 2
-        x: 834
-        y: 80
-        width: 244
-        height: 244
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a20d65fb60d8b5e478df6560b625904a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_curve_fourth_xl
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 86
-        width: 244
-        height: 244
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c52becc111190a4285cae9c354089bf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_cube_m
-      rect:
-        serializedVersion: 2
-        x: 1326
-        y: 190
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc0ac03a18d767243aac57023a851931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_curve_fourth_m
-      rect:
-        serializedVersion: 2
-        x: 1452
-        y: 190
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fcdc0668112ebcc4dbdb0a6b603ebfe1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_cube_m
-      rect:
-        serializedVersion: 2
-        x: 1578
-        y: 190
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aeee5025ef70d034c9118169ff1f41fa
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_hump_l
-      rect:
-        serializedVersion: 2
-        x: 1704
-        y: 302
-        width: 184
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb87deb91d0ac6744b67bc92fd049272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_ramp_xxs_right
-      rect:
-        serializedVersion: 2
-        x: 1899
-        y: 274
-        width: 91
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35f75ac3ef732c047884628e13359769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_flat_xs
-      rect:
-        serializedVersion: 2
-        x: 1992
-        y: 288
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bd99509ff75e024aaacdef60d2c6e40
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_bump_m
-      rect:
-        serializedVersion: 2
-        x: 1704
-        y: 236
-        width: 124
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bdac5ac8009935b4098b74fbe4e2f278
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_pie_quarter_s
-      rect:
-        serializedVersion: 2
-        x: 1830
-        y: 236
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 933082b30f8a305448bb55b482cb6a41
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_ramp_xxs_left
-      rect:
-        serializedVersion: 2
-        x: 1896
-        y: 238
-        width: 91
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba95d4d0fd12b604faaf5513c501a420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_pyramid_xs
-      rect:
-        serializedVersion: 2
-        x: 1992
-        y: 266
-        width: 34
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c30d5b143cbf18d419cbb3357a436235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_bump_xs
-      rect:
-        serializedVersion: 2
-        x: 1992
-        y: 244
-        width: 34
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98f9f2e21568ba44fb426606ad675ece
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_curve_eighth_xxl
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 68
-        width: 344
-        height: 166
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e969bccd058a0fa4daf0e2db4d52c62d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_bump_m
-      rect:
-        serializedVersion: 2
-        x: 1704
-        y: 170
-        width: 124
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aff2174524d95f7459e93cd4c8c4f42d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_curve_fourth_s
-      rect:
-        serializedVersion: 2
-        x: 1830
-        y: 170
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f96cffdd6e1d2c44ab70d3adc698cda7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_flat_s
-      rect:
-        serializedVersion: 2
-        x: 1896
-        y: 202
-        width: 64
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c0bb0133da808d459be0f8f2be16c6c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_curve_eighth_s
-      rect:
-        serializedVersion: 2
-        x: 1962
-        y: 192
-        width: 46
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26ee81e22b87da64581f1313c122f6c0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sandstone_cube_m
-      rect:
-        serializedVersion: 2
-        x: 1326
-        y: 64
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 932a6c6d8d94aa84d94b95d5abf7e54b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_cube_m
-      rect:
-        serializedVersion: 2
-        x: 1452
-        y: 64
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce1419fa39a2b194e8cd265b94beeb02
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_curve_fourth_m
-      rect:
-        serializedVersion: 2
-        x: 1578
-        y: 64
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc56dec29c6ce244a96413d9edebf213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_ramp_xs_left
-      rect:
-        serializedVersion: 2
-        x: 1704
-        y: 134
-        width: 124
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcd35c27ef7354f429eb2341302a4576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_cube_s
-      rect:
-        serializedVersion: 2
-        x: 1830
-        y: 104
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 774ce85b84d27f940b7c617955a931b3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_curve_sixteenth_m
-      rect:
-        serializedVersion: 2
-        x: 1896
-        y: 158
-        width: 52
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23254fa44bdce7645a391bb2831bb78e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_curve_eighth_s
-      rect:
-        serializedVersion: 2
-        x: 1950
-        y: 146
-        width: 46
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc22e5ce54dc17a4aa2e6ccec7091d0c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_flat_xs
-      rect:
-        serializedVersion: 2
-        x: 1998
-        y: 156
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44029bb6676a8ec4884879de430d171c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_flat_m
-      rect:
-        serializedVersion: 2
-        x: 1704
-        y: 99
-        width: 124
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0396275a45ab34f45b40ff4619e49879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_curve_sixteenth_m
-      rect:
-        serializedVersion: 2
-        x: 1896
-        y: 114
-        width: 52
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c542be8a5faa914a84d92a0028cd745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_curve_eighth_s
-      rect:
-        serializedVersion: 2
-        x: 1950
-        y: 100
-        width: 46
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05be6163da0c03249813447fabe66081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_pie_quarter_xs
-      rect:
-        serializedVersion: 2
-        x: 1998
-        y: 120
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ae7a29f6d0a9f44f82ad61eb94e4bb0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_flat_xxl
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 86
-        width: 484
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38175878d2f15984693f317a4cb3eab8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_ramp_xs_right
-      rect:
-        serializedVersion: 2
-        x: 1704
-        y: 62
-        width: 124
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bfa855ecb6ca284c9a493cb2d802f82
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_curve_sixteenth_xl
-      rect:
-        serializedVersion: 2
-        x: 1830
-        y: 52
-        width: 98
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c7cd32dbaeb64f4cac1cb30a03495c7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_curve_eighth_s
-      rect:
-        serializedVersion: 2
-        x: 1930
-        y: 54
-        width: 46
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73661a8b6c778674a855e3f200538bee
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_curve_sixteenth_s
-      rect:
-        serializedVersion: 2
-        x: 1978
-        y: 62
-        width: 30
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f80ed0c0eb90c9419c0d011528574f8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_flat_xxl
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 50
-        width: 484
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4320aaa37d65a6d44bef29c348dec685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_ramp_s_right
-      rect:
-        serializedVersion: 2
-        x: 491
-        y: 2
-        width: 183
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f481ee58716d9c4887fa3db0bcec0b1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_ramp_s_left
-      rect:
-        serializedVersion: 2
-        x: 676
-        y: 2
-        width: 183
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 520ccd29fe37c7d4786aa3a67b83a4a2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_curve_sixteenth_xxl
-      rect:
-        serializedVersion: 2
-        x: 864
-        y: 8
-        width: 190
-        height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a74af2956ae8fa4c91e7413d5e2c68a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_flat_xl
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 50
-        width: 244
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d68249eb46144ab4a90bb2510a447b99
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_flat_l
-      rect:
-        serializedVersion: 2
-        x: 1326
-        y: 28
-        width: 184
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59cf8cd275517c94a841e7374ed5a3a4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_ramp_xs_right
-      rect:
-        serializedVersion: 2
-        x: 1512
-        y: 28
-        width: 124
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5125fff07b55ee34f80623832b0b634f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_flat_s
-      rect:
-        serializedVersion: 2
-        x: 1638
-        y: 28
-        width: 64
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12534b7ec8606e642a5d285ab2665423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_ramp_xs_left
-      rect:
-        serializedVersion: 2
-        x: 1704
-        y: 27
-        width: 124
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff08b16665fa4c145b9d998cae164c9f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plastic_curve_sixteenth_s
-      rect:
-        serializedVersion: 2
-        x: 1956
-        y: 17
-        width: 30
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 047bcaf6fd15e5d46a0c8b45b719f3de
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_pie_quarter_xs
-      rect:
-        serializedVersion: 2
-        x: 1987
-        y: 26
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df467d395b14dd24bb71666bdd1641bd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_flat_xl
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 14
-        width: 244
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3507ade26d129b4bb4e22b418fe0591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_flat_l
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 12
-        width: 184
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d852823eba662e44a44e02503c89257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rock_curve_sixteenth_m
-      rect:
-        serializedVersion: 2
-        x: 434
-        y: 6
-        width: 52
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7aa092b423f8b404bbce72912b987581
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ice_flat_xl
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 14
-        width: 244
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99225fdd1c64afb4a86a430c540a1c0e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_hump_m
+      name: snow_left_end_m
       rect:
         serializedVersion: 2
         x: 1302
-        y: 2
-        width: 121
+        y: 744
+        width: 66
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef9fdc45f63a45429a8f4bc18c22cc3
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_17
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 736
+        width: 260
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c773604c2051c249949785f3e68cc62
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_13
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 728
+        width: 260
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbea4e6b7a6b49d47a22197e50ac9c3d
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_1
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 740
+        width: 260
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a03fbfe6435d14c9377ad15dbe3a33
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_16
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 696
+        width: 260
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7014ffab847cc8f43a34736707684348
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: city_right_end
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 696
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583e131a13409a74f98d6c21ad8e2ed6
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bumper_bg
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 578
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda91c194a510e449be07f4fd1575b31
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinky_poff_15
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 709
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb99f1d1ad5989459f96a345b553a0a
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinky_poff_16
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 710
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7519e8ab76499404bbcfd67ebbcd633b
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jungle_flat_l
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 700
+        width: 168
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9bc447466f08b4cb4f25ebbcab1423
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_30
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 669
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e50b734a0cfae247985b3fe03692d45
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_31
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 673
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f9c567b99b9d14fbf928c47bfe4c7e
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_32
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 679
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82fe9e4eeb620544940e6c038c17af6
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_33
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 678
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1aa623ff5fb5134db4af359d7286358
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_34
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 683
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0701b1e619ae6e40bc05a38135f375c
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_35
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 681
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5083edb6b0a109148820629bb345b6a3
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost_tunnel_fg
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 456
+        width: 94
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0cd2f6b1b8b5dd4aab1ee714a01f0a0
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bumper_on
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 575
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221e2edc9cbfa7647be1ef6e2caa4222
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_38
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 640
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b1175e49bdb314ba2922e48227d98e
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_39
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 646
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3254,18 +1288,313 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5539550e0a0547149b5d1f191ec38b51
+      spriteID: 368d463729abffa428eb25db2573e774
+      internalID: 21300078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_hump_m
+      name: GameObjectsFG_40
       rect:
         serializedVersion: 2
-        x: 1428
-        y: 2
-        width: 121
+        x: 1050
+        y: 652
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04918ed1cd3cc540a3d302bb13f82a2
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_41
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 653
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a947e54fa7a5d45b392ed0fc41a458
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trampoline_layer_3
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 609
+        width: 444
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4676fedbc84d7540b3c7c4807f2d0ad
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_43
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 604
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6eddbf0d9d99894393b79312aaddfad
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_44
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 623
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c5a411bfb1123438b3ca5bceec031c
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_45
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 621
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cda4f9d8175bc4c8dee8b239d05741
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_46
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 596
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b921758b7d486d4c85e42b2c8502d74
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_47
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 601
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104dc9b279e307d4689c9fe64d03e337
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_48
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 528
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f45448b2ef1a74387c348cb913d906
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket_2_4
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 544
+        width: 198
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab719c6ee151e24a827a2e1ff072ff0
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket_2_3
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 548
+        width: 175
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda5ff1021bc9a5468b4b6786f718d9f
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trampoline_layer_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 496
+        width: 356
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767096a093c42f94b92fda5a5e7a104a
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_52
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 487
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69dd6b7454500b8448b66111431145e8
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_53
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 522
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8509429a64b5046b19886d75e71de5
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_54
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 500
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3274,18 +1603,61 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a826456de4e3b943a73e49648106a17
+      spriteID: ad4c018c01f8bf142a9bb5db4c937d94
+      internalID: 21300108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_hump_s
+      name: factory_bit_cube_passthrough
       rect:
         serializedVersion: 2
-        x: 1554
-        y: 6
-        width: 64
+        x: 1036
+        y: 396
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9d51bab8d720040bdd5eb1027bbe51
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_56
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 512
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180743403af42e5479d6fec28c148079
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_57
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 511
+        width: 31
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3294,19 +1666,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58e21f5108e76214886784918e0ff6e4
+      spriteID: 0a08d69383f523645a7aa7ab4b3cfe19
+      internalID: 21300114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wood_pyramid_xs
+      name: bumper_off
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 6
-        width: 34
-        height: 20
+        x: 625
+        y: 431
+        width: 75
+        height: 75
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3314,19 +1687,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb78ca4652fb17c40bf24d7a2fafd88c
+      spriteID: b267352eaeedbb145b84749634f139dd
+      internalID: 21300116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wood_bump_xs
+      name: GameObjectsFG_59
       rect:
         serializedVersion: 2
-        x: 1656
-        y: 6
-        width: 34
-        height: 20
+        x: 893
+        y: 478
+        width: 44
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3334,18 +1708,292 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9785d7a10db27d341b8a40dcd8d71828
+      spriteID: 7e0c934a4f1174b469d03b6a21d74ca8
+      internalID: 21300118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock_flat_m
+      name: GameObjectsFG_60
       rect:
         serializedVersion: 2
-        x: 1830
-        y: 16
-        width: 124
+        x: 1211
+        y: 488
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241a1c73d4ad663418a69cb7890f8620
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_61
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 488
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5aee36d8bf9b6439cb5957d7f5c91b
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_62
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 432
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373773f1e157d01478da777c8c9ee5e6
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_63
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 482
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94bd232340fc834186d59bf0acf56ac
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_2
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 334
+        width: 346
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13adba8c63d2dfa459fb8c9a6a67783b
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_board_spring
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 376
+        width: 63
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aec2c4105d165242b012a2398def0e0
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rope_bridgge_connection
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 458
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448b6d4b5fc349b40a488d8659972a3b
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_67
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 456
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8462ce35d0e68448aa6cdb8ae65f99
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_68
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 454
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b8fd48541ec5045bdc1e3d3161e649
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_69
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 416
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7362c8ce92970b4b822ea09e853d39f
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_70
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 402
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5accab951efb1954d8021717fe86a8dc
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_board_box
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 383
+        width: 147
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da15b84cfc94ece44910908e0eab6198
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_12
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 388
+        width: 260
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2b1f8ea32d03440a9af417e0f892aa
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egypt_right_end
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 390
+        width: 28
         height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3354,7 +2002,1016 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a446d8787f9e91c4c90e68d1dd4b1bd9
+      spriteID: a5c870c19c63c5645ae2ab8fded8a956
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_74
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 406
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36756b43982e1f64c9d3f9240248aba9
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_75
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 238
+        width: 57
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16fcc79c70daff48a83e841e92d86a0
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_76
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 348
+        width: 46
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993b4de61d4cdc84eb431c07491bd3ef
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_77
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 317
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd95d88ce9d1c44a8a2fce05961ff63
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_78
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 254
+        width: 102
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f902366741cf841894f64b345c4cdc
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_79
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 275
+        width: 59
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723396197a8766a4f843c1e5e6f247b6
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_80
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 282
+        width: 72
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1925c9c7398b9bb41923763c402ba7ef
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_81
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 307
+        width: 65
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11dc539a8d702c4d9b11993560f3a0e
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_82
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 271
+        width: 78
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa635c9de475a3d4caa2cf1b60214349
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rope_bridge_cracked
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 336
+        width: 104
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e3cce1a3593884692095cab7bde712
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_curve_fourth_xl
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 82
+        width: 244
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45d1347e3dbe254e8951e63a3e5eb32
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost_tunnel_top
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 90
+        width: 94
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e25845576a9404daa3df3b8731cbd3
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_86
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 226
+        width: 82
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7738f996f3419448943911d432f1030
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_87
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 303
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681710f91a9bb1f4588d97e7e383e7a4
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rope_bridge_base
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 278
+        width: 104
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da7e3f05040d7d4d839895cddece953
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_89
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 273
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e943bb3c3f58a4394df88a7ae37e61
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_90
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 273
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afe231350bb513439274e3190dae9be
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_vertical_stop
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 244
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30ed592ff35d9b4ab61aa6359691849
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jungle_vertical_stop
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 244
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c43c434a1e1aa45afec8874391701d
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_93
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 89
+        width: 125
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f466c0af48d49e045bdef71ac5d5a78e
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_94
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 113
+        width: 81
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675d40a393895ad48acee3cd3d9d7341
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_95
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 124
+        width: 69
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d66fa244bf123b479cc7bf65dc70240
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_96
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 171
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c20885c2004cc146a1674df842bdf06
+      internalID: 21300192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_97
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 109
+        width: 89
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375bc1e3ae54f4d41ada9ece66b539f1
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_98
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 177
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329a6c60b6592534b9f2563d98db9f87
+      internalID: 21300196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_down_right
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 104
+        width: 110
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6871dc680da944cbd547583d6e7413
+      internalID: 21300198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_down_left
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 104
+        width: 110
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee6821326b2ca0439067ce2d65d1e5d
+      internalID: 21300200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_101
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 134
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69377d2cff97997488cc62e5dc1c5ac1
+      internalID: 21300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_102
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 125
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adcbba27a52f2d46be820616aec7773
+      internalID: 21300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_103
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 140
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e185bb959160fe845bab61c7b79ad959
+      internalID: 21300206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjectsFG_104
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 131
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4030f576a944b340a8d2eaba648b5ae
+      internalID: 21300208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 42
+        width: 260
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a49521649ec4d47ae4abc7e4b0c2f2
+      internalID: 21300210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jungle_right_end_m
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 6
+        width: 66
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b1ec96693076846922d06feccde279
+      internalID: 21300212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_flat_l
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 35
+        width: 168
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a34def98f851d1498aa4c3237feeeba
+      internalID: 21300214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jungle_left_end_m
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 4
+        width: 66
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7dfe4977da94014a9da64b5df8e0bac
+      internalID: 21300216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egypt_left_end
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 42
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af1f1a76120a534ab24547492c7ca5f
+      internalID: 21300218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket_2_2
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 47
+        width: 169
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdfb83d9905eeb459c533ca09689917
+      internalID: 21300220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket_2_1
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 47
+        width: 166
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b3e819c62262c429f356ed7964db5d
+      internalID: 21300222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: factory_cover_flat
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 56
+        width: 168
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c1182c0c51d174bb220b68e8052af4
+      internalID: 21300224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_flat_l
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 57
+        width: 184
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f558209a311738a4d91805e4112c080e
+      internalID: 21300226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_left_end_s
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 58
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7d98c002479e349a04f559ff3a5ee2
+      internalID: 21300228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egypt_flat_l
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 168
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c6e7f2a25b1894a86b18b4a3bf55e6
+      internalID: 21300230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_flat_m
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 4
+        width: 88
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fec9d5db72378141b44a9284c7bbb76
+      internalID: 21300232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: city_flat_l
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 10
+        width: 168
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7712ca21e39b9f64085cdb3ac6a94ebb
+      internalID: 21300234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: city_left_end
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 10
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c781a45633303c4692dd39d258f25fb
+      internalID: 21300236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_board_glow
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 7
+        width: 132
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ca491afa4b8664d980d49eda2d8c6c
+      internalID: 21300238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring_board
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 13
+        width: 120
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a80bb73dd16e84184c1990af201a35
+      internalID: 21300240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snow_right_end_s
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 12
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a7b47646bba4a488d71ed92bf0b452
+      internalID: 21300242
       vertices: []
       indices: 
       edges: []
@@ -3362,11 +3019,13 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a4e0036d7244c0c4fa5cc9971904bfbe
+    spriteID: 74c557a4f932f9043836b013debcff82
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
