@@ -213,18 +213,26 @@ public class PlhsGenerator : MonoBehaviour
         var genProps = new NSDictionary();
         SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
         Sprite sprite = sr.sprite;
-
-        if (sprite.name.Length < 5 || sprite.name.Substring(0,5) != "water") //fudge cos error on 'box'
-        {
+        //Edit to add gates and water and catch short string errors
+        if (sprite.name.Substring(0,3) == "box"){
             genProps.Add("TagName", "DEFAULT");
             genProps.Add("Tag", 0);
             genProps.Add("Opacity", 1.0);
         }
-        else
-        {
+        else if (gameObject.name.Substring(0,4) == "GATE") {
+            genProps.Add("TagName", "LHTAG_PICKUP_GATE");
+            genProps.Add("Tag", 19);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (sprite.name.Substring(0,5) == "water") {
             genProps.Add("TagName", "LHTAG_WATER");
             genProps.Add("Tag", 13);
             genProps.Add("Opacity", 0.8);
+        }
+        else {
+            genProps.Add("TagName", "DEFAULT");
+            genProps.Add("Tag", 0);
+            genProps.Add("Opacity", 1.0);
         }
         genProps.Add("Color", new NSArray(4) {1.0, 1.0, 1.0, 0.0});
         genProps.Add("UV", new NSArray(4) {0.0, 0.0, 0.0, 0.0});
