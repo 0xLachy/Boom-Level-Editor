@@ -50,7 +50,7 @@ public class PlhsGenerator : MonoBehaviour
         root.Add("LoadedImages", GetLoadedImages());
         root.Add("LHVersion", "1.4.7");
         root.Add("BEZIER_INFO", beziers);
-        root.Add("Gravity", new NSArray() {0.0, -10.0});
+        root.Add("Gravity", new NSArray() { 0.0, -10.0 });
         root.Add("CreatedWith", "LevelHelper");
         root.Add("JOINTS_INFO", new NSArray());
         root.Add("ScenePreference", GetScenePreferences());
@@ -64,8 +64,9 @@ public class PlhsGenerator : MonoBehaviour
     {
         var bezier = new NSDictionary();
         var spriteShapeController = gameObject.GetComponent<SpriteShapeController>();
-        
-        if (gameObject.name.Substring(0,7) == "EgyptBG"){
+
+        if (gameObject.name.Substring(0, 7) == "EgyptBG")
+        {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
             bezier.Add("IsSenzor", false);
             bezier.Add("Tag", 24);
@@ -73,7 +74,8 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Image", "EgyptGroundBG.png");
             bezier.Add("PhysicType", 3);
         }
-        else if (gameObject.name.Substring(0,11) == "EgyptGround"){
+        else if (gameObject.name.Substring(0, 11) == "EgyptGround")
+        {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
             bezier.Add("IsSenzor", false);
             bezier.Add("Tag", 24);
@@ -81,7 +83,8 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Image", "EgyptGround.png");
             bezier.Add("PhysicType", 0);
         }
-        else if (gameObject.name.Substring(0,12) == "JungleGround"){
+        else if (gameObject.name.Substring(0, 12) == "JungleGround")
+        {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
             bezier.Add("IsSenzor", false);
             bezier.Add("Tag", 24);
@@ -89,7 +92,8 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Image", "JungleGround.png");
             bezier.Add("PhysicType", 0);
         }
-       else if (gameObject.name.Substring(0,5) != "Water"){
+        else if (gameObject.name.Substring(0, 5) != "Water")
+        {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
             bezier.Add("IsSenzor", false);
             bezier.Add("Tag", 24);
@@ -110,7 +114,7 @@ public class PlhsGenerator : MonoBehaviour
 
 
         bezier.Add("IsSimpleLine", true);
-        bezier.Add("Color", new NSArray(4) {1.0, 1.0, 1.0, 1.0});
+        bezier.Add("Color", new NSArray(4) { 1.0, 1.0, 1.0, 1.0 });
         bezier.Add("IsTile", true);
         bezier.Add("IsPath", false);
         bezier.Add("Density", 0.2);
@@ -151,9 +155,9 @@ public class PlhsGenerator : MonoBehaviour
         bezier.Add("UniqueName", gameObject.name);
         bezier.Add("CanSleep", true);
         bezier.Add("LineWidth", 1.0);
-        bezier.Add("ZOrder", (int) gameObject.transform.position.z);
+        bezier.Add("ZOrder", (int)gameObject.transform.position.z);
         bezier.Add("Category", 1);
-        
+
         // Add curves for collisions
         var curves = new NSArray();
         for (var i = 1; i < spline.GetPointCount(); i++)
@@ -188,10 +192,10 @@ public class PlhsGenerator : MonoBehaviour
         dict.Add("PanValue",
             new NSArray()
                 {Camera.main.transform.position.x * multiplier, -Camera.main.transform.position.y * multiplier});
-        dict.Add("SafeFrame", new NSArray() {480.0, 320.0});
+        dict.Add("SafeFrame", new NSArray() { 480.0, 320.0 });
         dict.Add("ZoomValue", 1.0);
         dict.Add("GameWorld", GetCameraBounds());
-        dict.Add("BackgroundColor", new NSArray() {0.631373, 0.921569, 0.976471, 0.0});
+        dict.Add("BackgroundColor", new NSArray() { 0.631373, 0.921569, 0.976471, 0.0 });
         dict.Add("ProjectName", "Boom!");
         return dict;
     }
@@ -214,44 +218,37 @@ public class PlhsGenerator : MonoBehaviour
         SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
         Sprite sprite = sr.sprite;
         //Edit to add gates and water and catch short string errors
-        if (sprite.name.Substring(0,3) == "box"){
+        if (sprite.name.Substring(0, 3) == "box")
+        {
             genProps.Add("TagName", "DEFAULT");
             genProps.Add("Tag", 0);
             genProps.Add("Opacity", 1.0);
         }
-        else if (gameObject.name.Substring(0,4) == "GATE") {
+        else if (gameObject.name.Length >= 4 && gameObject.name.Substring(0, 4) == "GATE")
+        {
             genProps.Add("TagName", "LHTAG_PICKUP_GATE");
             genProps.Add("Tag", 19);
             genProps.Add("Opacity", 1.0);
         }
-        else if (sprite.name.Substring(0,5) == "water") {
-            genProps.Add("TagName", "LHTAG_WATER");
-            genProps.Add("Tag", 13);
-            genProps.Add("Opacity", 0.8);
-        }
-        else {
-            genProps.Add("TagName", "DEFAULT");
-            genProps.Add("Tag", 0);
-            genProps.Add("Opacity", 1.0);
-        }
-        genProps.Add("Color", new NSArray(4) {1.0, 1.0, 1.0, 0.0});
-        genProps.Add("UV", new NSArray(4) {0.0, 0.0, 0.0, 0.0});
+        else UnityTagToBoomTagInGame(gameObject, genProps, sprite);
+        genProps.Add("Color", new NSArray(4) { 1.0, 1.0, 1.0, 0.0 });
+        genProps.Add("UV", new NSArray(4) { 0.0, 0.0, 0.0, 0.0 });
 
 
-        int angle = (int) Quaternion.Inverse(gameObject.transform.rotation.normalized).eulerAngles.z;
+        int angle = (int)Quaternion.Inverse(gameObject.transform.rotation.normalized).eulerAngles.z;
         genProps.Add("SHName", sprite.name);
         genProps.Add("Image", sprite.texture.name + ".png");
         genProps.Add("SHScene", sprite.texture.name + ".pshs");
         genProps.Add("Angle", angle);
-        genProps.Add("Size", new NSArray(2) {sprite.rect.width / 2, sprite.rect.height / 2});
+        genProps.Add("Size", new NSArray(2) { sprite.rect.width / 2, sprite.rect.height / 2 });
         genProps.Add("UniqueName", gameObject.name);
         genProps.Add("Position",
             new NSArray(2)
                 {gameObject.transform.position.x * multiplier, -gameObject.transform.position.y * multiplier});
         genProps.Add("IsDrawable", true);
         genProps.Add("IsInParallax", false);
-        genProps.Add("Scale", new NSArray(2) {gameObject.transform.localScale.x, gameObject.transform.localScale.y});
-        genProps.Add("ZOrder", (int) gameObject.transform.position.z);
+        genProps.Add("Scale", new NSArray(2) { gameObject.transform.localScale.x, gameObject.transform.localScale.y });
+        genProps.Add("ZOrder", (int)gameObject.transform.position.z);
         genProps.Add("Locked", false);
 
         var anim = gameObject.GetComponent<BoomAnimation>();
@@ -266,7 +263,8 @@ public class PlhsGenerator : MonoBehaviour
         }
         else
         {
-            if (sprite.name.Length < 5 || sprite.name.Substring(0,5) != "water"){ //fudge cos error on 'box'
+            if (sprite.name.Length < 5 || sprite.name.Substring(0, 5) != "water")
+            { //fudge cos error on 'box'
                 genProps.Add("AnimRepetitions", 0);
                 genProps.Add("AnimAtStart", false);
                 genProps.Add("AnimSpeed", 0.0);
@@ -288,37 +286,114 @@ public class PlhsGenerator : MonoBehaviour
         return dict;
     }
 
+    private static void UnityTagToBoomTagInGame(GameObject gameObject, NSDictionary genProps, Sprite sprite)
+    {
+        //for some reason quick actions and refactorings wants to put this in here, don't know why, fix later.
+        if (gameObject.name.Length >= 5 && gameObject.name.Substring(0, 5) == "bigwh")
+        {
+            genProps.Add("TagName", "DEFAULT");
+            genProps.Add("Tag", 23);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "sandstone" || gameObject.tag == "sandstone")
+        {
+            genProps.Add("TagName", "LHTAG_SANDSTONE_BLOCK");
+            genProps.Add("Tag", 18);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "bomb" || gameObject.tag == "bomb")
+        {
+            genProps.Add("TagName", "LHTAG_BOMB");
+            genProps.Add("Tag", 17);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "spike" || gameObject.tag == "spike")
+        {
+            genProps.Add("TagName", "LHTAG_SPIKES");
+            genProps.Add("Tag", 5);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "wheely" || gameObject.tag == "wheely")
+        {
+            genProps.Add("TagName", "LHTAG_WHEELY");
+            genProps.Add("Tag", 2);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "rocket" || gameObject.tag == "rocket")
+        {
+            genProps.Add("TagName", "LHTAG_ROCKET");
+            genProps.Add("Tag", 9);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "cage" || gameObject.tag == "cage")
+        {
+            genProps.Add("TagName", "LHTAG_CAGE");
+            genProps.Add("Tag", 20);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "rflipper" || gameObject.tag == "rflipper")
+        {
+            genProps.Add("TagName", "LHTAG_FLIPPER_RIGHT");
+            genProps.Add("Tag", 35);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "bumper" || gameObject.tag == "bumper")
+        {
+            genProps.Add("TagName", "LHTAG_BUMPER");
+            genProps.Add("Tag", 31);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "springboard" || gameObject.tag == "springboard")
+        {
+            genProps.Add("TagName", "LHTAG_SPRINGBOARD");
+            genProps.Add("Tag", 27);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.name.Length >= 5 && sprite.name.Substring(0, 5) == "water")
+        {
+            genProps.Add("TagName", "LHTAG_WATER");
+            genProps.Add("Tag", 13);
+            genProps.Add("Opacity", 0.8);
+        }
+        else
+        {
+            genProps.Add("TagName", "DEFAULT");
+            genProps.Add("Tag", 0);
+            genProps.Add("Opacity", 1.0);
+        }
+    }
+
     private static NSArray GetLoadedImages()
     {
         var arr = new NSArray();
         for (int i = 0; i < 19; i++)
         {
-            var dict = new NSDictionary {{"OrderZ", 0}};
+            var dict = new NSDictionary { { "OrderZ", 0 } };
             arr.Add(dict);
         }
 
-        ((NSDictionary) arr[0]).Add("Image", "CityGround.png");
-        ((NSDictionary) arr[1]).Add("Image", "CityGroundBG.png");
-        ((NSDictionary) arr[2]).Add("Image", "DesertGround.png");
-        ((NSDictionary) arr[3]).Add("Image", "EgyptGround.png");
-        ((NSDictionary) arr[4]).Add("Image", "EgyptGroundBG.png");
-        ((NSDictionary) arr[5]).Add("Image", "FactoryGround.png");
-        ((NSDictionary) arr[6]).Add("Image", "FactoryGroundBG.png");
-        ((NSDictionary) arr[7]).Add("Image", "FrozenBG.png");
-        ((NSDictionary) arr[8]).Add("Image", "GameObjectsBG.png");
-        ((NSDictionary) arr[9]).Add("Image", "JungleBGround.png");
-        ((NSDictionary) arr[10]).Add("Image", "JungleGround.png");
-        ((NSDictionary) arr[11]).Add("Image", "QuicksandFill.png");
-        ((NSDictionary) arr[12]).Add("Image", "StonesIce.png");
-        ((NSDictionary) arr[13]).Add("Image", "TestGround.png");
-        ((NSDictionary) arr[14]).Add("Image", "WaterFill.png");
-        ((NSDictionary) arr[15]).Add("Image", "WheelBit.png");
-        ((NSDictionary) arr[16]).Add("Image", "Tracks.png");
-        ((NSDictionary) arr[16])["OrderZ"] = (NSNumber) 1;
-        ((NSDictionary) arr[17]).Add("Image", "GameObjects.png");
-        ((NSDictionary) arr[17])["OrderZ"] = (NSNumber) 2;
-        ((NSDictionary) arr[18]).Add("Image", "GameObjectsFG.png");
-        ((NSDictionary) arr[18])["OrderZ"] = (NSNumber) 6;
+        ((NSDictionary)arr[0]).Add("Image", "CityGround.png");
+        ((NSDictionary)arr[1]).Add("Image", "CityGroundBG.png");
+        ((NSDictionary)arr[2]).Add("Image", "DesertGround.png");
+        ((NSDictionary)arr[3]).Add("Image", "EgyptGround.png");
+        ((NSDictionary)arr[4]).Add("Image", "EgyptGroundBG.png");
+        ((NSDictionary)arr[5]).Add("Image", "FactoryGround.png");
+        ((NSDictionary)arr[6]).Add("Image", "FactoryGroundBG.png");
+        ((NSDictionary)arr[7]).Add("Image", "FrozenBG.png");
+        ((NSDictionary)arr[8]).Add("Image", "GameObjectsBG.png");
+        ((NSDictionary)arr[9]).Add("Image", "JungleBGround.png");
+        ((NSDictionary)arr[10]).Add("Image", "JungleGround.png");
+        ((NSDictionary)arr[11]).Add("Image", "QuicksandFill.png");
+        ((NSDictionary)arr[12]).Add("Image", "StonesIce.png");
+        ((NSDictionary)arr[13]).Add("Image", "TestGround.png");
+        ((NSDictionary)arr[14]).Add("Image", "WaterFill.png");
+        ((NSDictionary)arr[15]).Add("Image", "WheelBit.png");
+        ((NSDictionary)arr[16]).Add("Image", "Tracks.png");
+        ((NSDictionary)arr[16])["OrderZ"] = (NSNumber)1;
+        ((NSDictionary)arr[17]).Add("Image", "GameObjects.png");
+        ((NSDictionary)arr[17])["OrderZ"] = (NSNumber)2;
+        ((NSDictionary)arr[18]).Add("Image", "GameObjectsFG.png");
+        ((NSDictionary)arr[18])["OrderZ"] = (NSNumber)6;
 
         return arr;
     }

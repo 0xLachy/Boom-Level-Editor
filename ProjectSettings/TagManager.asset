@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - sandstone
+  - bomb
+  - spike
+  - wheely
+  - rflipper
+  - bumper
+  - cage
+  - rocket
+  - springboard
   layers:
   - Default
   - TransparentFX
