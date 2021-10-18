@@ -331,7 +331,19 @@ public class PlhsGenerator : MonoBehaviour
             genProps.Add("Tag", 20);
             genProps.Add("Opacity", 1.0);
         }
-        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "rflipper" || gameObject.tag == "rflipper")
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "boosttunnel" || gameObject.tag == "boosttunnel")
+        {
+            genProps.Add("TagName", "LHTAG_BOOST_TUNNEL");
+            genProps.Add("Tag", 29);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "leftflipper" || gameObject.tag == "leftflipper")
+        {
+            genProps.Add("TagName", "LHTAG_FLIPPER_LEFT");
+            genProps.Add("Tag", 34);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "rightflipper" || gameObject.tag == "rightflipper")
         {
             genProps.Add("TagName", "LHTAG_FLIPPER_RIGHT");
             genProps.Add("Tag", 35);
@@ -341,6 +353,18 @@ public class PlhsGenerator : MonoBehaviour
         {
             genProps.Add("TagName", "LHTAG_BUMPER");
             genProps.Add("Tag", 31);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "lollipop" || gameObject.tag == "lollipop")
+        {
+            genProps.Add("TagName", "LHTAG_LOLLIPOP");
+            genProps.Add("Tag", 36);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "plastic" || gameObject.tag == "plastic")
+        {
+            genProps.Add("TagName", "LHTAG_PLASTIC_BLOCK");
+            genProps.Add("Tag", 37);
             genProps.Add("Opacity", 1.0);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "springboard" || gameObject.tag == "springboard")

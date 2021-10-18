@@ -8,11 +8,14 @@ TagManager:
   - bomb
   - spike
   - wheely
-  - rflipper
   - bumper
   - cage
   - rocket
   - springboard
+  - leftflipper
+  - rightflipper
+  - lollipop
+  - plastic
   layers:
   - Default
   - TransparentFX
