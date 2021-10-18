@@ -65,7 +65,7 @@ public class PlhsGenerator : MonoBehaviour
         var bezier = new NSDictionary();
         var spriteShapeController = gameObject.GetComponent<SpriteShapeController>();
 
-        if (gameObject.name.Substring(0, 7) == "EgyptBG")
+        if (gameObject.name.Length >= 7 && gameObject.name.Substring(0, 7) == "EgyptBG")
         {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
             bezier.Add("IsSenzor", false);
@@ -74,7 +74,7 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Image", "EgyptGroundBG.png");
             bezier.Add("PhysicType", 3);
         }
-        else if (gameObject.name.Substring(0, 11) == "EgyptGround")
+        else if (gameObject.name.Length >= 11 && gameObject.name.Substring(0, 11) == "EgyptGround")
         {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
             bezier.Add("IsSenzor", false);
@@ -83,7 +83,7 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Image", "EgyptGround.png");
             bezier.Add("PhysicType", 0);
         }
-        else if (gameObject.name.Substring(0, 12) == "JungleGround")
+        else if (gameObject.name.Length >= 12 && gameObject.name.Substring(0, 12) == "JungleGround")
         {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
             bezier.Add("IsSenzor", false);
@@ -92,7 +92,7 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Image", "JungleGround.png");
             bezier.Add("PhysicType", 0);
         }
-        else if (gameObject.name.Substring(0, 5) != "Water")
+        else if (gameObject.name.Length >= 5 && gameObject.name.Substring(0, 5) != "Water")
         {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
             bezier.Add("IsSenzor", false);
@@ -263,7 +263,7 @@ public class PlhsGenerator : MonoBehaviour
         }
         else
         {
-            if (sprite.name.Length < 5 || sprite.name.Substring(0, 5) != "water")
+            if (sprite.name.Length < 5 || (sprite.name.Length >= 5 && sprite.name.Substring(0, 5) != "water"))
             { //fudge cos error on 'box'
                 genProps.Add("AnimRepetitions", 0);
                 genProps.Add("AnimAtStart", false);
