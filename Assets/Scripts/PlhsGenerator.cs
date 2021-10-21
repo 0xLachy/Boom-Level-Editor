@@ -110,7 +110,7 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Image", "JungleGround.png");
             bezier.Add("PhysicType", 0);
         }
-        else if (gameObject.name == "zoom")
+        else if (gameObject.name.Length >= 4 && gameObject.name.Substring(0, 4) == "zoom")
         {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
             bezier.Add("IsSenzor", false);
