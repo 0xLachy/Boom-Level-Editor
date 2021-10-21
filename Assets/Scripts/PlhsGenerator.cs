@@ -215,6 +215,7 @@ public class PlhsGenerator : MonoBehaviour
     {
         var dict = new NSDictionary();
         var genProps = new NSDictionary();
+        var physProps = new NSDictionary();
         SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
         Sprite sprite = sr.sprite;
         //Edit to add gates and water and catch short string errors
@@ -281,6 +282,33 @@ public class PlhsGenerator : MonoBehaviour
             }
 
         }
+        var rotationComponent = gameObject.GetComponent<BoomRotator>();
+        if (rotationComponent != null)
+        {
+            physProps.Add("ShapePositionOffset", new NSArray(2){0, 0});
+            physProps.Add("AngularDamping", 0.0);
+            physProps.Add("Density", 0.2);
+            physProps.Add("Mask", 65535);
+            physProps.Add("IsCircle", false);
+            physProps.Add("GravityScale", 1.0);
+            physProps.Add("FixedRot", rotationComponent.canRotate);
+            physProps.Add("Type", 1);
+            physProps.Add("HandledBySH", rotationComponent.handledBySH);
+            physProps.Add("IsBullet", false);
+            physProps.Add("Group", 0);
+            physProps.Add("CanSleep", true);
+            physProps.Add("LinearVelocity", new NSArray(2) { 0, 0 });
+            physProps.Add("ShapeFixtures", new NSArray(1) { new NSArray(1) { new NSArray(6) { 
+                new NSArray(2) { 35.635010, -62.214996 }, 
+                new NSArray(2) { 71.910004, 0.100006 },
+                new NSArray(2) { 35.804993, 62.119995 },
+                new NSArray(2) { -35.949997, 62.119995 },
+                new NSArray(2) { -72.205002, -0.239990 },
+                new NSArray(2) { -36.345001, -62.214996 } } } });
+
+            physProps.Add("AngularVelocity", rotationComponent.rotationSpeed);
+            dict.Add("PhysicProperties", physProps);
+        }
 
         dict.Add("GeneralProperties", genProps);
         return dict;
@@ -305,6 +333,12 @@ public class PlhsGenerator : MonoBehaviour
         {
             genProps.Add("TagName", "LHTAG_BOMB");
             genProps.Add("Tag", 17);
+            genProps.Add("Opacity", 1.0);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "star" || gameObject.tag == "star")
+        {
+            genProps.Add("TagName", "LHTAG_STAR");
+            genProps.Add("Tag", 54);
             genProps.Add("Opacity", 1.0);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "spike" || gameObject.tag == "spike")

@@ -39,7 +39,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>57</integer>
+				<integer>74</integer>
 				<key>Size</key>
 				<array>
 					<real>98.5</real>
@@ -49,8 +49,8 @@
 				<string>rocket (1)</string>
 				<key>Position</key>
 				<array>
-					<real>-706.5</real>
-					<real>-1411</real>
+					<real>-682</real>
+					<real>-1402</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
