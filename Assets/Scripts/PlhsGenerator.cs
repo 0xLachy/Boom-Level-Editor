@@ -83,6 +83,24 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Image", "EgyptGround.png");
             bezier.Add("PhysicType", 0);
         }
+        else if (gameObject.name.Length >= 8 && gameObject.name.Substring(0,8) == "FrozenBG")
+        {
+            bezier.Add("TagName", "LHTAG_STONE_GROUND");
+            bezier.Add("IsSenzor", false);
+            bezier.Add("Tag", 24);
+            bezier.Add("Friction", 1.0);
+            bezier.Add("Image", "FrozenBG.png");
+            bezier.Add("PhysicType", 3);
+        }
+        else if (gameObject.name.Length >= 9 && gameObject.name.Substring(0,9) == "StonesIce")
+        {
+            bezier.Add("TagName", "LHTAG_STONE_GROUND");
+            bezier.Add("IsSenzor", false);
+            bezier.Add("Tag", 24);
+            bezier.Add("Friction", 1.0);
+            bezier.Add("Image", "StonesIce.png");
+            bezier.Add("PhysicType", 0);
+        }
         else if (gameObject.name.Length >= 12 && gameObject.name.Substring(0, 12) == "JungleGround")
         {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
@@ -92,17 +110,16 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Image", "JungleGround.png");
             bezier.Add("PhysicType", 0);
         }
-        else if (gameObject.name.Length >= 5 && gameObject.name.Substring(0, 5) != "Water")
+        else if (gameObject.name.Length >= 4 && gameObject.name.Substring(0, 4) == "zoom")
         {
             bezier.Add("TagName", "LHTAG_STONE_GROUND");
             bezier.Add("IsSenzor", false);
             bezier.Add("Tag", 24);
             bezier.Add("Friction", 1.0);
-            bezier.Add("Image", spriteShapeController.spriteShape.fillTexture.name + ".png");
+            bezier.Add("Image", "");
             bezier.Add("PhysicType", 0);
-
         }
-        else
+        else if (gameObject.name.Length >= 5 && gameObject.name.Substring(0, 5) == "Water")
         {
             bezier.Add("TagName", "LHTAG_WATER");
             bezier.Add("IsSenzor", true);
@@ -111,7 +128,15 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Image", "WaterFill.png");
             bezier.Add("PhysicType", 0);
         }
-
+        else //default
+        {
+            bezier.Add("TagName", "LHTAG_STONE_GROUND");
+            bezier.Add("IsSenzor", false);
+            bezier.Add("Tag", 24);
+            bezier.Add("Friction", 1.0);
+            bezier.Add("Image", spriteShapeController.spriteShape.fillTexture.name + ".png");
+            bezier.Add("PhysicType", 0);
+        }
 
         bezier.Add("IsSimpleLine", true);
         bezier.Add("Color", new NSArray(4) { 1.0, 1.0, 1.0, 1.0 });
