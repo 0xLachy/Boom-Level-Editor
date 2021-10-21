@@ -285,28 +285,34 @@ public class PlhsGenerator : MonoBehaviour
         var rotationComponent = gameObject.GetComponent<BoomRotator>();
         if (rotationComponent != null)
         {
-            physProps.Add("ShapePositionOffset", new NSArray(2){0, 0});
-            physProps.Add("AngularDamping", 0.0);
-            physProps.Add("Density", 0.2);
+            physProps.Add("ShapePositionOffset", new NSArray(2){0.000000, 0.000000 });
+            physProps.Add("AngularDamping", 0.000000);
+            physProps.Add("Density", 0.200000);
             physProps.Add("Mask", 65535);
             physProps.Add("IsCircle", false);
-            physProps.Add("GravityScale", 1.0);
-            physProps.Add("FixedRot", rotationComponent.canRotate);
+            physProps.Add("FixedRot", rotationComponent.lockRotation);
+            physProps.Add("GravityScale", 1.000000);
             physProps.Add("Type", 1);
             physProps.Add("HandledBySH", rotationComponent.handledBySH);
             physProps.Add("IsBullet", false);
             physProps.Add("Group", 0);
             physProps.Add("CanSleep", true);
-            physProps.Add("LinearVelocity", new NSArray(2) { 0, 0 });
-            physProps.Add("ShapeFixtures", new NSArray(1) { new NSArray(1) { new NSArray(6) { 
+            physProps.Add("LinearVelocity", new NSArray(2) { 0.000000, 0.000000 });
+            physProps.Add("ShapeFixtures", new NSArray(1) { new NSArray(6) { 
                 new NSArray(2) { 35.635010, -62.214996 }, 
                 new NSArray(2) { 71.910004, 0.100006 },
                 new NSArray(2) { 35.804993, 62.119995 },
                 new NSArray(2) { -35.949997, 62.119995 },
                 new NSArray(2) { -72.205002, -0.239990 },
-                new NSArray(2) { -36.345001, -62.214996 } } } });
-
+                new NSArray(2) { -36.345001, -62.214996 } } });
+            physProps.Add("Category", 1);
+            physProps.Add("Friction", 1.000000);
+            physProps.Add("Restitution", 0.200000);
+            physProps.Add("IsSensor", false);
             physProps.Add("AngularVelocity", rotationComponent.rotationSpeed);
+            physProps.Add("LinearDamping", 0.000000);
+            physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
+
             dict.Add("PhysicProperties", physProps);
         }
 
