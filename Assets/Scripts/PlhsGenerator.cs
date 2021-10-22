@@ -307,39 +307,100 @@ public class PlhsGenerator : MonoBehaviour
             }
 
         }
-        var rotationComponent = gameObject.GetComponent<BoomRotator>();
+        var rotationComponent = gameObject.GetComponent<BoomPhysicsModifier>();
         if (rotationComponent != null)
         {
-            physProps.Add("ShapePositionOffset", new NSArray(2){0.000000, 0.000000 });
-            physProps.Add("AngularDamping", 0.000000);
-            physProps.Add("Density", 0.200000);
-            physProps.Add("Mask", 65535);
-            physProps.Add("IsCircle", false);
-            physProps.Add("FixedRot", rotationComponent.lockRotation);
-            physProps.Add("GravityScale", 1.000000);
-            physProps.Add("Type", 1);
-            physProps.Add("HandledBySH", rotationComponent.handledBySH);
-            physProps.Add("IsBullet", false);
-            physProps.Add("Group", 0);
-            physProps.Add("CanSleep", true);
-            physProps.Add("LinearVelocity", new NSArray(2) { 0.000000, 0.000000 });
-            physProps.Add("ShapeFixtures", new NSArray(1) { new NSArray(6) { 
-                new NSArray(2) { 35.635010, -62.214996 }, 
-                new NSArray(2) { 71.910004, 0.100006 },
-                new NSArray(2) { 35.804993, 62.119995 },
-                new NSArray(2) { -35.949997, 62.119995 },
-                new NSArray(2) { -72.205002, -0.239990 },
-                new NSArray(2) { -36.345001, -62.214996 } } });
-            physProps.Add("Category", 1);
-            physProps.Add("Friction", 1.000000);
-            physProps.Add("Restitution", 0.200000);
-            physProps.Add("IsSensor", false);
-            physProps.Add("AngularVelocity", rotationComponent.rotationSpeed);
-            physProps.Add("LinearDamping", 0.000000);
-            physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
+            //HandledbySH needs to not be used or set to false, best to not have it
+            //Keep the one in hexagon, I have kept the hexagon the same as other levels
+            if (rotationComponent.isHexagon == true)
+            {
+                physProps.Add("ShapePositionOffset", new NSArray(2){0.000000, 0.000000 });
+                physProps.Add("AngularDamping", 0.000000);
+                physProps.Add("Density", 0.200000);
+                physProps.Add("Mask", 65535);
+                physProps.Add("IsCircle", false);
+                physProps.Add("FixedRot", rotationComponent.lockRotation);
+                physProps.Add("GravityScale", 1.000000);
+                physProps.Add("Type", 1);
+                physProps.Add("HandledBySH", rotationComponent.isHexagon);
+                physProps.Add("IsBullet", false);
+                physProps.Add("Group", 0);
+                physProps.Add("CanSleep", true);
+                physProps.Add("LinearVelocity", new NSArray(2) { 0.000000, 0.000000 });
+                physProps.Add("ShapeFixtures", new NSArray(1) { new NSArray(6) { 
+                    new NSArray(2) { 35.635010, -62.214996 }, 
+                    new NSArray(2) { 71.910004, 0.100006 },
+                    new NSArray(2) { 35.804993, 62.119995 },
+                    new NSArray(2) { -35.949997, 62.119995 },
+                    new NSArray(2) { -72.205002, -0.239990 },
+                    new NSArray(2) { -36.345001, -62.214996 } } });
+                //var vector2Points = new NSArray()
+                physProps.Add("Category", 1);
+                physProps.Add("Friction", 1.000000);
+                physProps.Add("Restitution", 0.200000);
+                physProps.Add("IsSensor", false);
+                physProps.Add("AngularVelocity", rotationComponent.rotationSpeed);
+                physProps.Add("LinearDamping", 0.000000);
+                physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
+            }
+            else
+            {
+                if (rotationComponent.isSpike)
+                {
+                    physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
+                    physProps.Add("Density", 2.000000);
+                    physProps.Add("Mask", 65535);
+                    //physProps.Add("IsCircle", false); don't need to set for this and others e.g bullet
+                    physProps.Add("FixedRot", rotationComponent.lockRotation);
+                    physProps.Add("Type", 2);
+                    physProps.Add("Group", 0);
+                    physProps.Add("CanSleep", true);
+                    physProps.Add("Category", 1);
+                    physProps.Add("Friction", 80.000000);
+                    physProps.Add("Restitution", 0.200000);
+                    physProps.Add("IsSensor", false);
+                    physProps.Add("AngularVelocity", rotationComponent.rotationSpeed);
+                    physProps.Add("LinearDamping", 0.000000);
+                    physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
+                }
+                else
+                {
+                physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
+                physProps.Add("Density", 0.200000);
+                physProps.Add("Mask", 65535);
+                physProps.Add("FixedRot", rotationComponent.lockRotation);
+                physProps.Add("Type", 1);
+                physProps.Add("Group", 0);
+                physProps.Add("CanSleep", true);
+                physProps.Add("Category", 1);
+                physProps.Add("Friction", 1.000000);
+                physProps.Add("Restitution", 0.200000);
+                physProps.Add("IsSensor", false);
+                physProps.Add("AngularVelocity", rotationComponent.rotationSpeed);
+                physProps.Add("LinearDamping", 0.000000);
+                physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
+                }
+            }
 
             dict.Add("PhysicProperties", physProps);
         }
+        //if (gameObject.transform.parent.transform.parent != null &&
+        //        gameObject.transform.parent.transform.parent.tag == "ParentSpinner"
+        //        || gameObject.transform.parent != null && gameObject.transform.parent.tag == "ParentSpinner" && rotationComponent == null)
+        //{
+        //    var childRotator = gameObject.AddComponent<BoomRotator>();
+        //    if (gameObject.transform.parent.transform.parent != null)
+        //    {
+        //        var grandparentRotation = gameObject.transform.parent.GetComponentInParent<BoomRotator>();
+        //        childRotator.rotationSpeed = grandparentRotation.rotationSpeed;
+        //    }
+        //    else if (gameObject.transform.parent != null)
+        //    {
+        //        var parentRotation = gameObject.GetComponentInParent<BoomRotator>();
+        //        childRotator.rotationSpeed = parentRotation.rotationSpeed;
+        //    }
+
+        //}
 
         dict.Add("GeneralProperties", genProps);
         return dict;

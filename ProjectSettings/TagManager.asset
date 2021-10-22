@@ -17,6 +17,7 @@ TagManager:
   - lollipop
   - plastic
   - star
+  - ParentSpinner
   layers:
   - Default
   - TransparentFX
