@@ -312,6 +312,7 @@ public class PlhsGenerator : MonoBehaviour
         {
             //HandledbySH needs to not be used or set to false, best to not have it
             //Keep the one in hexagon, I have kept the hexagon the same as other levels
+            //Left fixedRot add inside to remember the order originally in game.
             if (rotationComponent.isHexagon == true)
             {
                 physProps.Add("ShapePositionOffset", new NSArray(2){0.000000, 0.000000 });
@@ -319,14 +320,14 @@ public class PlhsGenerator : MonoBehaviour
                 physProps.Add("Density", 0.200000);
                 physProps.Add("Mask", 65535);
                 physProps.Add("IsCircle", false);
-                physProps.Add("FixedRot", rotationComponent.lockRotation);
-                physProps.Add("GravityScale", 1.000000);
+                //physProps.Add("FixedRot", rotationComponent.lockRotation);
+                //physProps.Add("GravityScale", 1.000000);
                 physProps.Add("Type", 1);
                 physProps.Add("HandledBySH", rotationComponent.isHexagon);
                 physProps.Add("IsBullet", false);
                 physProps.Add("Group", 0);
                 physProps.Add("CanSleep", true);
-                physProps.Add("LinearVelocity", new NSArray(2) { 0.000000, 0.000000 });
+                //physProps.Add("LinearVelocity", new NSArray(2) { 0.000000, 0.000000 });
                 physProps.Add("ShapeFixtures", new NSArray(1) { new NSArray(6) { 
                     new NSArray(2) { 35.635010, -62.214996 }, 
                     new NSArray(2) { 71.910004, 0.100006 },
@@ -351,7 +352,7 @@ public class PlhsGenerator : MonoBehaviour
                     physProps.Add("Density", 2.000000);
                     physProps.Add("Mask", 65535);
                     //physProps.Add("IsCircle", false); don't need to set for this and others e.g bullet
-                    physProps.Add("FixedRot", rotationComponent.lockRotation);
+                    //physProps.Add("FixedRot", rotationComponent.lockRotation);
                     physProps.Add("Type", 2);
                     physProps.Add("Group", 0);
                     physProps.Add("CanSleep", true);
@@ -363,23 +364,43 @@ public class PlhsGenerator : MonoBehaviour
                     physProps.Add("LinearDamping", 0.000000);
                     physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
                 }
+                else if (rotationComponent.isMovingPlatform)
+                {
+                    physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
+                    physProps.Add("Density", 10.000000);
+                    physProps.Add("Mask", 65535);
+                    //physProps.Add("IsCircle", false); don't need to set for this and others e.g bullet
+                    physProps.Add("Type", 1);
+                    physProps.Add("Group", 0);
+                    physProps.Add("CanSleep", true);
+                    physProps.Add("Category", 1);
+                    physProps.Add("Friction", 2.000000);
+                    physProps.Add("Restitution", 0.200000);
+                    physProps.Add("IsSensor", false);
+                    physProps.Add("AngularVelocity", rotationComponent.rotationSpeed);
+                    physProps.Add("LinearDamping", 0.000000);
+                    physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
+                }
                 else
                 {
-                physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
-                physProps.Add("Density", 0.200000);
-                physProps.Add("Mask", 65535);
-                physProps.Add("FixedRot", rotationComponent.lockRotation);
-                physProps.Add("Type", 1);
-                physProps.Add("Group", 0);
-                physProps.Add("CanSleep", true);
-                physProps.Add("Category", 1);
-                physProps.Add("Friction", 1.000000);
-                physProps.Add("Restitution", 0.200000);
-                physProps.Add("IsSensor", false);
-                physProps.Add("AngularVelocity", rotationComponent.rotationSpeed);
-                physProps.Add("LinearDamping", 0.000000);
-                physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
+                    physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
+                    physProps.Add("Density", 0.200000);
+                    physProps.Add("Mask", 65535);
+                    //physProps.Add("FixedRot", rotationComponent.lockRotation);
+                    physProps.Add("Type", 1);
+                    physProps.Add("Group", 0);
+                    physProps.Add("CanSleep", true);
+                    physProps.Add("Category", 1);
+                    physProps.Add("Friction", 1.000000);
+                    physProps.Add("Restitution", 0.200000);
+                    physProps.Add("IsSensor", false);
+                    physProps.Add("AngularVelocity", rotationComponent.rotationSpeed);
+                    physProps.Add("LinearDamping", 0.000000);
+                    physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
                 }
+                physProps.Add("FixedRot", rotationComponent.lockRotation);
+                physProps.Add("GravityScale", rotationComponent.gravity);
+                physProps.Add("LinearVelocity", new NSArray(2) { rotationComponent.verticalSpeed, rotationComponent.horizontalSpeed });
             }
 
             dict.Add("PhysicProperties", physProps);
