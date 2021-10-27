@@ -242,21 +242,22 @@ public class PlhsGenerator : MonoBehaviour
         var genProps = new NSDictionary();
         var physProps = new NSDictionary();
         SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+        Color color = sr.color; //for opacity later, not used for color as it has no effect
         Sprite sprite = sr.sprite;
         //Edit to add gates and water and catch short string errors
         if (sprite.name.Substring(0, 3) == "box")
         {
             genProps.Add("TagName", "DEFAULT");
             genProps.Add("Tag", 0);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.name.Length >= 4 && gameObject.name.Substring(0, 4) == "GATE")
         {
             genProps.Add("TagName", "LHTAG_PICKUP_GATE");
             genProps.Add("Tag", 19);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
-        else UnityTagToBoomTagInGame(gameObject, genProps, sprite);
+        else UnityTagToBoomTagInGame(gameObject, genProps, sprite, color);
         genProps.Add("Color", new NSArray(4) { 1.0, 1.0, 1.0, 0.0 });
         genProps.Add("UV", new NSArray(4) { 0.0, 0.0, 0.0, 0.0 });
 
@@ -427,98 +428,98 @@ public class PlhsGenerator : MonoBehaviour
         return dict;
     }
 
-    private static void UnityTagToBoomTagInGame(GameObject gameObject, NSDictionary genProps, Sprite sprite)
+    private static void UnityTagToBoomTagInGame(GameObject gameObject, NSDictionary genProps, Sprite sprite, Color color)
     {
         //for some reason quick actions and refactorings wants to put this in here, don't know why, fix later.
         if (gameObject.name.Length >= 5 && gameObject.name.Substring(0, 5) == "bigwh")
         {
             genProps.Add("TagName", "DEFAULT");
             genProps.Add("Tag", 23);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "sandstone" || gameObject.tag == "sandstone")
         {
             genProps.Add("TagName", "LHTAG_SANDSTONE_BLOCK");
             genProps.Add("Tag", 18);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "bomb" || gameObject.tag == "bomb")
         {
             genProps.Add("TagName", "LHTAG_BOMB");
             genProps.Add("Tag", 17);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "star" || gameObject.tag == "star")
         {
             genProps.Add("TagName", "LHTAG_STAR");
             genProps.Add("Tag", 54);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "spike" || gameObject.tag == "spike")
         {
             genProps.Add("TagName", "LHTAG_SPIKES");
             genProps.Add("Tag", 5);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "wheely" || gameObject.tag == "wheely")
         {
             genProps.Add("TagName", "LHTAG_WHEELY");
             genProps.Add("Tag", 2);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "rocket" || gameObject.tag == "rocket")
         {
             genProps.Add("TagName", "LHTAG_ROCKET");
             genProps.Add("Tag", 9);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "cage" || gameObject.tag == "cage")
         {
             genProps.Add("TagName", "LHTAG_CAGE");
             genProps.Add("Tag", 20);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "boosttunnel" || gameObject.tag == "boosttunnel")
         {
             genProps.Add("TagName", "LHTAG_BOOST_TUNNEL");
             genProps.Add("Tag", 29);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "leftflipper" || gameObject.tag == "leftflipper")
         {
             genProps.Add("TagName", "LHTAG_FLIPPER_LEFT");
             genProps.Add("Tag", 34);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "rightflipper" || gameObject.tag == "rightflipper")
         {
             genProps.Add("TagName", "LHTAG_FLIPPER_RIGHT");
             genProps.Add("Tag", 35);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "bumper" || gameObject.tag == "bumper")
         {
             genProps.Add("TagName", "LHTAG_BUMPER");
             genProps.Add("Tag", 31);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "lollipop" || gameObject.tag == "lollipop")
         {
             genProps.Add("TagName", "LHTAG_LOLLIPOP");
             genProps.Add("Tag", 36);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "plastic" || gameObject.tag == "plastic")
         {
             genProps.Add("TagName", "LHTAG_PLASTIC_BLOCK");
             genProps.Add("Tag", 37);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "springboard" || gameObject.tag == "springboard")
         {
             genProps.Add("TagName", "LHTAG_SPRINGBOARD");
             genProps.Add("Tag", 27);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
         else if (gameObject.name.Length >= 5 && sprite.name.Substring(0, 5) == "water")
         {
@@ -530,7 +531,7 @@ public class PlhsGenerator : MonoBehaviour
         {
             genProps.Add("TagName", "DEFAULT");
             genProps.Add("Tag", 0);
-            genProps.Add("Opacity", 1.0);
+            genProps.Add("Opacity", color.a);
         }
     }
 
