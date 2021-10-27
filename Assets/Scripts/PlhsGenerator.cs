@@ -13,6 +13,7 @@ public class PlhsGenerator : MonoBehaviour
 {
     private static int multiplier = 50;
     public static float triangulationThreshold = 20.5f;
+    public static float zoomValue = 1.0f;
 
     [MenuItem("Boom/Export PLHS")]
     static void ExportPlhs()
@@ -218,7 +219,7 @@ public class PlhsGenerator : MonoBehaviour
             new NSArray()
                 {Camera.main.transform.position.x * multiplier, -Camera.main.transform.position.y * multiplier});
         dict.Add("SafeFrame", new NSArray() { 480.0, 320.0 });
-        dict.Add("ZoomValue", 1.0);
+        dict.Add("ZoomValue", zoomValue);
         dict.Add("GameWorld", GetCameraBounds());
         dict.Add("BackgroundColor", new NSArray() { 0.631373, 0.921569, 0.976471, 0.0 });
         dict.Add("ProjectName", "Boom!");
@@ -308,13 +309,13 @@ public class PlhsGenerator : MonoBehaviour
             }
 
         }
-        var rotationComponent = gameObject.GetComponent<BoomPhysicsModifier>();
-        if (rotationComponent != null)
+        var BPM = gameObject.GetComponent<BoomPhysicsModifier>();
+        if (BPM != null)
         {
             //HandledbySH needs to not be used or set to false, best to not have it
             //Keep the one in hexagon, I have kept the hexagon the same as other levels
             //Left fixedRot add inside to remember the order originally in game.
-            if (rotationComponent.isHexagon == true)
+            if (BPM.isHexagon == true)
             {
                 physProps.Add("ShapePositionOffset", new NSArray(2){0.000000, 0.000000 });
                 physProps.Add("AngularDamping", 0.000000);
@@ -324,7 +325,7 @@ public class PlhsGenerator : MonoBehaviour
                 //physProps.Add("FixedRot", rotationComponent.lockRotation);
                 //physProps.Add("GravityScale", 1.000000);
                 physProps.Add("Type", 1);
-                physProps.Add("HandledBySH", rotationComponent.isHexagon);
+                physProps.Add("HandledBySH", BPM.isHexagon);
                 physProps.Add("IsBullet", false);
                 physProps.Add("Group", 0);
                 physProps.Add("CanSleep", true);
@@ -341,13 +342,13 @@ public class PlhsGenerator : MonoBehaviour
                 physProps.Add("Friction", 1.000000);
                 physProps.Add("Restitution", 0.200000);
                 physProps.Add("IsSensor", false);
-                physProps.Add("AngularVelocity", rotationComponent.rotationSpeed);
+                physProps.Add("AngularVelocity", BPM.rotationSpeed);
                 physProps.Add("LinearDamping", 0.000000);
                 physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
             }
             else
             {
-                if (rotationComponent.isSpike)
+                if (BPM.isSpike)
                 {
                     physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
                     physProps.Add("Density", 2.000000);
@@ -361,11 +362,11 @@ public class PlhsGenerator : MonoBehaviour
                     physProps.Add("Friction", 80.000000);
                     physProps.Add("Restitution", 0.200000);
                     physProps.Add("IsSensor", false);
-                    physProps.Add("AngularVelocity", rotationComponent.rotationSpeed);
+                    physProps.Add("AngularVelocity", BPM.rotationSpeed);
                     physProps.Add("LinearDamping", 0.000000);
                     physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
                 }
-                else if (rotationComponent.isMovingPlatform)
+                else if (BPM.isMovingPlatform)
                 {
                     physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
                     physProps.Add("Density", 10.000000);
@@ -378,30 +379,63 @@ public class PlhsGenerator : MonoBehaviour
                     physProps.Add("Friction", 2.000000);
                     physProps.Add("Restitution", 0.200000);
                     physProps.Add("IsSensor", false);
-                    physProps.Add("AngularVelocity", rotationComponent.rotationSpeed);
+                    physProps.Add("AngularVelocity", BPM.rotationSpeed);
                     physProps.Add("LinearDamping", 0.000000);
                     physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
                 }
                 else
                 {
+                    if (BPM.wantZerodft)
+                    {
+                        physProps.Add("Density", BPM.density);
+                        physProps.Add("Type", BPM.type);
+                        physProps.Add("Friction", BPM.friction);
+                    }
+                    else
+                    {
+                        if(BPM.density == 0)
+                        {
+                            physProps.Add("Density", 0.200000);
+                        }
+                        else
+                        {
+                            physProps.Add("Density", BPM.density);
+                        }
+                        if (BPM.type == 0)
+                        {
+                            physProps.Add("Type", 1);
+                        }
+                        else
+                        {
+                            physProps.Add("Type", BPM.type);
+                        }
+                        if (BPM.friction == 0)
+                        {
+                            physProps.Add("Friction", 1.000000);
+                        }
+                        else
+                        {
+                            physProps.Add("Friction", BPM.friction);
+                        }
+                    }
                     physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
-                    physProps.Add("Density", 0.200000);
                     physProps.Add("Mask", 65535);
                     //physProps.Add("FixedRot", rotationComponent.lockRotation);
-                    physProps.Add("Type", 1);
+                    //physProps.Add("Type", 1);
+                    //BPM.type == null ? physProps.Add("Type", BPM.type) : physProps.Add("Type", 1);
                     physProps.Add("Group", 0);
                     physProps.Add("CanSleep", true);
                     physProps.Add("Category", 1);
-                    physProps.Add("Friction", 1.000000);
+                    //physProps.Add("Friction", 1.000000);
                     physProps.Add("Restitution", 0.200000);
                     physProps.Add("IsSensor", false);
-                    physProps.Add("AngularVelocity", rotationComponent.rotationSpeed);
+                    physProps.Add("AngularVelocity", BPM.rotationSpeed);
                     physProps.Add("LinearDamping", 0.000000);
                     physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
                 }
-                physProps.Add("FixedRot", rotationComponent.lockRotation);
-                physProps.Add("GravityScale", rotationComponent.gravity);
-                physProps.Add("LinearVelocity", new NSArray(2) { rotationComponent.verticalSpeed, rotationComponent.horizontalSpeed });
+                physProps.Add("FixedRot", BPM.lockRotation);
+                physProps.Add("GravityScale", BPM.gravity);
+                physProps.Add("LinearVelocity", new NSArray(2) { BPM.verticalSpeed, BPM.horizontalSpeed });
             }
 
             dict.Add("PhysicProperties", physProps);

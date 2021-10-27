@@ -19,4 +19,22 @@ public class BoomPhysicsModifier : MonoBehaviour
     public float gravity = 1.000000f;
     //not sure if this is needed, default set to false for past rotation objects
     public bool isHexagon = false;
+
+
+    public bool wantZerodft = false;
+    //public bool customDensity = false;
+    public float density;
+
+    //public bool customFriction = false;
+    public float friction;
+
+    //type one static, type 2 seems to fall, thats all I know.
+    //public bool customType = false;
+    [Tooltip("1==static, 2==variable (can fall and move around)")]
+    public int type;
+
+    private void Start()
+    {
+        Debug.Log(density);
+    }
 }
