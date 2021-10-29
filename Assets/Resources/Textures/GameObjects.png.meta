@@ -94,7 +94,7 @@ TextureImporter:
     second: pinky_blink
   - first:
       213: 21300060
-    second: pyramid_3
+    second: pyramid_wheel
   - first:
       213: 21300062
     second: boulder_snow
@@ -325,6 +325,8 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -989,7 +991,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pyramid_3
+      name: pyramid_wheel
       rect:
         serializedVersion: 2
         x: 698
