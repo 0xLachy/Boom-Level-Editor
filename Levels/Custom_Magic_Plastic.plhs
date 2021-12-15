@@ -10,74 +10,50 @@
 	<key>SPRITES_INFO</key>
 	<array>
 		<dict>
-			<key>GeneralProperties</key>
+			<key>PhysicProperties</key>
 			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
+				<key>Density</key>
+				<real>0.2</real>
+				<key>Type</key>
+				<integer>1</integer>
+				<key>Friction</key>
 				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
+				<key>ShapePositionOffset</key>
 				<array>
 					<real>0.0</real>
 					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
 				</array>
-				<key>SHName</key>
-				<string>rock_curve_eighth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>47</integer>
-				<key>Size</key>
-				<array>
-					<real>87</real>
-					<real>48</real>
-				</array>
-				<key>UniqueName</key>
-				<string>rock_curve_eighth_xl (2)</string>
-				<key>Position</key>
-				<array>
-					<real>-999.5</real>
-					<real>-806.499938964844</real>
-				</array>
-				<key>IsDrawable</key>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>CanSleep</key>
 				<true/>
-				<key>IsInParallax</key>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Restitution</key>
+				<real>0.2</real>
+				<key>IsSensor</key>
 				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
+				<key>AngularVelocity</key>
 				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>ShapeBorder</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>FixedRot</key>
 				<false/>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>LinearVelocity</key>
+				<array>
+					<real>0.0</real>
+					<real>2</real>
+				</array>
 			</dict>
-		</dict>
-		<dict>
 			<key>GeneralProperties</key>
 			<dict>
 				<key>TagName</key>
@@ -101,568 +77,24 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>rock_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>270</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>122</real>
-				</array>
-				<key>UniqueName</key>
-				<string>rock_curve_fourth_xl (3)</string>
-				<key>Position</key>
-				<array>
-					<real>-1126.09997558594</real>
-					<real>-1205.25</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>rock_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>122</real>
-				</array>
-				<key>UniqueName</key>
-				<string>rock_curve_fourth_xl (2)</string>
-				<key>Position</key>
-				<array>
-					<real>-1126</real>
-					<real>-1085.5</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>23</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>PU_ice_wheel_1</string>
+				<string>pinky_breathing_1</string>
 				<key>Image</key>
 				<string>GameObjects.png</string>
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>66</real>
-					<real>66</real>
-				</array>
-				<key>UniqueName</key>
-				<string>bigwheel</string>
-				<key>Position</key>
-				<array>
-					<real>-1607.85632324219</real>
-					<real>-1080.71789550781</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>rock_flat_xxl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>242</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>rock_flat_xxl (1)</string>
-				<key>Position</key>
-				<array>
-					<real>-1542.19995117188</real>
-					<real>-1123.84997558594</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>rock_flat_xxxl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>482</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>rock_flat_xxxl (3)</string>
-				<key>Position</key>
-				<array>
-					<real>-1425.83740234375</real>
-					<real>-1032.88818359375</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>rock_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>180</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>122</real>
-				</array>
-				<key>UniqueName</key>
-				<string>rock_curve_fourth_xl (1)</string>
-				<key>Position</key>
-				<array>
-					<real>-1722.40014648438</real>
-					<real>-1071.19995117188</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>rock_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>90</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>122</real>
-				</array>
-				<key>UniqueName</key>
-				<string>rock_curve_fourth_xl</string>
-				<key>Position</key>
-				<array>
-					<real>-1722.5</real>
-					<real>-951</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>rock_flat_xxxl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>482</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>rock_flat_xxxl (2)</string>
-				<key>Position</key>
-				<array>
-					<real>-1421.96154785156</real>
-					<real>-898.499938964844</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>LHTAG_ROCKET</string>
-				<key>Tag</key>
-				<integer>9</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>festival_cone</string>
-				<key>Image</key>
-				<string>GameObjects.png</string>
-				<key>SHScene</key>
-				<string>GameObjects.pshs</string>
-				<key>Angle</key>
-				<integer>180</integer>
+				<integer>135</integer>
 				<key>Size</key>
 				<array>
 					<real>28</real>
-					<real>83</real>
+					<real>38</real>
 				</array>
 				<key>UniqueName</key>
-				<string>festival_cone</string>
+				<string>pinky_breathing_1</string>
 				<key>Position</key>
 				<array>
-					<real>-864.000061035156</real>
-					<real>-995.5</real>
+					<real>856.638305664063</real>
+					<real>-448.106964111328</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -690,142 +122,50 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>GeneralProperties</key>
+			<key>PhysicProperties</key>
 			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (3)</string>
-				<key>Position</key>
-				<array>
-					<real>-1017.53594970703</real>
-					<real>-430.000030517578</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
+				<key>Density</key>
+				<real>0.2</real>
+				<key>Type</key>
 				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
+				<key>Friction</key>
 				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
+				<key>ShapePositionOffset</key>
 				<array>
 					<real>0.0</real>
 					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
 				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Group</key>
 				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (2)</string>
-				<key>Position</key>
-				<array>
-					<real>-885.325744628906</real>
-					<real>-380.535308837891</real>
-				</array>
-				<key>IsDrawable</key>
+				<key>CanSleep</key>
 				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
+				<key>Category</key>
 				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
+				<key>Restitution</key>
+				<real>0.2</real>
+				<key>IsSensor</key>
+				<false/>
+				<key>AngularVelocity</key>
 				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>ShapeBorder</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>FixedRot</key>
+				<false/>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>LinearVelocity</key>
+				<array>
+					<real>0.0</real>
+					<real>2</real>
+				</array>
 			</dict>
-		</dict>
-		<dict>
 			<key>GeneralProperties</key>
 			<dict>
 				<key>TagName</key>
@@ -849,160 +189,24 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>coin_1</string>
+				<string>pinky_falling_1</string>
 				<key>Image</key>
-				<string>GameObjectsBG.png</string>
+				<string>GameObjects.png</string>
 				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
+				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>0</integer>
+				<integer>34</integer>
 				<key>Size</key>
 				<array>
-					<real>40</real>
-					<real>38</real>
+					<real>29.5</real>
+					<real>35.5</real>
 				</array>
 				<key>UniqueName</key>
-				<string>coin (1)</string>
+				<string>pinky_falling_1</string>
 				<key>Position</key>
 				<array>
-					<real>-776.252258300781</real>
-					<real>-337.566955566406</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin</string>
-				<key>Position</key>
-				<array>
-					<real>-515.2958984375</real>
-					<real>-440.029541015625</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>rock_flat_xxl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>242</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>rock_flat_xxl</string>
-				<key>Position</key>
-				<array>
-					<real>-866.463012695313</real>
-					<real>-897.994873046875</real>
+					<real>1041.5</real>
+					<real>-482.499969482422</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1030,12 +234,56 @@
 			</dict>
 		</dict>
 		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>Density</key>
+				<real>0.2</real>
+				<key>Type</key>
+				<integer>1</integer>
+				<key>Friction</key>
+				<real>1</real>
+				<key>ShapePositionOffset</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Restitution</key>
+				<real>0.2</real>
+				<key>IsSensor</key>
+				<false/>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>ShapeBorder</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>FixedRot</key>
+				<false/>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>LinearVelocity</key>
+				<array>
+					<real>0.0</real>
+					<real>2</real>
+				</array>
+			</dict>
 			<key>GeneralProperties</key>
 			<dict>
 				<key>TagName</key>
-				<string>LHTAG_PICKUP_GATE</string>
+				<string>LHTAG_BUMPER</string>
 				<key>Tag</key>
-				<integer>19</integer>
+				<integer>31</integer>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>Color</key>
@@ -1053,24 +301,248 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>rock_flat_l</string>
+				<string>pinky_falling_3</string>
 				<key>Image</key>
-				<string>Tracks.png</string>
+				<string>GameObjects.png</string>
 				<key>SHScene</key>
-				<string>Tracks.pshs</string>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>38.5</real>
+					<real>39</real>
+				</array>
+				<key>UniqueName</key>
+				<string>pinky_falling_3 (1)</string>
+				<key>Position</key>
+				<array>
+					<real>808.5</real>
+					<real>-256.5</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>Density</key>
+				<real>0.2</real>
+				<key>Type</key>
+				<integer>1</integer>
+				<key>Friction</key>
+				<real>1</real>
+				<key>ShapePositionOffset</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Restitution</key>
+				<real>0.2</real>
+				<key>IsSensor</key>
+				<false/>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>ShapeBorder</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>FixedRot</key>
+				<false/>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>LinearVelocity</key>
+				<array>
+					<real>0.0</real>
+					<real>2</real>
+				</array>
+			</dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>LHTAG_BUMPER</string>
+				<key>Tag</key>
+				<integer>31</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>pinky_3</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>283</integer>
+				<key>Size</key>
+				<array>
+					<real>29</real>
+					<real>34.5</real>
+				</array>
+				<key>UniqueName</key>
+				<string>pinky_3 (1)</string>
+				<key>Position</key>
+				<array>
+					<real>931.000061035156</real>
+					<real>-337.5</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>Density</key>
+				<real>0.2</real>
+				<key>Type</key>
+				<integer>1</integer>
+				<key>Friction</key>
+				<real>1</real>
+				<key>ShapePositionOffset</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Restitution</key>
+				<real>0.2</real>
+				<key>IsSensor</key>
+				<false/>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>ShapeBorder</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>FixedRot</key>
+				<false/>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>LinearVelocity</key>
+				<array>
+					<real>0.0</real>
+					<real>2</real>
+				</array>
+			</dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>rocket_2_4</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
 				<key>Angle</key>
 				<integer>270</integer>
 				<key>Size</key>
 				<array>
-					<real>92</real>
-					<real>17</real>
+					<real>97</real>
+					<real>19</real>
 				</array>
 				<key>UniqueName</key>
-				<string>GATE</string>
+				<string>rocket_2_4 (1)</string>
 				<key>Position</key>
 				<array>
-					<real>-753.5</real>
-					<real>-843.999938964844</real>
+					<real>1378.5</real>
+					<real>-608.5</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1082,7 +554,7 @@
 					<real>1</real>
 				</array>
 				<key>ZOrder</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>Locked</key>
 				<false/>
 				<key>AnimRepetitions</key>
@@ -1098,12 +570,56 @@
 			</dict>
 		</dict>
 		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>Density</key>
+				<real>0.2</real>
+				<key>Type</key>
+				<integer>1</integer>
+				<key>Friction</key>
+				<real>1</real>
+				<key>ShapePositionOffset</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Restitution</key>
+				<real>0.2</real>
+				<key>IsSensor</key>
+				<false/>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>ShapeBorder</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>FixedRot</key>
+				<false/>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>LinearVelocity</key>
+				<array>
+					<real>0.0</real>
+					<real>2</real>
+				</array>
+			</dict>
 			<key>GeneralProperties</key>
 			<dict>
 				<key>TagName</key>
-				<string>LHTAG_SANDSTONE_BLOCK</string>
+				<string>DEFAULT</string>
 				<key>Tag</key>
-				<integer>18</integer>
+				<integer>0</integer>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>Color</key>
@@ -1121,24 +637,24 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>rock_curve_eighth_xl</string>
+				<string>rocket_2_4</string>
 				<key>Image</key>
-				<string>Tracks.png</string>
+				<string>GameObjects.png</string>
 				<key>SHScene</key>
-				<string>Tracks.pshs</string>
+				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>111</integer>
+				<integer>270</integer>
 				<key>Size</key>
 				<array>
-					<real>87</real>
-					<real>48</real>
+					<real>97</real>
+					<real>19</real>
 				</array>
 				<key>UniqueName</key>
-				<string>rock_curve_eighth_xl (1)</string>
+				<string>rocket_2_4</string>
 				<key>Position</key>
 				<array>
-					<real>-737</real>
-					<real>-841.5</real>
+					<real>1309.5</real>
+					<real>-608.5</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1150,75 +666,7 @@
 					<real>1</real>
 				</array>
 				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>LHTAG_SANDSTONE_BLOCK</string>
-				<key>Tag</key>
-				<integer>18</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>rock_curve_eighth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>290</integer>
-				<key>Size</key>
-				<array>
-					<real>87</real>
-					<real>48</real>
-				</array>
-				<key>UniqueName</key>
-				<string>rock_curve_eighth_xl</string>
-				<key>Position</key>
-				<array>
-					<real>-771.5</real>
-					<real>-845.5</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>Locked</key>
 				<false/>
 				<key>AnimRepetitions</key>
@@ -1257,92 +705,24 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>rock_flat_xxxl</string>
+				<string>cage_fg</string>
 				<key>Image</key>
-				<string>Tracks.png</string>
+				<string>GameObjects.png</string>
 				<key>SHScene</key>
-				<string>Tracks.pshs</string>
+				<string>GameObjects.pshs</string>
 				<key>Angle</key>
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>482</real>
-					<real>17</real>
+					<real>50</real>
+					<real>77.5</real>
 				</array>
 				<key>UniqueName</key>
-				<string>rock_flat_xxxl (1)</string>
+				<string>cage</string>
 				<key>Position</key>
 				<array>
-					<real>-921.810546875</real>
-					<real>-791.537963867188</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>rock_flat_xxxl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>22</integer>
-				<key>Size</key>
-				<array>
-					<real>482</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>rock_flat_xxxl</string>
-				<key>Position</key>
-				<array>
-					<real>-904</real>
-					<real>-322.5</real>
+					<real>1338.111328125</real>
+					<real>-287.782409667969</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1409,8 +789,120 @@
 				<string>wheel_0</string>
 				<key>Position</key>
 				<array>
-					<real>-858</real>
-					<real>-555.5</real>
+					<real>306</real>
+					<real>-141.774337768555</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>Density</key>
+				<real>0.2</real>
+				<key>Type</key>
+				<integer>1</integer>
+				<key>Friction</key>
+				<real>1</real>
+				<key>ShapePositionOffset</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Restitution</key>
+				<real>0.2</real>
+				<key>IsSensor</key>
+				<false/>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>ShapeBorder</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>FixedRot</key>
+				<false/>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>LinearVelocity</key>
+				<array>
+					<real>0.0</real>
+					<real>2</real>
+				</array>
+			</dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>LHTAG_BUMPER</string>
+				<key>Tag</key>
+				<integer>31</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>pinky_3</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>29</real>
+					<real>34.5</real>
+				</array>
+				<key>UniqueName</key>
+				<string>pinky_3</string>
+				<key>Position</key>
+				<array>
+					<real>1177.5</real>
+					<real>-374.5</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1441,9 +933,9 @@
 			<key>GeneralProperties</key>
 			<dict>
 				<key>TagName</key>
-				<string>LHTAG_FLIPPER_LEFT</string>
+				<string>DEFAULT</string>
 				<key>Tag</key>
-				<integer>34</integer>
+				<integer>0</integer>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>Color</key>
@@ -1461,7 +953,7 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>plastic_flat_xxxl</string>
+				<string>rock_curve_fourth_xxl</string>
 				<key>Image</key>
 				<string>Tracks.png</string>
 				<key>SHScene</key>
@@ -1470,15 +962,15 @@
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>482</real>
-					<real>17</real>
+					<real>242</real>
+					<real>242</real>
 				</array>
 				<key>UniqueName</key>
-				<string>plastic_flat_xxxl (1)</string>
+				<string>rock_curve_fourth_xxl</string>
 				<key>Position</key>
 				<array>
-					<real>-862.099670410156</real>
-					<real>-491.164123535156</real>
+					<real>522</real>
+					<real>-181</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1506,80 +998,56 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>GeneralProperties</key>
+			<key>PhysicProperties</key>
 			<dict>
-				<key>TagName</key>
-				<string>LHTAG_FLIPPER_RIGHT</string>
-				<key>Tag</key>
-				<integer>35</integer>
-				<key>Opacity</key>
+				<key>Density</key>
+				<real>0.2</real>
+				<key>Type</key>
+				<integer>1</integer>
+				<key>Friction</key>
 				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
+				<key>ShapePositionOffset</key>
 				<array>
 					<real>0.0</real>
 					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
 				</array>
-				<key>SHName</key>
-				<string>plastic_flat_xxxl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>270</integer>
-				<key>Size</key>
-				<array>
-					<real>482</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>plastic_flat_xxxl (2)</string>
-				<key>Position</key>
-				<array>
-					<real>-1299.49987792969</real>
-					<real>-617</real>
-				</array>
-				<key>IsDrawable</key>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>CanSleep</key>
 				<true/>
-				<key>IsInParallax</key>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Restitution</key>
+				<real>0.2</real>
+				<key>IsSensor</key>
 				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
+				<key>AngularVelocity</key>
 				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>ShapeBorder</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>FixedRot</key>
 				<false/>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>LinearVelocity</key>
+				<array>
+					<real>0.0</real>
+					<real>2</real>
+				</array>
 			</dict>
-		</dict>
-		<dict>
 			<key>GeneralProperties</key>
 			<dict>
 				<key>TagName</key>
-				<string>LHTAG_FLIPPER_RIGHT</string>
+				<string>LHTAG_BUMPER</string>
 				<key>Tag</key>
-				<integer>35</integer>
+				<integer>31</integer>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>Color</key>
@@ -1597,24 +1065,24 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>plastic_flat_xxxl</string>
+				<string>pinky_falling_3</string>
 				<key>Image</key>
-				<string>Tracks.png</string>
+				<string>GameObjects.png</string>
 				<key>SHScene</key>
-				<string>Tracks.pshs</string>
+				<string>GameObjects.pshs</string>
 				<key>Angle</key>
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>482</real>
-					<real>17</real>
+					<real>38.5</real>
+					<real>39</real>
 				</array>
 				<key>UniqueName</key>
-				<string>plastic_flat_xxxl</string>
+				<string>pinky_falling_3</string>
 				<key>Position</key>
 				<array>
-					<real>-301.647521972656</real>
-					<real>-488.338470458984</real>
+					<real>1048.87670898438</real>
+					<real>-263.959381103516</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1691,6 +1159,230 @@
 				<key>Scale</key>
 				<array>
 					<real>10</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>Density</key>
+				<real>0.2</real>
+				<key>Type</key>
+				<integer>1</integer>
+				<key>Friction</key>
+				<real>1</real>
+				<key>ShapePositionOffset</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Restitution</key>
+				<real>0.2</real>
+				<key>IsSensor</key>
+				<false/>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>ShapeBorder</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>FixedRot</key>
+				<false/>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>LinearVelocity</key>
+				<array>
+					<real>0.0</real>
+					<real>2</real>
+				</array>
+			</dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>frozen_statue_1</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>103</real>
+					<real>97</real>
+				</array>
+				<key>UniqueName</key>
+				<string>frozen_statue_1</string>
+				<key>Position</key>
+				<array>
+					<real>1347.44287109375</real>
+					<real>-663.393859863281</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>Density</key>
+				<real>0.2</real>
+				<key>Type</key>
+				<integer>1</integer>
+				<key>Friction</key>
+				<real>1</real>
+				<key>ShapePositionOffset</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Restitution</key>
+				<real>0.2</real>
+				<key>IsSensor</key>
+				<false/>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>ShapeBorder</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>FixedRot</key>
+				<false/>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>LinearVelocity</key>
+				<array>
+					<real>0.0</real>
+					<real>2</real>
+				</array>
+			</dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>roof_hook</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>10.5</real>
+					<real>14</real>
+				</array>
+				<key>UniqueName</key>
+				<string>cage_hook</string>
+				<key>Position</key>
+				<array>
+					<real>1348.41687011719</real>
+					<real>-608.138427734375</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
 					<real>1</real>
 				</array>
 				<key>ZOrder</key>
@@ -1822,7 +1514,7 @@
 		</dict>
 		<dict>
 			<key>OrderZ</key>
-			<integer>0</integer>
+			<integer>6</integer>
 			<key>Image</key>
 			<string>GameObjectsFG.png</string>
 		</dict>

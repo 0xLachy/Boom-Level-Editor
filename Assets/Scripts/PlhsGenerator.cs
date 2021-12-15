@@ -9,12 +9,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.U2D;
 
+//[RequireComponent(typeof(CogFixer))]
 public class PlhsGenerator : MonoBehaviour
 {
     private static int multiplier = 50;
     public static float triangulationThreshold = 20.5f;
     public static float zoomValue = 1.0f;
-
+    
     [MenuItem("Boom/Export PLHS")]
     static void ExportPlhs()
     {
@@ -127,6 +128,15 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Tag", 13);
             bezier.Add("Friction", 0.2);
             bezier.Add("Image", "WaterFill.png");
+            bezier.Add("PhysicType", 0);
+        }
+        else if (gameObject.name.Length >= 9 && gameObject.name.Substring(0, 9) == "quicksand")
+        {
+            bezier.Add("TagName", "LHTAG_QUICKSAND");
+            bezier.Add("IsSenzor", true);
+            bezier.Add("Tag", 44);
+            bezier.Add("Friction", 0.2);
+            bezier.Add("Image", "QuicksandFill.png");
             bezier.Add("PhysicType", 0);
         }
         else //default
@@ -273,7 +283,7 @@ public class PlhsGenerator : MonoBehaviour
         genProps.Add("Position",
             new NSArray(2)
                 {gameObject.transform.position.x * multiplier, -gameObject.transform.position.y * multiplier});
-        genProps.Add("IsDrawable", true);
+        if (gameObject.tag == "noDraw") { genProps.Add("IsDrawable", false); } else { genProps.Add("IsDrawable", true); };
         genProps.Add("IsInParallax", false);
         genProps.Add("Scale", new NSArray(2) { gameObject.transform.localScale.x, gameObject.transform.localScale.y });
         genProps.Add("ZOrder", (int)gameObject.transform.position.z);
@@ -325,7 +335,7 @@ public class PlhsGenerator : MonoBehaviour
                 //physProps.Add("FixedRot", rotationComponent.lockRotation);
                 //physProps.Add("GravityScale", 1.000000);
                 physProps.Add("Type", 1);
-                physProps.Add("HandledBySH", BPM.isHexagon);
+                physProps.Add("HandledBySH", false);
                 physProps.Add("IsBullet", false);
                 physProps.Add("Group", 0);
                 physProps.Add("CanSleep", true);
@@ -345,6 +355,10 @@ public class PlhsGenerator : MonoBehaviour
                 physProps.Add("AngularVelocity", BPM.rotationSpeed);
                 physProps.Add("LinearDamping", 0.000000);
                 physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
+            }
+        if (BPM.isRotateCog == true)
+            {
+                CogFixer.AddCogPhysics(physProps, BPM);
             }
             else
             {
@@ -385,11 +399,12 @@ public class PlhsGenerator : MonoBehaviour
                 }
                 else
                 {
-                    if (BPM.wantZerodft)
+                    if (BPM.wantZeroDFTR)
                     {
                         physProps.Add("Density", BPM.density);
                         physProps.Add("Type", BPM.type);
                         physProps.Add("Friction", BPM.friction);
+                        physProps.Add("Restitution", BPM.friction);
                     }
                     else
                     {
@@ -417,8 +432,16 @@ public class PlhsGenerator : MonoBehaviour
                         {
                             physProps.Add("Friction", BPM.friction);
                         }
+                        if (BPM.restitution == 0)
+                        {
+                            physProps.Add("Restitution", 0.200000);
+                        }
+                        else
+                        {
+                            physProps.Add("Restitution", BPM.restitution);
+                        }
                     }
-                    physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
+                    
                     physProps.Add("Mask", 65535);
                     //physProps.Add("FixedRot", rotationComponent.lockRotation);
                     //physProps.Add("Type", 1);
@@ -427,10 +450,11 @@ public class PlhsGenerator : MonoBehaviour
                     physProps.Add("CanSleep", true);
                     physProps.Add("Category", 1);
                     //physProps.Add("Friction", 1.000000);
-                    physProps.Add("Restitution", 0.200000);
+                    //physProps.Add("Restitution", 0.200000);
                     physProps.Add("IsSensor", false);
                     physProps.Add("AngularVelocity", BPM.rotationSpeed);
                     physProps.Add("LinearDamping", 0.000000);
+                    physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
                     physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
                 }
                 physProps.Add("FixedRot", BPM.lockRotation);
@@ -461,6 +485,7 @@ public class PlhsGenerator : MonoBehaviour
         dict.Add("GeneralProperties", genProps);
         return dict;
     }
+
 
     private static void UnityTagToBoomTagInGame(GameObject gameObject, NSDictionary genProps, Sprite sprite, Color color)
     {
@@ -553,6 +578,12 @@ public class PlhsGenerator : MonoBehaviour
         {
             genProps.Add("TagName", "LHTAG_SPRINGBOARD");
             genProps.Add("Tag", 27);
+            genProps.Add("Opacity", color.a);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "ball" || gameObject.tag == "ball")
+        {
+            genProps.Add("TagName", "LHTAG_BALL");
+            genProps.Add("Tag", 22);
             genProps.Add("Opacity", color.a);
         }
         else if (gameObject.name.Length >= 5 && sprite.name.Substring(0, 5) == "water")

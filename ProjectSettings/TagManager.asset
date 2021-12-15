@@ -18,6 +18,8 @@ TagManager:
   - plastic
   - star
   - ParentSpinner
+  - noDraw
+  - ball
   layers:
   - Default
   - TransparentFX
