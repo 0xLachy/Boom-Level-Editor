@@ -262,7 +262,7 @@ public class PlhsGenerator : MonoBehaviour
             genProps.Add("Tag", 0);
             genProps.Add("Opacity", color.a);
         }
-        else if (gameObject.name.Length >= 4 && gameObject.name.Substring(0, 4) == "GATE")
+        else if (gameObject.name.Length >= 4 && gameObject.name.Substring(0, 4) == "GATE" || gameObject.tag == "gate")
         {
             genProps.Add("TagName", "LHTAG_PICKUP_GATE");
             genProps.Add("Tag", 19);
@@ -322,145 +322,92 @@ public class PlhsGenerator : MonoBehaviour
         var BPM = gameObject.GetComponent<BoomPhysicsModifier>();
         if (BPM != null)
         {
-            //HandledbySH needs to not be used or set to false, best to not have it
-            //Keep the one in hexagon, I have kept the hexagon the same as other levels
-            //Left fixedRot add inside to remember the order originally in game.
-            if (BPM.isHexagon == true)
+            if (BPM.use0DRFT)
             {
-                physProps.Add("ShapePositionOffset", new NSArray(2){0.000000, 0.000000 });
-                physProps.Add("AngularDamping", 0.000000);
-                physProps.Add("Density", 0.200000);
-                physProps.Add("Mask", 65535);
-                physProps.Add("IsCircle", false);
-                //physProps.Add("FixedRot", rotationComponent.lockRotation);
-                //physProps.Add("GravityScale", 1.000000);
-                physProps.Add("Type", 1);
-                physProps.Add("HandledBySH", false);
-                physProps.Add("IsBullet", false);
-                physProps.Add("Group", 0);
-                physProps.Add("CanSleep", true);
-                //physProps.Add("LinearVelocity", new NSArray(2) { 0.000000, 0.000000 });
-                physProps.Add("ShapeFixtures", new NSArray(1) { new NSArray(6) { 
-                    new NSArray(2) { 35.635010, -62.214996 }, 
-                    new NSArray(2) { 71.910004, 0.100006 },
-                    new NSArray(2) { 35.804993, 62.119995 },
-                    new NSArray(2) { -35.949997, 62.119995 },
-                    new NSArray(2) { -72.205002, -0.239990 },
-                    new NSArray(2) { -36.345001, -62.214996 } } });
-                //var vector2Points = new NSArray()
-                physProps.Add("Category", 1);
-                physProps.Add("Friction", 1.000000);
-                physProps.Add("Restitution", 0.200000);
-                physProps.Add("IsSensor", false);
-                physProps.Add("AngularVelocity", BPM.rotationSpeed);
-                physProps.Add("LinearDamping", 0.000000);
-                physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
-            }
-        if (BPM.isRotateCog == true)
-            {
-                CogFixer.AddCogPhysics(physProps, BPM);
+                physProps.Add("Density", BPM.density);
+                physProps.Add("Type", BPM.type);
+                physProps.Add("Friction", BPM.friction);
+                physProps.Add("Restitution", BPM.friction);
             }
             else
             {
-                if (BPM.isSpike)
+                if(BPM.density == 0)
                 {
-                    physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
-                    physProps.Add("Density", 2.000000);
-                    physProps.Add("Mask", 65535);
-                    //physProps.Add("IsCircle", false); don't need to set for this and others e.g bullet
-                    //physProps.Add("FixedRot", rotationComponent.lockRotation);
-                    physProps.Add("Type", 2);
-                    physProps.Add("Group", 0);
-                    physProps.Add("CanSleep", true);
-                    physProps.Add("Category", 1);
-                    physProps.Add("Friction", 80.000000);
-                    physProps.Add("Restitution", 0.200000);
-                    physProps.Add("IsSensor", false);
-                    physProps.Add("AngularVelocity", BPM.rotationSpeed);
-                    physProps.Add("LinearDamping", 0.000000);
-                    physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
-                }
-                else if (BPM.isMovingPlatform)
-                {
-                    physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
-                    physProps.Add("Density", 10.000000);
-                    physProps.Add("Mask", 65535);
-                    //physProps.Add("IsCircle", false); don't need to set for this and others e.g bullet
-                    physProps.Add("Type", 1);
-                    physProps.Add("Group", 0);
-                    physProps.Add("CanSleep", true);
-                    physProps.Add("Category", 1);
-                    physProps.Add("Friction", 2.000000);
-                    physProps.Add("Restitution", 0.200000);
-                    physProps.Add("IsSensor", false);
-                    physProps.Add("AngularVelocity", BPM.rotationSpeed);
-                    physProps.Add("LinearDamping", 0.000000);
-                    physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
+                    //I There is copying but it is to avoid confusion, keeping consistent
+                    if (BPM.isHexagon) { physProps.Add("Density", 0.200000); }
+                    else if (BPM.isGoldenNail) { physProps.Add("Density", 0.200000); }
+                    else if (BPM.isGreyNail) { physProps.Add("Density", 2.000000); }
+                    else if (BPM.isCog) { physProps.Add("Density", 0.200000); }
+                    else if (BPM.isMovingPlatform) { physProps.Add("Density", 10.000000); }
+                    else { physProps.Add("Density", 0.200000); }
                 }
                 else
                 {
-                    if (BPM.wantZeroDFTR)
-                    {
-                        physProps.Add("Density", BPM.density);
-                        physProps.Add("Type", BPM.type);
-                        physProps.Add("Friction", BPM.friction);
-                        physProps.Add("Restitution", BPM.friction);
-                    }
-                    else
-                    {
-                        if(BPM.density == 0)
-                        {
-                            physProps.Add("Density", 0.200000);
-                        }
-                        else
-                        {
-                            physProps.Add("Density", BPM.density);
-                        }
-                        if (BPM.type == 0)
-                        {
-                            physProps.Add("Type", 1);
-                        }
-                        else
-                        {
-                            physProps.Add("Type", BPM.type);
-                        }
-                        if (BPM.friction == 0)
-                        {
-                            physProps.Add("Friction", 1.000000);
-                        }
-                        else
-                        {
-                            physProps.Add("Friction", BPM.friction);
-                        }
-                        if (BPM.restitution == 0)
-                        {
-                            physProps.Add("Restitution", 0.200000);
-                        }
-                        else
-                        {
-                            physProps.Add("Restitution", BPM.restitution);
-                        }
-                    }
-                    
-                    physProps.Add("Mask", 65535);
-                    //physProps.Add("FixedRot", rotationComponent.lockRotation);
-                    //physProps.Add("Type", 1);
-                    //BPM.type == null ? physProps.Add("Type", BPM.type) : physProps.Add("Type", 1);
-                    physProps.Add("Group", 0);
-                    physProps.Add("CanSleep", true);
-                    physProps.Add("Category", 1);
-                    //physProps.Add("Friction", 1.000000);
-                    //physProps.Add("Restitution", 0.200000);
-                    physProps.Add("IsSensor", false);
-                    physProps.Add("AngularVelocity", BPM.rotationSpeed);
-                    physProps.Add("LinearDamping", 0.000000);
-                    physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
-                    physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
+                    physProps.Add("Density", BPM.density);
                 }
-                physProps.Add("FixedRot", BPM.lockRotation);
-                physProps.Add("GravityScale", BPM.gravity);
-                physProps.Add("LinearVelocity", new NSArray(2) { BPM.verticalSpeed, BPM.horizontalSpeed });
+
+                if (BPM.restitution == 0)
+                {
+                    //there probably custom restitution for stuff like balls and stuff
+                    if (BPM.isHexagon) { physProps.Add("Restitution", 0.200000); }
+                    else if (BPM.isGoldenNail) { physProps.Add("Restitution", 0.200000); }
+                    else if (BPM.isGreyNail) { physProps.Add("Restitution", 0.200000); }
+                    else if (BPM.isCog) { physProps.Add("Restitution", 0.200000); }
+                    else if (BPM.isMovingPlatform) { physProps.Add("Restitution", 0.200000); }
+                    else { physProps.Add("Restitution", 0.200000); }                
+                }
+                else
+                {
+                    physProps.Add("Restitution", BPM.restitution);
+                }
+
+                if (BPM.friction == 0)
+                {
+                    if (BPM.isHexagon) { physProps.Add("Friction", 1.000000); }
+                    else if (BPM.isGoldenNail) { physProps.Add("Friction", 0.200000); }
+                    else if (BPM.isGreyNail) { physProps.Add("Friction", 80.000000); }
+                    else if (BPM.isCog) { physProps.Add("Friction", 1.000000); }
+                    else if (BPM.isMovingPlatform) { physProps.Add("Friction", 2.000000); }
+                    else { physProps.Add("Friction", 1.000000); }
+                }
+                else
+                {
+                    physProps.Add("Friction", BPM.friction);
+                }
+
+                if (BPM.type == 0)
+                {
+                    //maybe I should remove???
+                    if (BPM.isHexagon) { physProps.Add("Type", 1); }
+                    else if (BPM.isGreyNail) { physProps.Add("Type", 1); }
+                    else if (BPM.isCog) { physProps.Add("Type", 1); }
+                    else if (BPM.isMovingPlatform) { physProps.Add("Type", 1); }
+                    else { physProps.Add("Type", 1); }
+                }
+                else
+                {
+                    physProps.Add("Type", BPM.type);
+                }
+
             }
+                
+            physProps.Add("Mask", 65535);
+            physProps.Add("Group", 0);
+            physProps.Add("CanSleep", true);
+            physProps.Add("Category", 1);
+            physProps.Add("IsSensor", false);
+            physProps.Add("FixedRot", BPM.lockRotation);
+            physProps.Add("GravityScale", BPM.gravity);
+            physProps.Add("AngularVelocity", BPM.rotationSpeed);
+            physProps.Add("LinearVelocity", new NSArray(2) { BPM.horizontalSpeed, BPM.verticalSpeed });
+            physProps.Add("LinearDamping", 0.000000);
+            physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
+            physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
+
+            if (BPM.isHexagon) { ShapeFixtureFixer.Hexagon(physProps); }
+            if (BPM.isCog) { ShapeFixtureFixer.Cog(physProps); }
+            if (BPM.isGoldenNail) { ShapeFixtureFixer.GoldenNail(physProps); }
+            //if (BPM.isMovingPlatform) { FixtureFixer.MovingPlatform(physProps); }
 
             dict.Add("PhysicProperties", physProps);
         }

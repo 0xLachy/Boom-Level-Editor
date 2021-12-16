@@ -5,23 +5,10 @@ using System.IO;
 using Claunia.PropertyList;
 
 
-public class CogFixer : MonoBehaviour
+public class ShapeFixtureFixer : MonoBehaviour
 {
-    public static void AddCogPhysics(NSDictionary physProps, BoomPhysicsModifier BPM)
+    public static void Cog(NSDictionary physProps)
     {
-        physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
-        physProps.Add("AngularDamping", 0.000000);
-        physProps.Add("Density", 0.200000);
-        physProps.Add("Mask", 65535);
-        physProps.Add("IsCircle", false);
-        //physProps.Add("FixedRot", rotationComponent.lockRotation);
-        //physProps.Add("GravityScale", 1.000000);
-        physProps.Add("Type", 1);
-        physProps.Add("HandledBySH", false);
-        physProps.Add("IsBullet", false);
-        physProps.Add("Group", 0);
-        physProps.Add("CanSleep", true);
-        //physProps.Add("LinearVelocity", new NSArray(2) { 0.000000, 0.000000 });
         physProps.Add("ShapeFixtures", new NSArray(8) {
             new NSArray(4) {
             new NSArray(2) { 50.420013, 11.434998 },
@@ -66,7 +53,7 @@ public class CogFixer : MonoBehaviour
             new NSArray(2) { 8.399994, -75.705002 },
             new NSArray(2) { 15.010010, -48.394997 },
             new NSArray(2) { -15.985001, -48.349998 },
-                },
+            },
 
             new NSArray(6) {
             new NSArray(2) { 34.940002, -37.790001 },
@@ -83,13 +70,25 @@ public class CogFixer : MonoBehaviour
             new NSArray(2) { -7.934998, 76.120003}
             }
             });
-        //var vector2Points = new NSArray()
-        physProps.Add("Category", 1);
-        physProps.Add("Friction", 1.000000);
-        physProps.Add("Restitution", 0.200000);
-        physProps.Add("IsSensor", false);
-        physProps.Add("AngularVelocity", BPM.rotationSpeed);
-        physProps.Add("LinearDamping", 0.000000);
-        physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
+    }
+    public static void GoldenNail(NSDictionary physProps)
+    {
+        physProps.Add("ShapeFixtures", new NSArray(1) { new NSArray(3) {
+            new NSArray(2) { -5.534973, -22.655029 },
+            new NSArray(2) { 5.784974, -22.784973 },
+            new NSArray(2) { 0.125000, 22.769989 }
+        } });
+    }
+
+    public static void Hexagon(NSDictionary physProps)
+    {
+        physProps.Add("ShapeFixtures", new NSArray(1) { new NSArray(6) {
+            new NSArray(2) { 35.635010, -62.214996 },
+            new NSArray(2) { 71.910004, 0.100006 },
+            new NSArray(2) { 35.804993, 62.119995 },
+            new NSArray(2) { -35.949997, 62.119995 },
+            new NSArray(2) { -72.205002, -0.239990 },
+            new NSArray(2) { -36.345001, -62.214996 } 
+        } });
     }
 }
