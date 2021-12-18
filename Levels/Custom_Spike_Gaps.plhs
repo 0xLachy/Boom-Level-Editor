@@ -33,6 +33,822 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
+				<string>rock_curve_eighth_xxl</string>
+				<key>Image</key>
+				<string>Tracks.png</string>
+				<key>SHScene</key>
+				<string>Tracks.pshs</string>
+				<key>Angle</key>
+				<integer>315</integer>
+				<key>Size</key>
+				<array>
+					<real>172</real>
+					<real>83</real>
+				</array>
+				<key>UniqueName</key>
+				<string>rock_curve_eighth_xxl</string>
+				<key>Position</key>
+				<array>
+					<real>2211.5</real>
+					<real>-158.850006103516</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>nails</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>61</integer>
+				<key>Size</key>
+				<array>
+					<real>51</real>
+					<real>14</real>
+				</array>
+				<key>UniqueName</key>
+				<string>nails (14)</string>
+				<key>Position</key>
+				<array>
+					<real>1384.74645996094</real>
+					<real>146.363143920898</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>nails</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>61</integer>
+				<key>Size</key>
+				<array>
+					<real>51</real>
+					<real>14</real>
+				</array>
+				<key>UniqueName</key>
+				<string>nails (13)</string>
+				<key>Position</key>
+				<array>
+					<real>1375.21301269531</real>
+					<real>128.952346801758</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>nails</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>61</integer>
+				<key>Size</key>
+				<array>
+					<real>51</real>
+					<real>14</real>
+				</array>
+				<key>UniqueName</key>
+				<string>nails (12)</string>
+				<key>Position</key>
+				<array>
+					<real>1351.19909667969</real>
+					<real>85.0964889526367</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>nails</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>61</integer>
+				<key>Size</key>
+				<array>
+					<real>51</real>
+					<real>14</real>
+				</array>
+				<key>UniqueName</key>
+				<string>nails (11)</string>
+				<key>Position</key>
+				<array>
+					<real>1326.96911621094</real>
+					<real>40.8459701538086</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>nails</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>61</integer>
+				<key>Size</key>
+				<array>
+					<real>51</real>
+					<real>14</real>
+				</array>
+				<key>UniqueName</key>
+				<string>nails (10)</string>
+				<key>Position</key>
+				<array>
+					<real>1302.57104492188</real>
+					<real>-3.71160793304443</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>nails</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>61</integer>
+				<key>Size</key>
+				<array>
+					<real>51</real>
+					<real>14</real>
+				</array>
+				<key>UniqueName</key>
+				<string>nails (9)</string>
+				<key>Position</key>
+				<array>
+					<real>1278.34118652344</real>
+					<real>-47.9621620178223</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>nails</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>61</integer>
+				<key>Size</key>
+				<array>
+					<real>51</real>
+					<real>14</real>
+				</array>
+				<key>UniqueName</key>
+				<string>nails (8)</string>
+				<key>Position</key>
+				<array>
+					<real>1254.37536621094</real>
+					<real>-91.730354309082</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>nails</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>61</integer>
+				<key>Size</key>
+				<array>
+					<real>51</real>
+					<real>14</real>
+				</array>
+				<key>UniqueName</key>
+				<string>nails (7)</string>
+				<key>Position</key>
+				<array>
+					<real>1230.14538574219</real>
+					<real>-135.980880737305</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>nails</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>61</integer>
+				<key>Size</key>
+				<array>
+					<real>51</real>
+					<real>14</real>
+				</array>
+				<key>UniqueName</key>
+				<string>nails (6)</string>
+				<key>Position</key>
+				<array>
+					<real>1205.74731445313</real>
+					<real>-180.53840637207</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>nails</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>61</integer>
+				<key>Size</key>
+				<array>
+					<real>51</real>
+					<real>14</real>
+				</array>
+				<key>UniqueName</key>
+				<string>nails (5)</string>
+				<key>Position</key>
+				<array>
+					<real>1181.51745605469</real>
+					<real>-224.788970947266</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>rock_flat_xxxl</string>
+				<key>Image</key>
+				<string>Tracks.png</string>
+				<key>SHScene</key>
+				<string>Tracks.pshs</string>
+				<key>Angle</key>
+				<integer>61</integer>
+				<key>Size</key>
+				<array>
+					<real>482</real>
+					<real>17</real>
+				</array>
+				<key>UniqueName</key>
+				<string>rock_flat_xxxl (1)</string>
+				<key>Position</key>
+				<array>
+					<real>1271.13708496094</real>
+					<real>-32.6765403747559</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
 				<string>nails</string>
 				<key>Image</key>
 				<string>GameObjects.png</string>
@@ -855,7 +1671,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>9</integer>
+				<integer>338</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -865,8 +1681,8 @@
 				<string>nails (11)</string>
 				<key>Position</key>
 				<array>
-					<real>1356.00085449219</real>
-					<real>-17.840648651123</real>
+					<real>1672.93627929688</real>
+					<real>257.274230957031</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -923,7 +1739,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>0</integer>
+				<integer>328</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -933,8 +1749,8 @@
 				<string>nails (10)</string>
 				<key>Position</key>
 				<array>
-					<real>1358.10083007813</real>
-					<real>-18.2406196594238</real>
+					<real>1674.52294921875</real>
+					<real>255.841644287109</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -991,7 +1807,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>20</integer>
+				<integer>349</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -1001,8 +1817,8 @@
 				<string>nails (9)</string>
 				<key>Position</key>
 				<array>
-					<real>1313.40100097656</real>
-					<real>-28.7406749725342</real>
+					<real>1630.87255859375</real>
+					<real>270.088684082031</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1059,7 +1875,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>25</integer>
+				<integer>354</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -1069,8 +1885,8 @@
 				<string>nails (8)</string>
 				<key>Position</key>
 				<array>
-					<real>1285.80090332031</real>
-					<real>-41.9406776428223</real>
+					<real>1600.431640625</real>
+					<real>273.146209716797</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1127,7 +1943,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>34</integer>
+				<integer>3</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -1137,8 +1953,8 @@
 				<string>nails (7)</string>
 				<key>Position</key>
 				<array>
-					<real>1252.35095214844</real>
-					<real>-62.5406188964844</real>
+					<real>1561.14782714844</real>
+					<real>272.919128417969</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1195,7 +2011,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>44</integer>
+				<integer>13</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -1205,8 +2021,8 @@
 				<string>nails (6)</string>
 				<key>Position</key>
 				<array>
-					<real>1229.45092773438</real>
-					<real>-82.7406921386719</real>
+					<real>1531.0869140625</real>
+					<real>267.553588867188</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1263,7 +2079,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>49</integer>
+				<integer>17</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -1273,8 +2089,8 @@
 				<string>nails (5)</string>
 				<key>Position</key>
 				<array>
-					<real>1209.45092773438</real>
-					<real>-105.040649414063</real>
+					<real>1502.4130859375</real>
+					<real>258.887329101563</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1331,7 +2147,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>60</integer>
+				<integer>29</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -1341,8 +2157,8 @@
 				<string>nails (4)</string>
 				<key>Position</key>
 				<array>
-					<real>1192.7509765625</real>
-					<real>-130.890655517578</real>
+					<real>1474.71508789063</real>
+					<real>245.473297119141</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1399,7 +2215,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>70</integer>
+				<integer>38</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -1409,8 +2225,8 @@
 				<string>nails (3)</string>
 				<key>Position</key>
 				<array>
-					<real>1179.5009765625</real>
-					<real>-158.190658569336</real>
+					<real>1449.21203613281</real>
+					<real>229.02815246582</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1467,7 +2283,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>79</integer>
+				<integer>48</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -1477,8 +2293,8 @@
 				<string>nails (2)</string>
 				<key>Position</key>
 				<array>
-					<real>1170.30102539063</real>
-					<real>-186.84065246582</real>
+					<real>1426.46850585938</real>
+					<real>209.325622558594</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1535,7 +2351,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>90</integer>
+				<integer>58</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -1545,8 +2361,8 @@
 				<string>nails (1)</string>
 				<key>Position</key>
 				<array>
-					<real>1165.10473632813</real>
-					<real>-208.809020996094</real>
+					<real>1410.61669921875</real>
+					<real>193.252914428711</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1603,7 +2419,7 @@
 				<key>SHScene</key>
 				<string>Tracks.pshs</string>
 				<key>Angle</key>
-				<integer>90</integer>
+				<integer>58</integer>
 				<key>Size</key>
 				<array>
 					<real>242</real>
@@ -1613,8 +2429,8 @@
 				<string>rock_curve_fourth_xxl</string>
 				<key>Position</key>
 				<array>
-					<real>1264.5</real>
-					<real>-116.5</real>
+					<real>1543.5</real>
+					<real>220.5</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -5887,7 +6703,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>0</integer>
+				<integer>325</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -5897,8 +6713,8 @@
 				<string>nails (4)</string>
 				<key>Position</key>
 				<array>
-					<real>1594.57983398438</real>
-					<real>-18.1373920440674</real>
+					<real>1871.68432617188</real>
+					<real>123.341011047363</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -5955,7 +6771,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>0</integer>
+				<integer>325</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -5965,8 +6781,8 @@
 				<string>nails (3)</string>
 				<key>Position</key>
 				<array>
-					<real>1564.62976074219</real>
-					<real>-18.1373920440674</real>
+					<real>1846.95812988281</real>
+					<real>140.241271972656</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -6023,7 +6839,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>0</integer>
+				<integer>325</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -6033,8 +6849,8 @@
 				<string>nails (2)</string>
 				<key>Position</key>
 				<array>
-					<real>1514.17980957031</real>
-					<real>-18.1373920440674</real>
+					<real>1805.30737304688</real>
+					<real>168.709289550781</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -6091,7 +6907,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>0</integer>
+				<integer>325</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -6101,8 +6917,8 @@
 				<string>nails (1)</string>
 				<key>Position</key>
 				<array>
-					<real>1463.37976074219</real>
-					<real>-18.1373920440674</real>
+					<real>1763.36779785156</real>
+					<real>197.37483215332</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -6159,7 +6975,7 @@
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>0</integer>
+				<integer>325</integer>
 				<key>Size</key>
 				<array>
 					<real>51</real>
@@ -6169,8 +6985,8 @@
 				<string>nails</string>
 				<key>Position</key>
 				<array>
-					<real>1412.92980957031</real>
-					<real>-18.1374263763428</real>
+					<real>1721.71728515625</real>
+					<real>225.842834472656</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -6227,7 +7043,7 @@
 				<key>SHScene</key>
 				<string>Tracks.pshs</string>
 				<key>Angle</key>
-				<integer>0</integer>
+				<integer>325</integer>
 				<key>Size</key>
 				<array>
 					<real>242</real>
@@ -6237,8 +7053,8 @@
 				<string>rock_flat_xxl</string>
 				<key>Position</key>
 				<array>
-					<real>1503.0615234375</real>
-					<real>-4.18742609024048</real>
+					<real>1804.00012207031</real>
+					<real>186.5</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -7189,8 +8005,8 @@
 				<string>coin (8)</string>
 				<key>Position</key>
 				<array>
-					<real>1648.5</real>
-					<real>-94</real>
+					<real>1998</real>
+					<real>-42</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -11661,142 +12477,6 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>rock_curve_fourth_xxl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>242</real>
-					<real>242</real>
-				</array>
-				<key>UniqueName</key>
-				<string>rock_curve_fourth_xxl</string>
-				<key>Position</key>
-				<array>
-					<real>2128.28344726563</real>
-					<real>-121.059867858887</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>rock_flat_xxl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>359</integer>
-				<key>Size</key>
-				<array>
-					<real>242</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>rock_flat_xxl (1)</string>
-				<key>Position</key>
-				<array>
-					<real>1889</real>
-					<real>-6.25</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
 				<string>rock_ramp_l_left</string>
 				<key>Image</key>
 				<string>Tracks.png</string>
@@ -12007,7 +12687,7 @@
 				<key>SHScene</key>
 				<string>Tracks.pshs</string>
 				<key>Angle</key>
-				<integer>0</integer>
+				<integer>323</integer>
 				<key>Size</key>
 				<array>
 					<real>242</real>
@@ -12017,8 +12697,8 @@
 				<string>rock_flat_xxl</string>
 				<key>Position</key>
 				<array>
-					<real>1742</real>
-					<real>-8.25</real>
+					<real>2045.5</real>
+					<real>15.0000009536743</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -12026,7 +12706,7 @@
 				<false/>
 				<key>Scale</key>
 				<array>
-					<real>1</real>
+					<real>1.5</real>
 					<real>1</real>
 				</array>
 				<key>ZOrder</key>

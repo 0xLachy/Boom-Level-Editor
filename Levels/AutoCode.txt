@@ -1,0 +1,3766 @@
+	public static void ice_cube_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-30,30},
+			new NSArray(2) {-30,-30},
+			new NSArray(2) {30,-30},
+			new NSArray(2) {30,30}
+		}
+		});
+	}
+
+	public static void ice_curve_eighth_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {0.97998047,-7.7150269},
+			new NSArray(2) {10.715027,-1.2150269},
+			new NSArray(2) {0.10498047,9.3950195},
+			new NSArray(2) {-4.7600098,6.1400146},
+			new NSArray(2) {-10.5,-10}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-10.5,-10},
+			new NSArray(2) {-4.7600098,6.1400146},
+			new NSArray(2) {-10.5,5}
+		}
+		});
+	}
+
+	public static void ice_curve_eighth_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {-4.2800293,3.9249878},
+			new NSArray(2) {-21.5,-14.5},
+			new NSArray(2) {1.460022,-9.9349976},
+			new NSArray(2) {20.924988,3.0750122},
+			new NSArray(2) {10.320007,13.679993}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-21.5,-14.5},
+			new NSArray(2) {-4.2800293,3.9249878},
+			new NSArray(2) {-21.5,0.5}
+		}
+		});
+	}
+
+	public static void ice_curve_eighth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(4) {
+		new NSArray(5) {
+			new NSArray(2) {24.169983,-2.7750244},
+			new NSArray(2) {42.35498,12.14502},
+			new NSArray(2) {31.744995,22.755005},
+			new NSArray(2) {15.835022,9.6950073},
+			new NSArray(2) {3.4199829,-13.86499}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-42.5,-8},
+			new NSArray(2) {-42.5,-23},
+			new NSArray(2) {-19.090027,-20.695007},
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {-22.015015,-5.9799805}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-22.015015,-5.9799805},
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {-2.3200073,-0.0050048828}
+		},
+		new NSArray(3) {
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {15.835022,9.6950073},
+			new NSArray(2) {-2.3200073,-0.0050048828}
+		}
+		});
+	}
+
+	public static void ice_curve_eighth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(9) {
+		new NSArray(5) {
+			new NSArray(2) {69.27002,15.649994},
+			new NSArray(2) {84.705017,29.794998},
+			new NSArray(2) {74.099976,40.399994},
+			new NSArray(2) {59.625,27.139999},
+			new NSArray(2) {52.659973,2.9049988}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-85,-40.5},
+			new NSArray(2) {-64.084991,-39.584991},
+			new NSArray(2) {-43.325012,-36.855011},
+			new NSArray(2) {-65.390015,-24.644989},
+			new NSArray(2) {-85,-25.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-65.390015,-24.644989},
+			new NSArray(2) {-43.325012,-36.855011},
+			new NSArray(2) {-22.88501,-32.320007},
+			new NSArray(2) {-45.929993,-22.079987}
+		},
+		new NSArray(4) {
+			new NSArray(2) {52.659973,2.9049988},
+			new NSArray(2) {59.625,27.139999},
+			new NSArray(2) {44.054993,15.190002},
+			new NSArray(2) {35,-8.3450012}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-45.929993,-22.079987},
+			new NSArray(2) {-22.88501,-32.320007},
+			new NSArray(2) {-2.914978,-26.024994},
+			new NSArray(2) {-26.765015,-17.835007}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-26.765015,-17.835007},
+			new NSArray(2) {-2.914978,-26.024994},
+			new NSArray(2) {-8.0449829,-11.929993}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-2.914978,-26.024994},
+			new NSArray(2) {16.429993,-18.014999},
+			new NSArray(2) {35,-8.3450012},
+			new NSArray(2) {10.090027,-4.4199982},
+			new NSArray(2) {-8.0449829,-11.929993}
+		},
+		new NSArray(3) {
+			new NSArray(2) {10.090027,-4.4199982},
+			new NSArray(2) {35,-8.3450012},
+			new NSArray(2) {27.5,4.6450043}
+		},
+		new NSArray(3) {
+			new NSArray(2) {35,-8.3450012},
+			new NSArray(2) {44.054993,15.190002},
+			new NSArray(2) {27.5,4.6450043}
+		}
+		});
+	}
+
+	public static void ice_curve_fourth_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(4) {
+			new NSArray(2) {6.2150269,-6.2149963},
+			new NSArray(2) {15,15},
+			new NSArray(2) {0,15},
+			new NSArray(2) {-4.3950195,4.394989}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-15,0},
+			new NSArray(2) {-15,-15},
+			new NSArray(2) {6.2150269,-6.2149963},
+			new NSArray(2) {-4.3950195,4.394989}
+		}
+		});
+	}
+
+	public static void ice_curve_fourth_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(3) {
+		new NSArray(5) {
+			new NSArray(2) {25.434998,7.039978},
+			new NSArray(2) {30,30},
+			new NSArray(2) {15,30},
+			new NSArray(2) {8.9699707,7.5},
+			new NSArray(2) {12.424988,-12.424988}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-30,-15},
+			new NSArray(2) {-30,-30},
+			new NSArray(2) {-7.039978,-25.434998},
+			new NSArray(2) {12.424988,-12.424988},
+			new NSArray(2) {-7.5,-8.9699707}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-7.5,-8.9699707},
+			new NSArray(2) {12.424988,-12.424988},
+			new NSArray(2) {8.9699707,7.5}
+		}
+		});
+	}
+
+	public static void ice_curve_fourth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(7) {
+		new NSArray(5) {
+			new NSArray(2) {57.695007,36.590027},
+			new NSArray(2) {60,60},
+			new NSArray(2) {45,60},
+			new NSArray(2) {42.36499,36.63501},
+			new NSArray(2) {50.86499,14.080017}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-60,-45},
+			new NSArray(2) {-60,-60},
+			new NSArray(2) {-36.590027,-57.695007},
+			new NSArray(2) {-14.080017,-50.86499},
+			new NSArray(2) {-36.63501,-42.36499}
+		},
+		new NSArray(4) {
+			new NSArray(2) {34.599976,14.440002},
+			new NSArray(2) {39.775024,-6.6699829},
+			new NSArray(2) {50.86499,14.080017},
+			new NSArray(2) {42.36499,36.63501}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-36.63501,-42.36499},
+			new NSArray(2) {-14.080017,-50.86499},
+			new NSArray(2) {6.6699829,-39.775024},
+			new NSArray(2) {-14.440002,-34.599976}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-14.440002,-34.599976},
+			new NSArray(2) {6.6699829,-39.775024},
+			new NSArray(2) {24.85498,-24.85498},
+			new NSArray(2) {5.4650269,-22.090027}
+		},
+		new NSArray(4) {
+			new NSArray(2) {5.4650269,-22.090027},
+			new NSArray(2) {24.85498,-24.85498},
+			new NSArray(2) {39.775024,-6.6699829},
+			new NSArray(2) {22.090027,-5.4650269}
+		},
+		new NSArray(3) {
+			new NSArray(2) {22.090027,-5.4650269},
+			new NSArray(2) {39.775024,-6.6699829},
+			new NSArray(2) {34.599976,14.440002}
+		}
+		});
+	}
+
+	public static void ice_curve_fourth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(15) {
+		new NSArray(5) {
+			new NSArray(2) {118.845,96.475006},
+			new NSArray(2) {120,120},
+			new NSArray(2) {105,120},
+			new NSArray(2) {103.76501,96.480011},
+			new NSArray(2) {115.39001,73.179993}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-120,-105},
+			new NSArray(2) {-120,-120},
+			new NSArray(2) {-96.475006,-118.84497},
+			new NSArray(2) {-73.179993,-115.39001},
+			new NSArray(2) {-96.480011,-103.76501}
+		},
+		new NSArray(4) {
+			new NSArray(2) {109.66501,50.329987},
+			new NSArray(2) {115.39001,73.179993},
+			new NSArray(2) {103.76501,96.480011},
+			new NSArray(2) {100.08499,73.220001}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-96.480011,-103.76501},
+			new NSArray(2) {-73.179993,-115.39001},
+			new NSArray(2) {-50.329987,-109.66498},
+			new NSArray(2) {-73.220001,-100.08502}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-73.220001,-100.08502},
+			new NSArray(2) {-50.329987,-109.66498},
+			new NSArray(2) {-28.154999,-101.72998},
+			new NSArray(2) {-50.470001,-93.98999}
+		},
+		new NSArray(4) {
+			new NSArray(2) {101.73001,28.154999},
+			new NSArray(2) {109.66501,50.329987},
+			new NSArray(2) {100.08499,73.220001},
+			new NSArray(2) {93.98999,50.470001}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-50.470001,-93.98999},
+			new NSArray(2) {-28.154999,-101.72998},
+			new NSArray(2) {-6.8649902,-91.659973},
+			new NSArray(2) {-28.484985,-85.549988}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-28.484985,-85.549988},
+			new NSArray(2) {-6.8649902,-91.659973},
+			new NSArray(2) {13.334991,-79.554993},
+			new NSArray(2) {-7.5,-74.85498}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-7.5,-74.85498},
+			new NSArray(2) {13.334991,-79.554993},
+			new NSArray(2) {32.255005,-65.525024},
+			new NSArray(2) {12.25,-62.030029}
+		},
+		new NSArray(5) {
+			new NSArray(2) {30.554993,-47.210022},
+			new NSArray(2) {32.255005,-65.525024},
+			new NSArray(2) {49.704987,-49.705017},
+			new NSArray(2) {65.524994,-32.255005},
+			new NSArray(2) {47.209991,-30.554993}
+		},
+		new NSArray(3) {
+			new NSArray(2) {12.25,-62.030029},
+			new NSArray(2) {32.255005,-65.525024},
+			new NSArray(2) {30.554993,-47.210022}
+		},
+		new NSArray(4) {
+			new NSArray(2) {47.209991,-30.554993},
+			new NSArray(2) {65.524994,-32.255005},
+			new NSArray(2) {79.554993,-13.335022},
+			new NSArray(2) {62.029999,-12.25}
+		},
+		new NSArray(4) {
+			new NSArray(2) {62.029999,-12.25},
+			new NSArray(2) {79.554993,-13.335022},
+			new NSArray(2) {91.660004,6.8649902},
+			new NSArray(2) {74.855011,7.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {74.855011,7.5},
+			new NSArray(2) {91.660004,6.8649902},
+			new NSArray(2) {101.73001,28.154999},
+			new NSArray(2) {85.549988,28.484985}
+		},
+		new NSArray(3) {
+			new NSArray(2) {85.549988,28.484985},
+			new NSArray(2) {101.73001,28.154999},
+			new NSArray(2) {93.98999,50.470001}
+		}
+		});
+	}
+
+	public static void ice_curve_sixteenth_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {-0.65002441,-7.4249878},
+			new NSArray(2) {4.9799805,-5.7150269},
+			new NSArray(2) {-0.76000977,8.1400146},
+			new NSArray(2) {-3.5750122,7.289978},
+			new NSArray(2) {-6.5,-8}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-6.5,-8},
+			new NSArray(2) {-3.5750122,7.289978},
+			new NSArray(2) {-6.5,7}
+		}
+		});
+	}
+
+	public static void ice_curve_sixteenth_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {-0.29498291,-8.3449707},
+			new NSArray(2) {10.960022,-4.9349976},
+			new NSArray(2) {5.2199707,8.9249878},
+			new NSArray(2) {-3.2199707,6.3649902},
+			new NSArray(2) {-12,-9.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-12,-9.5},
+			new NSArray(2) {-3.2199707,6.3649902},
+			new NSArray(2) {-12,5.5}
+		}
+		});
+	}
+
+	public static void ice_curve_sixteenth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {7.5599976,-7.4099731},
+			new NSArray(2) {22.419983,-2.3649902},
+			new NSArray(2) {16.679993,11.48999},
+			new NSArray(2) {-3.0150146,5.5200195},
+			new NSArray(2) {-7.835022,-10.474976}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-23.5,-11.5},
+			new NSArray(2) {-7.835022,-10.474976},
+			new NSArray(2) {-3.0150146,5.5200195},
+			new NSArray(2) {-23.5,3.5}
+		}
+		});
+	}
+
+	public static void ice_curve_sixteenth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(5) {
+		new NSArray(5) {
+			new NSArray(2) {30.64502,-3.7650146},
+			new NSArray(2) {45.344971,1.7700195},
+			new NSArray(2) {39.60498,15.625},
+			new NSArray(2) {23.030029,9.5150146},
+			new NSArray(2) {15.61499,-8.3200073}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-46.5,-16.5},
+			new NSArray(2) {-30.804993,-15.984985},
+			new NSArray(2) {-15.174988,-14.445007},
+			new NSArray(2) {-28.844971,-0.80499268},
+			new NSArray(2) {-46.5,-1.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-15.174988,-14.445007},
+			new NSArray(2) {0.32000732,-11.890015},
+			new NSArray(2) {-11.299988,1.2700195},
+			new NSArray(2) {-28.844971,-0.80499268}
+		},
+		new NSArray(4) {
+			new NSArray(2) {15.61499,-8.3200073},
+			new NSArray(2) {23.030029,9.5150146},
+			new NSArray(2) {6.0250244,4.7150269},
+			new NSArray(2) {0.32000732,-11.890015}
+		},
+		new NSArray(3) {
+			new NSArray(2) {0.32000732,-11.890015},
+			new NSArray(2) {6.0250244,4.7150269},
+			new NSArray(2) {-11.299988,1.2700195}
+		}
+		});
+	}
+
+	public static void ice_flat_xs(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-7.5,7.5},
+			new NSArray(2) {-7.5,-7.5},
+			new NSArray(2) {7.5,-7.5},
+			new NSArray(2) {7.5,7.5}
+		}
+		});
+	}
+
+	public static void ice_flat_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-15,7.5},
+			new NSArray(2) {-15,-7.5},
+			new NSArray(2) {15,-7.5},
+			new NSArray(2) {15,7.5}
+		}
+		});
+	}
+
+	public static void ice_flat_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-30,7.5},
+			new NSArray(2) {-30,-7.5},
+			new NSArray(2) {30,-7.5},
+			new NSArray(2) {30,7.5}
+		}
+		});
+	}
+
+	public static void ice_flat_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-45,7.5},
+			new NSArray(2) {-45,-7.5},
+			new NSArray(2) {45,-7.5},
+			new NSArray(2) {45,7.5}
+		}
+		});
+	}
+
+	public static void ice_flat_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-60,7.5},
+			new NSArray(2) {-60,-7.5},
+			new NSArray(2) {60,-7.5},
+			new NSArray(2) {60,7.5}
+		}
+		});
+	}
+
+	public static void ice_flat_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-120,7.5},
+			new NSArray(2) {-120,-7.5},
+			new NSArray(2) {120,-7.5},
+			new NSArray(2) {120,7.5}
+		}
+		});
+	}
+
+	public static void ice_flat_xxxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-240,7.5},
+			new NSArray(2) {-240,-7.5},
+			new NSArray(2) {240,-7.5},
+			new NSArray(2) {240,7.5}
+		}
+		});
+	}
+
+	public static void ice_flat_xxxxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-480,7.5},
+			new NSArray(2) {-480,-7.5},
+			new NSArray(2) {480,-7.5},
+			new NSArray(2) {480,7.5}
+		}
+		});
+	}
+
+	public static void plastic_cube_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-30,30},
+			new NSArray(2) {-30,-30},
+			new NSArray(2) {30,-30},
+			new NSArray(2) {30,30}
+		}
+		});
+	}
+
+	public static void plastic_curve_eighth_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {0.97998047,-7.7150269},
+			new NSArray(2) {10.715027,-1.2150269},
+			new NSArray(2) {0.10498047,9.3950195},
+			new NSArray(2) {-4.7600098,6.1400146},
+			new NSArray(2) {-10.5,-10}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-10.5,-10},
+			new NSArray(2) {-4.7600098,6.1400146},
+			new NSArray(2) {-10.5,5}
+		}
+		});
+	}
+
+	public static void plastic_curve_eighth_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {-4.2800293,3.9249992},
+			new NSArray(2) {-21.5,-14.5},
+			new NSArray(2) {1.460022,-9.9350014},
+			new NSArray(2) {20.924988,3.0750008},
+			new NSArray(2) {10.320007,13.68}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-21.5,-14.5},
+			new NSArray(2) {-4.2800293,3.9249992},
+			new NSArray(2) {-21.5,0.5}
+		}
+		});
+	}
+
+	public static void plastic_curve_eighth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(4) {
+		new NSArray(5) {
+			new NSArray(2) {24.169983,-2.7750244},
+			new NSArray(2) {42.35498,12.14502},
+			new NSArray(2) {31.744995,22.755005},
+			new NSArray(2) {15.835022,9.6950073},
+			new NSArray(2) {3.4199829,-13.86499}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-42.5,-8},
+			new NSArray(2) {-42.5,-23},
+			new NSArray(2) {-19.090027,-20.695007},
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {-22.015015,-5.9799805}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-22.015015,-5.9799805},
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {-2.3200073,-0.0050048828}
+		},
+		new NSArray(3) {
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {15.835022,9.6950073},
+			new NSArray(2) {-2.3200073,-0.0050048828}
+		}
+		});
+	}
+
+	public static void plastic_curve_eighth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(9) {
+		new NSArray(5) {
+			new NSArray(2) {69.27002,15.649994},
+			new NSArray(2) {84.705017,29.794998},
+			new NSArray(2) {74.099976,40.400002},
+			new NSArray(2) {59.625,27.139999},
+			new NSArray(2) {52.659973,2.9049988}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-85,-40.5},
+			new NSArray(2) {-64.084991,-39.585007},
+			new NSArray(2) {-43.325012,-36.854996},
+			new NSArray(2) {-65.390015,-24.645004},
+			new NSArray(2) {-85,-25.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-65.390015,-24.645004},
+			new NSArray(2) {-43.325012,-36.854996},
+			new NSArray(2) {-22.88501,-32.320007},
+			new NSArray(2) {-45.929993,-22.080002}
+		},
+		new NSArray(4) {
+			new NSArray(2) {52.659973,2.9049988},
+			new NSArray(2) {59.625,27.139999},
+			new NSArray(2) {44.054993,15.190002},
+			new NSArray(2) {35,-8.3450012}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-45.929993,-22.080002},
+			new NSArray(2) {-22.88501,-32.320007},
+			new NSArray(2) {-2.914978,-26.024994},
+			new NSArray(2) {-26.765015,-17.835007}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-26.765015,-17.835007},
+			new NSArray(2) {-2.914978,-26.024994},
+			new NSArray(2) {-8.0449829,-11.929993}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-2.914978,-26.024994},
+			new NSArray(2) {16.429993,-18.014999},
+			new NSArray(2) {35,-8.3450012},
+			new NSArray(2) {10.090027,-4.4199982},
+			new NSArray(2) {-8.0449829,-11.929993}
+		},
+		new NSArray(3) {
+			new NSArray(2) {10.090027,-4.4199982},
+			new NSArray(2) {35,-8.3450012},
+			new NSArray(2) {27.5,4.6450043}
+		},
+		new NSArray(3) {
+			new NSArray(2) {35,-8.3450012},
+			new NSArray(2) {44.054993,15.190002},
+			new NSArray(2) {27.5,4.6450043}
+		}
+		});
+	}
+
+	public static void plastic_curve_fourth_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(4) {
+			new NSArray(2) {6.2150269,-6.2149963},
+			new NSArray(2) {15,15},
+			new NSArray(2) {0,15},
+			new NSArray(2) {-4.3950195,4.394989}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-15,0},
+			new NSArray(2) {-15,-15},
+			new NSArray(2) {6.2150269,-6.2149963},
+			new NSArray(2) {-4.3950195,4.394989}
+		}
+		});
+	}
+
+	public static void plastic_curve_fourth_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(3) {
+		new NSArray(5) {
+			new NSArray(2) {25.434998,7.039978},
+			new NSArray(2) {30,30},
+			new NSArray(2) {15,30},
+			new NSArray(2) {8.9699707,7.5},
+			new NSArray(2) {12.424988,-12.424988}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-30,-15},
+			new NSArray(2) {-30,-30},
+			new NSArray(2) {-7.039978,-25.434998},
+			new NSArray(2) {12.424988,-12.424988},
+			new NSArray(2) {-7.5,-8.9699707}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-7.5,-8.9699707},
+			new NSArray(2) {12.424988,-12.424988},
+			new NSArray(2) {8.9699707,7.5}
+		}
+		});
+	}
+
+	public static void plastic_curve_fourth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(7) {
+		new NSArray(5) {
+			new NSArray(2) {57.695007,36.590027},
+			new NSArray(2) {60,60},
+			new NSArray(2) {45,60},
+			new NSArray(2) {42.36499,36.63501},
+			new NSArray(2) {50.86499,14.080017}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-60,-45},
+			new NSArray(2) {-60,-60},
+			new NSArray(2) {-36.590027,-57.695007},
+			new NSArray(2) {-14.080017,-50.86499},
+			new NSArray(2) {-36.63501,-42.36499}
+		},
+		new NSArray(4) {
+			new NSArray(2) {34.599976,14.440002},
+			new NSArray(2) {39.775024,-6.6699829},
+			new NSArray(2) {50.86499,14.080017},
+			new NSArray(2) {42.36499,36.63501}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-36.63501,-42.36499},
+			new NSArray(2) {-14.080017,-50.86499},
+			new NSArray(2) {6.6699829,-39.775024},
+			new NSArray(2) {-14.440002,-34.599976}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-14.440002,-34.599976},
+			new NSArray(2) {6.6699829,-39.775024},
+			new NSArray(2) {24.85498,-24.85498},
+			new NSArray(2) {5.4650269,-22.090027}
+		},
+		new NSArray(4) {
+			new NSArray(2) {5.4650269,-22.090027},
+			new NSArray(2) {24.85498,-24.85498},
+			new NSArray(2) {39.775024,-6.6699829},
+			new NSArray(2) {22.090027,-5.4650269}
+		},
+		new NSArray(3) {
+			new NSArray(2) {22.090027,-5.4650269},
+			new NSArray(2) {39.775024,-6.6699829},
+			new NSArray(2) {34.599976,14.440002}
+		}
+		});
+	}
+
+	public static void plastic_curve_fourth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(15) {
+		new NSArray(5) {
+			new NSArray(2) {118.845,96.475006},
+			new NSArray(2) {120,120},
+			new NSArray(2) {105,120},
+			new NSArray(2) {103.76501,96.479996},
+			new NSArray(2) {115.39001,73.179993}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-120,-105},
+			new NSArray(2) {-120,-120},
+			new NSArray(2) {-96.475006,-118.845},
+			new NSArray(2) {-73.179993,-115.39001},
+			new NSArray(2) {-96.480011,-103.76501}
+		},
+		new NSArray(4) {
+			new NSArray(2) {109.66501,50.330002},
+			new NSArray(2) {115.39001,73.179993},
+			new NSArray(2) {103.76501,96.479996},
+			new NSArray(2) {100.08499,73.220001}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-96.480011,-103.76501},
+			new NSArray(2) {-73.179993,-115.39001},
+			new NSArray(2) {-50.329987,-109.66501},
+			new NSArray(2) {-73.220001,-100.08499}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-73.220001,-100.08499},
+			new NSArray(2) {-50.329987,-109.66501},
+			new NSArray(2) {-28.154999,-101.73001},
+			new NSArray(2) {-50.470001,-93.98999}
+		},
+		new NSArray(4) {
+			new NSArray(2) {101.73001,28.154999},
+			new NSArray(2) {109.66501,50.330002},
+			new NSArray(2) {100.08499,73.220001},
+			new NSArray(2) {93.98999,50.470001}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-50.470001,-93.98999},
+			new NSArray(2) {-28.154999,-101.73001},
+			new NSArray(2) {-6.8649902,-91.660004},
+			new NSArray(2) {-28.484985,-85.549988}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-28.484985,-85.549988},
+			new NSArray(2) {-6.8649902,-91.660004},
+			new NSArray(2) {13.334991,-79.554993},
+			new NSArray(2) {-7.5,-74.855011}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-7.5,-74.855011},
+			new NSArray(2) {13.334991,-79.554993},
+			new NSArray(2) {32.255005,-65.524994},
+			new NSArray(2) {12.25,-62.029999}
+		},
+		new NSArray(5) {
+			new NSArray(2) {30.554993,-47.209991},
+			new NSArray(2) {32.255005,-65.524994},
+			new NSArray(2) {49.704987,-49.704987},
+			new NSArray(2) {65.524994,-32.255005},
+			new NSArray(2) {47.209991,-30.554993}
+		},
+		new NSArray(3) {
+			new NSArray(2) {12.25,-62.029999},
+			new NSArray(2) {32.255005,-65.524994},
+			new NSArray(2) {30.554993,-47.209991}
+		},
+		new NSArray(4) {
+			new NSArray(2) {47.209991,-30.554993},
+			new NSArray(2) {65.524994,-32.255005},
+			new NSArray(2) {79.554993,-13.334991},
+			new NSArray(2) {62.029999,-12.25}
+		},
+		new NSArray(4) {
+			new NSArray(2) {62.029999,-12.25},
+			new NSArray(2) {79.554993,-13.334991},
+			new NSArray(2) {91.660004,6.8649902},
+			new NSArray(2) {74.855011,7.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {74.855011,7.5},
+			new NSArray(2) {91.660004,6.8649902},
+			new NSArray(2) {101.73001,28.154999},
+			new NSArray(2) {85.549988,28.485001}
+		},
+		new NSArray(3) {
+			new NSArray(2) {85.549988,28.485001},
+			new NSArray(2) {101.73001,28.154999},
+			new NSArray(2) {93.98999,50.470001}
+		}
+		});
+	}
+
+	public static void plastic_curve_sixteenth_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {-0.65002441,-7.4249878},
+			new NSArray(2) {4.9799805,-5.7150269},
+			new NSArray(2) {-0.76000977,8.1400146},
+			new NSArray(2) {-3.5750122,7.289978},
+			new NSArray(2) {-6.5,-8}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-6.5,-8},
+			new NSArray(2) {-3.5750122,7.289978},
+			new NSArray(2) {-6.5,7}
+		}
+		});
+	}
+
+	public static void plastic_curve_sixteenth_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {-0.29498291,-8.3449707},
+			new NSArray(2) {10.960022,-4.9349976},
+			new NSArray(2) {5.2199707,8.9249878},
+			new NSArray(2) {-3.2199707,6.3649902},
+			new NSArray(2) {-12,-9.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-12,-9.5},
+			new NSArray(2) {-3.2199707,6.3649902},
+			new NSArray(2) {-12,5.5}
+		}
+		});
+	}
+
+	public static void plastic_curve_sixteenth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {7.5599976,-7.4099731},
+			new NSArray(2) {22.419983,-2.3649902},
+			new NSArray(2) {16.679993,11.48999},
+			new NSArray(2) {-3.0150146,5.5200195},
+			new NSArray(2) {-7.835022,-10.474976}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-23.5,-11.5},
+			new NSArray(2) {-7.835022,-10.474976},
+			new NSArray(2) {-3.0150146,5.5200195},
+			new NSArray(2) {-23.5,3.5}
+		}
+		});
+	}
+
+	public static void plastic_curve_sixteenth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(5) {
+		new NSArray(5) {
+			new NSArray(2) {30.64502,-3.7650146},
+			new NSArray(2) {45.344971,1.7700195},
+			new NSArray(2) {39.60498,15.625},
+			new NSArray(2) {23.030029,9.5150146},
+			new NSArray(2) {15.61499,-8.3200073}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-46.5,-16.5},
+			new NSArray(2) {-30.804993,-15.984985},
+			new NSArray(2) {-15.174988,-14.445007},
+			new NSArray(2) {-28.844971,-0.80499268},
+			new NSArray(2) {-46.5,-1.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-15.174988,-14.445007},
+			new NSArray(2) {0.32000732,-11.890015},
+			new NSArray(2) {-11.299988,1.2700195},
+			new NSArray(2) {-28.844971,-0.80499268}
+		},
+		new NSArray(4) {
+			new NSArray(2) {15.61499,-8.3200073},
+			new NSArray(2) {23.030029,9.5150146},
+			new NSArray(2) {6.0250244,4.7150269},
+			new NSArray(2) {0.32000732,-11.890015}
+		},
+		new NSArray(3) {
+			new NSArray(2) {0.32000732,-11.890015},
+			new NSArray(2) {6.0250244,4.7150269},
+			new NSArray(2) {-11.299988,1.2700195}
+		}
+		});
+	}
+
+	public static void plastic_flat_xs(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-7.5,7.5},
+			new NSArray(2) {-7.5,-7.5},
+			new NSArray(2) {7.5,-7.5},
+			new NSArray(2) {7.5,7.5}
+		}
+		});
+	}
+
+	public static void plastic_flat_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-15,7.5},
+			new NSArray(2) {-15,-7.5},
+			new NSArray(2) {15,-7.5},
+			new NSArray(2) {15,7.5}
+		}
+		});
+	}
+
+	public static void plastic_flat_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-30,7.5},
+			new NSArray(2) {-30,-7.5},
+			new NSArray(2) {30,-7.5},
+			new NSArray(2) {30,7.5}
+		}
+		});
+	}
+
+	public static void plastic_flat_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-45,7.5},
+			new NSArray(2) {-45,-7.5},
+			new NSArray(2) {45,-7.5},
+			new NSArray(2) {45,7.5}
+		}
+		});
+	}
+
+	public static void plastic_flat_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-60,7.5},
+			new NSArray(2) {-60,-7.5},
+			new NSArray(2) {60,-7.5},
+			new NSArray(2) {60,7.5}
+		}
+		});
+	}
+
+	public static void plastic_flat_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-120,7.5},
+			new NSArray(2) {-120,-7.5},
+			new NSArray(2) {120,-7.5},
+			new NSArray(2) {120,7.5}
+		}
+		});
+	}
+
+	public static void plastic_flat_xxxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-240,7.5},
+			new NSArray(2) {-240,-7.5},
+			new NSArray(2) {240,-7.5},
+			new NSArray(2) {240,7.5}
+		}
+		});
+	}
+
+	public static void plastic_flat_xxxxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-480,7.5},
+			new NSArray(2) {-480,-7.5},
+			new NSArray(2) {480,-7.5},
+			new NSArray(2) {480,7.5}
+		}
+		});
+	}
+
+	public static void rock_bump_xs(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(5) {
+			new NSArray(2) {0,3.5},
+			new NSArray(2) {-5.3049927,1.3049927},
+			new NSArray(2) {-7.5,-4},
+			new NSArray(2) {7.5,-4},
+			new NSArray(2) {5.3049927,1.3049927}
+		}
+		});
+	}
+
+	public static void rock_bump_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(5) {
+			new NSArray(2) {-10.60498,2.605011},
+			new NSArray(2) {-15,-8},
+			new NSArray(2) {15,-8},
+			new NSArray(2) {10.60498,2.605011},
+			new NSArray(2) {0,7}
+		}
+		});
+	}
+
+	public static void rock_bump_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(8) {
+			new NSArray(2) {11.47998,12.715027},
+			new NSArray(2) {0,15},
+			new NSArray(2) {-11.47998,12.715027},
+			new NSArray(2) {-27.715027,-3.5200195},
+			new NSArray(2) {-30,-15},
+			new NSArray(2) {30,-15},
+			new NSArray(2) {27.715027,-3.5200195},
+			new NSArray(2) {21.215027,6.2150269}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-27.715027,-3.5200195},
+			new NSArray(2) {-11.47998,12.715027},
+			new NSArray(2) {-21.215027,6.2150269}
+		}
+		});
+	}
+
+	public static void rock_bump_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(3) {
+		new NSArray(8) {
+			new NSArray(2) {11.64502,20.964996},
+			new NSArray(2) {0,22.5},
+			new NSArray(2) {-11.64502,20.964996},
+			new NSArray(2) {-43.465027,-10.855011},
+			new NSArray(2) {43.465027,-10.855011},
+			new NSArray(2) {38.969971,0},
+			new NSArray(2) {31.820007,9.3200073},
+			new NSArray(2) {22.5,16.470001}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-43.465027,-10.855011},
+			new NSArray(2) {-45,-22.5},
+			new NSArray(2) {45,-22.5},
+			new NSArray(2) {43.465027,-10.855011}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-38.969971,0},
+			new NSArray(2) {-43.465027,-10.855011},
+			new NSArray(2) {-11.64502,20.964996},
+			new NSArray(2) {-22.5,16.470001},
+			new NSArray(2) {-31.820007,9.3200073}
+		}
+		});
+	}
+
+	public static void rock_cube_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-15,15},
+			new NSArray(2) {-15,-15},
+			new NSArray(2) {15,-15},
+			new NSArray(2) {15,15}
+		}
+		});
+	}
+
+	public static void rock_cube_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-30,30},
+			new NSArray(2) {-30,-30},
+			new NSArray(2) {30,-30},
+			new NSArray(2) {30,30}
+		}
+		});
+	}
+
+	public static void rock_cube_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-45,45},
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {45,45}
+		}
+		});
+	}
+
+	public static void rock_cube_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-60,60},
+			new NSArray(2) {-60,-60},
+			new NSArray(2) {60,-60},
+			new NSArray(2) {60,60}
+		}
+		});
+	}
+
+	public static void rock_curve_eighth_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {0.97998047,-7.7150269},
+			new NSArray(2) {10.715027,-1.2150269},
+			new NSArray(2) {0.10498047,9.3950195},
+			new NSArray(2) {-4.7600098,6.1400146},
+			new NSArray(2) {-10.5,-10}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-10.5,-10},
+			new NSArray(2) {-4.7600098,6.1400146},
+			new NSArray(2) {-10.5,5}
+		}
+		});
+	}
+
+	public static void rock_curve_eighth_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {-4.2800293,3.9250002},
+			new NSArray(2) {-21.5,-14.5},
+			new NSArray(2) {1.460022,-9.9349995},
+			new NSArray(2) {20.924988,3.0749998},
+			new NSArray(2) {10.320007,13.68}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-21.5,-14.5},
+			new NSArray(2) {-4.2800293,3.9250002},
+			new NSArray(2) {-21.5,0.5}
+		}
+		});
+	}
+
+	public static void rock_curve_eighth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(4) {
+		new NSArray(5) {
+			new NSArray(2) {24.169983,-2.7750244},
+			new NSArray(2) {42.35498,12.14502},
+			new NSArray(2) {31.744995,22.755005},
+			new NSArray(2) {15.835022,9.6950073},
+			new NSArray(2) {3.4199829,-13.86499}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-42.5,-8},
+			new NSArray(2) {-42.5,-23},
+			new NSArray(2) {-19.090027,-20.695007},
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {-22.015015,-5.9799805}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-22.015015,-5.9799805},
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {-2.3200073,-0.0050048828}
+		},
+		new NSArray(3) {
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {15.835022,9.6950073},
+			new NSArray(2) {-2.3200073,-0.0050048828}
+		}
+		});
+	}
+
+	public static void rock_curve_eighth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(9) {
+		new NSArray(5) {
+			new NSArray(2) {69.269989,15.650024},
+			new NSArray(2) {84.704987,29.794983},
+			new NSArray(2) {74.100006,40.400024},
+			new NSArray(2) {59.625,27.140015},
+			new NSArray(2) {52.660004,2.9050293}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-85,-40.5},
+			new NSArray(2) {-64.084991,-39.585022},
+			new NSArray(2) {-43.325012,-36.85498},
+			new NSArray(2) {-65.390015,-24.64502},
+			new NSArray(2) {-85,-25.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-65.390015,-24.64502},
+			new NSArray(2) {-43.325012,-36.85498},
+			new NSArray(2) {-22.88501,-32.320007},
+			new NSArray(2) {-45.929993,-22.080017}
+		},
+		new NSArray(4) {
+			new NSArray(2) {52.660004,2.9050293},
+			new NSArray(2) {59.625,27.140015},
+			new NSArray(2) {44.054993,15.190002},
+			new NSArray(2) {35,-8.3449707}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-45.929993,-22.080017},
+			new NSArray(2) {-22.88501,-32.320007},
+			new NSArray(2) {-2.9150085,-26.025024},
+			new NSArray(2) {-26.765015,-17.835022}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-26.765015,-17.835022},
+			new NSArray(2) {-2.9150085,-26.025024},
+			new NSArray(2) {-8.0450134,-11.929993}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-2.9150085,-26.025024},
+			new NSArray(2) {16.429993,-18.015015},
+			new NSArray(2) {35,-8.3449707},
+			new NSArray(2) {10.089996,-4.4199829},
+			new NSArray(2) {-8.0450134,-11.929993}
+		},
+		new NSArray(3) {
+			new NSArray(2) {10.089996,-4.4199829},
+			new NSArray(2) {35,-8.3449707},
+			new NSArray(2) {27.5,4.6450195}
+		},
+		new NSArray(3) {
+			new NSArray(2) {35,-8.3449707},
+			new NSArray(2) {44.054993,15.190002},
+			new NSArray(2) {27.5,4.6450195}
+		}
+		});
+	}
+
+	public static void rock_curve_fourth_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(4) {
+			new NSArray(2) {6.2150269,-6.2149963},
+			new NSArray(2) {15,15},
+			new NSArray(2) {0,15},
+			new NSArray(2) {-4.3950195,4.394989}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-15,0},
+			new NSArray(2) {-15,-15},
+			new NSArray(2) {6.2150269,-6.2149963},
+			new NSArray(2) {-4.3950195,4.394989}
+		}
+		});
+	}
+
+	public static void rock_curve_fourth_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(3) {
+		new NSArray(5) {
+			new NSArray(2) {25.434998,7.039978},
+			new NSArray(2) {30,30},
+			new NSArray(2) {15,30},
+			new NSArray(2) {8.9699707,7.5},
+			new NSArray(2) {12.424988,-12.424988}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-30,-15},
+			new NSArray(2) {-30,-30},
+			new NSArray(2) {-7.039978,-25.434998},
+			new NSArray(2) {12.424988,-12.424988},
+			new NSArray(2) {-7.5,-8.9699707}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-7.5,-8.9699707},
+			new NSArray(2) {12.424988,-12.424988},
+			new NSArray(2) {8.9699707,7.5}
+		}
+		});
+	}
+
+	public static void rock_curve_fourth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(7) {
+		new NSArray(5) {
+			new NSArray(2) {57.695007,36.589996},
+			new NSArray(2) {60,60},
+			new NSArray(2) {45,60},
+			new NSArray(2) {42.36499,36.634995},
+			new NSArray(2) {50.86499,14.080002}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-60,-45},
+			new NSArray(2) {-60,-60},
+			new NSArray(2) {-36.590027,-57.695007},
+			new NSArray(2) {-14.080017,-50.865005},
+			new NSArray(2) {-36.63501,-42.365005}
+		},
+		new NSArray(4) {
+			new NSArray(2) {34.599976,14.440002},
+			new NSArray(2) {39.775024,-6.6699982},
+			new NSArray(2) {50.86499,14.080002},
+			new NSArray(2) {42.36499,36.634995}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-36.63501,-42.365005},
+			new NSArray(2) {-14.080017,-50.865005},
+			new NSArray(2) {6.6699829,-39.774994},
+			new NSArray(2) {-14.440002,-34.600006}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-14.440002,-34.600006},
+			new NSArray(2) {6.6699829,-39.774994},
+			new NSArray(2) {24.85498,-24.854996},
+			new NSArray(2) {5.4650269,-22.089996}
+		},
+		new NSArray(4) {
+			new NSArray(2) {5.4650269,-22.089996},
+			new NSArray(2) {24.85498,-24.854996},
+			new NSArray(2) {39.775024,-6.6699982},
+			new NSArray(2) {22.090027,-5.4649963}
+		},
+		new NSArray(3) {
+			new NSArray(2) {22.090027,-5.4649963},
+			new NSArray(2) {39.775024,-6.6699982},
+			new NSArray(2) {34.599976,14.440002}
+		}
+		});
+	}
+
+	public static void rock_curve_fourth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(15) {
+		new NSArray(5) {
+			new NSArray(2) {118.845,96.474976},
+			new NSArray(2) {120,120},
+			new NSArray(2) {105,120},
+			new NSArray(2) {103.765,96.47998},
+			new NSArray(2) {115.39,73.179993}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-120,-105},
+			new NSArray(2) {-120,-120},
+			new NSArray(2) {-96.474998,-118.84497},
+			new NSArray(2) {-73.18,-115.39001},
+			new NSArray(2) {-96.479996,-103.76501}
+		},
+		new NSArray(4) {
+			new NSArray(2) {109.66499,50.330017},
+			new NSArray(2) {115.39,73.179993},
+			new NSArray(2) {103.765,96.47998},
+			new NSArray(2) {100.08501,73.219971}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-96.479996,-103.76501},
+			new NSArray(2) {-73.18,-115.39001},
+			new NSArray(2) {-50.330002,-109.66498},
+			new NSArray(2) {-73.220001,-100.08502}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-73.220001,-100.08502},
+			new NSArray(2) {-50.330002,-109.66498},
+			new NSArray(2) {-28.154999,-101.72998},
+			new NSArray(2) {-50.470001,-93.98999}
+		},
+		new NSArray(4) {
+			new NSArray(2) {101.73,28.155029},
+			new NSArray(2) {109.66499,50.330017},
+			new NSArray(2) {100.08501,73.219971},
+			new NSArray(2) {93.990005,50.469971}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-50.470001,-93.98999},
+			new NSArray(2) {-28.154999,-101.72998},
+			new NSArray(2) {-6.8649979,-91.659973},
+			new NSArray(2) {-28.485001,-85.549988}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-28.485001,-85.549988},
+			new NSArray(2) {-6.8649979,-91.659973},
+			new NSArray(2) {13.335007,-79.554993},
+			new NSArray(2) {-7.5,-74.85498}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-7.5,-74.85498},
+			new NSArray(2) {13.335007,-79.554993},
+			new NSArray(2) {32.255005,-65.525024},
+			new NSArray(2) {12.25,-62.030029}
+		},
+		new NSArray(5) {
+			new NSArray(2) {30.554993,-47.210022},
+			new NSArray(2) {32.255005,-65.525024},
+			new NSArray(2) {49.705002,-49.705017},
+			new NSArray(2) {65.524994,-32.255005},
+			new NSArray(2) {47.210007,-30.554993}
+		},
+		new NSArray(3) {
+			new NSArray(2) {12.25,-62.030029},
+			new NSArray(2) {32.255005,-65.525024},
+			new NSArray(2) {30.554993,-47.210022}
+		},
+		new NSArray(4) {
+			new NSArray(2) {47.210007,-30.554993},
+			new NSArray(2) {65.524994,-32.255005},
+			new NSArray(2) {79.554993,-13.335022},
+			new NSArray(2) {62.029999,-12.25}
+		},
+		new NSArray(4) {
+			new NSArray(2) {62.029999,-12.25},
+			new NSArray(2) {79.554993,-13.335022},
+			new NSArray(2) {91.660004,6.8649902},
+			new NSArray(2) {74.854996,7.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {91.660004,6.8649902},
+			new NSArray(2) {101.73,28.155029},
+			new NSArray(2) {85.550003,28.484985},
+			new NSArray(2) {74.854996,7.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {85.550003,28.484985},
+			new NSArray(2) {101.73,28.155029},
+			new NSArray(2) {93.990005,50.469971}
+		}
+		});
+	}
+
+	public static void rock_curve_sixteenth_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {-0.65002441,-7.4249878},
+			new NSArray(2) {4.9799805,-5.7150269},
+			new NSArray(2) {-0.76000977,8.1400146},
+			new NSArray(2) {-3.5750122,7.289978},
+			new NSArray(2) {-6.5,-8}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-6.5,-8},
+			new NSArray(2) {-3.5750122,7.289978},
+			new NSArray(2) {-6.5,7}
+		}
+		});
+	}
+
+	public static void rock_curve_sixteenth_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {-0.29499817,-8.3449707},
+			new NSArray(2) {10.960007,-4.9349976},
+			new NSArray(2) {5.2200012,8.9249878},
+			new NSArray(2) {-3.2200012,6.3649902},
+			new NSArray(2) {-12,-9.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-12,-9.5},
+			new NSArray(2) {-3.2200012,6.3649902},
+			new NSArray(2) {-12,5.5}
+		}
+		});
+	}
+
+	public static void rock_curve_sixteenth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {7.5599976,-7.4099731},
+			new NSArray(2) {22.419983,-2.3649902},
+			new NSArray(2) {16.679993,11.48999},
+			new NSArray(2) {-3.0150146,5.5200195},
+			new NSArray(2) {-7.835022,-10.474976}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-23.5,-11.5},
+			new NSArray(2) {-7.835022,-10.474976},
+			new NSArray(2) {-3.0150146,5.5200195},
+			new NSArray(2) {-23.5,3.5}
+		}
+		});
+	}
+
+	public static void rock_curve_sixteenth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(5) {
+		new NSArray(5) {
+			new NSArray(2) {30.64502,-3.7650146},
+			new NSArray(2) {45.344971,1.7700195},
+			new NSArray(2) {39.60498,15.625},
+			new NSArray(2) {23.030029,9.5150146},
+			new NSArray(2) {15.61499,-8.3200073}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-46.5,-16.5},
+			new NSArray(2) {-30.804993,-15.984985},
+			new NSArray(2) {-15.174988,-14.445007},
+			new NSArray(2) {-28.844971,-0.80499268},
+			new NSArray(2) {-46.5,-1.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-15.174988,-14.445007},
+			new NSArray(2) {0.32000732,-11.890015},
+			new NSArray(2) {-11.299988,1.2700195},
+			new NSArray(2) {-28.844971,-0.80499268}
+		},
+		new NSArray(4) {
+			new NSArray(2) {15.61499,-8.3200073},
+			new NSArray(2) {23.030029,9.5150146},
+			new NSArray(2) {6.0250244,4.7150269},
+			new NSArray(2) {0.32000732,-11.890015}
+		},
+		new NSArray(3) {
+			new NSArray(2) {0.32000732,-11.890015},
+			new NSArray(2) {6.0250244,4.7150269},
+			new NSArray(2) {-11.299988,1.2700195}
+		}
+		});
+	}
+
+	public static void rock_flat_xs(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-7.5,7.5},
+			new NSArray(2) {-7.5,-7.5},
+			new NSArray(2) {7.5,-7.5},
+			new NSArray(2) {7.5,7.5}
+		}
+		});
+	}
+
+	public static void rock_flat_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-15,7.5},
+			new NSArray(2) {-15,-7.5},
+			new NSArray(2) {15,-7.5},
+			new NSArray(2) {15,7.5}
+		}
+		});
+	}
+
+	public static void rock_flat_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-30,7.5},
+			new NSArray(2) {-30,-7.5},
+			new NSArray(2) {30,-7.5},
+			new NSArray(2) {30,7.5}
+		}
+		});
+	}
+
+	public static void rock_flat_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-45,7.5},
+			new NSArray(2) {-45,-7.5},
+			new NSArray(2) {45,-7.5},
+			new NSArray(2) {45,7.5}
+		}
+		});
+	}
+
+	public static void rock_flat_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-60,7.5},
+			new NSArray(2) {-60,-7.5},
+			new NSArray(2) {60,-7.5},
+			new NSArray(2) {60,7.5}
+		}
+		});
+	}
+
+	public static void rock_flat_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-120,7.5},
+			new NSArray(2) {-120,-7.5},
+			new NSArray(2) {120,-7.5},
+			new NSArray(2) {120,7.5}
+		}
+		});
+	}
+
+	public static void rock_flat_xxxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-240,7.5},
+			new NSArray(2) {-240,-7.5},
+			new NSArray(2) {240,-7.5},
+			new NSArray(2) {240,7.5}
+		}
+		});
+	}
+
+	public static void rock_flat_xxxxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-480,7.5},
+			new NSArray(2) {-480,-7.5},
+			new NSArray(2) {480,-7.5},
+			new NSArray(2) {480,7.5}
+		}
+		});
+	}
+
+	public static void rock_hump_xs(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(5) {
+			new NSArray(2) {0,2.5},
+			new NSArray(2) {-4.25,1.3600006},
+			new NSArray(2) {-7.5,-2.5},
+			new NSArray(2) {7.5,-2.5},
+			new NSArray(2) {4.25,1.3600006}
+		}
+		});
+	}
+
+	public static void rock_hump_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(5) {
+			new NSArray(2) {0,4},
+			new NSArray(2) {-9.1550293,1.7150269},
+			new NSArray(2) {-15,-4},
+			new NSArray(2) {15,-4},
+			new NSArray(2) {9.1550293,1.7150269}
+		}
+		});
+	}
+
+	public static void rock_hump_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(7) {
+			new NSArray(2) {0,5},
+			new NSArray(2) {-10.210022,4.0150146},
+			new NSArray(2) {-20.039978,1.1049805},
+			new NSArray(2) {-30,-5},
+			new NSArray(2) {30,-5},
+			new NSArray(2) {20.039978,1.1049805},
+			new NSArray(2) {10.210022,4.0150146}
+		}
+		});
+	}
+
+	public static void rock_hump_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(8) {
+			new NSArray(2) {0,6},
+			new NSArray(2) {-12.125,5.2249756},
+			new NSArray(2) {-24.054993,2.9050293},
+			new NSArray(2) {-45,-6},
+			new NSArray(2) {45,-6},
+			new NSArray(2) {35.590027,-0.91998291},
+			new NSArray(2) {24.054993,2.9050293},
+			new NSArray(2) {12.125,5.2249756}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-6},
+			new NSArray(2) {-24.054993,2.9050293},
+			new NSArray(2) {-35.590027,-0.91998291}
+		}
+		});
+	}
+
+	public static void rock_pie_quarter_xs(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {7.5,-7.5},
+			new NSArray(2) {7.5,7.5},
+			new NSArray(2) {-3.1049805,3.1049805},
+			new NSArray(2) {-7.5,-7.5}
+		}
+		});
+	}
+
+	public static void rock_pie_quarter_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(6) {
+			new NSArray(2) {15,-15},
+			new NSArray(2) {15,15},
+			new NSArray(2) {3.5200195,12.715027},
+			new NSArray(2) {-6.2150269,6.2150269},
+			new NSArray(2) {-12.715027,-3.5200195},
+			new NSArray(2) {-15,-15}
+		}
+		});
+	}
+
+	public static void rock_pie_quarter_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(8) {
+			new NSArray(2) {30,-30},
+			new NSArray(2) {30,30},
+			new NSArray(2) {18.294983,28.844971},
+			new NSArray(2) {7.039978,25.434998},
+			new NSArray(2) {-3.335022,19.890015},
+			new NSArray(2) {-12.424988,12.424988},
+			new NSArray(2) {-19.890015,3.335022},
+			new NSArray(2) {-25.434998,-7.039978}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-30,-30},
+			new NSArray(2) {30,-30},
+			new NSArray(2) {-25.434998,-7.039978},
+			new NSArray(2) {-28.844971,-18.294983}
+		}
+		});
+	}
+
+	public static void rock_pie_quarter_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(3) {
+		new NSArray(7) {
+			new NSArray(2) {45,-45},
+			new NSArray(2) {45,45},
+			new NSArray(2) {33.255005,44.230011},
+			new NSArray(2) {21.705017,41.934998},
+			new NSArray(2) {10.559998,38.149994},
+			new NSArray(2) {0,32.940002},
+			new NSArray(2) {-9.789978,26.399994}
+		},
+		new NSArray(8) {
+			new NSArray(2) {-18.640015,18.640015},
+			new NSArray(2) {-26.400024,9.7900085},
+			new NSArray(2) {-32.940002,0},
+			new NSArray(2) {-38.150024,-10.559998},
+			new NSArray(2) {-41.934998,-21.704987},
+			new NSArray(2) {-44.22998,-33.255005},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {-9.789978,26.399994}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {-44.22998,-33.255005}
+		}
+		});
+	}
+
+	public static void rock_pie_quarter_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(3) {
+		new NSArray(8) {
+			new NSArray(2) {-24.855011,24.85498},
+			new NSArray(2) {-32.76001,16.125},
+			new NSArray(2) {-39.774994,6.6699829},
+			new NSArray(2) {-45.829987,-3.4299927},
+			new NSArray(2) {-50.86499,-14.080017},
+			new NSArray(2) {60,-60},
+			new NSArray(2) {-6.6700134,39.775024},
+			new NSArray(2) {-16.125,32.76001}
+		},
+		new NSArray(8) {
+			new NSArray(2) {25.165009,54.835022},
+			new NSArray(2) {14.079987,50.86499},
+			new NSArray(2) {3.4299927,45.830017},
+			new NSArray(2) {-6.6700134,39.775024},
+			new NSArray(2) {60,-60},
+			new NSArray(2) {60,60},
+			new NSArray(2) {48.23999,59.419983},
+			new NSArray(2) {36.590027,57.695007}
+		},
+		new NSArray(6) {
+			new NSArray(2) {-60,-60},
+			new NSArray(2) {60,-60},
+			new NSArray(2) {-50.86499,-14.080017},
+			new NSArray(2) {-54.834991,-25.164978},
+			new NSArray(2) {-57.695007,-36.590027},
+			new NSArray(2) {-59.420013,-48.23999}
+		}
+		});
+	}
+
+	public static void rock_pyramid_xs(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(3) {
+			new NSArray(2) {-7.5,-4},
+			new NSArray(2) {7.5,-4},
+			new NSArray(2) {0,4}
+		}
+		});
+	}
+
+	public static void rock_pyramid_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(3) {
+			new NSArray(2) {-15,-8},
+			new NSArray(2) {15,-8},
+			new NSArray(2) {0,8}
+		}
+		});
+	}
+
+	public static void rock_pyramid_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(3) {
+			new NSArray(2) {-30,-15.5},
+			new NSArray(2) {30,-15.5},
+			new NSArray(2) {0,15.5}
+		}
+		});
+	}
+
+	public static void rock_pyramid_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(3) {
+			new NSArray(2) {-45,-23},
+			new NSArray(2) {45,-23},
+			new NSArray(2) {0,23}
+		}
+		});
+	}
+
+	public static void rock_pyramid_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(3) {
+			new NSArray(2) {-60,-30.5},
+			new NSArray(2) {60,-30.5},
+			new NSArray(2) {0,30.5}
+		}
+		});
+	}
+
+	public static void rock_ramp_xxs_left(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(4) {
+		new NSArray(3) {
+			new NSArray(2) {-22.5,-7.5},
+			new NSArray(2) {22.5,-7.5},
+			new NSArray(2) {3.1599731,-4.8250122}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-22.5,-7.5},
+			new NSArray(2) {3.1599731,-4.8250122},
+			new NSArray(2) {-7.2199707,-1.5499878}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-22.5,-7.5},
+			new NSArray(2) {-14.974976,2.2349854},
+			new NSArray(2) {-22.5,7.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-22.5,-7.5},
+			new NSArray(2) {-7.2199707,-1.5499878},
+			new NSArray(2) {-14.974976,2.2349854}
+		}
+		});
+	}
+
+	public static void rock_ramp_xs_left(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(8) {
+			new NSArray(2) {-30,-7.5},
+			new NSArray(2) {30,-7.5},
+			new NSArray(2) {20.5,-3.4699707},
+			new NSArray(2) {10.825012,0.075012207},
+			new NSArray(2) {0.93499756,2.9849854},
+			new NSArray(2) {-9.1199951,5.2349854},
+			new NSArray(2) {-19.304993,6.8250122},
+			new NSArray(2) {-30,7.5}
+		}
+		});
+	}
+
+	public static void rock_ramp_s_left(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(6) {
+		new NSArray(4) {
+			new NSArray(2) {-45.5,-15},
+			new NSArray(2) {0,-15},
+			new NSArray(2) {-7.8499756,-5.3150024},
+			new NSArray(2) {-21.97998,0.30999756}
+		},
+		new NSArray(3) {
+			new NSArray(2) {0,-15},
+			new NSArray(2) {45.5,-15},
+			new NSArray(2) {23.025024,-12.61499}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-15},
+			new NSArray(2) {-35,7.375},
+			new NSArray(2) {-45.5,15}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-15},
+			new NSArray(2) {-21.97998,0.30999756},
+			new NSArray(2) {-35,7.375}
+		},
+		new NSArray(3) {
+			new NSArray(2) {0,-15},
+			new NSArray(2) {23.025024,-12.61499},
+			new NSArray(2) {6.5050049,-9.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {0,-15},
+			new NSArray(2) {6.5050049,-9.5},
+			new NSArray(2) {-7.8499756,-5.3150024}
+		}
+		});
+	}
+
+	public static void rock_ramp_m_left(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(7) {
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {27.679993,-26.584991},
+			new NSArray(2) {12.049988,-21.475006}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {27.679993,-26.584991}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {-38.700012,19.040009},
+			new NSArray(2) {-45.5,30}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {-28.330017,6.2749939},
+			new NSArray(2) {-38.700012,19.040009}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {-16.244995,-4.875},
+			new NSArray(2) {-28.330017,6.2749939}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {-2.6950073,-14.190002},
+			new NSArray(2) {-16.244995,-4.875}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {12.049988,-21.475006},
+			new NSArray(2) {-2.6950073,-14.190002}
+		}
+		});
+	}
+
+	public static void rock_ramp_l_left(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(9) {
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {29.369995,-41.184998},
+			new NSArray(2) {11.73999,-34.11499}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {29.369995,-41.184998}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {-40.924988,25.845001},
+			new NSArray(2) {-45,45}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {-37.01001,15.505005},
+			new NSArray(2) {-40.924988,25.845001}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {-32.434998,6.585022},
+			new NSArray(2) {-37.01001,15.505005}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {-24.164978,-6.039978},
+			new NSArray(2) {-32.434998,6.585022}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {-14.049988,-16.705017},
+			new NSArray(2) {-24.164978,-6.039978}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {-5.5599976,-23.559998},
+			new NSArray(2) {-14.049988,-16.705017}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {11.73999,-34.11499},
+			new NSArray(2) {-5.5599976,-23.559998}
+		}
+		});
+	}
+
+	public static void rock_ramp_xxs_right(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(4) {
+		new NSArray(3) {
+			new NSArray(2) {14.974976,2.2349854},
+			new NSArray(2) {22.5,-7.5},
+			new NSArray(2) {22.5,7.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {7.2199707,-1.5499878},
+			new NSArray(2) {22.5,-7.5},
+			new NSArray(2) {14.974976,2.2349854}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-3.1599731,-4.8250122},
+			new NSArray(2) {22.5,-7.5},
+			new NSArray(2) {7.2199707,-1.5499878}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-22.5,-7.5},
+			new NSArray(2) {22.5,-7.5},
+			new NSArray(2) {-3.1599731,-4.8250122}
+		}
+		});
+	}
+
+	public static void rock_ramp_xs_right(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(8) {
+			new NSArray(2) {19.304993,6.8250122},
+			new NSArray(2) {9.1199951,5.2349854},
+			new NSArray(2) {-0.93499756,2.9849854},
+			new NSArray(2) {-10.825012,0.075012207},
+			new NSArray(2) {-20.5,-3.4699707},
+			new NSArray(2) {-30,-7.5},
+			new NSArray(2) {30,-7.5},
+			new NSArray(2) {30,7.5}
+		}
+		});
+	}
+
+	public static void rock_ramp_s_right(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(6) {
+		new NSArray(3) {
+			new NSArray(2) {35,7.375},
+			new NSArray(2) {45.5,-15},
+			new NSArray(2) {45.5,15}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-23.025024,-12.61499},
+			new NSArray(2) {0,-15},
+			new NSArray(2) {-6.5050049,-9.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-15},
+			new NSArray(2) {0,-15},
+			new NSArray(2) {-23.025024,-12.61499}
+		},
+		new NSArray(3) {
+			new NSArray(2) {21.97998,0.30999756},
+			new NSArray(2) {45.5,-15},
+			new NSArray(2) {35,7.375}
+		},
+		new NSArray(4) {
+			new NSArray(2) {7.8499756,-5.3150024},
+			new NSArray(2) {0,-15},
+			new NSArray(2) {45.5,-15},
+			new NSArray(2) {21.97998,0.30999756}
+		},
+		new NSArray(3) {
+			new NSArray(2) {0,-15},
+			new NSArray(2) {7.8499756,-5.3150024},
+			new NSArray(2) {-6.5050049,-9.5}
+		}
+		});
+	}
+
+	public static void rock_ramp_m_right(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(7) {
+		new NSArray(3) {
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {45.5,30},
+			new NSArray(2) {38.700012,19.040009}
+		},
+		new NSArray(3) {
+			new NSArray(2) {28.330017,6.2749939},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {38.700012,19.040009}
+		},
+		new NSArray(3) {
+			new NSArray(2) {16.244995,-4.875},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {28.330017,6.2749939}
+		},
+		new NSArray(3) {
+			new NSArray(2) {2.6950073,-14.190002},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {16.244995,-4.875}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {-27.679993,-26.585022}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-27.679993,-26.585022},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {-12.049988,-21.474976}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-12.049988,-21.474976},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {2.6950073,-14.190002}
+		}
+		});
+	}
+
+	public static void rock_ramp_l_right(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(9) {
+		new NSArray(3) {
+			new NSArray(2) {45,-45},
+			new NSArray(2) {45,45},
+			new NSArray(2) {40.924988,25.845001}
+		},
+		new NSArray(3) {
+			new NSArray(2) {32.434998,6.5849915},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {37.005005,15.505005}
+		},
+		new NSArray(3) {
+			new NSArray(2) {24.164978,-6.0400085},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {32.434998,6.5849915}
+		},
+		new NSArray(3) {
+			new NSArray(2) {14.049988,-16.704987},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {24.164978,-6.0400085}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-11.73999,-34.11499},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {5.5599976,-23.559998}
+		},
+		new NSArray(3) {
+			new NSArray(2) {5.5599976,-23.559998},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {14.049988,-16.704987}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {-29.369995,-41.184998}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-29.369995,-41.184998},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {-11.73999,-34.11499}
+		},
+		new NSArray(3) {
+			new NSArray(2) {37.005005,15.505005},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {40.924988,25.845001}
+		}
+		});
+	}
+
+	public static void sandstone_cube_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-30,30},
+			new NSArray(2) {-30,-30},
+			new NSArray(2) {30,-30},
+			new NSArray(2) {30,30}
+		}
+		});
+	}
+
+	public static void sandstone_curve_eighth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(4) {
+		new NSArray(5) {
+			new NSArray(2) {24.169983,-2.7750244},
+			new NSArray(2) {42.35498,12.14502},
+			new NSArray(2) {31.744995,22.755005},
+			new NSArray(2) {15.835022,9.6950073},
+			new NSArray(2) {3.4199829,-13.86499}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-42.5,-8},
+			new NSArray(2) {-42.5,-23},
+			new NSArray(2) {-19.090027,-20.695007},
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {-22.015015,-5.9799805}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-22.015015,-5.9799805},
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {-2.3200073,-0.0050048828}
+		},
+		new NSArray(3) {
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {15.835022,9.6950073},
+			new NSArray(2) {-2.3200073,-0.0050048828}
+		}
+		});
+	}
+
+	public static void sandstone_curve_eighth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(9) {
+		new NSArray(5) {
+			new NSArray(2) {69.269989,15.650024},
+			new NSArray(2) {84.704987,29.794983},
+			new NSArray(2) {74.100006,40.400024},
+			new NSArray(2) {59.625,27.140015},
+			new NSArray(2) {52.660004,2.9050293}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-85,-40.5},
+			new NSArray(2) {-64.084991,-39.585022},
+			new NSArray(2) {-43.325012,-36.85498},
+			new NSArray(2) {-65.390015,-24.64502},
+			new NSArray(2) {-85,-25.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-65.390015,-24.64502},
+			new NSArray(2) {-43.325012,-36.85498},
+			new NSArray(2) {-22.88501,-32.320007},
+			new NSArray(2) {-45.929993,-22.080017}
+		},
+		new NSArray(4) {
+			new NSArray(2) {52.660004,2.9050293},
+			new NSArray(2) {59.625,27.140015},
+			new NSArray(2) {44.054993,15.190002},
+			new NSArray(2) {35,-8.3449707}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-45.929993,-22.080017},
+			new NSArray(2) {-22.88501,-32.320007},
+			new NSArray(2) {-2.9150085,-26.025024},
+			new NSArray(2) {-26.765015,-17.835022}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-26.765015,-17.835022},
+			new NSArray(2) {-2.9150085,-26.025024},
+			new NSArray(2) {-8.0450134,-11.929993}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-2.9150085,-26.025024},
+			new NSArray(2) {16.429993,-18.015015},
+			new NSArray(2) {35,-8.3449707},
+			new NSArray(2) {10.089996,-4.4199829},
+			new NSArray(2) {-8.0450134,-11.929993}
+		},
+		new NSArray(3) {
+			new NSArray(2) {10.089996,-4.4199829},
+			new NSArray(2) {35,-8.3449707},
+			new NSArray(2) {27.5,4.6450195}
+		},
+		new NSArray(3) {
+			new NSArray(2) {35,-8.3449707},
+			new NSArray(2) {44.054993,15.190002},
+			new NSArray(2) {27.5,4.6450195}
+		}
+		});
+	}
+
+	public static void sandstone_curve_fourth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(7) {
+		new NSArray(5) {
+			new NSArray(2) {57.695007,36.590027},
+			new NSArray(2) {60,60},
+			new NSArray(2) {45,60},
+			new NSArray(2) {42.36499,36.63501},
+			new NSArray(2) {50.86499,14.080017}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-60,-45},
+			new NSArray(2) {-60,-60},
+			new NSArray(2) {-36.589996,-57.695007},
+			new NSArray(2) {-14.079987,-50.86499},
+			new NSArray(2) {-36.63501,-42.36499}
+		},
+		new NSArray(4) {
+			new NSArray(2) {34.599976,14.440002},
+			new NSArray(2) {39.775024,-6.6699829},
+			new NSArray(2) {50.86499,14.080017},
+			new NSArray(2) {42.36499,36.63501}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-36.63501,-42.36499},
+			new NSArray(2) {-14.079987,-50.86499},
+			new NSArray(2) {6.6700134,-39.775024},
+			new NSArray(2) {-14.440002,-34.599976}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-14.440002,-34.599976},
+			new NSArray(2) {6.6700134,-39.775024},
+			new NSArray(2) {24.855011,-24.85498},
+			new NSArray(2) {5.4649963,-22.090027}
+		},
+		new NSArray(4) {
+			new NSArray(2) {5.4649963,-22.090027},
+			new NSArray(2) {24.855011,-24.85498},
+			new NSArray(2) {39.775024,-6.6699829},
+			new NSArray(2) {22.089996,-5.4650269}
+		},
+		new NSArray(3) {
+			new NSArray(2) {22.089996,-5.4650269},
+			new NSArray(2) {39.775024,-6.6699829},
+			new NSArray(2) {34.599976,14.440002}
+		}
+		});
+	}
+
+	public static void sandstone_curve_fourth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(15) {
+		new NSArray(5) {
+			new NSArray(2) {118.845,96.475006},
+			new NSArray(2) {120,120},
+			new NSArray(2) {105,120},
+			new NSArray(2) {103.765,96.480011},
+			new NSArray(2) {115.39,73.179993}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-120,-105},
+			new NSArray(2) {-120,-120},
+			new NSArray(2) {-96.474998,-118.84497},
+			new NSArray(2) {-73.18,-115.39001},
+			new NSArray(2) {-96.479996,-103.76501}
+		},
+		new NSArray(4) {
+			new NSArray(2) {109.66499,50.329987},
+			new NSArray(2) {115.39,73.179993},
+			new NSArray(2) {103.765,96.480011},
+			new NSArray(2) {100.08501,73.220001}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-96.479996,-103.76501},
+			new NSArray(2) {-73.18,-115.39001},
+			new NSArray(2) {-50.330002,-109.66498},
+			new NSArray(2) {-73.220001,-100.08502}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-73.220001,-100.08502},
+			new NSArray(2) {-50.330002,-109.66498},
+			new NSArray(2) {-28.154999,-101.72998},
+			new NSArray(2) {-50.470001,-93.98999}
+		},
+		new NSArray(4) {
+			new NSArray(2) {101.73,28.154999},
+			new NSArray(2) {109.66499,50.329987},
+			new NSArray(2) {100.08501,73.220001},
+			new NSArray(2) {93.990005,50.470001}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-50.470001,-93.98999},
+			new NSArray(2) {-28.154999,-101.72998},
+			new NSArray(2) {-6.8649979,-91.659973},
+			new NSArray(2) {-28.485001,-85.549988}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-28.485001,-85.549988},
+			new NSArray(2) {-6.8649979,-91.659973},
+			new NSArray(2) {13.335007,-79.554993},
+			new NSArray(2) {-7.5,-74.85498}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-7.5,-74.85498},
+			new NSArray(2) {13.335007,-79.554993},
+			new NSArray(2) {32.255005,-65.525024},
+			new NSArray(2) {12.25,-62.030029}
+		},
+		new NSArray(5) {
+			new NSArray(2) {30.554993,-47.210022},
+			new NSArray(2) {32.255005,-65.525024},
+			new NSArray(2) {49.705002,-49.705017},
+			new NSArray(2) {65.524994,-32.255005},
+			new NSArray(2) {47.210007,-30.554993}
+		},
+		new NSArray(3) {
+			new NSArray(2) {12.25,-62.030029},
+			new NSArray(2) {32.255005,-65.525024},
+			new NSArray(2) {30.554993,-47.210022}
+		},
+		new NSArray(4) {
+			new NSArray(2) {47.210007,-30.554993},
+			new NSArray(2) {65.524994,-32.255005},
+			new NSArray(2) {79.554993,-13.335022},
+			new NSArray(2) {62.029999,-12.25}
+		},
+		new NSArray(4) {
+			new NSArray(2) {62.029999,-12.25},
+			new NSArray(2) {79.554993,-13.335022},
+			new NSArray(2) {91.660004,6.8649902},
+			new NSArray(2) {74.854996,7.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {91.660004,6.8649902},
+			new NSArray(2) {101.73,28.154999},
+			new NSArray(2) {85.550003,28.484985},
+			new NSArray(2) {74.854996,7.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {85.550003,28.484985},
+			new NSArray(2) {101.73,28.154999},
+			new NSArray(2) {93.990005,50.470001}
+		}
+		});
+	}
+
+	public static void sandstone_curve_sixteenth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {7.5599976,-7.4099731},
+			new NSArray(2) {22.419983,-2.3649902},
+			new NSArray(2) {16.679993,11.48999},
+			new NSArray(2) {-3.0150146,5.5200195},
+			new NSArray(2) {-7.835022,-10.474976}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-23.5,-11.5},
+			new NSArray(2) {-7.835022,-10.474976},
+			new NSArray(2) {-3.0150146,5.5200195},
+			new NSArray(2) {-23.5,3.5}
+		}
+		});
+	}
+
+	public static void sandstone_curve_sixteenth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(5) {
+		new NSArray(5) {
+			new NSArray(2) {30.64502,-3.7650146},
+			new NSArray(2) {45.344971,1.769989},
+			new NSArray(2) {39.60498,15.625},
+			new NSArray(2) {23.030029,9.5100098},
+			new NSArray(2) {15.61499,-8.3200073}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-46.5,-16.5},
+			new NSArray(2) {-30.804993,-15.984985},
+			new NSArray(2) {-15.174988,-14.445007},
+			new NSArray(2) {-28.844971,-0.80499268},
+			new NSArray(2) {-46.5,-1.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-15.174988,-14.445007},
+			new NSArray(2) {0.32000732,-11.890015},
+			new NSArray(2) {-11.299988,1.269989},
+			new NSArray(2) {-28.844971,-0.80499268}
+		},
+		new NSArray(4) {
+			new NSArray(2) {15.61499,-8.3200073},
+			new NSArray(2) {23.030029,9.5100098},
+			new NSArray(2) {6.0250244,4.7149963},
+			new NSArray(2) {0.32000732,-11.890015}
+		},
+		new NSArray(3) {
+			new NSArray(2) {0.32000732,-11.890015},
+			new NSArray(2) {6.0250244,4.7149963},
+			new NSArray(2) {-11.299988,1.269989}
+		}
+		});
+	}
+
+	public static void sandstone_flat_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-45,7.5},
+			new NSArray(2) {-45,-7.5},
+			new NSArray(2) {45,-7.5},
+			new NSArray(2) {45,7.5}
+		}
+		});
+	}
+
+	public static void sandstone_flat_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-60,7.5},
+			new NSArray(2) {-60,-7.5},
+			new NSArray(2) {60,-7.5},
+			new NSArray(2) {60,7.5}
+		}
+		});
+	}
+
+	public static void sandstone_flat_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-120,7.5},
+			new NSArray(2) {-120,-7.5},
+			new NSArray(2) {120,-7.5},
+			new NSArray(2) {120,7.5}
+		}
+		});
+	}
+
+	public static void wood_bump_xs(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(5) {
+			new NSArray(2) {0,3.5},
+			new NSArray(2) {-5.3049927,1.3049927},
+			new NSArray(2) {-7.5,-4},
+			new NSArray(2) {7.5,-4},
+			new NSArray(2) {5.3049927,1.3049927}
+		}
+		});
+	}
+
+	public static void wood_bump_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(5) {
+			new NSArray(2) {-10.60498,2.605011},
+			new NSArray(2) {-15,-8},
+			new NSArray(2) {15,-8},
+			new NSArray(2) {10.60498,2.605011},
+			new NSArray(2) {0,7}
+		}
+		});
+	}
+
+	public static void wood_bump_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(8) {
+			new NSArray(2) {11.47998,12.715027},
+			new NSArray(2) {0,15},
+			new NSArray(2) {-11.47998,12.715027},
+			new NSArray(2) {-27.715027,-3.5200195},
+			new NSArray(2) {-30,-15},
+			new NSArray(2) {30,-15},
+			new NSArray(2) {27.715027,-3.5200195},
+			new NSArray(2) {21.215027,6.2150269}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-27.715027,-3.5200195},
+			new NSArray(2) {-11.47998,12.715027},
+			new NSArray(2) {-21.215027,6.2150269}
+		}
+		});
+	}
+
+	public static void wood_bump_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(3) {
+		new NSArray(8) {
+			new NSArray(2) {11.64502,20.964996},
+			new NSArray(2) {0,22.5},
+			new NSArray(2) {-11.64502,20.964996},
+			new NSArray(2) {-43.465027,-10.855011},
+			new NSArray(2) {43.465027,-10.855011},
+			new NSArray(2) {38.969971,0},
+			new NSArray(2) {31.820007,9.3200073},
+			new NSArray(2) {22.5,16.470001}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-43.465027,-10.855011},
+			new NSArray(2) {-45,-22.5},
+			new NSArray(2) {45,-22.5},
+			new NSArray(2) {43.465027,-10.855011}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-38.969971,0},
+			new NSArray(2) {-43.465027,-10.855011},
+			new NSArray(2) {-11.64502,20.964996},
+			new NSArray(2) {-22.5,16.470001},
+			new NSArray(2) {-31.820007,9.3200073}
+		}
+		});
+	}
+
+	public static void wood_cube_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-15,15},
+			new NSArray(2) {-15,-15},
+			new NSArray(2) {15,-15},
+			new NSArray(2) {15,15}
+		}
+		});
+	}
+
+	public static void wood_cube_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-30,30},
+			new NSArray(2) {-30,-30},
+			new NSArray(2) {30,-30},
+			new NSArray(2) {30,30}
+		}
+		});
+	}
+
+	public static void wood_cube_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-45,45},
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {45,45}
+		}
+		});
+	}
+
+	public static void wood_cube_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-60,60},
+			new NSArray(2) {-60,-60},
+			new NSArray(2) {60,-60},
+			new NSArray(2) {60,60}
+		}
+		});
+	}
+
+	public static void wood_curve_eighth_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {0.97998047,-7.7150269},
+			new NSArray(2) {10.715027,-1.2150269},
+			new NSArray(2) {0.10498047,9.3950195},
+			new NSArray(2) {-4.7600098,6.1400146},
+			new NSArray(2) {-10.5,-10}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-10.5,-10},
+			new NSArray(2) {-4.7600098,6.1400146},
+			new NSArray(2) {-10.5,5}
+		}
+		});
+	}
+
+	public static void wood_curve_eighth_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {-4.2800293,3.9250031},
+			new NSArray(2) {-21.5,-14.5},
+			new NSArray(2) {1.460022,-9.9349976},
+			new NSArray(2) {20.924988,3.0749969},
+			new NSArray(2) {10.320007,13.68}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-21.5,-14.5},
+			new NSArray(2) {-4.2800293,3.9250031},
+			new NSArray(2) {-21.5,0.5}
+		}
+		});
+	}
+
+	public static void wood_curve_eighth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(4) {
+		new NSArray(5) {
+			new NSArray(2) {24.169983,-2.7750244},
+			new NSArray(2) {42.35498,12.14502},
+			new NSArray(2) {31.744995,22.755005},
+			new NSArray(2) {15.835022,9.6950073},
+			new NSArray(2) {3.4199829,-13.86499}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-42.5,-8},
+			new NSArray(2) {-42.5,-23},
+			new NSArray(2) {-19.090027,-20.695007},
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {-22.015015,-5.9799805}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-22.015015,-5.9799805},
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {-2.3200073,-0.0050048828}
+		},
+		new NSArray(3) {
+			new NSArray(2) {3.4199829,-13.86499},
+			new NSArray(2) {15.835022,9.6950073},
+			new NSArray(2) {-2.3200073,-0.0050048828}
+		}
+		});
+	}
+
+	public static void wood_curve_eighth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(9) {
+		new NSArray(5) {
+			new NSArray(2) {69.269989,15.650024},
+			new NSArray(2) {84.704987,29.794983},
+			new NSArray(2) {74.100006,40.400024},
+			new NSArray(2) {59.625,27.140015},
+			new NSArray(2) {52.660004,2.9050293}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-85,-40.5},
+			new NSArray(2) {-64.084991,-39.585022},
+			new NSArray(2) {-43.325012,-36.85498},
+			new NSArray(2) {-65.390015,-24.64502},
+			new NSArray(2) {-85,-25.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-65.390015,-24.64502},
+			new NSArray(2) {-43.325012,-36.85498},
+			new NSArray(2) {-22.88501,-32.320007},
+			new NSArray(2) {-45.929993,-22.080017}
+		},
+		new NSArray(4) {
+			new NSArray(2) {52.660004,2.9050293},
+			new NSArray(2) {59.625,27.140015},
+			new NSArray(2) {44.054993,15.190002},
+			new NSArray(2) {35,-8.3449707}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-45.929993,-22.080017},
+			new NSArray(2) {-22.88501,-32.320007},
+			new NSArray(2) {-2.9150085,-26.025024},
+			new NSArray(2) {-26.765015,-17.835022}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-26.765015,-17.835022},
+			new NSArray(2) {-2.9150085,-26.025024},
+			new NSArray(2) {-8.0450134,-11.929993}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-2.9150085,-26.025024},
+			new NSArray(2) {16.429993,-18.015015},
+			new NSArray(2) {35,-8.3449707},
+			new NSArray(2) {10.089996,-4.4199829},
+			new NSArray(2) {-8.0450134,-11.929993}
+		},
+		new NSArray(3) {
+			new NSArray(2) {10.089996,-4.4199829},
+			new NSArray(2) {35,-8.3449707},
+			new NSArray(2) {27.5,4.6450195}
+		},
+		new NSArray(3) {
+			new NSArray(2) {35,-8.3449707},
+			new NSArray(2) {44.054993,15.190002},
+			new NSArray(2) {27.5,4.6450195}
+		}
+		});
+	}
+
+	public static void wood_curve_fourth_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(4) {
+			new NSArray(2) {6.2150269,-6.2150269},
+			new NSArray(2) {15,15},
+			new NSArray(2) {0,15},
+			new NSArray(2) {-4.3950195,4.3950195}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-15,0},
+			new NSArray(2) {-15,-15},
+			new NSArray(2) {6.2150269,-6.2150269},
+			new NSArray(2) {-4.3950195,4.3950195}
+		}
+		});
+	}
+
+	public static void wood_curve_fourth_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(3) {
+		new NSArray(5) {
+			new NSArray(2) {25.434998,7.039978},
+			new NSArray(2) {30,30},
+			new NSArray(2) {15,30},
+			new NSArray(2) {8.9699707,7.5},
+			new NSArray(2) {12.424988,-12.424988}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-30,-15},
+			new NSArray(2) {-30,-30},
+			new NSArray(2) {-7.039978,-25.434998},
+			new NSArray(2) {12.424988,-12.424988},
+			new NSArray(2) {-7.5,-8.9699707}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-7.5,-8.9699707},
+			new NSArray(2) {12.424988,-12.424988},
+			new NSArray(2) {8.9699707,7.5}
+		}
+		});
+	}
+
+	public static void wood_curve_fourth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(7) {
+		new NSArray(5) {
+			new NSArray(2) {57.695007,36.589996},
+			new NSArray(2) {60,60},
+			new NSArray(2) {45,60},
+			new NSArray(2) {42.36499,36.63501},
+			new NSArray(2) {50.86499,14.079987}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-60,-45},
+			new NSArray(2) {-60,-60},
+			new NSArray(2) {-36.589996,-57.695007},
+			new NSArray(2) {-14.080017,-50.86499},
+			new NSArray(2) {-36.63501,-42.36499}
+		},
+		new NSArray(4) {
+			new NSArray(2) {34.599976,14.440002},
+			new NSArray(2) {39.775024,-6.6700134},
+			new NSArray(2) {50.86499,14.079987},
+			new NSArray(2) {42.36499,36.63501}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-36.63501,-42.36499},
+			new NSArray(2) {-14.080017,-50.86499},
+			new NSArray(2) {6.6699829,-39.774994},
+			new NSArray(2) {-14.440002,-34.600006}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-14.440002,-34.600006},
+			new NSArray(2) {6.6699829,-39.774994},
+			new NSArray(2) {24.85498,-24.855011},
+			new NSArray(2) {5.4650269,-22.089996}
+		},
+		new NSArray(4) {
+			new NSArray(2) {5.4650269,-22.089996},
+			new NSArray(2) {24.85498,-24.855011},
+			new NSArray(2) {39.775024,-6.6700134},
+			new NSArray(2) {22.090027,-5.4649963}
+		},
+		new NSArray(3) {
+			new NSArray(2) {22.090027,-5.4649963},
+			new NSArray(2) {39.775024,-6.6700134},
+			new NSArray(2) {34.599976,14.440002}
+		}
+		});
+	}
+
+	public static void wood_curve_fourth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(15) {
+		new NSArray(5) {
+			new NSArray(2) {118.845,96.475006},
+			new NSArray(2) {120,120},
+			new NSArray(2) {105,120},
+			new NSArray(2) {103.765,96.479996},
+			new NSArray(2) {115.39,73.179993}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-120,-105},
+			new NSArray(2) {-120,-120},
+			new NSArray(2) {-96.474998,-118.845},
+			new NSArray(2) {-73.18,-115.39001},
+			new NSArray(2) {-96.479996,-103.76501}
+		},
+		new NSArray(4) {
+			new NSArray(2) {109.66499,50.330002},
+			new NSArray(2) {115.39,73.179993},
+			new NSArray(2) {103.765,96.479996},
+			new NSArray(2) {100.08501,73.220001}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-96.479996,-103.76501},
+			new NSArray(2) {-73.18,-115.39001},
+			new NSArray(2) {-50.330002,-109.66501},
+			new NSArray(2) {-73.220001,-100.08499}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-73.220001,-100.08499},
+			new NSArray(2) {-50.330002,-109.66501},
+			new NSArray(2) {-28.154999,-101.73001},
+			new NSArray(2) {-50.470001,-93.98999}
+		},
+		new NSArray(4) {
+			new NSArray(2) {101.73,28.154999},
+			new NSArray(2) {109.66499,50.330002},
+			new NSArray(2) {100.08501,73.220001},
+			new NSArray(2) {93.990005,50.470001}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-50.470001,-93.98999},
+			new NSArray(2) {-28.154999,-101.73001},
+			new NSArray(2) {-6.8649979,-91.660004},
+			new NSArray(2) {-28.485001,-85.549988}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-28.485001,-85.549988},
+			new NSArray(2) {-6.8649979,-91.660004},
+			new NSArray(2) {13.335007,-79.554993},
+			new NSArray(2) {-7.5,-74.855011}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-7.5,-74.855011},
+			new NSArray(2) {13.335007,-79.554993},
+			new NSArray(2) {32.255005,-65.524994},
+			new NSArray(2) {12.25,-62.029999}
+		},
+		new NSArray(5) {
+			new NSArray(2) {30.554993,-47.209991},
+			new NSArray(2) {32.255005,-65.524994},
+			new NSArray(2) {49.705002,-49.704987},
+			new NSArray(2) {65.524994,-32.255005},
+			new NSArray(2) {47.210007,-30.554993}
+		},
+		new NSArray(3) {
+			new NSArray(2) {12.25,-62.029999},
+			new NSArray(2) {32.255005,-65.524994},
+			new NSArray(2) {30.554993,-47.209991}
+		},
+		new NSArray(4) {
+			new NSArray(2) {47.210007,-30.554993},
+			new NSArray(2) {65.524994,-32.255005},
+			new NSArray(2) {79.554993,-13.334991},
+			new NSArray(2) {62.029999,-12.25}
+		},
+		new NSArray(4) {
+			new NSArray(2) {62.029999,-12.25},
+			new NSArray(2) {79.554993,-13.334991},
+			new NSArray(2) {91.660004,6.8649902},
+			new NSArray(2) {74.854996,7.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {91.660004,6.8649902},
+			new NSArray(2) {101.73,28.154999},
+			new NSArray(2) {85.550003,28.485001},
+			new NSArray(2) {74.854996,7.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {85.550003,28.485001},
+			new NSArray(2) {101.73,28.154999},
+			new NSArray(2) {93.990005,50.470001}
+		}
+		});
+	}
+
+	public static void wood_curve_sixteenth_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {-0.65002441,-7.4249878},
+			new NSArray(2) {4.9799805,-5.7149963},
+			new NSArray(2) {-0.76000977,8.1400146},
+			new NSArray(2) {-3.5750122,7.2900085},
+			new NSArray(2) {-6.5,-8}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-6.5,-8},
+			new NSArray(2) {-3.5750122,7.2900085},
+			new NSArray(2) {-6.5,7}
+		}
+		});
+	}
+
+	public static void wood_curve_sixteenth_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {-0.29498291,-8.3449707},
+			new NSArray(2) {10.960022,-4.9349976},
+			new NSArray(2) {5.2199707,8.9249878},
+			new NSArray(2) {-3.2199707,6.3649902},
+			new NSArray(2) {-12,-9.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-12,-9.5},
+			new NSArray(2) {-3.2199707,6.3649902},
+			new NSArray(2) {-12,5.5}
+		}
+		});
+	}
+
+	public static void wood_curve_sixteenth_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(5) {
+			new NSArray(2) {7.5599976,-7.4099731},
+			new NSArray(2) {22.419983,-2.3649902},
+			new NSArray(2) {16.679993,11.48999},
+			new NSArray(2) {-3.0150146,5.5200195},
+			new NSArray(2) {-7.835022,-10.474976}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-23.5,-11.5},
+			new NSArray(2) {-7.835022,-10.474976},
+			new NSArray(2) {-3.0150146,5.5200195},
+			new NSArray(2) {-23.5,3.5}
+		}
+		});
+	}
+
+	public static void wood_curve_sixteenth_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(5) {
+		new NSArray(5) {
+			new NSArray(2) {30.644989,-3.7650146},
+			new NSArray(2) {45.344971,1.7700195},
+			new NSArray(2) {39.60498,15.625},
+			new NSArray(2) {23.029999,9.5150146},
+			new NSArray(2) {15.61499,-8.3200073}
+		},
+		new NSArray(5) {
+			new NSArray(2) {-46.5,-16.5},
+			new NSArray(2) {-30.804993,-15.984985},
+			new NSArray(2) {-15.174988,-14.445007},
+			new NSArray(2) {-28.845001,-0.80499268},
+			new NSArray(2) {-46.5,-1.5}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-15.174988,-14.445007},
+			new NSArray(2) {0.32000732,-11.890015},
+			new NSArray(2) {-11.299988,1.2700195},
+			new NSArray(2) {-28.845001,-0.80499268}
+		},
+		new NSArray(4) {
+			new NSArray(2) {15.61499,-8.3200073},
+			new NSArray(2) {23.029999,9.5150146},
+			new NSArray(2) {6.0249939,4.7150269},
+			new NSArray(2) {0.32000732,-11.890015}
+		},
+		new NSArray(3) {
+			new NSArray(2) {0.32000732,-11.890015},
+			new NSArray(2) {6.0249939,4.7150269},
+			new NSArray(2) {-11.299988,1.2700195}
+		}
+		});
+	}
+
+	public static void wood_flat_xs(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-7.5,7.5},
+			new NSArray(2) {-7.5,-7.5},
+			new NSArray(2) {7.5,-7.5},
+			new NSArray(2) {7.5,7.5}
+		}
+		});
+	}
+
+	public static void wood_flat_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-15,7.5},
+			new NSArray(2) {-15,-7.5},
+			new NSArray(2) {15,-7.5},
+			new NSArray(2) {15,7.5}
+		}
+		});
+	}
+
+	public static void wood_flat_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-30,7.5},
+			new NSArray(2) {-30,-7.5},
+			new NSArray(2) {30,-7.5},
+			new NSArray(2) {30,7.5}
+		}
+		});
+	}
+
+	public static void wood_flat_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-45,7.5},
+			new NSArray(2) {-45,-7.5},
+			new NSArray(2) {45,-7.5},
+			new NSArray(2) {45,7.5}
+		}
+		});
+	}
+
+	public static void wood_flat_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-60,7.5},
+			new NSArray(2) {-60,-7.5},
+			new NSArray(2) {60,-7.5},
+			new NSArray(2) {60,7.5}
+		}
+		});
+	}
+
+	public static void wood_flat_xxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-120,7.5},
+			new NSArray(2) {-120,-7.5},
+			new NSArray(2) {120,-7.5},
+			new NSArray(2) {120,7.5}
+		}
+		});
+	}
+
+	public static void wood_flat_xxxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-240,7.5},
+			new NSArray(2) {-240,-7.5},
+			new NSArray(2) {240,-7.5},
+			new NSArray(2) {240,7.5}
+		}
+		});
+	}
+
+	public static void wood_flat_xxxxl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {-480,7.5},
+			new NSArray(2) {-480,-7.5},
+			new NSArray(2) {480,-7.5},
+			new NSArray(2) {480,7.5}
+		}
+		});
+	}
+
+	public static void wood_hump_xs(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(5) {
+			new NSArray(2) {0,2.5},
+			new NSArray(2) {-4.25,1.3599854},
+			new NSArray(2) {-7.5,-2.5},
+			new NSArray(2) {7.5,-2.5},
+			new NSArray(2) {4.25,1.3599854}
+		}
+		});
+	}
+
+	public static void wood_hump_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(5) {
+			new NSArray(2) {0,4},
+			new NSArray(2) {-9.1550293,1.7150269},
+			new NSArray(2) {-15,-4},
+			new NSArray(2) {15,-4},
+			new NSArray(2) {9.1550293,1.7150269}
+		}
+		});
+	}
+
+	public static void wood_hump_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(7) {
+			new NSArray(2) {0,5},
+			new NSArray(2) {-10.210022,4.0150146},
+			new NSArray(2) {-20.039978,1.1049805},
+			new NSArray(2) {-30,-5},
+			new NSArray(2) {30,-5},
+			new NSArray(2) {20.039978,1.1049805},
+			new NSArray(2) {10.210022,4.0150146}
+		}
+		});
+	}
+
+	public static void wood_hump_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(8) {
+			new NSArray(2) {0,6},
+			new NSArray(2) {-12.125,5.2249756},
+			new NSArray(2) {-24.054993,2.9050293},
+			new NSArray(2) {-45,-6},
+			new NSArray(2) {45,-6},
+			new NSArray(2) {35.590027,-0.91998291},
+			new NSArray(2) {24.054993,2.9050293},
+			new NSArray(2) {12.125,5.2249756}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-6},
+			new NSArray(2) {-24.054993,2.9050293},
+			new NSArray(2) {-35.590027,-0.91998291}
+		}
+		});
+	}
+
+	public static void wood_pie_quarter_xs(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(4) {
+			new NSArray(2) {7.5,-7.5},
+			new NSArray(2) {7.5,7.5},
+			new NSArray(2) {-3.1049805,3.1049805},
+			new NSArray(2) {-7.5,-7.5}
+		}
+		});
+	}
+
+	public static void wood_pie_quarter_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(6) {
+			new NSArray(2) {15,-15},
+			new NSArray(2) {15,15},
+			new NSArray(2) {3.5200195,12.715027},
+			new NSArray(2) {-6.2150269,6.2150269},
+			new NSArray(2) {-12.715027,-3.5200195},
+			new NSArray(2) {-15,-15}
+		}
+		});
+	}
+
+	public static void wood_pie_quarter_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(2) {
+		new NSArray(8) {
+			new NSArray(2) {30,-30},
+			new NSArray(2) {30,30},
+			new NSArray(2) {18.294983,28.844971},
+			new NSArray(2) {7.039978,25.434998},
+			new NSArray(2) {-3.335022,19.890015},
+			new NSArray(2) {-12.424988,12.424988},
+			new NSArray(2) {-19.890015,3.335022},
+			new NSArray(2) {-25.434998,-7.039978}
+		},
+		new NSArray(4) {
+			new NSArray(2) {-30,-30},
+			new NSArray(2) {30,-30},
+			new NSArray(2) {-25.434998,-7.039978},
+			new NSArray(2) {-28.844971,-18.294983}
+		}
+		});
+	}
+
+	public static void wood_pie_quarter_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(3) {
+		new NSArray(7) {
+			new NSArray(2) {45,-45},
+			new NSArray(2) {45,45},
+			new NSArray(2) {33.255005,44.230011},
+			new NSArray(2) {21.705017,41.934998},
+			new NSArray(2) {10.559998,38.149994},
+			new NSArray(2) {0,32.940002},
+			new NSArray(2) {-9.789978,26.399994}
+		},
+		new NSArray(8) {
+			new NSArray(2) {-18.640015,18.640015},
+			new NSArray(2) {-26.400024,9.7900085},
+			new NSArray(2) {-32.940002,0},
+			new NSArray(2) {-38.150024,-10.559998},
+			new NSArray(2) {-41.934998,-21.704987},
+			new NSArray(2) {-44.22998,-33.255005},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {-9.789978,26.399994}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {-44.22998,-33.255005}
+		}
+		});
+	}
+
+	public static void wood_pie_quarter_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(3) {
+		new NSArray(8) {
+			new NSArray(2) {-24.85498,24.855011},
+			new NSArray(2) {-32.76001,16.125},
+			new NSArray(2) {-39.774994,6.6700134},
+			new NSArray(2) {-45.829987,-3.4299927},
+			new NSArray(2) {-50.86499,-14.079987},
+			new NSArray(2) {60,-60},
+			new NSArray(2) {-6.6699829,39.774994},
+			new NSArray(2) {-16.125,32.76001}
+		},
+		new NSArray(8) {
+			new NSArray(2) {25.164978,54.834991},
+			new NSArray(2) {14.080017,50.86499},
+			new NSArray(2) {3.4299927,45.829987},
+			new NSArray(2) {-6.6699829,39.774994},
+			new NSArray(2) {60,-60},
+			new NSArray(2) {60,60},
+			new NSArray(2) {48.23999,59.420013},
+			new NSArray(2) {36.590027,57.695007}
+		},
+		new NSArray(6) {
+			new NSArray(2) {-60,-60},
+			new NSArray(2) {60,-60},
+			new NSArray(2) {-50.86499,-14.079987},
+			new NSArray(2) {-54.834991,-25.165009},
+			new NSArray(2) {-57.695007,-36.589996},
+			new NSArray(2) {-59.420013,-48.23999}
+		}
+		});
+	}
+
+	public static void wood_pyramid_xs(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(3) {
+			new NSArray(2) {-7.5,-4},
+			new NSArray(2) {7.5,-4},
+			new NSArray(2) {0,4}
+		}
+		});
+	}
+
+	public static void wood_pyramid_s(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(3) {
+			new NSArray(2) {-15,-8},
+			new NSArray(2) {15,-8},
+			new NSArray(2) {0,8}
+		}
+		});
+	}
+
+	public static void wood_pyramid_m(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(3) {
+			new NSArray(2) {-30,-15.5},
+			new NSArray(2) {30,-15.5},
+			new NSArray(2) {0,15.5}
+		}
+		});
+	}
+
+	public static void wood_pyramid_l(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(3) {
+			new NSArray(2) {-45,-23},
+			new NSArray(2) {45,-23},
+			new NSArray(2) {0,23}
+		}
+		});
+	}
+
+	public static void wood_pyramid_xl(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(3) {
+			new NSArray(2) {-60,-30.5},
+			new NSArray(2) {60,-30.5},
+			new NSArray(2) {0,30.5}
+		}
+		});
+	}
+
+	public static void wood_ramp_xxs_left(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(4) {
+		new NSArray(3) {
+			new NSArray(2) {-22.5,-7.5},
+			new NSArray(2) {22.5,-7.5},
+			new NSArray(2) {3.1599731,-4.8250122}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-22.5,-7.5},
+			new NSArray(2) {3.1599731,-4.8250122},
+			new NSArray(2) {-7.2199707,-1.5499878}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-22.5,-7.5},
+			new NSArray(2) {-14.974976,2.2349854},
+			new NSArray(2) {-22.5,7.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-22.5,-7.5},
+			new NSArray(2) {-7.2199707,-1.5499878},
+			new NSArray(2) {-14.974976,2.2349854}
+		}
+		});
+	}
+
+	public static void wood_ramp_xs_left(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(8) {
+			new NSArray(2) {-30,-7.5},
+			new NSArray(2) {30,-7.5},
+			new NSArray(2) {20.5,-3.4699707},
+			new NSArray(2) {10.825012,0.075012207},
+			new NSArray(2) {0.93499756,2.9849854},
+			new NSArray(2) {-9.1199951,5.2349854},
+			new NSArray(2) {-19.304993,6.8250122},
+			new NSArray(2) {-30,7.5}
+		}
+		});
+	}
+
+	public static void wood_ramp_s_left(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(6) {
+		new NSArray(4) {
+			new NSArray(2) {-45.5,-15},
+			new NSArray(2) {0,-15},
+			new NSArray(2) {-7.8500061,-5.3150024},
+			new NSArray(2) {-21.980011,0.30999756}
+		},
+		new NSArray(3) {
+			new NSArray(2) {0,-15},
+			new NSArray(2) {45.5,-15},
+			new NSArray(2) {23.024994,-12.61499}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-15},
+			new NSArray(2) {-35,7.375},
+			new NSArray(2) {-45.5,15}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-15},
+			new NSArray(2) {-21.980011,0.30999756},
+			new NSArray(2) {-35,7.375}
+		},
+		new NSArray(3) {
+			new NSArray(2) {0,-15},
+			new NSArray(2) {23.024994,-12.61499},
+			new NSArray(2) {6.5050049,-9.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {0,-15},
+			new NSArray(2) {6.5050049,-9.5},
+			new NSArray(2) {-7.8500061,-5.3150024}
+		}
+		});
+	}
+
+	public static void wood_ramp_m_left(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(7) {
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {27.679993,-26.584991},
+			new NSArray(2) {12.049988,-21.475006}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {27.679993,-26.584991}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {-38.700012,19.040009},
+			new NSArray(2) {-45.5,30}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {-28.330017,6.2749939},
+			new NSArray(2) {-38.700012,19.040009}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {-16.244995,-4.875},
+			new NSArray(2) {-28.330017,6.2749939}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {-2.6950073,-14.190002},
+			new NSArray(2) {-16.244995,-4.875}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {12.049988,-21.475006},
+			new NSArray(2) {-2.6950073,-14.190002}
+		}
+		});
+	}
+
+	public static void wood_ramp_l_left(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(9) {
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {29.369995,-41.184998},
+			new NSArray(2) {11.73999,-34.115005}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {29.369995,-41.184998}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {-40.924988,25.845001},
+			new NSArray(2) {-45,45}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {-37.01001,15.505005},
+			new NSArray(2) {-40.924988,25.845001}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {-32.434998,6.5850067},
+			new NSArray(2) {-37.01001,15.505005}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {-24.164978,-6.0399933},
+			new NSArray(2) {-32.434998,6.5850067}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {-14.049988,-16.705002},
+			new NSArray(2) {-24.164978,-6.0399933}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {-5.5599976,-23.559998},
+			new NSArray(2) {-14.049988,-16.705002}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {11.73999,-34.115005},
+			new NSArray(2) {-5.5599976,-23.559998}
+		}
+		});
+	}
+
+	public static void wood_ramp_xxs_right(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(4) {
+		new NSArray(3) {
+			new NSArray(2) {14.974976,2.2349854},
+			new NSArray(2) {22.5,-7.5},
+			new NSArray(2) {22.5,7.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {7.2199707,-1.5499878},
+			new NSArray(2) {22.5,-7.5},
+			new NSArray(2) {14.974976,2.2349854}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-3.1599731,-4.8250122},
+			new NSArray(2) {22.5,-7.5},
+			new NSArray(2) {7.2199707,-1.5499878}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-22.5,-7.5},
+			new NSArray(2) {22.5,-7.5},
+			new NSArray(2) {-3.1599731,-4.8250122}
+		}
+		});
+	}
+
+	public static void wood_ramp_xs_right(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(1) {
+		new NSArray(8) {
+			new NSArray(2) {19.304993,6.8250122},
+			new NSArray(2) {9.1199951,5.2349854},
+			new NSArray(2) {-0.93499756,2.9849854},
+			new NSArray(2) {-10.825012,0.075012207},
+			new NSArray(2) {-20.5,-3.4699707},
+			new NSArray(2) {-30,-7.5},
+			new NSArray(2) {30,-7.5},
+			new NSArray(2) {30,7.5}
+		}
+		});
+	}
+
+	public static void wood_ramp_s_right(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(6) {
+		new NSArray(3) {
+			new NSArray(2) {35,7.375},
+			new NSArray(2) {45.5,-15},
+			new NSArray(2) {45.5,15}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-23.024994,-12.61499},
+			new NSArray(2) {0,-15},
+			new NSArray(2) {-6.5050049,-9.5}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-15},
+			new NSArray(2) {0,-15},
+			new NSArray(2) {-23.024994,-12.61499}
+		},
+		new NSArray(3) {
+			new NSArray(2) {21.980011,0.30999756},
+			new NSArray(2) {45.5,-15},
+			new NSArray(2) {35,7.375}
+		},
+		new NSArray(4) {
+			new NSArray(2) {7.8500061,-5.3150024},
+			new NSArray(2) {0,-15},
+			new NSArray(2) {45.5,-15},
+			new NSArray(2) {21.980011,0.30999756}
+		},
+		new NSArray(3) {
+			new NSArray(2) {0,-15},
+			new NSArray(2) {7.8500061,-5.3150024},
+			new NSArray(2) {-6.5050049,-9.5}
+		}
+		});
+	}
+
+	public static void wood_ramp_m_right(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(7) {
+		new NSArray(3) {
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {45.5,30},
+			new NSArray(2) {38.700012,19.039978}
+		},
+		new NSArray(3) {
+			new NSArray(2) {28.330017,6.2750244},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {38.700012,19.039978}
+		},
+		new NSArray(3) {
+			new NSArray(2) {16.244995,-4.875},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {28.330017,6.2750244}
+		},
+		new NSArray(3) {
+			new NSArray(2) {2.6950073,-14.190002},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {16.244995,-4.875}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45.5,-30},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {-27.679993,-26.585022}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-27.679993,-26.585022},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {-12.049988,-21.474976}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-12.049988,-21.474976},
+			new NSArray(2) {45.5,-30},
+			new NSArray(2) {2.6950073,-14.190002}
+		}
+		});
+	}
+
+	public static void wood_ramp_l_right(NSDictionary physProps)
+	{
+	physProps.Add("ShapeFixtures", new NSArray(9) {
+		new NSArray(3) {
+			new NSArray(2) {45,-45},
+			new NSArray(2) {45,45},
+			new NSArray(2) {40.924988,25.845001}
+		},
+		new NSArray(3) {
+			new NSArray(2) {32.434998,6.5849991},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {37.005005,15.504997}
+		},
+		new NSArray(3) {
+			new NSArray(2) {24.164978,-6.0400009},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {32.434998,6.5849991}
+		},
+		new NSArray(3) {
+			new NSArray(2) {14.049988,-16.705002},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {24.164978,-6.0400009}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-11.73999,-34.115005},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {5.5599976,-23.559998}
+		},
+		new NSArray(3) {
+			new NSArray(2) {5.5599976,-23.559998},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {14.049988,-16.705002}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-45,-45},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {-29.369995,-41.184998}
+		},
+		new NSArray(3) {
+			new NSArray(2) {-29.369995,-41.184998},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {-11.73999,-34.115005}
+		},
+		new NSArray(3) {
+			new NSArray(2) {37.005005,15.504997},
+			new NSArray(2) {45,-45},
+			new NSArray(2) {40.924988,25.845001}
+		}
+		});
+	}
+

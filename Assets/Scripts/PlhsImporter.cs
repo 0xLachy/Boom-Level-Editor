@@ -9,7 +9,7 @@ public class PlhsImporter : MonoBehaviour
 {
     private static int multiplier = 50;
 
-    [MenuItem("Boom/Import PLHS")]
+    [MenuItem("Boom/Import PLHS", false, 20)]
     static void ImportPlhs()
     {
         Debug.Log("Importing PLHS to Scene...");

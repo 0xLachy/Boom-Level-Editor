@@ -5,12 +5,13 @@ using UnityEngine;
 public class BoomPhysicsModifier : MonoBehaviour
 {
     //TODO: get better header name than isThings
-    [Header("isThings")]
+    [Header("ShapeFixtures")]
     public bool isHexagon = false;
     public bool isCog = false;
     [Tooltip("This only changes DRFT values, it still kills player on false (The Tag/id is what changes that)")]
     public bool isGoldenNail = false;
     public bool isGreyNail = false;
+    public bool isFactoryNail = false;
     [Tooltip("add _trigger (start when pressed) or leave blank for auto, add _to for second one ALWAYS")]
     public bool isMovingPlatform = false;
 
@@ -46,6 +47,16 @@ public class BoomPhysicsModifier : MonoBehaviour
     public int type;
 
     
+    [Header("Other/Debug")]
+    public float linearDampening = 0.000000f;
+    public float group = 0;
+    public float category = 1;
+    [Tooltip("65534.5==PlayerBlocked, 65539==Balls Blocked")]
+    public float mask = 65535;
+    public bool ShapePositionOffsett = true;
+    public bool ShapeBorder = true;
+    public bool canSleep = true;
+    public bool isSensor = false;
     //public float DRFTvalue { get { return density + restitution + friction + type; } }
    
 }

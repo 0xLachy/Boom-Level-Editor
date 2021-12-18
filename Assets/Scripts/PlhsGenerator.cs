@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using System.IO;
 using Claunia.PropertyList;
 using mattatz.Triangulation2DSystem;
@@ -16,7 +17,7 @@ public class PlhsGenerator : MonoBehaviour
     public static float triangulationThreshold = 20.5f;
     public static float zoomValue = 1.0f;
     
-    [MenuItem("Boom/Export PLHS")]
+    [MenuItem("Boom/Export PLHS %g", false, 5)]
     static void ExportPlhs()
     {
         Debug.Log("Exporting Scene to PLHS...");
@@ -325,9 +326,9 @@ public class PlhsGenerator : MonoBehaviour
             if (BPM.use0DRFT)
             {
                 physProps.Add("Density", BPM.density);
-                physProps.Add("Type", BPM.type);
-                physProps.Add("Friction", BPM.friction);
                 physProps.Add("Restitution", BPM.friction);
+                physProps.Add("Friction", BPM.friction);
+                physProps.Add("Type", BPM.type);
             }
             else
             {
@@ -366,6 +367,7 @@ public class PlhsGenerator : MonoBehaviour
                     if (BPM.isHexagon) { physProps.Add("Friction", 1.000000); }
                     else if (BPM.isGoldenNail) { physProps.Add("Friction", 0.200000); }
                     else if (BPM.isGreyNail) { physProps.Add("Friction", 80.000000); }
+                    //else if (BPM.isFactoryNail) { physProps.Add("Friction", 1.000000); }
                     else if (BPM.isCog) { physProps.Add("Friction", 1.000000); }
                     else if (BPM.isMovingPlatform) { physProps.Add("Friction", 2.000000); }
                     else { physProps.Add("Friction", 1.000000); }
@@ -391,22 +393,43 @@ public class PlhsGenerator : MonoBehaviour
 
             }
                 
-            physProps.Add("Mask", 65535);
-            physProps.Add("Group", 0);
-            physProps.Add("CanSleep", true);
-            physProps.Add("Category", 1);
-            physProps.Add("IsSensor", false);
+            physProps.Add("Mask", BPM.mask);
+            physProps.Add("Group", BPM.group);
+            physProps.Add("CanSleep", BPM.canSleep);
+            physProps.Add("Category", BPM.category);
+            physProps.Add("IsSensor", BPM.isSensor);
             physProps.Add("FixedRot", BPM.lockRotation);
             physProps.Add("GravityScale", BPM.gravity);
             physProps.Add("AngularVelocity", BPM.rotationSpeed);
             physProps.Add("LinearVelocity", new NSArray(2) { BPM.horizontalSpeed, BPM.verticalSpeed });
-            physProps.Add("LinearDamping", 0.000000);
-            physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 });
-            physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 });
+            physProps.Add("LinearDamping", BPM.linearDampening);
+            if (BPM.ShapePositionOffsett) { physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 }); }
+            if (BPM.ShapeBorder) { physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 }); }
 
-            if (BPM.isHexagon) { ShapeFixtureFixer.Hexagon(physProps); }
-            if (BPM.isCog) { ShapeFixtureFixer.Cog(physProps); }
-            if (BPM.isGoldenNail) { ShapeFixtureFixer.GoldenNail(physProps); }
+            //these are here because if you want to give hexagon colliosion to a city flat, you can??
+            if (BPM.isHexagon) { ShapeFixtures.rotate_hexagon(physProps); }
+            else if (BPM.isCog) { ShapeFixtures.rotate_cog(physProps); }
+            else if (BPM.isFactoryNail) { ShapeFixtures.factory_bit_fat(physProps); }
+            else if (BPM.isGoldenNail) { ShapeFixtures.golden_nail(physProps); }
+            else
+            {
+                try
+                {
+                    ShapeFixtures shapeFixtures = new ShapeFixtures();
+                    MethodInfo method = shapeFixtures.GetType().GetMethod(sprite.name);
+                    if (method == null)
+                    {
+                        throw new Exception($"Method {sprite.name} not found on type {shapeFixtures.GetType()}, is this the right name?");
+                    }
+                    method.Invoke(shapeFixtures, new object[] { physProps });
+                }
+                finally
+                {
+                    Debug.Log($"Shape fixtures for {sprite.name} can't be found in the shapeFixtures script, " +
+                        $"exporting without can make the objects collision act weird");
+                }
+
+            }
             //if (BPM.isMovingPlatform) { FixtureFixer.MovingPlatform(physProps); }
 
             dict.Add("PhysicProperties", physProps);
