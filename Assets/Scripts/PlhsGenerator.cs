@@ -413,25 +413,14 @@ public class PlhsGenerator : MonoBehaviour
             else if (BPM.isGoldenNail) { ShapeFixtures.golden_nail(physProps); }
             else
             {
-                try
-                {
-                    ShapeFixtures shapeFixtures = new ShapeFixtures();
-                    MethodInfo method = shapeFixtures.GetType().GetMethod(sprite.name);
-                    if (method == null)
-                    {
-                        throw new Exception($"Method {sprite.name} not found on type {shapeFixtures.GetType()}, is this the right name?");
-                    }
-                    method.Invoke(shapeFixtures, new object[] { physProps });
-                }
-                finally
-                {
-                    Debug.Log($"Shape fixtures for {sprite.name} can't be found in the shapeFixtures script, " +
-                        $"exporting without can make the objects collision act weird");
-                }
+                Type type = typeof(ShapeFixtures);
+                MethodInfo method = type.GetMethod(sprite.name);
+                ShapeFixtures shapeFixtures = new ShapeFixtures();
+                method.Invoke(shapeFixtures, new object[] { physProps });
 
             }
             //if (BPM.isMovingPlatform) { FixtureFixer.MovingPlatform(physProps); }
-
+            
             dict.Add("PhysicProperties", physProps);
         }
         //if (gameObject.transform.parent.transform.parent != null &&
@@ -455,7 +444,6 @@ public class PlhsGenerator : MonoBehaviour
         dict.Add("GeneralProperties", genProps);
         return dict;
     }
-
 
     private static void UnityTagToBoomTagInGame(GameObject gameObject, NSDictionary genProps, Sprite sprite, Color color)
     {
