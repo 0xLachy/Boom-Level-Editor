@@ -4,14 +4,7 @@ using UnityEngine;
 
 public class BoomPhysicsModifier : MonoBehaviour
 {
-    //TODO: get better header name than isThings
-    [Header("ShapeFixtures")]
-    public bool isHexagon = false;
-    public bool isCog = false;
-    [Tooltip("This only changes DRFT values, it still kills player on false (The Tag/id is what changes that)")]
-    public bool isGoldenNail = false;
-    public bool isGreyNail = false;
-    public bool isFactoryNail = false;
+    
     [Tooltip("add _trigger (start when pressed) or leave blank for auto, add _to for second one ALWAYS")]
     public bool isMovingPlatform = false;
 
@@ -23,7 +16,7 @@ public class BoomPhysicsModifier : MonoBehaviour
 
     [Header("Rotation")]
     //slider (range) isn't needed but I like the look :P
-    [Tooltip("default for hexagon and cog 4")]
+    [Tooltip("AngularVelocity used in DRAFT values added to physprops dict")]
     [Range(-50.0f, 50.0f)]
     public float rotationSpeed = 0f;
     public bool lockRotation = false;
@@ -32,9 +25,10 @@ public class BoomPhysicsModifier : MonoBehaviour
     [Tooltip("default is 1.000000f")]
     public float gravity = 1.000000f;
 
-    [Header("DRFT")]
-    [Tooltip("by default, dens-rest-fric-type values at zero will use default boom config")]
-    public bool use0DRFT = false;
+    [Header("DRFT Values")]
+    //I could have rotation in here and it will get rid of some confusion, but I like rotation being seperate
+    [Tooltip("by default, dens-rest--angVel-fric-type values at zero will use default boom config")]
+    public bool use0DRAFT = false;
 
     public float density;
 

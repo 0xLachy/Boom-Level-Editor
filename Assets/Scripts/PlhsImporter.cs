@@ -55,8 +55,9 @@ public class PlhsImporter : MonoBehaviour
         Dictionary<string, Sprite[]> spritesheets = new Dictionary<string, Sprite[]>();
         foreach (NSObject obj in sprites)
         {
-            NSDictionary dict = (NSDictionary) obj;
-            NSDictionary properties = (NSDictionary) dict["GeneralProperties"];
+            NSDictionary dict = (NSDictionary)obj;
+            NSDictionary properties = (NSDictionary)dict["GeneralProperties"];
+
 
             GameObject newObj = new GameObject();
             newObj.name = properties["UniqueName"].ToString();
@@ -70,10 +71,24 @@ public class PlhsImporter : MonoBehaviour
             }
 
             spriteRenderer.sprite = spritesheets[imageName].Single(s => s.name == properties["SHName"].ToString());
-            NSArray pos = (NSArray) properties["Position"];
-            newObj.transform.position = new Vector3(((NSNumber) pos[0]).floatValue() / multiplier,
-                -((NSNumber) pos[1]).floatValue() / multiplier, ((NSNumber) properties["ZOrder"]).floatValue());
-            newObj.transform.Rotate(new Vector3(0, 0, -((NSNumber) properties["Angle"]).floatValue()));
+            NSArray pos = (NSArray)properties["Position"];
+            newObj.transform.position = new Vector3(((NSNumber)pos[0]).floatValue() / multiplier,
+                -((NSNumber)pos[1]).floatValue() / multiplier, ((NSNumber)properties["ZOrder"]).floatValue());
+            newObj.transform.Rotate(new Vector3(0, 0, -((NSNumber)properties["Angle"]).floatValue()));
+
+            NSArray scale = (NSArray)properties["Scale"];
+            newObj.transform.localScale = new Vector2((float)(NSNumber)scale[0], (float)(NSNumber)scale[1]);
+
+            if (dict.ContainsKey("PhysicProperties"))
+            {
+                NSDictionary physProps = (NSDictionary)dict["PhysicProperties"];
+                BoomPhysicsModifier BPM = newObj.AddComponent<BoomPhysicsModifier>();
+                BPM.density = (float)(NSNumber)physProps["Density"]; 
+                BPM.restitution = (float)(NSNumber)physProps["Restitution"];
+                BPM.friction = (float)(NSNumber)physProps["Friction"];
+                BPM.type = (int)(NSNumber)physProps["Type"];
+                BPM.rotationSpeed = (float)(NSNumber)physProps["AngularVelocity"];
+            }
         }
 
         // Unload the unused sprites?

@@ -323,76 +323,48 @@ public class PlhsGenerator : MonoBehaviour
         var BPM = gameObject.GetComponent<BoomPhysicsModifier>();
         if (BPM != null)
         {
-            if (BPM.use0DRFT)
+            if (BPM.use0DRAFT)
             {
                 physProps.Add("Density", BPM.density);
-                physProps.Add("Restitution", BPM.friction);
+                physProps.Add("Restitution", BPM.restitution);
+                physProps.Add("AngularVelocity", BPM.rotationSpeed);
                 physProps.Add("Friction", BPM.friction);
                 physProps.Add("Type", BPM.type);
             }
             else
             {
-                if(BPM.density == 0)
-                {
-                    //I There is copying but it is to avoid confusion, keeping consistent
-                    if (BPM.isHexagon) { physProps.Add("Density", 0.200000); }
-                    else if (BPM.isGoldenNail) { physProps.Add("Density", 0.200000); }
-                    else if (BPM.isGreyNail) { physProps.Add("Density", 2.000000); }
-                    else if (BPM.isCog) { physProps.Add("Density", 0.200000); }
-                    else if (BPM.isMovingPlatform) { physProps.Add("Density", 10.000000); }
-                    else { physProps.Add("Density", 0.200000); }
-                }
+                if (BPM.density == 0) { AddDefaultValueFromRefScript(physProps, sprite.name, "Density"); }
                 else
                 {
                     physProps.Add("Density", BPM.density);
                 }
 
-                if (BPM.restitution == 0)
-                {
-                    //there probably custom restitution for stuff like balls and stuff
-                    if (BPM.isHexagon) { physProps.Add("Restitution", 0.200000); }
-                    else if (BPM.isGoldenNail) { physProps.Add("Restitution", 0.200000); }
-                    else if (BPM.isGreyNail) { physProps.Add("Restitution", 0.200000); }
-                    else if (BPM.isCog) { physProps.Add("Restitution", 0.200000); }
-                    else if (BPM.isMovingPlatform) { physProps.Add("Restitution", 0.200000); }
-                    else { physProps.Add("Restitution", 0.200000); }                
-                }
+                if (BPM.restitution == 0) { AddDefaultValueFromRefScript(physProps, sprite.name, "Restitution"); }
                 else
                 {
                     physProps.Add("Restitution", BPM.restitution);
                 }
 
-                if (BPM.friction == 0)
+                if (BPM.rotationSpeed == 0) { AddDefaultValueFromRefScript(physProps, sprite.name, "AngularVelocity"); }
+                else
                 {
-                    if (BPM.isHexagon) { physProps.Add("Friction", 1.000000); }
-                    else if (BPM.isGoldenNail) { physProps.Add("Friction", 0.200000); }
-                    else if (BPM.isGreyNail) { physProps.Add("Friction", 80.000000); }
-                    //else if (BPM.isFactoryNail) { physProps.Add("Friction", 1.000000); }
-                    else if (BPM.isCog) { physProps.Add("Friction", 1.000000); }
-                    else if (BPM.isMovingPlatform) { physProps.Add("Friction", 2.000000); }
-                    else { physProps.Add("Friction", 1.000000); }
+                    physProps.Add("AngularVelocity", BPM.rotationSpeed);
                 }
+
+                if (BPM.friction == 0) { AddDefaultValueFromRefScript(physProps, sprite.name, "Friction"); }
                 else
                 {
                     physProps.Add("Friction", BPM.friction);
                 }
 
-                if (BPM.type == 0)
-                {
-                    //maybe I should remove???
-                    if (BPM.isHexagon) { physProps.Add("Type", 1); }
-                    else if (BPM.isGreyNail) { physProps.Add("Type", 1); }
-                    else if (BPM.isCog) { physProps.Add("Type", 1); }
-                    else if (BPM.isMovingPlatform) { physProps.Add("Type", 1); }
-                    else { physProps.Add("Type", 1); }
-                }
+                if (BPM.type == 0) { AddDefaultValueFromRefScript(physProps, sprite.name, "Type"); }
                 else
                 {
                     physProps.Add("Type", BPM.type);
                 }
 
             }
-                
+
             physProps.Add("Mask", BPM.mask);
             physProps.Add("Group", BPM.group);
             physProps.Add("CanSleep", BPM.canSleep);
@@ -400,29 +372,20 @@ public class PlhsGenerator : MonoBehaviour
             physProps.Add("IsSensor", BPM.isSensor);
             physProps.Add("FixedRot", BPM.lockRotation);
             physProps.Add("GravityScale", BPM.gravity);
-            physProps.Add("AngularVelocity", BPM.rotationSpeed);
             physProps.Add("LinearVelocity", new NSArray(2) { BPM.horizontalSpeed, BPM.verticalSpeed });
             physProps.Add("LinearDamping", BPM.linearDampening);
             if (BPM.ShapePositionOffsett) { physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 }); }
             if (BPM.ShapeBorder) { physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 }); }
 
-            //these are here because if you want to give hexagon colliosion to a city flat, you can??
-            if (BPM.isHexagon) { ShapeFixtures.rotate_hexagon(physProps); }
-            else if (BPM.isCog) { ShapeFixtures.rotate_cog(physProps); }
-            else if (BPM.isFactoryNail) { ShapeFixtures.factory_bit_fat(physProps); }
-            else if (BPM.isGoldenNail) { ShapeFixtures.golden_nail(physProps); }
-            else
-            {
-                Type type = typeof(ShapeFixtures);
-                MethodInfo method = type.GetMethod(sprite.name);
-                ShapeFixtures shapeFixtures = new ShapeFixtures();
-                method.Invoke(shapeFixtures, new object[] { physProps });
+            //adding shapefixtures by name
+            Type type = typeof(ShapeFixtures);
+            MethodInfo method = type.GetMethod(sprite.name);
+            ShapeFixtures shapeFixtures = new ShapeFixtures();
+            method.Invoke(shapeFixtures, new object[] { physProps });           
 
-            }
-            //if (BPM.isMovingPlatform) { FixtureFixer.MovingPlatform(physProps); }
-            
             dict.Add("PhysicProperties", physProps);
         }
+
         //if (gameObject.transform.parent.transform.parent != null &&
         //        gameObject.transform.parent.transform.parent.tag == "ParentSpinner"
         //        || gameObject.transform.parent != null && gameObject.transform.parent.tag == "ParentSpinner" && rotationComponent == null)
@@ -443,6 +406,33 @@ public class PlhsGenerator : MonoBehaviour
 
         dict.Add("GeneralProperties", genProps);
         return dict;
+    }
+
+    private static void AddDefaultValueFromRefScript(NSDictionary physProps, string spriteName, string ValueNameToAdd)
+    {
+        int retrievingIndex = 1;
+        switch (ValueNameToAdd)
+        {
+            case "Density":
+                retrievingIndex = 0;
+                break;
+            case "Restitution":
+                retrievingIndex = 1;
+                break;
+            case "AngularVelocity":
+                retrievingIndex = 2;
+                break;
+            case "Friction":
+                retrievingIndex = 3;
+                break;
+            case "Type":
+                retrievingIndex = 4;
+                break;
+            default:
+                Debug.Log($"couldn't add {ValueNameToAdd} to GORS with spritename {spriteName} index {retrievingIndex}");
+                return;
+        }
+        physProps.Add(ValueNameToAdd, String.Format("{0:0.000000}", DefaultValuesReferences.GORS[spriteName][retrievingIndex])); 
     }
 
     private static void UnityTagToBoomTagInGame(GameObject gameObject, NSDictionary genProps, Sprite sprite, Color color)

@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System.IO;
 using Claunia.PropertyList;
-using System.Linq;
+using System;
+using System.IO;
 using UnityEditor;
+using UnityEngine;
 
 
 
@@ -14,14 +12,49 @@ public class AutoCoderFixtureFixer : MonoBehaviour
     static string fileWriteLocation = "Levels/AutoCode.txt";
     static bool firstNumber = true;
     static bool pshsFile;
+    static bool referenceMode;
+
+    //words different in pshs
+    //static Dictionary<string, string> pshsWordList = new Dictionary<string, string>();
+    
     [MenuItem("Boom/AutoCode", false, 50)]
     static void AutoCode()
     {
-        Debug.Log($"Writing Code to {fileWriteLocation}");
+        //pshsWordList.Add("ShapeFixtures", "Fixtures");
+        //pshsWordList.Add("Type", "PhysicType");
+        //pshsWordList.Add("Friction", "Friction");
+        int option = EditorUtility.DisplayDialogComplex("Choose setting",
+    "Codewriter for shapefixture stuff, Reference Mode - generates reference values",
+    "Reference",
+    "Cancel",
+    "CodeWriter");
+
+        switch (option)
+        {
+            // Reference Mode
+            case 0:
+                //;
+                referenceMode = true;
+                break;
+
+            // Cancel.
+            case 1:
+                break;
+
+            // CodeWriter
+            case 2:
+                referenceMode = false;
+                break;
+
+            default:
+                Debug.LogError("Unrecognized option.");
+                break;
+        }
         string[] filters = { "boom extensions", "plhs,pshs", "All Files", "*" };
         string path = EditorUtility.OpenFilePanelWithFilters("Open boom file with ShapeFixtures", "", filters);
-        pshsFile = EditorUtility.DisplayDialog("PSHS File or PLHS File",
-                "chose\"PSHS\" for batch fixture grabbing, Chose \"PLHS\" for getting the fixtures from a level", "PSHS", "PLHS");
+        //pshsFile = EditorUtility.DisplayDialog("PSHS File or PLHS File",
+        //        "choose the file extension that you are using", "PSHS", "PLHS");
+        pshsFile = path.Substring(path.Length - 4) == "pshs";
         
         if (path.Length != 0)
         {
@@ -29,7 +62,8 @@ public class AutoCoderFixtureFixer : MonoBehaviour
             NSObject obj = PropertyListParser.Parse(fileContent);
             if (obj is NSDictionary dict)
             {
-                WriteTheArraysPLHS((NSArray)dict["SPRITES_INFO"]);
+                WriteTheArray((NSArray)dict["SPRITES_INFO"]);
+                Debug.Log($"Writing Code to {fileWriteLocation}");
             }
             else
             {
@@ -38,15 +72,21 @@ public class AutoCoderFixtureFixer : MonoBehaviour
             }
         }
     }
-    private static void WriteTheArraysPLHS(NSArray sprites)
+    private static void WriteTheArray(NSArray sprites)
     {
         //could probably save to somewhere else, but it's sort of a temp file
         Directory.CreateDirectory("./Levels");
         sw = File.CreateText(fileWriteLocation);
         try
         {
-            foreach (NSObject obj in sprites)
+            if (referenceMode)
             {
+                sw.WriteLine("public static Dictionary<string, float[]> gameObjectsReferenceSheet = new Dictionary<string, float[]>");
+                sw.WriteLine("\t{");
+            }
+            for (int index = 0; index < sprites.Count; index++)
+            {
+                NSObject obj = sprites[index];
                 NSDictionary dict = (NSDictionary)obj;
                 string name;
                 if (dict.ContainsKey("PhysicProperties"))
@@ -61,43 +101,81 @@ public class AutoCoderFixtureFixer : MonoBehaviour
                         NSDictionary generalProperties = (NSDictionary)dict["GeneralProperties"];
                         name = generalProperties["UniqueName"].ToString();
                     }
-
                     NSDictionary physicProperties = (NSDictionary)dict["PhysicProperties"];
-                    if (pshsFile) { AnalyzeShapeFixtures(name, physicProperties, "Fixtures"); }
-                    else { AnalyzeShapeFixtures(name, physicProperties, "ShapeFixtures"); }                  
+                    string fixturesWord, typeWord;
+                    if (pshsFile) { fixturesWord = "Fixtures"; typeWord = "PhysicType"; }
+                    else { fixturesWord = "ShapeFixtures"; typeWord = "Type"; }
+                    if (referenceMode)
+                    {
+                        GenerateReferenceSheet(name, physicProperties, typeWord, index, sprites.Count);
+                    } 
+                    else
+                    {
+                        AnalyzePhysicsProperties(name, physicProperties, fixturesWord, typeWord);
+                    }
+             
                 }
             }
+            if (referenceMode) { sw.WriteLine("\t};\n"); }
         }
         finally
         {
-            sw?.Dispose();
+            sw?.Dispose(); 
         }
 
     }
 
-    private static void AnalyzeShapeFixtures(string name, NSDictionary physicProperties, string fixturesWord)
+    private static void GenerateReferenceSheet(string name, NSDictionary physicProperties, string typeWord, int index, int spriteCount)
     {
+        float density = (float)(NSNumber)physicProperties["Density"];
+        float restitution = (float)(NSNumber)physicProperties["Restitution"];
+        float angularVelocity = (float)(NSNumber)physicProperties["AngularVelocity"];
+        float friction = (float)(NSNumber)physicProperties["Friction"];
+        float type = (float)(NSNumber)physicProperties[typeWord];
+        if(index == spriteCount - 1) 
+        { 
+            sw.WriteLine($"\t\t{{ \"{name}\" , new float[] {{ { density }f, { restitution }f, { angularVelocity }f, { friction }f, { type }f}} }}"); 
+        }
+        else
+        {
+            sw.WriteLine($"\t\t{{ \"{name}\" , new float[] {{ { density }f, { restitution }f, { angularVelocity }f, { friction }f, { type }f}} }},");
+        }
+    }
+
+    private static void AnalyzePhysicsProperties(string name, NSDictionary physicProperties, string fixturesWord, string typeWord)
+    {
+        sw.WriteLine($"\tpublic static void {name}(NSDictionary physProps)");
+        sw.WriteLine("\t{");
+        ///Left here so incase I want to change how I reference sprites physics values.
+        ////written in DRAFT format for better readability than normal base file
+        //sw.WriteLine($"\t\tphysProps.Add(\"Density\", {(float)(NSNumber)physicProperties["Density"]});");
+        //sw.WriteLine($"\t\tphysProps.Add(\"Restitution\", {(float)(NSNumber)physicProperties["Restitution"]});");
+        //sw.WriteLine($"\t\tphysProps.Add(\"AngularVelocity\", {(float)(NSNumber)physicProperties["AngularVelocity"]});");
+        //sw.WriteLine($"\t\tphysProps.Add(\"Friction\", {(float)(NSNumber)physicProperties["Friction"]});");
+        //sw.WriteLine($"\t\tphysProps.Add(\"Type\", {(float)(NSNumber)physicProperties[typeWord]});");
         if (physicProperties.ContainsKey(fixturesWord))
         {
             NSArray shapeFixtures = (NSArray)physicProperties[fixturesWord];
+            //if (pshsFile) { }
             //If shapefixtures is empty, don't write to the file and exit out early
-            if (shapeFixtures.Count == 0) { return; }
-            sw.WriteLine($"\tpublic static void {name}(NSDictionary physProps)");
-            sw.WriteLine("\t{");
-            sw.WriteLine($"\tphysProps.Add(\"ShapeFixtures\", new NSArray({shapeFixtures.Count}) {{");
-            for (int i = 0; i < shapeFixtures.Count; i++)
+            if (shapeFixtures.Count > 0)
             {
-                NSArray outerarray = (NSArray)shapeFixtures[i];
-                sw.WriteLine($"\t\tnew NSArray({outerarray.Count}) {{");
-                checkForMoreNSArraysNested(outerarray);
-                if (i == shapeFixtures.Count - 1) { sw.WriteLine("\t\t}"); }
-                else { sw.WriteLine("\t\t},"); }
-            }
-            sw.WriteLine("\t\t});"); sw.WriteLine("\t}\n");
+                sw.WriteLine($"\t\tphysProps.Add(\"ShapeFixtures\", new NSArray({shapeFixtures.Count}) {{");
+                for (int i = 0; i < shapeFixtures.Count; i++)
+                {
+                    NSArray outerarray = (NSArray)shapeFixtures[i];
+                    sw.WriteLine($"\t\t\tnew NSArray({outerarray.Count}) {{");
+                    CheckForMoreNestedNSArrays(outerarray);
+                    if (i == shapeFixtures.Count - 1) { sw.WriteLine("\t\t\t}"); }
+                    else { sw.WriteLine("\t\t\t},"); }
+                }
+                sw.WriteLine("\t\t});"); //sw.WriteLine("\t}\n");
+            }      
         }
+        sw.WriteLine("\t}\n");
     }
 
-    private static void checkForMoreNSArraysNested(NSArray nsArray)
+    private static void CheckForMoreNestedNSArrays(NSArray nsArray)
     {
         for (int i = 0; i < nsArray.Count; i++)
         {
@@ -105,8 +183,8 @@ public class AutoCoderFixtureFixer : MonoBehaviour
             if (nestedObject.GetType().Equals(typeof(NSArray)))
             {
                 NSArray nestedarray = (NSArray)nestedObject;
-                sw.Write("\t\t\tnew NSArray(" + nestedarray.Count + ") {");
-                checkForMoreNSArraysNested(nestedarray);
+                sw.Write("\t\t\t\tnew NSArray(" + nestedarray.Count + ") {");
+                CheckForMoreNestedNSArrays(nestedarray);
                 if (i == nsArray.Count - 1) { sw.WriteLine("}"); }
                 else { sw.WriteLine("},"); }
             }

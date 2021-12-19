@@ -7,8 +7,7 @@ using Claunia.PropertyList;
 
 public class ShapeFixtures
 {
-
-	public static void rotate_star(NSDictionary physProps)
+public static void rotate_star(NSDictionary physProps)
 	{
 		physProps.Add("ShapeFixtures", new NSArray(5) {
 		new NSArray(8) {
