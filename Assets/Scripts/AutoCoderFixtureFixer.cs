@@ -9,20 +9,14 @@ using UnityEngine;
 public class AutoCoderFixtureFixer : MonoBehaviour
 {
     static StreamWriter sw;
-    static string fileWriteLocation = "Levels/AutoCode.txt";
+    static readonly string fileWriteLocation = "Levels/AutoCode.txt";
     static bool firstNumber = true;
     static bool pshsFile;
     static bool referenceMode;
 
-    //words different in pshs
-    //static Dictionary<string, string> pshsWordList = new Dictionary<string, string>();
-    
     [MenuItem("Boom/AutoCode", false, 50)]
     static void AutoCode()
     {
-        //pshsWordList.Add("ShapeFixtures", "Fixtures");
-        //pshsWordList.Add("Type", "PhysicType");
-        //pshsWordList.Add("Friction", "Friction");
         int option = EditorUtility.DisplayDialogComplex("Choose setting",
     "Codewriter for shapefixture stuff, Reference Mode - generates reference values",
     "Reference",
@@ -156,8 +150,6 @@ public class AutoCoderFixtureFixer : MonoBehaviour
         if (physicProperties.ContainsKey(fixturesWord))
         {
             NSArray shapeFixtures = (NSArray)physicProperties[fixturesWord];
-            //if (pshsFile) { }
-            //If shapefixtures is empty, don't write to the file and exit out early
             if (shapeFixtures.Count > 0)
             {
                 sw.WriteLine($"\t\tphysProps.Add(\"ShapeFixtures\", new NSArray({shapeFixtures.Count}) {{");

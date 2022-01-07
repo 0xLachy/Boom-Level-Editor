@@ -10,155 +10,6 @@
 	<key>SPRITES_INFO</key>
 	<array>
 		<dict>
-			<key>PhysicProperties</key>
-			<dict>
-				<key>Density</key>
-				<string>0.200000</string>
-				<key>Restitution</key>
-				<string>0.200000</string>
-				<key>AngularVelocity</key>
-				<string>100.000000</string>
-				<key>Friction</key>
-				<string>1.000000</string>
-				<key>Type</key>
-				<string>1.000000</string>
-				<key>Mask</key>
-				<real>65535</real>
-				<key>Group</key>
-				<real>0.0</real>
-				<key>CanSleep</key>
-				<true/>
-				<key>Category</key>
-				<real>1</real>
-				<key>IsSensor</key>
-				<false/>
-				<key>FixedRot</key>
-				<false/>
-				<key>GravityScale</key>
-				<real>1</real>
-				<key>LinearVelocity</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>LinearDamping</key>
-				<real>0.0</real>
-				<key>ShapePositionOffset</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>ShapeBorder</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>ShapeFixtures</key>
-				<array>
-					<array>
-						<array>
-							<real>22.244995</real>
-							<real>24.019989</real>
-						</array>
-						<array>
-							<real>-22.289993</real>
-							<real>23.859985</real>
-						</array>
-						<array>
-							<real>-35.934998</real>
-							<real>-18.220001</real>
-						</array>
-						<array>
-							<real>-43.649994</real>
-							<real>-63.710022</real>
-						</array>
-						<array>
-							<real>-0.095001221</real>
-							<real>-44.765015</real>
-						</array>
-						<array>
-							<real>36.320007</real>
-							<real>-18.704987</real>
-						</array>
-						<array>
-							<real>68.899994</real>
-							<real>13.415009</real>
-						</array>
-						<array>
-							<real>67.934998</real>
-							<real>17.079987</real>
-						</array>
-					</array>
-					<array>
-						<array>
-							<real>-35.934998</real>
-							<real>-18.220001</real>
-						</array>
-						<array>
-							<real>-22.289993</real>
-							<real>23.859985</real>
-						</array>
-						<array>
-							<real>-68.089996</real>
-							<real>17.024994</real>
-						</array>
-						<array>
-							<real>-69.050003</real>
-							<real>13.75</real>
-						</array>
-					</array>
-					<array>
-						<array>
-							<real>-22.289993</real>
-							<real>23.859985</real>
-						</array>
-						<array>
-							<real>22.244995</real>
-							<real>24.019989</real>
-						</array>
-						<array>
-							<real>2.0899963</real>
-							<real>65.380005</real>
-						</array>
-						<array>
-							<real>-1.3800049</real>
-							<real>65.380005</real>
-						</array>
-					</array>
-					<array>
-						<array>
-							<real>-41.100006</real>
-							<real>-65.85498</real>
-						</array>
-						<array>
-							<real>-0.095001221</real>
-							<real>-44.765015</real>
-						</array>
-						<array>
-							<real>-43.649994</real>
-							<real>-63.710022</real>
-						</array>
-					</array>
-					<array>
-						<array>
-							<real>-0.095001221</real>
-							<real>-44.765015</real>
-						</array>
-						<array>
-							<real>41.404999</real>
-							<real>-65.659973</real>
-						</array>
-						<array>
-							<real>43.665009</real>
-							<real>-63.844971</real>
-						</array>
-						<array>
-							<real>36.320007</real>
-							<real>-18.704987</real>
-						</array>
-					</array>
-				</array>
-			</dict>
 			<key>GeneralProperties</key>
 			<dict>
 				<key>TagName</key>
@@ -182,7 +33,7 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>rotate_star</string>
+				<string>wheel</string>
 				<key>Image</key>
 				<string>GameObjects.png</string>
 				<key>SHScene</key>
@@ -191,15 +42,15 @@
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>139</real>
-					<real>134.5</real>
+					<real>32.7679977416992</real>
+					<real>32.757396697998</real>
 				</array>
 				<key>UniqueName</key>
-				<string>rotate_star</string>
+				<string>wheel_0 (1)</string>
 				<key>Position</key>
 				<array>
-					<real>815.040710449219</real>
-					<real>-457.499969482422</real>
+					<real>-195.768951416016</real>
+					<real>116.050956726074</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -250,6 +101,210 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
+				<string>rock_flat_xxl</string>
+				<key>Image</key>
+				<string>Tracks.png</string>
+				<key>SHScene</key>
+				<string>Tracks.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>242</real>
+					<real>17</real>
+				</array>
+				<key>UniqueName</key>
+				<string>rock_flat_xxl (1)</string>
+				<key>Position</key>
+				<array>
+					<real>-117.937408447266</real>
+					<real>163.285751342773</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>blue_city_flat</string>
+				<key>Image</key>
+				<string>CustomBoomSprites_CustomSprites.png</string>
+				<key>SHScene</key>
+				<string>CustomBoomSprites_CustomSprites.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>60.5</real>
+					<real>4</real>
+				</array>
+				<key>UniqueName</key>
+				<string>blue_city_flat</string>
+				<key>Position</key>
+				<array>
+					<real>-330.5</real>
+					<real>161.800003051758</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>3</real>
+					<real>3</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>dr wolfenstein</string>
+				<key>Image</key>
+				<string>CustomBoomSprites_CustomSprites.png</string>
+				<key>SHScene</key>
+				<string>CustomBoomSprites_CustomSprites.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>9</real>
+					<real>9</real>
+				</array>
+				<key>UniqueName</key>
+				<string>dr wolfenstein</string>
+				<key>Position</key>
+				<array>
+					<real>-69.8499984741211</real>
+					<real>121.400001525879</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>3</real>
+					<real>3</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
 				<string>wheel</string>
 				<key>Image</key>
 				<string>GameObjects.png</string>
@@ -259,8 +314,8 @@
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>48</real>
-					<real>48</real>
+					<real>32.7679977416992</real>
+					<real>32.757396697998</real>
 				</array>
 				<key>UniqueName</key>
 				<string>wheel_0</string>
@@ -400,8 +455,8 @@
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>143.5</real>
-					<real>125</real>
+					<real>97.9626693725586</real>
+					<real>85.3057174682617</real>
 				</array>
 				<key>UniqueName</key>
 				<string>rotate_hexagon</string>
@@ -529,8 +584,8 @@
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>12</real>
-					<real>46</real>
+					<real>8.1919994354248</real>
+					<real>31.392505645752</real>
 				</array>
 				<key>UniqueName</key>
 				<string>golden_nail</string>
@@ -812,8 +867,8 @@
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>143</real>
-					<real>153</real>
+					<real>97.6213302612305</real>
+					<real>104.414199829102</real>
 				</array>
 				<key>UniqueName</key>
 				<string>rotate_cog</string>
@@ -1023,8 +1078,8 @@
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>130</real>
-					<real>65</real>
+					<real>88.7466659545898</real>
+					<real>44.3589744567871</real>
 				</array>
 				<key>UniqueName</key>
 				<string>factory_bit_dome</string>

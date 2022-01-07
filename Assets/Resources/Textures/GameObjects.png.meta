@@ -1,5 +1,16 @@
 fileFormatVersion: 2
 guid: d67300bae036cd24887224e41faccec9
+labels:
+- Advanced
+- Architecture
+- Road
+- Sky
+- Terrain
+- Vegetation
+- Vehicle
+- Wall
+- Water
+- Weapon
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -94,7 +105,7 @@ TextureImporter:
     second: pinky_blink
   - first:
       213: 21300060
-    second: pyramid_wheel
+    second: pyramid_3
   - first:
       213: 21300062
     second: boulder_snow
@@ -272,6 +283,33 @@ TextureImporter:
   - first:
       213: 21300178
     second: wheel_bit
+  - first:
+      213: 487047406238522432
+    second: lollipop_whirl_smile
+  - first:
+      213: 1003958789531666178
+    second: stargate
+  - first:
+      213: 1003958789531666178
+    second: stargate
+  - first:
+      213: -4748949316688570600
+    second: xmas1
+  - first:
+      213: 7656349582420554337
+    second: dino
+  - first:
+      213: 4134492550651945424
+    second: big_rocket
+  - first:
+      213: 1709075981183930642
+    second: merry_christmas
+  - first:
+      213: 4668934956778751190
+    second: big_tree
+  - first:
+      213: 256802847777156987
+    second: GameObjects_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -294,6 +332,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -302,9 +341,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -344,7 +383,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -356,7 +395,31 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -365,7 +428,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4
-        y: 1644
+        y: 1637
         width: 384
         height: 384
       alignment: 0
@@ -599,8 +662,8 @@ TextureImporter:
         y: 1590
         width: 100
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.41146117, y: 0.49999878}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -932,12 +995,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 853
-        y: 1070
-        width: 140
-        height: 140
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        y: 1066
+        width: 138
+        height: 155
+      alignment: 9
+      pivot: {x: 0.50131047, y: 0.46252206}
+      border: {x: 0, y: 0, z: 0, w: 10}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -991,7 +1054,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pyramid_wheel
+      name: pyramid_3
       rect:
         serializedVersion: 2
         x: 698
@@ -1877,7 +1940,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 733
-        y: 219
+        y: 216
         width: 167
         height: 32
       alignment: 0
@@ -2250,6 +2313,279 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: lollipop_whirl_smile
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1635
+        width: 395
+        height: 393
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 2, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c5f95190752c600800000000000000
+      internalID: 487047406238522432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stargate
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 1251
+        width: 400
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2078a2b2337ceed00800000000000000
+      internalID: 1003958789531666178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas1
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 1709
+        width: 383
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817917ae1c7581eb0800000000000000
+      internalID: -4748949316688570600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 1796
+        width: 171
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16233605161d04a60800000000000000
+      internalID: 7656349582420554337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merry_christmas
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1542
+        width: 362
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211de90cc8bd7b710800000000000000
+      internalID: 1709075981183930642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_0
+      rect:
+        serializedVersion: 2
+        x: 2131
+        y: 1940
+        width: 102
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a85dcb992081aa4083ccaf71adfa62c
+      internalID: -1248235928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_1
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 1940
+        width: 102
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec36f85f44293d49a0139b05693c1e8
+      internalID: 2100880872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_2
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 1940
+        width: 102
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c685374c1edc42a49a5041f0420d29be
+      internalID: -372233548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_3
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 1940
+        width: 102
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d14f0bdab36b245ba8a0445b801da1
+      internalID: 1498113116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_4
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1940
+        width: 102
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fad3fc4ca182b04b82935d3c03e6a65
+      internalID: 757364714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_5
+      rect:
+        serializedVersion: 2
+        x: 2636
+        y: 1940
+        width: 102
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81940437a286e043834678d6e2ff9f8
+      internalID: 1421020960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_0
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 1902
+        width: 128
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5acdad9d955cb294188b198919f59a63
+      internalID: 1269399572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameObjects_0
+      rect:
+        serializedVersion: 2
+        x: 2354
+        y: 1918
+        width: 49
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af28ec5f8ff21144804d557ad477492
+      internalID: 698866057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2259,8 +2595,117 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
-  spritePackingTag: boulder_snow
+    secondaryTextures:
+    - texture: {instanceID: 0}
+      name: lol
+    nameFileIdTable:
+      rotate_drop: 21300080
+      pinky_blink: 21300058
+      pinky_falling_4: 21300162
+      pinky_falling_5: 21300160
+      bomb_normal_1: 21300164
+      lollipop_whirl_smile: 487047406238522432
+      golden_nail: 21300068
+      boulder_snow: 21300062
+      factory_bit_nail: 21300010
+      golden_nail_base: 21300012
+      pinky_breathing_3: 21300136
+      tree_big: 21300092
+      pyramid_brick_dark: 21300078
+      moving_flat_xxl: 21300026
+      PU_rocket_1: 21300074
+      GameObjects_0: 698866057
+      PU_ice_wheel_3: 21300066
+      statue_3: 21300030
+      wheel_bit: 21300178
+      pinky_1: 21300132
+      rocket_used_2: 21300082
+      marie: -800616533
+      festival_ball: 21300052
+      pinky_breathing_2: 21300134
+      cage_fg: 21300056
+      factory_barrel_still: 21300034
+      frozen_statue_1: 21300094
+      tree_small: 21300118
+      merry_christmas: 1709075981183930642
+      rotate_star: 21300048
+      PU_rocket_2: 21300142
+      pyramid_urn: 21300098
+      festival_circle: 21300152
+      rocket_2_4: 21300084
+      pile_of_coins_6: 21300036
+      box: 21300120
+      rocket_2_1: 21300156
+      pile_of_coins_4: 21300004
+      statue_2: 21300020
+      pile_of_coins_2: 21300090
+      festival_rectangle: 21300050
+      lollipop_depth: 21300014
+      rotate_hexagon: 21300028
+      festival_glass_ball: 21300124
+      PU_rocket_3: 21300044
+      statue_1: 21300104
+      bomb_normal_3: 21300116
+      nails: 21300172
+      festival_flat_xxl: 21300038
+      ball_1: 21300022
+      pinky_falling_3: 21300114
+      cage_bottom: 21300176
+      festival_barrel_rolling: 21300108
+      factory_bit_dome: 21300072
+      fish_0: -1958861788
+      barrel_1: 21300032
+      festival_bowl: 21300166
+      big_rocket: 4134492550651945424
+      festival_star: 21300122
+      pinky_falling_1: 21300128
+      festival_cone: 21300008
+      trampoline_layer_1: 21300024
+      rocket_used_1: 21300086
+      factory_bit_thin: 21300150
+      pinky_breathing_1: 21300140
+      moving_flat_xl: 21300158
+      factory_bit_fat: 21300138
+      factory_bit_nut: 21300046
+      PU_rocket_4: 21300168
+      dino: 7656349582420554337
+      stargate: 1003958789531666178
+      roof_hook: 21300174
+      pile_of_coins_5: 21300016
+      pyramid_pyramid: 21300018
+      cage_bg: 21300096
+      rocket_2_2: 21300144
+      bee_4: 757364714
+      bee_5: 1421020960
+      fire_bowl: 21300076
+      frozen_statue_2: 21300148
+      pile_of_coins_1: 21300130
+      xmas1: -4748949316688570600
+      rotate_cog: 21300002
+      pyramid_brick_light: 21300042
+      bomb_red_alert: 21300112
+      pinky_3: 21300064
+      festival_box: 21300110
+      bee_3: 1498113116
+      pinky_falling_2: 21300126
+      factory_bit_connect: 21300040
+      bee_0: -1248235928
+      wheel: 21300102
+      pyramid_3: 21300060
+      PU_ice_wheel_1: 21300106
+      lollipop_whirl: 21300000
+      pyramid_sarcophagus: 21300006
+      bee_2: -372233548
+      bomb_normal_2: 21300146
+      factory_bit_cube: 21300054
+      pinky_2: 21300170
+      rocket_2_3: 21300088
+      boulder: 21300154
+      big_tree: 4668934956778751190
+      pile_of_coins_3: 21300070
+      PU_ice_wheel_2: 21300100
+      bee_1: 2100880872
+  spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
   userData: 

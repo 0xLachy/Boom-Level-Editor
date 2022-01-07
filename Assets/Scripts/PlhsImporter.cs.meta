@@ -3,7 +3,15 @@ guid: e776b7c7aaa446e09639d8503ad4cf39
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cityGroundPrefab: {fileID: 235575469542850349, guid: 020727370740d2a41a7fac45d99c1da5,
+      type: 3}
+  - factoryGroundPrefab: {instanceID: 0}
+  - jungleGroundPrefab: {instanceID: 0}
+  - egyptGroundPrefab: {instanceID: 0}
+  - StoneiceGroundPrefab: {instanceID: 0}
+  - EpyptBGPrefab: {instanceID: 0}
+  - stoneIceBGPrefab: {instanceID: 0}
   executionOrder: 200
   icon: {instanceID: 0}
   userData: 

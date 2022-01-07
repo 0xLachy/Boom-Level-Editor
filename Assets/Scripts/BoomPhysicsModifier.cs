@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BoomPhysicsModifier : MonoBehaviour
 {
-    
+    //This actually does nothing but I like the reminder of how to add them
     [Tooltip("add _trigger (start when pressed) or leave blank for auto, add _to for second one ALWAYS")]
     public bool isMovingPlatform = false;
 

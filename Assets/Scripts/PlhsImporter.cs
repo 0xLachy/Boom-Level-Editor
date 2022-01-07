@@ -4,10 +4,20 @@ using System.Linq;
 using Claunia.PropertyList;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class PlhsImporter : MonoBehaviour
 {
     private static int multiplier = 50;
+    //prefabs of ground because you can't access spriteshapecontrollers profile through script :/
+    //can't use list or dictionary
+    [SerializeField] static GameObject cityGroundPrefab;
+    [SerializeField] GameObject factoryGroundPrefab;
+    [SerializeField] GameObject jungleGroundPrefab;
+    [SerializeField] GameObject egyptGroundPrefab;
+    [SerializeField] GameObject StoneiceGroundPrefab;
+    [SerializeField] GameObject EpyptBGPrefab;
+    [SerializeField] GameObject stoneIceBGPrefab;
 
     [MenuItem("Boom/Import PLHS", false, 20)]
     static void ImportPlhs()
@@ -22,6 +32,7 @@ public class PlhsImporter : MonoBehaviour
             {
                 LoadCamera((NSArray) ((NSDictionary) dict["ScenePreference"])["GameWorld"]);
                 LoadSprites((NSArray) dict["SPRITES_INFO"]);
+                if (dict.ContainsKey("BEZIER_INFO")) { LoadGround((NSArray) dict["BEZIER_INFO"]); }
             }
             else
             {
@@ -92,5 +103,18 @@ public class PlhsImporter : MonoBehaviour
         }
 
         // Unload the unused sprites?
+    }
+
+    private static void LoadGround(NSArray bigBezierArray)
+    {
+        //don't think this is an array, It is probably a dictionary for the load ground input parameters
+        NSDictionary bezierDict = (NSDictionary)bigBezierArray[0];
+        //instantiate at position of 
+        GameObject groundObject = Instantiate(cityGroundPrefab);
+        var spriteShapeRenderer = groundObject.GetComponent<SpriteShapeRenderer>();
+        var spriteShapeController = groundObject.GetComponent<SpriteShapeController>();
+        var spline = spriteShapeController.spline;
+        //spriteShapeController
+        groundObject.name = bezierDict["Image"].ToString().Substring(0, bezierDict["Image"].ToString().Length - 4);
     }
 }
