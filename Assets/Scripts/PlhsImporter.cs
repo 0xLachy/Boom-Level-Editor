@@ -5,19 +5,27 @@ using Claunia.PropertyList;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.U2D;
+using mattatz.Triangulation2DSystem;
 
 public class PlhsImporter : MonoBehaviour
 {
     private static int multiplier = 50;
+    public static float triangulationThreshold = 20.5f;
     //prefabs of ground because you can't access spriteshapecontrollers profile through script :/
     //can't use list or dictionary
-    [SerializeField] static GameObject cityGroundPrefab;
-    [SerializeField] GameObject factoryGroundPrefab;
-    [SerializeField] GameObject jungleGroundPrefab;
-    [SerializeField] GameObject egyptGroundPrefab;
-    [SerializeField] GameObject StoneiceGroundPrefab;
-    [SerializeField] GameObject EpyptBGPrefab;
-    [SerializeField] GameObject stoneIceBGPrefab;
+    [SerializeField] static GameObject JungleGroundPrefab;
+    [SerializeField] static GameObject JungleBGroundPrefab;
+    [SerializeField] static GameObject CityGroundPrefab;
+    [SerializeField] static GameObject CityGroundBGPrefab;
+    [SerializeField] static GameObject StonesIcePrefab;
+    [SerializeField] static GameObject FrozenBGPrefab;
+    [SerializeField] static GameObject EgyptGroundPrefab;
+    [SerializeField] static GameObject EgyptGroundBGPrefab;
+    [SerializeField] static GameObject DesertGroundPrefab;
+    [SerializeField] static GameObject FactoryGroundPrefab;
+    [SerializeField] static GameObject FactoryGroundBGPrefab;
+    [SerializeField] static GameObject WaterFillPrefab;
+    [SerializeField] static GameObject QuicksandFillPrefab;
 
     [MenuItem("Boom/Import PLHS", false, 20)]
     static void ImportPlhs()
@@ -99,6 +107,9 @@ public class PlhsImporter : MonoBehaviour
                 BPM.friction = (float)(NSNumber)physProps["Friction"];
                 BPM.type = (int)(NSNumber)physProps["Type"];
                 BPM.rotationSpeed = (float)(NSNumber)physProps["AngularVelocity"];
+                NSArray linearSpeed = (NSArray)physProps["LinearVelocity"];
+                BPM.horizontalSpeed = (float)(NSNumber)linearSpeed[0];
+                BPM.verticalSpeed = (float)(NSNumber)linearSpeed[1];
             }
         }
 
@@ -109,12 +120,128 @@ public class PlhsImporter : MonoBehaviour
     {
         //don't think this is an array, It is probably a dictionary for the load ground input parameters
         NSDictionary bezierDict = (NSDictionary)bigBezierArray[0];
-        //instantiate at position of 
-        GameObject groundObject = Instantiate(cityGroundPrefab);
-        var spriteShapeRenderer = groundObject.GetComponent<SpriteShapeRenderer>();
-        var spriteShapeController = groundObject.GetComponent<SpriteShapeController>();
-        var spline = spriteShapeController.spline;
+
+
+        //GameObject groundObject = Instantiate(cityGroundPrefab);
+
+
         //spriteShapeController
-        groundObject.name = bezierDict["Image"].ToString().Substring(0, bezierDict["Image"].ToString().Length - 4);
+        //groundObject.name = bezierDict["Image"].ToString().Substring(0, bezierDict["Image"].ToString().Length - 4);
+
+        GameObject groundObject = null;
+        switch (bezierDict["Image"].ToString())
+        {
+            case "JungleGround.png":
+                if(JungleGroundPrefab != null)
+                {
+                    groundObject = Instantiate(JungleGroundPrefab);
+                }               
+                break;
+            case "JungleBGround.png":
+                if (JungleBGroundPrefab != null)
+                {
+                    groundObject = Instantiate(JungleBGroundPrefab);
+                }
+                break;
+            case "CityGround.png":
+                if (CityGroundPrefab != null)
+                {
+                    groundObject = Instantiate(CityGroundPrefab);
+                }
+                break;
+            case "CityGroundBG.png":
+                if (CityGroundBGPrefab != null)
+                {
+                    groundObject = Instantiate(CityGroundBGPrefab);
+                }
+                break;
+            case "StonesIce.png":
+                if (StonesIcePrefab != null)
+                {
+                    groundObject = Instantiate(StonesIcePrefab);
+                }
+                break;
+            case "FrozenBG.png":
+                if (JungleGroundPrefab != null)
+                {
+                    groundObject = Instantiate(FrozenBGPrefab);
+                }
+                break;
+            case "EgyptGround.png":
+                if (JungleGroundPrefab != null)
+                {
+                    groundObject = Instantiate(EgyptGroundPrefab);
+                }
+                break;
+            case "EgyptGroundBG.png":
+                if (JungleGroundPrefab != null)
+                {
+                    groundObject = Instantiate(EgyptGroundBGPrefab);
+                }
+                break;
+            case "DesertGround.png":
+                if (JungleGroundPrefab != null)
+                {
+                    groundObject = Instantiate(DesertGroundPrefab);
+                }
+                break;
+            case "FactoryGround.png":
+                if (JungleGroundPrefab != null)
+                {
+                    groundObject = Instantiate(FactoryGroundPrefab);
+                }
+                break;
+            case "FactoryGroundBG.png":
+                if (JungleGroundPrefab != null)
+                {
+                    groundObject = Instantiate(FactoryGroundBGPrefab);
+                }
+                break;
+            case "WaterFill.png":
+                if (JungleGroundPrefab != null)
+                {
+                    groundObject = Instantiate(WaterFillPrefab);
+                }
+                break;
+            case "QuicksandFill.png":
+                if (JungleGroundPrefab != null)
+                {
+                    groundObject = Instantiate(QuicksandFillPrefab);
+                }
+                break;
+            default:
+                Debug.Log("Not a vowel");
+                break;
+        }
+        SpriteShapeRenderer spriteShapeRenderer;
+        SpriteShapeController spriteShapeController;
+        if (groundObject == null)
+        {
+            groundObject = new GameObject(bezierDict["UniqueName"].ToString());
+            spriteShapeRenderer = groundObject.AddComponent<SpriteShapeRenderer>();
+            spriteShapeController = groundObject.AddComponent<SpriteShapeController>();
+        }
+        else
+        {
+            groundObject.name = bezierDict["UniqueName"].ToString();
+            spriteShapeRenderer = groundObject.GetComponent<SpriteShapeRenderer>();
+            spriteShapeController = groundObject.GetComponent<SpriteShapeController>();
+        }
+        var spline = spriteShapeController.spline;
+        
+        //I don't know what I am doing, but also how would I turn the triangulation2d into the points again?
+
+        ////Polygon2D polygon = Polygon2D.Contour(points);
+        ////Triangulation2D triangulation = new Triangulation2D(polygon, triangulationThreshold);
+        ////var triangles = triangulation.Triangles;
+        //NSArray tileVerticies = (NSArray)bezierDict["TileVertices"];
+        //foreach(NSArray triangles in tileVerticies)
+        //{
+        //    foreach(NSArray triangleArr in triangles)
+        //    {
+
+        //    }
+        //}
+       // if(nestedObject.GetType().Equals(typeof(NSArray)))
     }
 }

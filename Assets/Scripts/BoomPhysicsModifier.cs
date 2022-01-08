@@ -40,8 +40,10 @@ public class BoomPhysicsModifier : MonoBehaviour
     [Tooltip("0==default, 1==static, 2==dynamic, 3==non-interactable, 4==onehit")]
     public int type;
 
-    
+
     [Header("Other/Debug")]
+    [Tooltip("bomb and ball will default to circle, unless 0DRAFT is true")]
+    public bool isCircle = false;
     public float linearDampening = 0.000000f;
     public float group = 0;
     public float category = 1;

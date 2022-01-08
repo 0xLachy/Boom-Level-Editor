@@ -76,6 +76,8 @@ public class PlhsGenerator : MonoBehaviour
             bezier.Add("Friction", 1.0);
             bezier.Add("Image", "EgyptGroundBG.png");
             bezier.Add("PhysicType", 3);
+            //if zOrder is anything but 0 it will cause problems....
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y);
         }
         else if (gameObject.name.Length >= 11 && gameObject.name.Substring(0, 11) == "EgyptGround")
         {
@@ -303,7 +305,7 @@ public class PlhsGenerator : MonoBehaviour
         else
         {
             if (sprite.name.Length < 5 || (sprite.name.Length >= 5 && sprite.name.Substring(0, 5) != "water"))
-            { //fudge cos error on 'box'
+            { 
                 genProps.Add("AnimRepetitions", 0);
                 genProps.Add("AnimAtStart", false);
                 genProps.Add("AnimSpeed", 0.0);
@@ -330,6 +332,7 @@ public class PlhsGenerator : MonoBehaviour
                 physProps.Add("AngularVelocity", BPM.rotationSpeed);
                 physProps.Add("Friction", BPM.friction);
                 physProps.Add("Type", BPM.type);
+                physProps.Add("IsCircle", BPM.isCircle);
             }
             else
             {
@@ -363,6 +366,11 @@ public class PlhsGenerator : MonoBehaviour
                     physProps.Add("Type", BPM.type);
                 }
 
+                if (sprite.name.Length >= 4 && sprite.name.Substring(0, 4) == "bomb" || sprite.name.Length >= 4 && sprite.name.Substring(0, 4) == "ball")
+                {
+                    physProps.Add("IsCircle", true);
+                }
+
             }
 
             physProps.Add("Mask", BPM.mask);
@@ -381,7 +389,15 @@ public class PlhsGenerator : MonoBehaviour
             Type type = typeof(ShapeFixtures);
             MethodInfo method = type.GetMethod(sprite.name);
             ShapeFixtures shapeFixtures = new ShapeFixtures();
-            method.Invoke(shapeFixtures, new object[] { physProps });           
+            try 
+            { 
+                method.Invoke(shapeFixtures, new object[] { physProps }); 
+            }
+            catch (NullReferenceException)
+            {
+                Debug.Log($"{sprite.name} is missing a shape fixtures reference, the border will be rectangle and may not fit properly");
+            }
+                       
 
             dict.Add("PhysicProperties", physProps);
         }
