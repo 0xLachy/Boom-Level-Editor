@@ -48,7 +48,22 @@ public class PlhsGenerator : MonoBehaviour
                 }
             }
         }
-
+        for (int index = 0; index < sprites.Count; index++)
+        {
+            NSObject obj = sprites[index];
+            NSDictionary dict = (NSDictionary)obj;
+            if (dict.ContainsKey("GeneralProperties"))
+            {
+                NSDictionary generalProperties = (NSDictionary)dict["GeneralProperties"];
+                if (generalProperties["SHName"].ToString() == "cage_fg")
+                {
+                    //this probably will break if you apply physics mods to the cage
+                    NSDictionary cageDict = dict;
+                    sprites.RemoveAt(index);
+                    sprites.Add(cageDict);
+                }
+            }
+        }
         root.Add("SPRITES_INFO", sprites);
         root.Add("LoadedImages", GetLoadedImages());
         root.Add("LHVersion", "1.4.7");
