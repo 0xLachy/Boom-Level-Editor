@@ -328,11 +328,10 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -410,6 +409,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -662,8 +673,8 @@ TextureImporter:
         y: 1590
         width: 100
         height: 100
-      alignment: 9
-      pivot: {x: 0.41146117, y: 0.49999878}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2574,7 +2585,7 @@ TextureImporter:
         width: 49
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2598,113 +2609,6 @@ TextureImporter:
     secondaryTextures:
     - texture: {instanceID: 0}
       name: lol
-    nameFileIdTable:
-      rotate_drop: 21300080
-      pinky_blink: 21300058
-      pinky_falling_4: 21300162
-      pinky_falling_5: 21300160
-      bomb_normal_1: 21300164
-      lollipop_whirl_smile: 487047406238522432
-      golden_nail: 21300068
-      boulder_snow: 21300062
-      factory_bit_nail: 21300010
-      golden_nail_base: 21300012
-      pinky_breathing_3: 21300136
-      tree_big: 21300092
-      pyramid_brick_dark: 21300078
-      moving_flat_xxl: 21300026
-      PU_rocket_1: 21300074
-      GameObjects_0: 698866057
-      PU_ice_wheel_3: 21300066
-      statue_3: 21300030
-      wheel_bit: 21300178
-      pinky_1: 21300132
-      rocket_used_2: 21300082
-      marie: -800616533
-      festival_ball: 21300052
-      pinky_breathing_2: 21300134
-      cage_fg: 21300056
-      factory_barrel_still: 21300034
-      frozen_statue_1: 21300094
-      tree_small: 21300118
-      merry_christmas: 1709075981183930642
-      rotate_star: 21300048
-      PU_rocket_2: 21300142
-      pyramid_urn: 21300098
-      festival_circle: 21300152
-      rocket_2_4: 21300084
-      pile_of_coins_6: 21300036
-      box: 21300120
-      rocket_2_1: 21300156
-      pile_of_coins_4: 21300004
-      statue_2: 21300020
-      pile_of_coins_2: 21300090
-      festival_rectangle: 21300050
-      lollipop_depth: 21300014
-      rotate_hexagon: 21300028
-      festival_glass_ball: 21300124
-      PU_rocket_3: 21300044
-      statue_1: 21300104
-      bomb_normal_3: 21300116
-      nails: 21300172
-      festival_flat_xxl: 21300038
-      ball_1: 21300022
-      pinky_falling_3: 21300114
-      cage_bottom: 21300176
-      festival_barrel_rolling: 21300108
-      factory_bit_dome: 21300072
-      fish_0: -1958861788
-      barrel_1: 21300032
-      festival_bowl: 21300166
-      big_rocket: 4134492550651945424
-      festival_star: 21300122
-      pinky_falling_1: 21300128
-      festival_cone: 21300008
-      trampoline_layer_1: 21300024
-      rocket_used_1: 21300086
-      factory_bit_thin: 21300150
-      pinky_breathing_1: 21300140
-      moving_flat_xl: 21300158
-      factory_bit_fat: 21300138
-      factory_bit_nut: 21300046
-      PU_rocket_4: 21300168
-      dino: 7656349582420554337
-      stargate: 1003958789531666178
-      roof_hook: 21300174
-      pile_of_coins_5: 21300016
-      pyramid_pyramid: 21300018
-      cage_bg: 21300096
-      rocket_2_2: 21300144
-      bee_4: 757364714
-      bee_5: 1421020960
-      fire_bowl: 21300076
-      frozen_statue_2: 21300148
-      pile_of_coins_1: 21300130
-      xmas1: -4748949316688570600
-      rotate_cog: 21300002
-      pyramid_brick_light: 21300042
-      bomb_red_alert: 21300112
-      pinky_3: 21300064
-      festival_box: 21300110
-      bee_3: 1498113116
-      pinky_falling_2: 21300126
-      factory_bit_connect: 21300040
-      bee_0: -1248235928
-      wheel: 21300102
-      pyramid_3: 21300060
-      PU_ice_wheel_1: 21300106
-      lollipop_whirl: 21300000
-      pyramid_sarcophagus: 21300006
-      bee_2: -372233548
-      bomb_normal_2: 21300146
-      factory_bit_cube: 21300054
-      pinky_2: 21300170
-      rocket_2_3: 21300088
-      boulder: 21300154
-      big_tree: 4668934956778751190
-      pile_of_coins_3: 21300070
-      PU_ice_wheel_2: 21300100
-      bee_1: 2100880872
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

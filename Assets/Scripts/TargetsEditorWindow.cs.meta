@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 7be309aa13e7fb94ead961864e2743a3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - coin: {fileID: 2800000, guid: ab84acc282234304d9738c1b92c7d744, type: 3}
+  - ball: {fileID: 2800000, guid: d2e14e84faa2cda4aa1ff5d3166b3c3a, type: 3}
+  - bomb: {fileID: 2800000, guid: 4abf967a4834124418fce601c8a1bc5c, type: 3}
+  - rocket: {fileID: 2800000, guid: 9d530b441cc723a4ebc8bd2f67001397, type: 3}
+  - bowlingPin: {fileID: 2800000, guid: 81248eadc967d974db248e943e44d818, type: 3}
+  - springboard: {fileID: 2800000, guid: f3c21c5278240da40b7d2f955cab47e4, type: 3}
+  - boostTunnel: {fileID: 2800000, guid: 48f6b556a9eb6604f9d25359b8f24683, type: 3}
+  - timeImage: {fileID: 2800000, guid: 94c48381f7f747e40b077bde141e25d4, type: 3}
+  - drWolfenstein1: {fileID: 2800000, guid: cb51a2d38dbaa494dba64d4bc83e9560, type: 3}
+  - drWolfenstein2: {fileID: 2800000, guid: f057b3a7758dfb94dbbd70e06aecfc86, type: 3}
+  - drWolfenstein3: {fileID: 2800000, guid: ec96092a44fc94f4e99fac0deec55db1, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
