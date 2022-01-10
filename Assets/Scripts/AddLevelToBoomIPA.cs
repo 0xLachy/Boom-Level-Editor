@@ -5,14 +5,18 @@ using Claunia.PropertyList;
 using System;
 using System.IO;
 using UnityEditor;
+using System.Text.RegularExpressions;
 
 
 public class AddLevelToBoomIPA : MonoBehaviour
 {
     static StreamWriter sw;
-
+    static NSDictionary dictionaryTarget1 = new NSDictionary();
+    static NSDictionary dictionaryTarget2 = new NSDictionary();
+    static NSDictionary dictionaryTarget3 = new NSDictionary();
+    static NSDictionary[] dictionaryTargetArray = { dictionaryTarget1, dictionaryTarget2, dictionaryTarget3 };
     //[MenuItem("Boom/Add To ipa", false, 50)]
-    static void AddToIpa(string[] targets, int[] targetIndexes, string[] targetValues, string levelsPlistPath, string levelsPlhsPath, string customLevelName)
+    public static void AddToIpa(string[] targets, int[] targetIndexes, string[] targetValues, string levelsPlistPath, string levelPlhsPath, string customLevelName)
     {
 
 
@@ -20,6 +24,7 @@ public class AddLevelToBoomIPA : MonoBehaviour
         NSObject obj = PropertyListParser.Parse(fileContent);
         if (obj is NSDictionary dict)
         {
+            ConvertTargetToDictionary(targets, targetIndexes, targetValues);
             FindCustomLevelsIndexInPlist((NSArray)dict["LevelGroups"], customLevelName);
             Debug.Log("Made it past the if statement");
         }
@@ -128,20 +133,58 @@ public class AddLevelToBoomIPA : MonoBehaviour
     }
 
     //using 2 arrays instead of a dictionary, need to fix that later
-    public static void ConvertTargetToDictionary(string[] targetsArray, string[] inputTextArray)
+    
+    public static void ConvertTargetToDictionary(string[] targets, int[] targetIndexes, string[] targetValues)
     {
-        for (int i = 0; i < targetsArray.Length; i++)
+        bool all = false;
+        bool none = false;
+        double targetNumber = 0;
+        bool notANumber = false;
+        foreach(int targetIndex in targetIndexes)
         {
-            string target = targetsArray[i];
-            switch (target)
+            string stringToConvert = targetValues[targetIndex].ToLower();
+            Regex.Replace(stringToConvert, @"\s+", "");
+            if (Regex.IsMatch(stringToConvert, @"\d"))
             {
-                case "ball":
-                    Debug.Log("testing");
+                Debug.LogError("string can only contain numbers or letters");
+            }
+            else if(stringToConvert == "all")
+            {
+                all = true;
+            }
+            else if(stringToConvert == "none")
+            {
+                none = true;
+            }
+            else
+            {
+                notANumber = Double.TryParse(stringToConvert, out targetNumber);
+            }
+            //foreach (KeyValuePair<int, string> targetDict in targetValuesDictionaryArray[i])
+            //String.Format("{0:0.000000}", DefaultValuesReferences.GORS[spriteName][retrievingIndex])
+            var editingTarget = dictionaryTargetArray[targetIndex];
+            //NSDictionaryTargets[targetIndex] = new NSDictionary();
+            switch (targets[targetIndex])
+            {
+                case "coin":
+                    if (all)
+                    {
+                        editingTarget.Add("Type", "All pickups");
+                    }
+                    else if (none || (targetNumber == 0 && !notANumber))
+                    {
+                        editingTarget.Add("Type", "No coins");
+                    }
+                    else if (!notANumber)
+                    {
+                        editingTarget.Add("Type", "soemthing");
+                    }
                     break;
                 default:
                     Debug.Log("Doesn't go into any");
                     break;
             }
         }
+        NSArray targetNSArry = new NSArray(3) { dictionaryTarget1, dictionaryTarget2, dictionaryTarget3 };
     }
 }
