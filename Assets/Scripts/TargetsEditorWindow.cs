@@ -4,27 +4,38 @@ using System;
 using System.IO;
 using UnityEngine;
 using UnityEditor;
+using System.Linq;
 
 public class TargetsEditorWindow : EditorWindow
 {
-    //use none or no, if you think it fits, eg, coins, do none, springboards do 0;
-    //if you add 4, then the 4th is a star point thing
-    //add complete without left button or right button, break balls
-    //add section to add description
-    //No plastic, No clouds etc...
-    public static int defaultIndex = 0;
-    public static string defaultValue = "1";
-    public static int targetsCount = 3;
+    public static bool singlesCanHaveDescription = BoomSettings.SinglesCanHaveDescription;
+    public static bool addSuperStarLevel;
+
+    public static int[] defaultIndexes = BoomSettings.DefaultIndexes;
+    public static string[] defaultTargetValues = BoomSettings.DefaultTargetValues;
+    public static bool autoDescription = BoomSettings.Autodescription;
+    public static string defaultDescription = BoomSettings.DefaultDescription;
+    public static int targetListCapacity = BoomSettings.TargetListCapacity;
+    public static int _targetListCapacity = targetListCapacity;
+    public static int backgroundIndex = BoomSettings.DefaultBGIndex;
+
     public static string[] targets = { "coin", "ball", "bomb", "rocket", "time", "bowling pin", "boost tunnel", "spring board", "goal", "button", "break ball", "custom", "multiple" };
-    public static string[] backgrounds = { "jungle", "city", "ice", "egypt", "desert", "festival" };
-    public static int backgroundIndex = 0;
- //   public int[] targetIndexes = new int[3];
-    public int[][] jaggedTargetIndexsArray = new int[targetsCount][];
-    public List<List<int>> targetIndexesListList = new List<List<int>>(3);
-    public List<List<string>> targetValuesListList = new List<List<string>>(3);
-    public List<Dictionary<int, string>> targetValuesDictionaryArray = new List<Dictionary<int, string>>(targetsCount);
-    public string[] targetValues = { "1", "1", "1" };
-    public string newLevelName = "";
+    public static string[] backgrounds = { "jungle", "city", "ice", "egypt", "festival" };
+
+    public static Color navyBlue = new Color32(48, 81, 99, 39);
+    public static Color blueDarkish = new Color32(84, 144, 176, 69);
+    public static Color blue = new Color32(109, 186, 227, 89);
+    public static Color lightBlue = new Color32(181, 214, 232, 91);
+    //TODO: implement a unity color picker in the settings to change these
+    //The order you put the colour in the array changes the look
+    public static Color[] colorArray = { navyBlue, blueDarkish, blue, lightBlue };
+
+    public List<List<int>> targetIndexesListList = new List<List<int>>(targetListCapacity);
+    public List<List<string>> targetValuesListList = new List<List<string>>(targetListCapacity);
+    public static Dictionary<int, string> targetDescriptions = new Dictionary<int, string>();
+
+
+    public string inGameName = "";
     bool showDrWolfenstein = true;
     [SerializeField] Texture2D coin;
     [SerializeField] Texture2D ball;
@@ -37,13 +48,15 @@ public class TargetsEditorWindow : EditorWindow
     [SerializeField] Texture2D button;
     [SerializeField] Texture2D breakBall;
     [SerializeField] Texture2D timeImage;
-    [SerializeField] Texture2D drWolfenstein1;
+    [SerializeField] public Texture2D drWolfenstein1;
     [SerializeField] Texture2D drWolfenstein2;
     [SerializeField] Texture2D drWolfenstein3;
-    [SerializeField] int groupedTargetLimit = 6;
+    Texture2D[] drWolfensteinArr;
+    
+    //GUIStyle boxStyle;
 
     static string[] levelsPlistfilters = { "Apple binary", "plist", "All Files", "*" };
-    string levelsPlistPath;
+    string levelsPlistPath = BoomSettings.DefaultPlistPath;
 
     static string[] levelsPlhsfilters = { "Boom Level", "plhs", "All Files", "*" };
     string levelPlhsPath;
@@ -56,6 +69,8 @@ public class TargetsEditorWindow : EditorWindow
 
     void OnGUI()
     {
+        //boxStyle = new GUIStyle(GUI.skin.box);
+        //boxStyle.normal.textColor = Color.cyan;
         EditorGUILayout.LabelField("Click the buttons to change the type of target, or to get the file location, " +
             "the box to the right holds how the target will be added. Type 0 or none if no touching, type all for touch/collect/explode " +
             "all, any number for targets, eg 4", EditorStyles.wordWrappedLabel);
@@ -74,36 +89,40 @@ public class TargetsEditorWindow : EditorWindow
         if (GUILayout.Button("New Level (File)"))
         {
             levelPlhsPath = EditorUtility.OpenFilePanelWithFilters("levels.plist should be found in boom.app", "", levelsPlhsfilters);
+            //add function / code here to get the previous challenges and display them automatically by the name
         }
         levelPlhsPath = EditorGUILayout.TextField(levelPlhsPath);
         EditorGUILayout.EndHorizontal();
 
         GUILayout.Space(20);
 
-        //EditorGUILayout.BeginHorizontal();
-        //GUILayout.FlexibleSpace();
-        //EditorGUILayout.LabelField("Choose Level background and Name (in game)", EditorStyles.wordWrappedLabel);
-        //GUILayout.FlexibleSpace();
-        //EditorGUILayout.EndHorizontal();
-
         EditorGUILayout.BeginHorizontal();
-        GUILayout.Label("Level Name", GUILayout.MaxWidth(position.width / 9));
-        newLevelName = GUILayout.TextField(newLevelName);
-        backgroundIndex = EditorGUILayout.Popup(backgroundIndex, backgrounds);
+        GUILayout.Label("in-game name", GUILayout.MaxWidth((float)(position.width / 8.2)));
+        inGameName = GUILayout.TextField(inGameName);
+        backgroundIndex = EditorGUILayout.Popup(backgroundIndex, backgrounds, GUILayout.MaxWidth(position.width / 2));
         GUILayout.EndHorizontal();
 
+        GUILayout.Space(10);
+        //f*ck unity not having a way to display the text on the right side!!!!
+        addSuperStarLevel = GUILayout.Toggle(addSuperStarLevel, "Have Super Star Challenge");
+        if (addSuperStarLevel) 
+        {
+            targetListCapacity = _targetListCapacity + 1; 
+        }
+        else
+        {
+            targetListCapacity = _targetListCapacity;
+            if(targetIndexesListList.Count > targetListCapacity)
+            {
+                for (int i = 0; i < targetIndexesListList[targetListCapacity].Count; i++)
+                {
+                    DecrementLists(targetListCapacity, i);
+                }
+            }
+        }
         GUILayout.Space(20);
 
         ShowAndEditTargetsInGUI();
-        //ShowAndEditTargetInGUI(0);
-
-        //GUILayout.Space(7);
-
-        //ShowAndEditTargetInGUI(1);
-
-        //GUILayout.Space(7);
-
-        //ShowAndEditTargetInGUI(2);
 
         if(showDrWolfenstein)
             ShowDrWolfenstein();
@@ -125,14 +144,11 @@ public class TargetsEditorWindow : EditorWindow
                         levelPlhsPath = "";
                     }
                 }
-                string camelCaseName = CamelCase(customLevelName);
-                if(camelCaseName == customLevelName)
+                if (customLevelName != string.Concat(customLevelName.Select((x, i) => i > 0 && char.IsUpper(x) ? "_" + x.ToString() : x.ToString())))
                 {
-                    answer = EditorUtility.DisplayDialog("WARNING", $"the name you chose \"{customLevelName}\" is in camelCase, the naming convention in boom" +
-                            $"files is generally Title Case Snake_Case for the name, if you don't care press continue", "back", "continue");
+                    Debug.Log(string.Concat(customLevelName.Select((x, i) => i > 0 && char.IsUpper(x) ? "_" + x.ToString() : x.ToString())));
+                    answer = EditorUtility.DisplayDialog("WARNING", $"the name you chose \"{customLevelName}\" isn't in snake case, an example of how to name it is 'Custom_Spike_Lover'", "back", "continue");
                 }
-                Debug.Log(Char.ToUpper(camelCaseName[0]) + camelCaseName.Substring(1));
-                
 
             }
             else
@@ -142,172 +158,213 @@ public class TargetsEditorWindow : EditorWindow
             }
             if (!answer)
             {
-                //AddLevelToBoomIPA.AddToIpa(targets, jaggedTargetIndexsArray, targetValuesDictionaryArray, levelsPlistPath, levelPlhsPath, customLevelName);
+                
+                AddLevelToBoomIPA.AddToIpa(targets, targetIndexesListList, targetValuesListList, targetDescriptions, levelsPlistPath, levelPlhsPath, customLevelName, 
+                    inGameName, GetBackgroundName());
+                BoomSettings.DefaultPlistPath = levelsPlistPath;
                 Close();
             }
         }
-        //GUILayout.BeginHorizontal();
-        //for (int i = 0; i < jaggedTargetIndexsArray.Length; i++)
-        //{
-        //    //int index = jaggedTargetsArray[i];
-        //    switch (targets[jaggedTargetIndexsArray[i][0]])
-        //    {
-        //        case "coin":
-        //            GUILayout.Box(coin, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //            break;
-        //        case "ball":
-        //            GUILayout.Box(ball, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //            break;
-        //        case "bomb":
-        //            GUILayout.Box(bomb, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //            break;
-        //        case "rocket":
-        //            GUILayout.Box(rocket, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //            break;
-        //        case "time":
-        //            GUILayout.Box(timeImage, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //            break;
-        //        case "bowling pin":
-        //            GUILayout.Box(bowlingPin, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //            break;
-        //        case "boost tunnel":
-        //            GUILayout.Box(boostTunnel, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //            break;
-        //        case "spring board":
-        //            GUILayout.Box(springboard, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //            break;
-        //        case "goal":
-        //            GUILayout.Box(goal, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //            break;
-        //        case "button":
-        //            GUILayout.Box(button, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //            break;
-        //        case "break ball":
-        //            GUILayout.Box(breakBall, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //            break;
-        //        case "custom":
-        //            GUILayout.Box(drWolfenstein1, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //            break;
-        //        case "multiple":
-        //            GUILayout.BeginVertical();
-        //            //GUILayout.BeginArea(new Rect(494.00f, 337.00f, 249.00f, 234.00f)); doesn't work
-        //            //(x: 494.00, y: 337.00, width: 249.00, height: 234.00) after for loop
-        //            for (int i1 = 0; i1 < targetValues[i].Length + 1; i1++)
-        //            {
-        //                int imageIndex = jaggedTargetIndexsArray[i][i1];
-        //                switch (targets[imageIndex])
-        //                {
-        //                    case "coin":
-        //                        GUILayout.Box(coin, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //                        break;
-        //                    case "ball":
-        //                        //GUILayout.Box(ball, GUILayout.ExpandHeight(true), GUILayout.ExpandWidth(true));
-        //                        GUILayout.Box(ball, GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //                        break;
-        //                    case "bomb":
-        //                        GUILayout.Box(bomb, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //                        break;
-        //                    case "rocket":
-        //                        GUILayout.Box(rocket, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //                        break;
-        //                    case "time":
-        //                        GUILayout.Box(timeImage, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //                        break;
-        //                    case "bowling pin":
-        //                        GUILayout.Box(bowlingPin, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //                        break;
-        //                    case "boost tunnel":
-        //                        GUILayout.Box(boostTunnel, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //                        break;
-        //                    case "spring board":
-        //                        GUILayout.Box(springboard, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //                        break;
-        //                    case "goal":
-        //                        GUILayout.Box(goal, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //                        break;
-        //                    case "button":
-        //                        GUILayout.Box(goal, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //                        break;
-        //                    case "break ball":
-        //                        GUILayout.Box(breakBall, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //                        break;
-        //                    case "custom":
-        //                        GUILayout.Box(drWolfenstein1, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
-        //                        break;
-        //                    default:
-        //                        Debug.Log(targets[imageIndex] + " can't been found in the logo images");
-        //                        break;
-        //                }
-        //            }
-        //            GUILayout.EndVertical();
-        //            //using the get last rect, I can figure otu the size of the box in the bottom left, then I can use division by the amount of multiples chosen and bam!
-        //            Debug.Log(GUILayoutUtility.GetLastRect());
-        //            break;
-        //        default:
-        //            Debug.Log(targets[i] + " can't been found in the logo images");
-        //            break;
-        //    }
-        //}
-        //(x: 494.00, y: 337.00, width: 249.00, height: 234.00) after for loop
+        GUILayout.BeginHorizontal();
+        for (int i2 = 0; i2 < targetIndexesListList.Count; i2++)
+        {
+            //List<int> listInt = targetIndexesListList[i2];
+            GUILayout.BeginVertical();
+            for (int i1 = 0; i1 < targetIndexesListList[i2].Count; i1++)
+            {
+                //int i = listInt[i1];
+                switch (targets[targetIndexesListList[i2][i1]])
+                {
+                    case "coin":
+                        GUILayout.Box(coin, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
+                        break;
+                    case "ball":
+                        GUILayout.Box(ball, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
+                        break;
+                    case "bomb":
+                        GUILayout.Box(bomb, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
+                        break;
+                    case "rocket":
+                        GUILayout.Box(rocket, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
+                        break;
+                    case "time":
+                        GUILayout.Box(timeImage, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
+                        break;
+                    case "bowling pin":
+                        GUILayout.Box(bowlingPin, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
+                        break;
+                    case "boost tunnel":
+                        GUILayout.Box(boostTunnel, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
+                        break;
+                    case "spring board":
+                        GUILayout.Box(springboard, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
+                        break;
+                    case "goal":
+                        GUILayout.Box(goal, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
+                        break;
+                    case "button":
+                        GUILayout.Box(button, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
+                        break;
+                    case "break ball":
+                        GUILayout.Box(breakBall, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
+                        break;
+                    case "custom":
+                        GUILayout.Box(drWolfenstein1, GUILayout.ExpandHeight(true), GUILayout.MinWidth(position.width / 3), GUILayout.MaxWidth(position.width / 3));
+                        break;
+                    default:
+                        Debug.Log(targets[targetIndexesListList[i2][i1]] + " can't been found in the logo images");
+                        break;
+                }
+            }
+            GUILayout.EndVertical();
+        }  
     }
 
     private void ShowAndEditTargetsInGUI()
     {
-        for (int i = 0; i < targetIndexesListList.Capacity; i++)
+        //Color defaultColor = GUI.color;
+        for (int i = 0; i < targetListCapacity; i++)
         {
             //List<int> intList = targetIndexesListList[i];
             if (targetIndexesListList.Count < i + 1)
             {
-                targetIndexesListList.Add(new List<int>(defaultIndex));
+                targetIndexesListList.Add(new List<int>(1));
                 targetValuesListList.Add(new List<string>(1));
-                IncrementLists(i);
+                IncrementLists(i, 0);
             }
             else
             {
-                EditorGUILayout.BeginHorizontal();
+                
                 if (targetIndexesListList[i].Count > 1)
                 {
-                   foreach(int entry in targetIndexesListList[i])
+                    //GUI.color = colorArray[i];
+                    EditorGUILayout.BeginVertical();
+                    for (int i1 = 0; i1 < targetIndexesListList[i].Count; i1++)
                     {
-                        targetIndexesListList[i][entry] = EditorGUILayout.Popup(targetIndexesListList[i][entry], targets);
-                        targetValuesListList[i][entry] = EditorGUILayout.TextField(targetValuesListList[i][entry]);
-                        DisplayMultipleButton(i, entry);
+                        //int entry = targetIndexesListList[i][i1];
+                        EditorGUILayout.BeginHorizontal();
+                        targetIndexesListList[i][i1] = EditorGUILayout.Popup(targetIndexesListList[i][i1], targets);
+                        targetValuesListList[i][i1] = EditorGUILayout.TextField(targetValuesListList[i][i1]);
+                        DisplayMultipleButton(i, i1);
+                        EditorGUILayout.EndHorizontal();
                     }
+                    ManageTargetDescription(i);
+                    EditorGUILayout.EndVertical();
+                    //GUI.color = defaultColor;
                 }
                 else
                 {
-
+                    EditorGUILayout.BeginHorizontal(); 
                     targetIndexesListList[i][0] = EditorGUILayout.Popup(targetIndexesListList[i][0], targets);
                     targetValuesListList[i][0] = EditorGUILayout.TextField(targetValuesListList[i][0]);
                     DisplayMultipleButton(i, 0);
+                    EditorGUILayout.EndHorizontal();
+                    if (singlesCanHaveDescription) ManageTargetDescription(i);
                 }
-                EditorGUILayout.EndHorizontal();
-                if (i != targetIndexesListList.Capacity - 1)
+                
+                if (i != targetIndexesListList.Count - 1)
                     GUILayout.Space(10);
             }
         }
     }
 
-    private void IncrementLists(int i)
+    private void ManageTargetDescription(int i)
     {
-        targetIndexesListList[i].Add(defaultIndex);
-        targetValuesListList[i].Add(defaultValue);
+        EditorGUILayout.BeginHorizontal();
+        if (!targetDescriptions.ContainsKey(i))
+        {
+            if (GUILayout.Button("Add Description"))
+            {
+                if (autoDescription)
+                {
+                    defaultDescription = "";
+                    for (int i1 = 0; i1 < targetIndexesListList[i].Count; i1++)
+                    {
+                        int i2 = targetIndexesListList[i][i1];
+                        string targetName = targets[i2];
+                        string value = targetValuesListList[i][i1];
+
+                        if (i1 == targetIndexesListList[i].Count - 1)
+                        {
+                            if(targetName == "time")
+                            {
+                                defaultDescription = defaultDescription.Remove(defaultDescription.LastIndexOf("and"), 4);
+                                defaultDescription += $"within {String.Format("{0:00.000}", float.Parse(value))}";
+                            }
+                            else if(targetName == "custom")
+                            {
+                                defaultDescription += $"{value}";
+                            }
+                            else
+                            {
+                                defaultDescription += $"{value} {targetName}";
+                            }
+                        }
+                        else
+                        {
+                            if(value.ToLower() == "all" || int.TryParse(value, out int intValue))
+                            {                               
+                                if(value.ToLower() == "all" || int.Parse(value) > 1)
+                                    defaultDescription += $"{value} {targetName}s and ";
+                                else
+                                    defaultDescription += $"{value} {targetName} and ";
+                            }
+                            else if (targetName == "custom")
+                            {
+                                defaultDescription += $"{value} and "; 
+                            }
+                            else
+                            {
+                                defaultDescription += $"{value} {targetName} and ";
+                            }
+                        }
+                    }
+                }
+                targetDescriptions.Add(i, defaultDescription);
+            }
+        }
+        else
+        {
+            targetDescriptions[i] = EditorGUILayout.TextField(targetDescriptions[i]);
+            if (GUILayout.Button("-"))
+            {
+                targetDescriptions.Remove(i);
+            }
+        }
+        EditorGUILayout.EndHorizontal();
+    }
+
+    private void IncrementLists(int i, int addIndex)
+    {
+        if(targetIndexesListList[i].Count > addIndex)
+        {
+            targetIndexesListList[i].Insert(addIndex + 1, defaultIndexes[i]);
+            targetValuesListList[i].Insert(addIndex + 1, defaultTargetValues[i]);
+        }
+        else
+        {
+            targetIndexesListList[i].Insert(addIndex, defaultIndexes[i]);
+            targetValuesListList[i].Insert(addIndex, defaultTargetValues[i]);
+        }
     }
     private void DecrementLists(int i, int removalIndex)
     {
-        targetIndexesListList[i].RemoveAt(removalIndex);
-        targetValuesListList[i].RemoveAt(removalIndex);
+        if (targetIndexesListList[i].Count > 1)
+        {
+            targetIndexesListList[i].RemoveAt(removalIndex);
+            targetValuesListList[i].RemoveAt(removalIndex);
+        }
     }
 
-    private void DisplayMultipleButton(int listIndex, int removalIndex)
+    private void DisplayMultipleButton(int listIndex, int addRemoveIndex)
     {
         if(GUILayout.Button("+"))
         {
-            IncrementLists(listIndex);
+            IncrementLists(listIndex, addRemoveIndex);
         }
         if (GUILayout.Button("-"))
         {
-            DecrementLists(listIndex, removalIndex);
+            DecrementLists(listIndex, addRemoveIndex);
         }
     }
 
@@ -317,130 +374,48 @@ public class TargetsEditorWindow : EditorWindow
         {
             Debug.LogError("Missing texture, assign a texture in the inspector");
         }
-
-        //targetValue1 != targetIndex2 || targetIndex2 != targetIndex3 || targetIndex1 != targetIndex3)
-        if (jaggedTargetIndexsArray[0] != jaggedTargetIndexsArray[1] || jaggedTargetIndexsArray[1] != jaggedTargetIndexsArray[2] || jaggedTargetIndexsArray[0] != jaggedTargetIndexsArray[2])
+        int thingsInCommon = 0;
+        for(int i = 1; i < targetIndexesListList.Count; i++)
         {
-            if (jaggedTargetIndexsArray[0] != jaggedTargetIndexsArray[1] && jaggedTargetIndexsArray[2] != jaggedTargetIndexsArray[1] && jaggedTargetIndexsArray[0] != jaggedTargetIndexsArray[2])
+            //lazy approach
+            if(targetIndexesListList[i][0] == targetIndexesListList[0][0])
             {
-                GUILayout.Box(drWolfenstein3, GUILayout.ExpandHeight(false), GUILayout.ExpandWidth(true));
-            }
-            else if ((jaggedTargetIndexsArray[0] == jaggedTargetIndexsArray[1] && targetValues[0] != targetValues[1]) || (jaggedTargetIndexsArray[1] == jaggedTargetIndexsArray[2] && targetValues[1] != targetValues[2])
-                || (jaggedTargetIndexsArray[0] == jaggedTargetIndexsArray[2] && targetValues[0] != targetValues[2]))
-            {
-                GUILayout.Box(drWolfenstein3, GUILayout.ExpandHeight(false), GUILayout.ExpandWidth(true));
-            }
-            else
-            {
-                GUILayout.Box(drWolfenstein2, GUILayout.ExpandHeight(false), GUILayout.ExpandWidth(true));
-            }
+                if(targetValuesListList[i].Count == targetValuesListList[0].Count)
+                {
+                    if (targetValuesListList[i][0] == targetValuesListList[0][0])
+                    {
+                        thingsInCommon++;
+                    }
+                }
+            }           
         }
-        else
+        //I hate having to do it like this but I can't get an array in the inspector, and I also can't declare it at the start either
+        if(drWolfensteinArr == null)
         {
-            if (targetValues[0] != targetValues[1] || targetValues[1] != targetValues[2] || targetValues[0] != targetValues[2])
-            {
-                if (targetValues[0] != targetValues[1] && targetValues[1] != targetValues[2] && targetValues[0] != targetValues[2])
-                {
-                    GUILayout.Box(drWolfenstein3, GUILayout.ExpandHeight(false), GUILayout.ExpandWidth(true));
-                }
-                else
-                {
-                    GUILayout.Box(drWolfenstein2, GUILayout.ExpandHeight(false), GUILayout.ExpandWidth(true));
-                }
-            }
-            else
-            {
-                GUILayout.Box(drWolfenstein1, GUILayout.ExpandHeight(false), GUILayout.ExpandWidth(true));
-            }
+            drWolfensteinArr = new Texture2D[] { drWolfenstein3, drWolfenstein2, drWolfenstein1 };
+        }
+        if(thingsInCommon < drWolfensteinArr.Length)
+        {
+            GUILayout.Box(drWolfensteinArr[thingsInCommon], GUILayout.ExpandHeight(false), GUILayout.ExpandWidth(true));
         }
     }
 
-    private void ShowAndEditTargetInGUI(int choiceOf3)
+    string GetBackgroundName()
     {
-
-        if (jaggedTargetIndexsArray[choiceOf3] == null)
+        return backgrounds[backgroundIndex] switch
         {
-            jaggedTargetIndexsArray[choiceOf3] = new int[1];
-        }
-
-        //EditorGUILayout.BeginHorizontal();
-        //jaggedTargetIndexsArray[choiceOf3][0] = EditorGUILayout.Popup(jaggedTargetIndexsArray[choiceOf3][0], targets);
-        if (targets[jaggedTargetIndexsArray[choiceOf3][0]] != "multiple")
-        {
-            //targetValuesDictionaryArray[choiceOf3][0] = EditorGUILayout.TextField(targetValuesDictionaryArray[choiceOf3][0]);
-            DisplayDictionaryArray(choiceOf3, 0);
-        }
-        else
-        {
-            EditorGUILayout.BeginHorizontal();
-            if (int.TryParse(targetValuesDictionaryArray[choiceOf3][0], out int result))
-            {
-                targetValuesDictionaryArray[choiceOf3][0] = EditorGUILayout.IntSlider(result, 2, groupedTargetLimit).ToString();
-                GUILayout.FlexibleSpace();
-            }
-            else
-            {
-                targetValuesDictionaryArray[choiceOf3][0] = "2";
-            }
-            EditorGUILayout.EndHorizontal();
-        }
-        //EditorGUILayout.EndHorizontal();
-        if (targets[jaggedTargetIndexsArray[choiceOf3][0]] == "multiple")
-        {
-            if (int.TryParse(targetValues[choiceOf3], out int multiCountAmount))
-            {
-                if(jaggedTargetIndexsArray[choiceOf3] == null || jaggedTargetIndexsArray[choiceOf3].Length < multiCountAmount)
-                {
-                    //so with the extra zeroes at the end, I can just use the multiamountcount to determine how much the user chose
-                    jaggedTargetIndexsArray[choiceOf3] = new int[groupedTargetLimit];
-                    targetValuesDictionaryArray[choiceOf3] = new Dictionary<int, string>();
-                }
-
-                for (int i = 0; i < multiCountAmount; i++)
-                {
-                    DisplayDictionaryArray(choiceOf3, i);
-                }
-            
-
-            }
-
-        }
+            "jungle" => "JungleBG.plist",
+            "city" => "CityBG.plist",
+            "ice" => "NorthBG.plist",
+            "egypt" => "EgyptBG.plist",
+            "festival" => "FestivalParkBG.plist",
+            _ => "CityBG.plist",
+        };
     }
-
-    private void DisplayDictionaryArray(int choiceOf3, int i)
-    {
-        //do
-        //{
-        if (targetValuesDictionaryArray[choiceOf3].ContainsKey(i))
-        {
-            EditorGUILayout.BeginHorizontal();
-            jaggedTargetIndexsArray[choiceOf3][i] = EditorGUILayout.Popup(jaggedTargetIndexsArray[choiceOf3][i], targets);
-            targetValuesDictionaryArray[choiceOf3][i] = EditorGUILayout.TextField(targetValuesDictionaryArray[choiceOf3][i]);
-            EditorGUILayout.EndHorizontal();
-        }
-        else
-        {
-            targetValuesDictionaryArray[choiceOf3].Add(i, "1");
-        }
-            //Debug.Log("Ihappende");
-
-        //} while (!targetValuesDictionaryArray[choiceOf3].TryGetValue(i, out string _result));
-
-
-    }
-    //camelCase off stack overflow https://stackoverflow.com/questions/42310727/convert-string-to-camelcase-from-titlecase-c-sharp
-    static string CamelCase(string s)
-    {
-        var x = s.Replace("_", "");
-        if (x.Length == 0) return "null";
-        x = System.Text.RegularExpressions.Regex.Replace(x, "([A-Z])([A-Z]+)($|[A-Z])",
-            m => m.Groups[1].Value + m.Groups[2].Value.ToLower() + m.Groups[3].Value);
-        return char.ToLower(x[0]) + x.Substring(1);
-    }
-
     [MenuItem("Boom/Add To ipa", false, 49)]
     public static void CreateTargetsEditorWindow()
     {
+        ScriptableObject.CreateInstance<BoomSettings>();
         TargetsEditorWindow window = ScriptableObject.CreateInstance<TargetsEditorWindow>();
         window.ShowUtility();
     }

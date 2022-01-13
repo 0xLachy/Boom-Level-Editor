@@ -10,20 +10,24 @@ using System.Text.RegularExpressions;
 
 public class AddLevelToBoomIPA : MonoBehaviour
 {
-    static StreamWriter sw;
     static NSArray targetsNSArray;
     static NSDictionary[] arrayOfNSDictionaryTargets;
+    static NSObject allBoomLevelsPlist;
+    static string extremeLevelsIndexFinderString = BoomSettings.ExtremeLevelsIndexFinderString;
+    static bool insertAtIndexFinderString = BoomSettings.InsertAtIndexFinderString;
+    static int newLevelInsertionIndex;
     //[MenuItem("Boom/Add To ipa", false, 50)]
-    public static void AddToIpa(string[] targets, int[][] jaggedTargetsArray, Dictionary<int, string>[] targetValuesDictionaryArray, string levelsPlistPath, string levelPlhsPath, string customLevelName)
+    public static void AddToIpa(string[] targets, List<List<int>> targetIndexesListList, List<List<string>> targetValuesListList,
+        Dictionary<int, string> targetDescriptions, string levelsPlistPath, string levelPlhsPath, string customLevelName, string inGameName, string bgName)
     {
-
-
+        
         var fileContent = File.ReadAllBytes(levelsPlistPath);
-        NSObject obj = PropertyListParser.Parse(fileContent);
-        if (obj is NSDictionary dict)
+        allBoomLevelsPlist = PropertyListParser.Parse(fileContent);
+        if (allBoomLevelsPlist is NSDictionary dict)
         {
-            ConvertTargetToDictionary(targets, jaggedTargetsArray, targetValuesDictionaryArray);
-            FindCustomLevelsIndexInPlist((NSArray)dict["LevelGroups"], customLevelName);
+            ConvertTargetToDictionary(targets, targetIndexesListList, targetValuesListList, targetDescriptions);
+            FindCustomLevelsIndexInPlist((NSArray)dict["LevelGroups"], customLevelName, inGameName, bgName);
+            AddLevelFileToIPA(levelsPlistPath, levelPlhsPath);
             Debug.Log("Made it past the if statement");
         }
         else
@@ -33,8 +37,26 @@ public class AddLevelToBoomIPA : MonoBehaviour
         }
     }
 
+    private static void AddLevelFileToIPA(string levelsPlistPath, string levelPlhsPath)
+    {
+        string levelsDir = Path.GetDirectoryName(levelsPlistPath);       
+        string plhsInBoomPath = levelsDir + Path.DirectorySeparatorChar + Path.GetFileName(levelPlhsPath);
+        if (!File.Exists(plhsInBoomPath))
+        {
+            File.Copy(levelPlhsPath, plhsInBoomPath);
+            Debug.Log($"copied {levelPlhsPath} into {plhsInBoomPath}");
+        } 
+        else
+        {
+            if(EditorUtility.DisplayDialog("Level File Exists", $"the level \"{levelPlhsPath}\" \"{plhsInBoomPath}\" already exists, do you want to replace it?", "yes", "no"))
+            {
+                File.Copy(levelPlhsPath, plhsInBoomPath, true);
+            }
+        }
+    }
+
     //The index should always be 7 generally, but with different ipa's and stuff, it's safer this way
-    static void FindCustomLevelsIndexInPlist(NSArray levelGroupsArray, string customLevelName)
+    static void FindCustomLevelsIndexInPlist(NSArray levelGroupsArray, string customLevelName, string inGameName, string bgName)
     {
         int CustomLevelsDictIndex = 0;
         for (int index = 0; index < levelGroupsArray.Count; index++)
@@ -44,94 +66,79 @@ public class AddLevelToBoomIPA : MonoBehaviour
             if (levelsGroupDict.ContainsKey("Levels"))
             {
                 NSArray levelsArray = (NSArray)levelsGroupDict["Levels"];
-                foreach (NSObject level in levelsArray)
+                for (int i = 0; i < levelsArray.Count; i++)
                 {
+                    NSObject level = levelsArray[i];
                     NSDictionary levelDict = (NSDictionary)level;
                     if (levelDict.ContainsKey("LevelName"))
                     {
-                        if ((string)(NSString)levelDict["LevelName"] == "House of Balance")
+                        if ((string)(NSString)levelDict["LevelName"] == extremeLevelsIndexFinderString)
                         {
                             //This is the first extreme level, which means that this is a a part of the extreme levels dict
                             CustomLevelsDictIndex = index;
+                            newLevelInsertionIndex = i;
                         }
                     }
                 }
             }
         }
-        AddLevelToPlist(CustomLevelsDictIndex, levelGroupsArray, customLevelName, "fix later");
+        AddLevelToPlist(CustomLevelsDictIndex, levelGroupsArray, customLevelName, inGameName, bgName);
     }
 
-    private static void AddLevelToPlist(int customLevelsDictIndex, NSArray levelGroupsArray, string LevelNameFromFile, string newLevelName)
+    private static void AddLevelToPlist(int customLevelsDictIndex, NSArray levelGroupsArray, string LevelNameFromFile, string inGameName, string bgName)
     {
         bool isNewLevelInPlist = true;
-        if (customLevelsDictIndex == 0) { Debug.Log("Don't know where to put the level/s"); return; }
+        NSDictionary newLevelDict = new NSDictionary();
+        newLevelDict.Add("RequiredSuperStars", 0);
+        newLevelDict.Add("Targets", targetsNSArray);
+        newLevelDict.Add("bgName", bgName);
+        newLevelDict.Add("LevelName", inGameName);
+        newLevelDict.Add("Version", 1);
+        newLevelDict.Add("LevelId", LevelNameFromFile);
+
+        if (customLevelsDictIndex == 0) { Debug.LogError("Don't know where to put the level/s"); return; }
         NSDictionary customLevelsDict = (NSDictionary)levelGroupsArray[customLevelsDictIndex];
         NSArray levelsArray = (NSArray)customLevelsDict["Levels"];
         foreach (NSObject level in levelsArray)
         {
             NSDictionary levelDict = (NSDictionary)level;
-            if (levelDict.ContainsKey("LevelId"))
+            if (levelDict.ContainsKey("LevelId") || levelDict.ContainsKey("LevelName"))
             {
-                if ((string)(NSString)levelDict["LevelId"] == LevelNameFromFile)
+                if (((string)(NSString)levelDict["LevelId"] == LevelNameFromFile) || ((string)(NSString)levelDict["LevelName"] == inGameName))
                 {
                     isNewLevelInPlist = false;
-                    //creating a function in here to edit the targets
-                    EditTargets(LevelNameFromFile, levelDict);
-                    Debug.Log("The level already exists in the levels.plist");
+                    //returns true for no, and false for yes, they are flipped so that the default option is no
+                    bool replaceTargets = EditorUtility.DisplayDialog("Level Conflict", $"the level \"{LevelNameFromFile}.plhs\" \"{inGameName}\" " +
+    "already exists, do you want to replace the targets, background and update the level name?", "yes", "no");
+                    if (replaceTargets)
+                    {
+                        levelDict["Targets"] = targetsNSArray;
+                        levelDict["bgName"] = newLevelDict["bgName"];
+                        levelDict["LevelName"] = newLevelDict["LevelName"];
+                    }
                 }
             }
+
         }
         if (isNewLevelInPlist)
         {
-
-            //        				<dict>
-            //	<key>RequiredSuperStars</key>
-            //	<integer>0</integer>
-            //	<key>Targets</key>
-            //	<array>
-            //		<dict>
-            //			<key>Target</key>
-            //			<integer>1</integer>
-            //			<key>Type</key>
-            //			<string>Touch ball</string>
-            //		</dict>
-            //		<dict>
-            //			<key>Type</key>
-            //			<string>All pickups</string>
-            //		</dict>
-            //		<dict>
-            //			<key>Target</key>
-            //			<string>1</string>
-            //			<key>Type</key>
-            //			<string>Bombs</string>
-            //		</dict>
-            //	</array>
-            //	<key>bgName</key>
-            //	<string>JungleBG.plist</string>
-            //	<key>LevelName</key>
-            //	<string>Twin Towers</string>
-            //	<key>Version</key>
-            //	<string>1</string>
-            //	<key>LevelId</key>
-            //	<string>Custom_TwinTowers</string>
-            //</dict>
-            NSDictionary newLevelDict = new NSDictionary();
-            newLevelDict.Add("RequiredSuperStars", 0);
-            newLevelDict.Add("Targets", targetsNSArray);
-            //TODO get BGName
+            //use insert to have it placed under where you put your last level
+            if (insertAtIndexFinderString)
+            { 
+                levelsArray.Insert(newLevelInsertionIndex, newLevelDict);
+            }
+            else
+            {
+                levelsArray.Add(newLevelDict);
+            }
         }
+        Directory.CreateDirectory("./Levels");
+        PropertyListParser.SaveAsXml(allBoomLevelsPlist, new FileInfo("Levels/Levels.plist"));
     }
 
-    private static void EditTargets(string customLevelName, NSDictionary levelDict)
+    public static void ConvertTargetToDictionary(string[] targets, List<List<int>> targetIndexesListList, List<List<string>> targetValuesListList, Dictionary<int, string> targetDescriptions)
     {
-        throw new NotImplementedException();
-    }
-
-    //using 2 arrays instead of a dictionary, need to fix that later
-
-    public static void ConvertTargetToDictionary(string[] targets, int[][] jaggedTargetIndexArray, Dictionary<int, string>[] targetValuesDictionaryArray)
-    {
-        arrayOfNSDictionaryTargets = new NSDictionary[jaggedTargetIndexArray.Length];
+        arrayOfNSDictionaryTargets = new NSDictionary[targetIndexesListList.Count];
         bool all = false;
         bool none = false;
         bool noNum = false;
@@ -140,56 +147,87 @@ public class AddLevelToBoomIPA : MonoBehaviour
         double targetNumber = 0;
         bool notANumber = false;
         bool isCustom = false;
-        foreach (int[] choiceOf3Index in jaggedTargetIndexArray)
+        for (int i1 = 0; i1 < targetIndexesListList.Count; i1++)
         {
-            foreach(int targetIndex in choiceOf3Index)
+            arrayOfNSDictionaryTargets[i1] = new NSDictionary();
+            List<int> listInt = targetIndexesListList[i1];
+            var editingTarget = arrayOfNSDictionaryTargets[i1];
+            if (listInt.Count > 1)
             {
-                arrayOfNSDictionaryTargets[targetIndex] = new NSDictionary();
-                //Debug.Log(arrayOfNSDictionaryTargets[targetIndex] + " just made to new NSDict");
-                var editingTarget = arrayOfNSDictionaryTargets[targetIndex];
-                if (targets[targetIndex] == "multiple")
+                editingTarget.Add("Group", new NSArray(listInt.Count));
+                NSArray group = (NSArray)editingTarget["Group"];
+                for (int i2 = 0; i2 < listInt.Count; i2++)
                 {
-                    int amountInGroup = int.Parse(targetValuesDictionaryArray[targetIndex][0]);
-                    editingTarget.Add("Group", new NSArray(amountInGroup));
-                    NSArray group = (NSArray)editingTarget["group"];
-                    for (int i = 0; i < amountInGroup; i++)
+                    all = false;
+                    none = false;
+                    noNum = false;
+                    finWith = false;
+                    rightbutton = false;
+                    targetNumber = 0;
+                    notANumber = false;
+                    isCustom = false;
+
+                    int targetIndex = listInt[i2];
+                    if (listInt.Count > 1)
                     {
-                        group[i] = new NSDictionary();
-                        int jaggedIndex = jaggedTargetIndexArray[targetIndex][i];
-                        if (targets[jaggedIndex] == "custom")
+                        group.Add(new NSDictionary());
+                        if (targets[targetIndex] == "custom")
                         {
                             isCustom = true;
                         }
                         else
                         {
-                            GetCorrectValueFromString(targetValuesDictionaryArray[targetIndex][jaggedIndex], ref all, ref none, ref targetNumber, ref notANumber, ref finWith, ref rightbutton, ref noNum);
+                            GetCorrectValueFromString(targetValuesListList[i1][i2], ref all, ref none, ref targetNumber, ref notANumber, ref finWith, ref rightbutton, ref noNum);
                         }
-                        group[i] = AddTargetToNSDictionary(targets, all, none, targetNumber, notANumber, i, finWith, rightbutton, noNum, isCustom, targetValuesDictionaryArray[targetIndex][jaggedIndex],
-                            (NSDictionary)group[i]);
+                        group[i2] = AddTargetToNSDictionary(targets, all, none, targetNumber, notANumber, targetIndex, finWith, rightbutton, noNum, isCustom, targetValuesListList[i1][i2],
+                            (NSDictionary)group[i2]);
+
                     }
+                }
+                editingTarget["Group"] = group;
+                arrayOfNSDictionaryTargets[i1] = editingTarget;
+            }
+            else
+            {
+                all = false;
+                none = false;
+                noNum = false;
+                finWith = false;
+                rightbutton = false;
+                targetNumber = 0;
+                notANumber = false;
+                isCustom = false;
+
+                if (targets[listInt[0]] == "custom")
+                {
+                    isCustom = true;
                 }
                 else
                 {
-                    GetCorrectValueFromString(targetValuesDictionaryArray[targetIndex][0], ref all, ref none, ref targetNumber, ref notANumber, ref finWith, ref rightbutton, ref noNum);
+                    GetCorrectValueFromString(targetValuesListList[i1][0], ref all, ref none, ref targetNumber, ref notANumber, ref finWith, ref rightbutton, ref noNum);
                 }
-                if (targets[targetIndex] == "custom") { isCustom = true; }
-                arrayOfNSDictionaryTargets[targetIndex] = AddTargetToNSDictionary(targets, all, none, targetNumber, notANumber, targetIndex, finWith, rightbutton, noNum, isCustom,
-                    targetValuesDictionaryArray[targetIndex][0], editingTarget);
+                arrayOfNSDictionaryTargets[i1] = AddTargetToNSDictionary(targets, all, none, targetNumber, notANumber, listInt[0], finWith, rightbutton, noNum, isCustom,
+                    targetValuesListList[i1][0], editingTarget);
             }
-        
+
+            if (targetDescriptions.ContainsKey(i1))
+            {
+                arrayOfNSDictionaryTargets[i1].Add("Description", targetDescriptions[i1]);
+            }
         }
         targetsNSArray = new NSArray(arrayOfNSDictionaryTargets.Length);
         for (int i = 0; i < arrayOfNSDictionaryTargets.Length; i++)
         {
+            //Debug.Log(arrayOfNSDictionaryTargets[i]["Type"]);
             targetsNSArray.Add(arrayOfNSDictionaryTargets[i]);
         }
     }
 
-    private static NSDictionary AddTargetToNSDictionary(string[] targets, bool all, bool none, double targetNumber, bool notANumber, int targetIndex, bool finWith, 
+    private static NSDictionary AddTargetToNSDictionary(string[] targets, bool all, bool none, double targetNumber, bool isNumber, int targetIndex, bool finWith, 
         bool rightbutton, bool noNum, bool isCustom, string customValue, NSDictionary Editingdict)
     {
         bool tryNoneAgain = false;
-        if (!notANumber || none)
+        if (isNumber || none)
         {
             
             if(none)
@@ -254,13 +292,19 @@ public class AddLevelToBoomIPA : MonoBehaviour
                     case "break ball":
                         Editingdict.Add("Type", "Break ball");
                         break;
+                    case "time":
+                        Editingdict.Remove("Target");
+                        Editingdict.Add("Target", double.Parse(String.Format("{0:00.000}", targetNumber)));
+                        Editingdict.Add("Type", "Time");
+                        break;
                     default:
-                        Debug.Log("number Doesn't go into any");
+                        tryNoneAgain = true;
+                        Debug.Log(targets[targetIndex] + " number Doesn't go into any");
                         break;
                 }
             }
         }
-        else if (notANumber || tryNoneAgain)
+        else if (!isNumber || tryNoneAgain)
         {
             switch (targets[targetIndex])
             {
@@ -268,7 +312,7 @@ public class AddLevelToBoomIPA : MonoBehaviour
                 case "coin":
                     if (all)
                         Editingdict.Add("Type", "All pickups");
-                    else if (none || (targetNumber == 0 && !notANumber))
+                    else if (none || (targetNumber == 0 && !isNumber))
                         Editingdict.Add("Type", "No coins");
                     else if (noNum)//might break
                         Editingdict.Add("Type", "pickups");
@@ -300,7 +344,7 @@ public class AddLevelToBoomIPA : MonoBehaviour
                         Editingdict.Add("Type", "all boost tunnels");
                     else if (noNum)
                         Editingdict.Add("Type", "Boost tunnel");
-                    else if (none || (targetNumber == 0 && !notANumber))
+                    else if (none || (targetNumber == 0 && !isNumber))
                         Editingdict.Add("Type", "No boost tunnels");
                     break;
                 case "spring board":
@@ -317,7 +361,7 @@ public class AddLevelToBoomIPA : MonoBehaviour
                         Editingdict.Add("Type", "Complete Left Button");
                     break;
                 default:
-                    Debug.Log("Doesn't go into any");
+                    Debug.Log(targets[targetIndex] + "Doesn't go into any (ignore if it says custom or your custom text)");
                     break;
             }
         }
@@ -329,7 +373,7 @@ public class AddLevelToBoomIPA : MonoBehaviour
         return Editingdict;  
     }
 
-    private static void GetCorrectValueFromString(string targetValue, ref bool all, ref bool none, ref double targetNumber, ref bool notANumber, ref bool finWith, ref bool rightbutton, ref bool noNum)
+    private static void GetCorrectValueFromString(string targetValue, ref bool all, ref bool none, ref double targetNumber, ref bool isNumber, ref bool finWith, ref bool rightbutton, ref bool noNum)
     {
         string valueToConvert = targetValue.ToLower();
         Regex.Replace(valueToConvert, @"\s+", "");
@@ -337,7 +381,7 @@ public class AddLevelToBoomIPA : MonoBehaviour
         //{
         //    Debug.LogError("string can only contain numbers or letters");
         //}
-        if (valueToConvert == "all")
+        if (valueToConvert == "all" || valueToConvert == "cac" || valueToConvert == "eab" )
         {
             all = true;
         }
@@ -345,17 +389,17 @@ public class AddLevelToBoomIPA : MonoBehaviour
         {
             finWith = true;
         }
-        else if (valueToConvert == "rightbutton" || valueToConvert == "right button" || valueToConvert == "rb" || valueToConvert == "right")
+        else if (valueToConvert == "rightbutton" || valueToConvert == "right button" || valueToConvert == "rb" || valueToConvert == "right" || valueToConvert == "cwlb")
         {
             rightbutton = true;
         }
-        else if (valueToConvert == "leftbutton" || valueToConvert == "left button" || valueToConvert == "lb" || valueToConvert == "left")
+        else if (valueToConvert == "leftbutton" || valueToConvert == "left button" || valueToConvert == "lb" || valueToConvert == "left" || valueToConvert == "cwrb")
         {
             rightbutton = false;
         }
-        else if (valueToConvert == "nonum" || valueToConvert == "no target" || valueToConvert == "no number" || valueToConvert == "default" || valueToConvert == "common")
+        else if (valueToConvert == "nonum" || valueToConvert == "no target" || valueToConvert == "no number" || valueToConvert == "default" || valueToConvert == "common" || valueToConvert == "tab")
         {
-            noNum = true;
+            noNum = true; 
         }
         else if (valueToConvert == "none")
         {
@@ -363,7 +407,7 @@ public class AddLevelToBoomIPA : MonoBehaviour
         }
         else
         {
-            notANumber = Double.TryParse(valueToConvert, out targetNumber);
+            isNumber = Double.TryParse(valueToConvert, out targetNumber);
         }
     }
 
