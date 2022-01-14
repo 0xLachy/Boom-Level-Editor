@@ -7,9 +7,9 @@ public class BoomSettings : ScriptableObject
 {
     [SerializeField] public string defaultPlistPath = "";
     /*[Header("Default Target Stuff")]*/
-    [SerializeField] private int[] defaultIndexes = new int[] { 0, 1, 8, 4 };
-    [SerializeField] private string[] defaultTargetValues = new string[] { "all", "1", "default", "0" };
-    [SerializeField] private int defaultBGIndex = 1;
+    [SerializeField] private int[] defaultIndexes = new int[] { 0, 1, 8, 0, 4, 2, 3 };
+    [SerializeField] private string[] defaultTargetValues = new string[] { "all", "1", "default", "0", "15", "2", "1" };
+    [SerializeField] public int defaultBGIndex = 1;
     [Tooltip("How many targets to add")] [SerializeField] private int targetListCapacity = 3;
 
     /*[Header("Plist File Config")]*/
@@ -24,7 +24,7 @@ public class BoomSettings : ScriptableObject
     public static string DefaultPlistPath { get; set; }
     public static int[] DefaultIndexes { get; private set; }
     public static string[] DefaultTargetValues { get; private set; }
-    public static int DefaultBGIndex { get; private set; }
+    public static int DefaultBGIndex { get; set; }
     public static int TargetListCapacity { get; private set; }
     public static bool InsertAtIndexFinderString { get; private set; }
     public static string ExtremeLevelsIndexFinderString { get; private set; }
@@ -52,10 +52,9 @@ public class BoomSettings : ScriptableObject
     }
 }
 
-public static class FrameworkSettingsRegister
+public static class BoomSettingsRegister
 {
-    const string SettingsPath = "Assets/Editor/BoomSettings.asset";
-
+   public const string SettingsPath = "Assets/Editor/BoomSettings.asset";
     [SettingsProvider]
     public static SettingsProvider CreateSettingsProvider()
     {
@@ -72,12 +71,12 @@ public static class FrameworkSettingsRegister
 
                 EditorGUI.BeginChangeCheck();
 
+                EditorGUILayout.PropertyField(serialized.FindProperty("defaultIndexes"), new GUIContent("default indexes"));
+                EditorGUILayout.PropertyField(serialized.FindProperty("defaultTargetValues"), new GUIContent("default values"));
                 targetsFoldout = EditorGUILayout.BeginFoldoutHeaderGroup(targetsFoldout, "Target");
 
                 if (targetsFoldout)
                 {
-                    EditorGUILayout.PropertyField(serialized.FindProperty("defaultIndexes"), new GUIContent("default indexes"));
-                    EditorGUILayout.PropertyField(serialized.FindProperty("defaultTargetValues"), new GUIContent("default values"));
                     EditorGUILayout.PropertyField(serialized.FindProperty("defaultBGIndex"), new GUIContent("default background index"));
                     EditorGUILayout.PropertyField(serialized.FindProperty("targetListCapacity"), new GUIContent("amount of targets"));
                 }
@@ -103,7 +102,7 @@ public static class FrameworkSettingsRegister
                 }
                 EditorGUILayout.EndFoldoutHeaderGroup();
 
-                EditorGUILayout.HelpBox("To Reset the properties, delete the asset file and go to BOOM -> Regenerate Settings", MessageType.Info);
+                EditorGUILayout.HelpBox("To reset settings, delete the asset file (in editor folder) and go to BOOM -> Regenerate Settings", MessageType.Info);
 
                 if (EditorGUI.EndChangeCheck())
                 {
@@ -112,7 +111,7 @@ public static class FrameworkSettingsRegister
                 }
             },
 
-            keywords = new HashSet<string>(new[] { "Entity log enabled", "Notifications log enabled" })
+            keywords = new HashSet<string>(new[] { "Boom Settigngs", "default target" })
         };
     }
 
@@ -120,7 +119,7 @@ public static class FrameworkSettingsRegister
     static BoomSettings Load()
     {
         var settings = AssetDatabase.LoadAssetAtPath<BoomSettings>(SettingsPath);
-
+        
         if (settings == null)
         {
             settings = ScriptableObject.CreateInstance<BoomSettings>();

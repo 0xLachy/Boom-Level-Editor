@@ -26,9 +26,9 @@ public class AddLevelToBoomIPA : MonoBehaviour
         if (allBoomLevelsPlist is NSDictionary dict)
         {
             ConvertTargetToDictionary(targets, targetIndexesListList, targetValuesListList, targetDescriptions);
-            FindCustomLevelsIndexInPlist((NSArray)dict["LevelGroups"], customLevelName, inGameName, bgName);
+            FindCustomLevelsIndexInPlist((NSArray)dict["LevelGroups"], customLevelName, inGameName, bgName, levelsPlistPath);
             AddLevelFileToIPA(levelsPlistPath, levelPlhsPath);
-            Debug.Log("Made it past the if statement");
+            Debug.Log("Level added to ipa, and to levels.plist");
         }
         else
         {
@@ -56,7 +56,7 @@ public class AddLevelToBoomIPA : MonoBehaviour
     }
 
     //The index should always be 7 generally, but with different ipa's and stuff, it's safer this way
-    static void FindCustomLevelsIndexInPlist(NSArray levelGroupsArray, string customLevelName, string inGameName, string bgName)
+    static void FindCustomLevelsIndexInPlist(NSArray levelGroupsArray, string customLevelName, string inGameName, string bgName, string levelsPlistPath)
     {
         int CustomLevelsDictIndex = 0;
         for (int index = 0; index < levelGroupsArray.Count; index++)
@@ -82,10 +82,10 @@ public class AddLevelToBoomIPA : MonoBehaviour
                 }
             }
         }
-        AddLevelToPlist(CustomLevelsDictIndex, levelGroupsArray, customLevelName, inGameName, bgName);
+        AddLevelToPlist(CustomLevelsDictIndex, levelGroupsArray, customLevelName, inGameName, bgName, levelsPlistPath);
     }
 
-    private static void AddLevelToPlist(int customLevelsDictIndex, NSArray levelGroupsArray, string LevelNameFromFile, string inGameName, string bgName)
+    private static void AddLevelToPlist(int customLevelsDictIndex, NSArray levelGroupsArray, string LevelNameFromFile, string inGameName, string bgName, string levelsPlistPath)
     {
         bool isNewLevelInPlist = true;
         NSDictionary newLevelDict = new NSDictionary();
@@ -93,7 +93,7 @@ public class AddLevelToBoomIPA : MonoBehaviour
         newLevelDict.Add("Targets", targetsNSArray);
         newLevelDict.Add("bgName", bgName);
         newLevelDict.Add("LevelName", inGameName);
-        newLevelDict.Add("Version", 1);
+        newLevelDict.Add("Version", "1");
         newLevelDict.Add("LevelId", LevelNameFromFile);
 
         if (customLevelsDictIndex == 0) { Debug.LogError("Don't know where to put the level/s"); return; }
@@ -133,7 +133,7 @@ public class AddLevelToBoomIPA : MonoBehaviour
             }
         }
         Directory.CreateDirectory("./Levels");
-        PropertyListParser.SaveAsXml(allBoomLevelsPlist, new FileInfo("Levels/Levels.plist"));
+        PropertyListParser.SaveAsXml(allBoomLevelsPlist, new FileInfo(levelsPlistPath));
     }
 
     public static void ConvertTargetToDictionary(string[] targets, List<List<int>> targetIndexesListList, List<List<string>> targetValuesListList, Dictionary<int, string> targetDescriptions)

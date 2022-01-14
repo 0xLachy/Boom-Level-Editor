@@ -10023,8 +10023,10 @@
 					<key>Targets</key>
 					<array>
 						<dict>
+							<key>Target</key>
+							<integer>3232</integer>
 							<key>Type</key>
-							<string>All pickups</string>
+							<string>Pickups</string>
 						</dict>
 						<dict>
 							<key>Target</key>
@@ -10033,18 +10035,14 @@
 							<string>Touch ball</string>
 						</dict>
 						<dict>
+							<key>Target</key>
+							<integer>1</integer>
 							<key>Type</key>
 							<string>Goal</string>
 						</dict>
-						<dict>
-							<key>Target</key>
-							<real>15.5</real>
-							<key>Type</key>
-							<string>Time</string>
-						</dict>
 					</array>
 					<key>bgName</key>
-					<string>EgyptBG.plist</string>
+					<string>CityBG.plist</string>
 					<key>LevelName</key>
 					<string>Spike Birds</string>
 					<key>Version</key>

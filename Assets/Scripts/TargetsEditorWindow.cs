@@ -17,7 +17,6 @@ public class TargetsEditorWindow : EditorWindow
     public static string defaultDescription = BoomSettings.DefaultDescription;
     public static int targetListCapacity = BoomSettings.TargetListCapacity;
     public static int _targetListCapacity = targetListCapacity;
-    public static int backgroundIndex = BoomSettings.DefaultBGIndex;
 
     public static string[] targets = { "coin", "ball", "bomb", "rocket", "time", "bowling pin", "boost tunnel", "spring board", "goal", "button", "break ball", "custom", "multiple" };
     public static string[] backgrounds = { "jungle", "city", "ice", "egypt", "festival" };
@@ -69,6 +68,12 @@ public class TargetsEditorWindow : EditorWindow
 
     void OnGUI()
     {
+        singlesCanHaveDescription = BoomSettings.SinglesCanHaveDescription;
+        defaultIndexes = BoomSettings.DefaultIndexes;
+        defaultTargetValues = BoomSettings.DefaultTargetValues;
+        autoDescription = BoomSettings.Autodescription;
+        defaultDescription = BoomSettings.DefaultDescription;
+        targetListCapacity = BoomSettings.TargetListCapacity;
         //boxStyle = new GUIStyle(GUI.skin.box);
         //boxStyle.normal.textColor = Color.cyan;
         EditorGUILayout.LabelField("Click the buttons to change the type of target, or to get the file location, " +
@@ -99,7 +104,7 @@ public class TargetsEditorWindow : EditorWindow
         EditorGUILayout.BeginHorizontal();
         GUILayout.Label("in-game name", GUILayout.MaxWidth((float)(position.width / 8.2)));
         inGameName = GUILayout.TextField(inGameName);
-        backgroundIndex = EditorGUILayout.Popup(backgroundIndex, backgrounds, GUILayout.MaxWidth(position.width / 2));
+        BoomSettings.DefaultBGIndex = EditorGUILayout.Popup(BoomSettings.DefaultBGIndex, backgrounds, GUILayout.MaxWidth(position.width / 2));
         GUILayout.EndHorizontal();
 
         GUILayout.Space(10);
@@ -127,6 +132,10 @@ public class TargetsEditorWindow : EditorWindow
         if(showDrWolfenstein)
             ShowDrWolfenstein();
 
+        if (GUILayout.Button("close"))
+        {
+            Close();
+        }
         if (GUILayout.Button("Add to plist"))
         {
             bool answer = false;
@@ -144,10 +153,11 @@ public class TargetsEditorWindow : EditorWindow
                         levelPlhsPath = "";
                     }
                 }
-                if (customLevelName != string.Concat(customLevelName.Select((x, i) => i > 0 && char.IsUpper(x) ? "_" + x.ToString() : x.ToString())))
+                string snakeCaseName = string.Concat(customLevelName.Select((x, i) => i > 0 && char.IsUpper(x) ? "_" + x.ToString() : x.ToString()));
+                snakeCaseName = snakeCaseName.Replace("__", "_");
+                if (customLevelName != snakeCaseName)
                 {
-                    Debug.Log(string.Concat(customLevelName.Select((x, i) => i > 0 && char.IsUpper(x) ? "_" + x.ToString() : x.ToString())));
-                    answer = EditorUtility.DisplayDialog("WARNING", $"the name you chose \"{customLevelName}\" isn't in snake case, an example of how to name it is 'Custom_Spike_Lover'", "back", "continue");
+                    answer = EditorUtility.DisplayDialog("WARNING", $"the name you chose \"{customLevelName}\" isn't in snake case, an example of how to name it is '{snakeCaseName}", "back", "continue");
                 }
 
             }
@@ -159,9 +169,9 @@ public class TargetsEditorWindow : EditorWindow
             if (!answer)
             {
                 
+                BoomSettings.DefaultPlistPath = levelsPlistPath;
                 AddLevelToBoomIPA.AddToIpa(targets, targetIndexesListList, targetValuesListList, targetDescriptions, levelsPlistPath, levelPlhsPath, customLevelName, 
                     inGameName, GetBackgroundName());
-                BoomSettings.DefaultPlistPath = levelsPlistPath;
                 Close();
             }
         }
@@ -402,7 +412,7 @@ public class TargetsEditorWindow : EditorWindow
 
     string GetBackgroundName()
     {
-        return backgrounds[backgroundIndex] switch
+        return backgrounds[BoomSettings.DefaultBGIndex] switch
         {
             "jungle" => "JungleBG.plist",
             "city" => "CityBG.plist",
@@ -415,7 +425,8 @@ public class TargetsEditorWindow : EditorWindow
     [MenuItem("Boom/Add To ipa", false, 49)]
     public static void CreateTargetsEditorWindow()
     {
-        ScriptableObject.CreateInstance<BoomSettings>();
+        //BoomSettings.Refresh(ScriptableObject.CreateInstance<BoomSettings>());
+        //BoomSettings.Refresh(AssetDatabase.LoadAssetAtPath<BoomSettings>(BoomSettingsRegister.SettingsPath));
         TargetsEditorWindow window = ScriptableObject.CreateInstance<TargetsEditorWindow>();
         window.ShowUtility();
     }
