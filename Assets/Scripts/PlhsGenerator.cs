@@ -463,7 +463,7 @@ public class PlhsGenerator : MonoBehaviour
                 Debug.Log($"couldn't add {ValueNameToAdd} to GORS with spritename {spriteName} index {retrievingIndex}");
                 return;
         }
-        physProps.Add(ValueNameToAdd, String.Format("{0:0.000000}", DefaultValuesReferences.GORS[spriteName][retrievingIndex])); 
+        physProps.Add(ValueNameToAdd, /*String.Format("{0:0.000000}"makes string :(,*/ DefaultValuesReferences.GORS[spriteName][retrievingIndex]);//); 
     }
 
     private static void UnityTagToBoomTagInGame(GameObject gameObject, NSDictionary genProps, Sprite sprite, Color color)
