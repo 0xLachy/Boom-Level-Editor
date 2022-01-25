@@ -228,7 +228,7 @@ public class PlhsImporter : MonoBehaviour
                     }
                     break;
                 default:
-                    Debug.Log("Not a vowel");
+                    Debug.Log("can't find prefab for the image " + bezierDict["Image"].ToString());
                     break;
             }
             SpriteShapeRenderer spriteShapeRenderer;
@@ -238,6 +238,7 @@ public class PlhsImporter : MonoBehaviour
                 groundObject = new GameObject(bezierDict["UniqueName"].ToString());
                 spriteShapeRenderer = groundObject.AddComponent<SpriteShapeRenderer>();
                 spriteShapeController = groundObject.AddComponent<SpriteShapeController>();
+                ColourSpriteRenderer(bezierDict["Image"].ToString(), ref spriteShapeRenderer);
             }
             else
             {
@@ -245,17 +246,82 @@ public class PlhsImporter : MonoBehaviour
                 spriteShapeRenderer = groundObject.GetComponent<SpriteShapeRenderer>();
                 spriteShapeController = groundObject.GetComponent<SpriteShapeController>();
             }
+            if (bezierDict["Image"].ToString().Contains("BG"))
+            {
+                spriteShapeRenderer.sortingOrder = -1;
+            }
+            groundObject.transform.position = new Vector3(0, 0, (float)(NSNumber)bezierDict["ZOrder"]);
+
             var spline = spriteShapeController.spline;
             NSArray curves = (NSArray)bezierDict["Curves"];
-            for (int i = 0; i < curves.Count - 1; i++)
+            for (int i = 0; i < curves.Count; i++)
             {
                 NSDictionary pointsDict = (NSDictionary)curves[i];
                 NSArray endPointArray = (NSArray)pointsDict["EndPoint"];
                 float offsettedPointX = (float)(NSNumber)endPointArray[0] / multiplier;
-                float offsettedPointY = (float)(NSNumber)endPointArray[1] / multiplier;
+                float offsettedPointY = -(float)(NSNumber)endPointArray[1] / multiplier;
                 Vector3 endPointVector = new Vector3(offsettedPointX, offsettedPointY);
-                spline.InsertPointAt(i, endPointVector);
+                
+                if(i > 3)
+                {
+                    spline.InsertPointAt(i, endPointVector);
+                }
+                else
+                {
+                    spline.SetPosition(i, endPointVector);
+                    
+                }
             }
+        }
+    }
+
+    static void ColourSpriteRenderer(string groundName, ref SpriteShapeRenderer groundSSR)
+    {
+
+        switch (groundName)
+        {
+            case "JungleGround.png":
+                groundSSR.color = new Color32(34, 72, 35, 255);
+                break;
+            case "JungleBGround.png":
+                groundSSR.color = new Color32(99, 99, 64, 255);
+                break;
+            case "CityGround.png":
+                groundSSR.color = new Color32(41, 34, 72, 255);
+                break;
+            case "CityGroundBG.png":
+                groundSSR.color = new Color32(41, 56, 106, 255);
+                break;
+            case "StonesIce.png":
+                groundSSR.color = new Color32(157, 202, 233, 255);
+                break;
+            case "FrozenBG.png":
+                groundSSR.color = new Color32(72, 110, 137, 255);
+                break;
+            case "EgyptGround.png":
+                groundSSR.color = new Color32(192, 155, 90, 255);
+                break;
+            case "EgyptGroundBG.png":
+                groundSSR.color = new Color32(106, 66, 51, 255);
+                break;
+            case "DesertGround.png":
+                groundSSR.color = new Color32(192, 155, 90, 255);
+                break;
+            case "FactoryGround.png":
+                groundSSR.color = new Color32(64, 26, 79, 255);
+                break;
+            case "FactoryGroundBG.png":
+                groundSSR.color = new Color32(81, 64, 99, 255);
+                break;
+            case "WaterFill.png":
+                groundSSR.color = new Color32(133, 182, 255, 255);
+                break;
+            case "QuicksandFill.png":
+                groundSSR.color = Color.yellow;
+                break;
+            default:
+                Debug.Log("can't find colour for the image " + groundName);
+                break;
         }
     }
 }

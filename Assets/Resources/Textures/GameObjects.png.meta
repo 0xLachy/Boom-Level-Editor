@@ -105,7 +105,7 @@ TextureImporter:
     second: pinky_blink
   - first:
       213: 21300060
-    second: pyramid_3
+    second: pyramid_wheel
   - first:
       213: 21300062
     second: boulder_snow
@@ -1065,7 +1065,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pyramid_3
+      name: pyramid_wheel
       rect:
         serializedVersion: 2
         x: 698

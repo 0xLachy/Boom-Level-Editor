@@ -85,10 +85,10 @@ TextureImporter:
     second: bumper_bg
   - first:
       213: 21300054
-    second: pinky_poff_15
+    second: pinky_poff_19
   - first:
       213: 21300056
-    second: pinky_poff_16
+    second: pinky_poff_18
   - first:
       213: 21300058
     second: jungle_flat_l
@@ -118,13 +118,13 @@ TextureImporter:
     second: bumper_on
   - first:
       213: 21300076
-    second: GameObjectsFG_38
+    second: pinky_poff_18
   - first:
       213: 21300078
     second: GameObjectsFG_39
   - first:
       213: 21300080
-    second: GameObjectsFG_40
+    second: pinky_poff_19
   - first:
       213: 21300082
     second: GameObjectsFG_41
@@ -145,7 +145,7 @@ TextureImporter:
     second: GameObjectsFG_46
   - first:
       213: 21300094
-    second: GameObjectsFG_47
+    second: pinky_poff_18
   - first:
       213: 21300096
     second: GameObjectsFG_48
@@ -160,7 +160,7 @@ TextureImporter:
     second: trampoline_layer_2
   - first:
       213: 21300104
-    second: GameObjectsFG_52
+    second: pinky_poff_15
   - first:
       213: 21300106
     second: GameObjectsFG_53
@@ -181,7 +181,7 @@ TextureImporter:
     second: bumper_off
   - first:
       213: 21300118
-    second: GameObjectsFG_59
+    second: pinky_poff_19
   - first:
       213: 21300120
     second: GameObjectsFG_60
@@ -190,7 +190,7 @@ TextureImporter:
     second: GameObjectsFG_61
   - first:
       213: 21300124
-    second: GameObjectsFG_62
+    second: pinky_poff_13
   - first:
       213: 21300126
     second: GameObjectsFG_63
@@ -208,7 +208,7 @@ TextureImporter:
     second: GameObjectsFG_67
   - first:
       213: 21300136
-    second: GameObjectsFG_68
+    second: pinky_poff_14
   - first:
       213: 21300138
     second: GameObjectsFG_69
@@ -238,19 +238,19 @@ TextureImporter:
     second: GameObjectsFG_77
   - first:
       213: 21300156
-    second: GameObjectsFG_78
+    second: pinky_poff_10
   - first:
       213: 21300158
-    second: GameObjectsFG_79
+    second: pinky_poff_04
   - first:
       213: 21300160
-    second: GameObjectsFG_80
+    second: pinky_poff_03
   - first:
       213: 21300162
-    second: GameObjectsFG_81
+    second: pinky_poff_02
   - first:
       213: 21300164
-    second: GameObjectsFG_82
+    second: pinky_poff_01
   - first:
       213: 21300166
     second: rope_bridge_cracked
@@ -262,10 +262,10 @@ TextureImporter:
     second: boost_tunnel_top
   - first:
       213: 21300172
-    second: GameObjectsFG_86
+    second: pinky_poff_14
   - first:
       213: 21300174
-    second: GameObjectsFG_87
+    second: pinky_poff_00
   - first:
       213: 21300176
     second: rope_bridge_base
@@ -283,19 +283,19 @@ TextureImporter:
     second: jungle_vertical_stop
   - first:
       213: 21300186
-    second: GameObjectsFG_93
+    second: pinky_poff_11
   - first:
       213: 21300188
-    second: GameObjectsFG_94
+    second: pinky_poff_09
   - first:
       213: 21300190
-    second: GameObjectsFG_95
+    second: pinky_poff_05
   - first:
       213: 21300192
     second: GameObjectsFG_96
   - first:
       213: 21300194
-    second: GameObjectsFG_97
+    second: pinky_poff_07
   - first:
       213: 21300196
     second: GameObjectsFG_98
@@ -307,13 +307,13 @@ TextureImporter:
     second: snow_down_left
   - first:
       213: 21300202
-    second: GameObjectsFG_101
+    second: pinky_poff_06
   - first:
       213: 21300204
     second: GameObjectsFG_102
   - first:
       213: 21300206
-    second: GameObjectsFG_103
+    second: pinky_poff_08
   - first:
       213: 21300208
     second: GameObjectsFG_104
@@ -1024,48 +1024,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinky_poff_15
-      rect:
-        serializedVersion: 2
-        x: 1107
-        y: 709
-        width: 19
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cb99f1d1ad5989459f96a345b553a0a
-      internalID: 21300054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pinky_poff_16
-      rect:
-        serializedVersion: 2
-        x: 1258
-        y: 710
-        width: 16
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7519e8ab76499404bbcfd67ebbcd633b
-      internalID: 21300056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: jungle_flat_l
       rect:
         serializedVersion: 2
@@ -1082,132 +1040,6 @@ TextureImporter:
       bones: []
       spriteID: ce9bc447466f08b4cb4f25ebbcab1423
       internalID: 21300058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_30
-      rect:
-        serializedVersion: 2
-        x: 928
-        y: 669
-        width: 20
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e50b734a0cfae247985b3fe03692d45
-      internalID: 21300060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_31
-      rect:
-        serializedVersion: 2
-        x: 964
-        y: 673
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50f9c567b99b9d14fbf928c47bfe4c7e
-      internalID: 21300062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_32
-      rect:
-        serializedVersion: 2
-        x: 1061
-        y: 679
-        width: 16
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e82fe9e4eeb620544940e6c038c17af6
-      internalID: 21300064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_33
-      rect:
-        serializedVersion: 2
-        x: 1144
-        y: 678
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1aa623ff5fb5134db4af359d7286358
-      internalID: 21300066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_34
-      rect:
-        serializedVersion: 2
-        x: 1214
-        y: 683
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0701b1e619ae6e40bc05a38135f375c
-      internalID: 21300068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_35
-      rect:
-        serializedVersion: 2
-        x: 1297
-        y: 681
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5083edb6b0a109148820629bb345b6a3
-      internalID: 21300070
       vertices: []
       indices: 
       edges: []
@@ -1255,13 +1087,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_38
+      name: pinky_poff_16
       rect:
         serializedVersion: 2
-        x: 922
-        y: 640
-        width: 20
-        height: 21
+        x: 908
+        y: 586
+        width: 102
+        height: 113
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1276,34 +1108,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_39
-      rect:
-        serializedVersion: 2
-        x: 979
-        y: 646
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 368d463729abffa428eb25db2573e774
-      internalID: 21300078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_40
+      name: pinky_poff_17
       rect:
         serializedVersion: 2
         x: 1050
-        y: 652
-        width: 20
-        height: 21
+        y: 589
+        width: 115
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1313,27 +1124,6 @@ TextureImporter:
       bones: []
       spriteID: c04918ed1cd3cc540a3d302bb13f82a2
       internalID: 21300080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_41
-      rect:
-        serializedVersion: 2
-        x: 1202
-        y: 653
-        width: 15
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87a947e54fa7a5d45b392ed0fc41a458
-      internalID: 21300082
       vertices: []
       indices: 
       edges: []
@@ -1360,97 +1150,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_43
+      name: pinky_poff_18
       rect:
         serializedVersion: 2
-        x: 954
-        y: 604
-        width: 44
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6eddbf0d9d99894393b79312aaddfad
-      internalID: 21300086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_44
-      rect:
-        serializedVersion: 2
-        x: 1137
-        y: 623
-        width: 23
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1c5a411bfb1123438b3ca5bceec031c
-      internalID: 21300088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_45
-      rect:
-        serializedVersion: 2
-        x: 1287
-        y: 621
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1cda4f9d8175bc4c8dee8b239d05741
-      internalID: 21300090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_46
-      rect:
-        serializedVersion: 2
-        x: 1102
-        y: 596
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b921758b7d486d4c85e42b2c8502d74
-      internalID: 21300092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_47
-      rect:
-        serializedVersion: 2
-        x: 1255
-        y: 601
-        width: 10
-        height: 9
+        x: 1191
+        y: 599
+        width: 123
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1460,27 +1166,6 @@ TextureImporter:
       bones: []
       spriteID: 104dc9b279e307d4689c9fe64d03e337
       internalID: 21300094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_48
-      rect:
-        serializedVersion: 2
-        x: 954
-        y: 528
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72f45448b2ef1a74387c348cb913d906
-      internalID: 21300096
       vertices: []
       indices: 
       edges: []
@@ -1549,11 +1234,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_52
+      name: pinky_poff_15
       rect:
         serializedVersion: 2
-        x: 795
-        y: 487
+        x: 794
+        y: 488
         width: 35
         height: 36
       alignment: 0
@@ -1565,48 +1250,6 @@ TextureImporter:
       bones: []
       spriteID: 69dd6b7454500b8448b66111431145e8
       internalID: 21300104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_53
-      rect:
-        serializedVersion: 2
-        x: 921
-        y: 522
-        width: 20
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca8509429a64b5046b19886d75e71de5
-      internalID: 21300106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_54
-      rect:
-        serializedVersion: 2
-        x: 987
-        y: 500
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad4c018c01f8bf142a9bb5db4c937d94
-      internalID: 21300108
       vertices: []
       indices: 
       edges: []
@@ -1633,48 +1276,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_56
-      rect:
-        serializedVersion: 2
-        x: 1249
-        y: 512
-        width: 26
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 180743403af42e5479d6fec28c148079
-      internalID: 21300112
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_57
-      rect:
-        serializedVersion: 2
-        x: 1396
-        y: 511
-        width: 31
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a08d69383f523645a7aa7ab4b3cfe19
-      internalID: 21300114
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bumper_off
       rect:
         serializedVersion: 2
@@ -1696,13 +1297,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_59
+      name: pinky_poff_19
       rect:
         serializedVersion: 2
-        x: 893
-        y: 478
-        width: 44
-        height: 44
+        x: 896
+        y: 440
+        width: 118
+        height: 115
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1717,55 +1318,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_60
+      name: pinky_poff_13
       rect:
         serializedVersion: 2
-        x: 1211
-        y: 488
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 241a1c73d4ad663418a69cb7890f8620
-      internalID: 21300120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_61
-      rect:
-        serializedVersion: 2
-        x: 1288
-        y: 488
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa5aee36d8bf9b6439cb5957d7f5c91b
-      internalID: 21300122
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_62
-      rect:
-        serializedVersion: 2
-        x: 1340
-        y: 432
-        width: 44
-        height: 78
+        x: 1336
+        y: 401
+        width: 141
+        height: 138
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1775,27 +1334,6 @@ TextureImporter:
       bones: []
       spriteID: 373773f1e157d01478da777c8c9ee5e6
       internalID: 21300124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_63
-      rect:
-        serializedVersion: 2
-        x: 1434
-        y: 482
-        width: 26
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a94bd232340fc834186d59bf0acf56ac
-      internalID: 21300126
       vertices: []
       indices: 
       edges: []
@@ -1864,34 +1402,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_67
+      name: pinky_poff_12
       rect:
         serializedVersion: 2
-        x: 981
-        y: 456
-        width: 20
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a8462ce35d0e68448aa6cdb8ae65f99
-      internalID: 21300134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_68
-      rect:
-        serializedVersion: 2
-        x: 1199
-        y: 454
-        width: 16
-        height: 31
+        x: 1193
+        y: 398
+        width: 130
+        height: 139
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1901,48 +1418,6 @@ TextureImporter:
       bones: []
       spriteID: f7b8fd48541ec5045bdc1e3d3161e649
       internalID: 21300136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_69
-      rect:
-        serializedVersion: 2
-        x: 1277
-        y: 416
-        width: 38
-        height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7362c8ce92970b4b822ea09e853d39f
-      internalID: 21300138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_70
-      rect:
-        serializedVersion: 2
-        x: 1401
-        y: 402
-        width: 63
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5accab951efb1954d8021717fe86a8dc
-      internalID: 21300140
       vertices: []
       indices: 
       edges: []
@@ -2011,91 +1486,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_74
-      rect:
-        serializedVersion: 2
-        x: 1251
-        y: 406
-        width: 14
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36756b43982e1f64c9d3f9240248aba9
-      internalID: 21300148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_75
-      rect:
-        serializedVersion: 2
-        x: 374
-        y: 238
-        width: 57
-        height: 118
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a16fcc79c70daff48a83e841e92d86a0
-      internalID: 21300150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_76
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 348
-        width: 46
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 993b4de61d4cdc84eb431c07491bd3ef
-      internalID: 21300152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_77
-      rect:
-        serializedVersion: 2
-        x: 477
-        y: 317
-        width: 28
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9cd95d88ce9d1c44a8a2fce05961ff63
-      internalID: 21300154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_78
+      name: pinky_poff_10
       rect:
         serializedVersion: 2
         x: 544
@@ -2116,7 +1507,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_79
+      name: pinky_poff_04
       rect:
         serializedVersion: 2
         x: 716
@@ -2137,13 +1528,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_80
+      name: pinky_poff_03
       rect:
         serializedVersion: 2
-        x: 857
-        y: 282
-        width: 72
-        height: 67
+        x: 839
+        y: 266
+        width: 100
+        height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2158,13 +1549,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_81
+      name: pinky_poff_02
       rect:
         serializedVersion: 2
-        x: 1005
-        y: 307
-        width: 65
-        height: 42
+        x: 995
+        y: 261
+        width: 80
+        height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2179,7 +1570,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_82
+      name: pinky_poff_01
       rect:
         serializedVersion: 2
         x: 1149
@@ -2263,13 +1654,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_86
+      name: pinky_poff_14
       rect:
         serializedVersion: 2
-        x: 433
+        x: 366
         y: 226
-        width: 82
-        height: 80
+        width: 149
+        height: 147
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2284,10 +1675,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_87
+      name: pinky_poff_00
       rect:
         serializedVersion: 2
-        x: 1317
+        x: 1316
         y: 303
         width: 35
         height: 36
@@ -2321,48 +1712,6 @@ TextureImporter:
       bones: []
       spriteID: 0da7e3f05040d7d4d839895cddece953
       internalID: 21300176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_89
-      rect:
-        serializedVersion: 2
-        x: 854
-        y: 273
-        width: 20
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6e943bb3c3f58a4394df88a7ae37e61
-      internalID: 21300178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_90
-      rect:
-        serializedVersion: 2
-        x: 1002
-        y: 273
-        width: 20
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7afe231350bb513439274e3190dae9be
-      internalID: 21300180
       vertices: []
       indices: 
       edges: []
@@ -2410,7 +1759,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_93
+      name: pinky_poff_11
       rect:
         serializedVersion: 2
         x: 382
@@ -2431,7 +1780,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_94
+      name: pinky_poff_09
       rect:
         serializedVersion: 2
         x: 554
@@ -2452,7 +1801,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_95
+      name: pinky_poff_05
       rect:
         serializedVersion: 2
         x: 714
@@ -2473,31 +1822,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_96
+      name: pinky_poff_07
       rect:
         serializedVersion: 2
-        x: 884
-        y: 171
-        width: 20
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c20885c2004cc146a1674df842bdf06
-      internalID: 21300192
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_97
-      rect:
-        serializedVersion: 2
-        x: 996
+        x: 995
         y: 109
         width: 89
         height: 90
@@ -2510,27 +1838,6 @@ TextureImporter:
       bones: []
       spriteID: 375bc1e3ae54f4d41ada9ece66b539f1
       internalID: 21300194
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_98
-      rect:
-        serializedVersion: 2
-        x: 1180
-        y: 177
-        width: 20
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 329a6c60b6592534b9f2563d98db9f87
-      internalID: 21300196
       vertices: []
       indices: 
       edges: []
@@ -2578,13 +1885,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_101
+      name: pinky_poff_06
       rect:
         serializedVersion: 2
-        x: 864
-        y: 134
-        width: 34
-        height: 34
+        x: 855
+        y: 121
+        width: 72
+        height: 75
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2599,34 +1906,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameObjectsFG_102
+      name: pinky_poff_08
       rect:
         serializedVersion: 2
-        x: 898
+        x: 1146
         y: 125
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7adcbba27a52f2d46be820616aec7773
-      internalID: 21300204
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_103
-      rect:
-        serializedVersion: 2
-        x: 1160
-        y: 140
-        width: 34
-        height: 34
+        width: 73
+        height: 73
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2636,27 +1922,6 @@ TextureImporter:
       bones: []
       spriteID: e185bb959160fe845bab61c7b79ad959
       internalID: 21300206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameObjectsFG_104
-      rect:
-        serializedVersion: 2
-        x: 1194
-        y: 131
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4030f576a944b340a8d2eaba648b5ae
-      internalID: 21300208
       vertices: []
       indices: 
       edges: []
