@@ -97,6 +97,32 @@ public class PlhsImporter : MonoBehaviour
 
             NSArray scale = (NSArray)properties["Scale"];
             newObj.transform.localScale = new Vector2((float)(NSNumber)scale[0], (float)(NSNumber)scale[1]);
+            spriteRenderer.color = new Color(1, 1, 1, (float)(NSNumber)properties["Opacity"]);
+
+            if ((int)(NSNumber)properties["Tag"] != 0)
+            {
+                switch ((int)(NSNumber)properties["Tag"])
+                {
+                    case 2:
+                        newObj.tag = "wheely";
+                        break;
+                    case 23:
+                        newObj.tag = "bigWheel";
+                        break;
+                    case 5:
+                        newObj.tag = "spike";
+                        break;
+                    case 19:
+                        newObj.tag = "gate";
+                        break;
+                    case 35:
+                        newObj.tag = "rightflipper";
+                        break;
+                    default:
+                        Debug.Log("The object with the tag: " + (int)(NSNumber)properties["Tag"] + "needs to be added to script");
+                        break;
+                }
+            }
 
             if (dict.ContainsKey("PhysicProperties"))
             {

@@ -21,6 +21,7 @@ TagManager:
   - noDraw
   - ball
   - gate
+  - bigWheel
   layers:
   - Default
   - TransparentFX

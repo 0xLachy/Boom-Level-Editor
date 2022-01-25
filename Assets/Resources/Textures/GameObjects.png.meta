@@ -1740,10 +1740,10 @@ TextureImporter:
       name: festival_glass_ball
       rect:
         serializedVersion: 2
-        x: 830
-        y: 366
-        width: 118
-        height: 118
+        x: 829
+        y: 358
+        width: 120
+        height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
