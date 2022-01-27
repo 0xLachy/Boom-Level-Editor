@@ -15,7 +15,7 @@ public class AutoCoderFixtureFixer : MonoBehaviour
     static bool pshsFile;
     static bool referenceMode;
 
-    [MenuItem("Boom/AutoCode", false, 50)]
+    [MenuItem("Boom/AutoCode", false, 100)]
     static void AutoCode()
     {
         int option = EditorUtility.DisplayDialogComplex("Choose setting",

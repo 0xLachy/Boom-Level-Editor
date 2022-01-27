@@ -68,18 +68,31 @@ public class TargetsEditorWindow : EditorWindow
 
     void OnGUI()
     {
-        singlesCanHaveDescription = BoomSettings.SinglesCanHaveDescription;
-        defaultIndexes = BoomSettings.DefaultIndexes;
-        defaultTargetValues = BoomSettings.DefaultTargetValues;
-        autoDescription = BoomSettings.Autodescription;
-        defaultDescription = BoomSettings.DefaultDescription;
-        targetListCapacity = BoomSettings.TargetListCapacity;
+        //singlesCanHaveDescription = BoomSettings.SinglesCanHaveDescription;
+        //defaultIndexes = BoomSettings.DefaultIndexes;
+        //defaultTargetValues = BoomSettings.DefaultTargetValues;
+        //autoDescription = BoomSettings.Autodescription;
+        //defaultDescription = BoomSettings.DefaultDescription;
+        //targetListCapacity = BoomSettings.TargetListCapacity;
         //boxStyle = new GUIStyle(GUI.skin.box);
         //boxStyle.normal.textColor = Color.cyan;
         EditorGUILayout.LabelField("Click the buttons to change the type of target, or to get the file location, " +
             "the box to the right holds how the target will be added. Type 0 or none if no touching, type all for touch/collect/explode " +
             "all, any number for targets, eg 4", EditorStyles.wordWrappedLabel);
         GUILayout.Space(10);
+
+        if (GUILayout.Button("Open Settings"))
+        {
+            BoomSettings.shouldfocus = true;
+            SettingsService.OpenProjectSettings("Project/BoomSettings");
+            Close();
+            //var window = SettingsService.OpenProjectSettings("Project/BoomSettings");
+            //window.Show();
+            //EditorUtility.FocusProjectWindow();
+            //EditorApplication.ExecuteMenuItem("Edit/Project Settings/");
+            //ProjectWindowUtil projectWindowUtil = (Settin)EditorWindow.GetWindow(typeof(ProjectWindowUtil), false, "Gib Halp Plis");
+            //BoomSettingsRegister.CreateSettingsProvider();
+        }
         EditorGUILayout.BeginHorizontal();
         if (GUILayout.Button("Levels.plist (File)"))
         {
@@ -132,10 +145,6 @@ public class TargetsEditorWindow : EditorWindow
         if(showDrWolfenstein)
             ShowDrWolfenstein();
 
-        if (GUILayout.Button("close"))
-        {
-            Close();
-        }
         if (GUILayout.Button("Add to plist"))
         {
             bool answer = false;
@@ -422,11 +431,13 @@ public class TargetsEditorWindow : EditorWindow
             _ => "CityBG.plist",
         };
     }
-    [MenuItem("Boom/Add To ipa", false, 49)]
+    [MenuItem("Boom/Add To ipa", false, 50)]
     public static void CreateTargetsEditorWindow()
     {
         //BoomSettings.Refresh(ScriptableObject.CreateInstance<BoomSettings>());
         //BoomSettings.Refresh(AssetDatabase.LoadAssetAtPath<BoomSettings>(BoomSettingsRegister.SettingsPath));
+        var settings = BoomSettingsRegister.Load();
+        BoomSettings.Refresh(settings);
         TargetsEditorWindow window = ScriptableObject.CreateInstance<TargetsEditorWindow>();
         window.ShowUtility();
     }

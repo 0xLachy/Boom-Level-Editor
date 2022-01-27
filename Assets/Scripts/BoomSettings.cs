@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class BoomSettings : ScriptableObject
 {
+    public static bool shouldfocus = false;
     [SerializeField] public string defaultPlistPath = "";
     /*[Header("Default Target Stuff")]*/
     [SerializeField] private int[] defaultIndexes = new int[] { 0, 1, 8, 0, 4, 2, 3 };
@@ -13,7 +14,7 @@ public class BoomSettings : ScriptableObject
     [Tooltip("How many targets to add")] [SerializeField] private int targetListCapacity = 3;
 
     /*[Header("Plist File Config")]*/
-    [Tooltip("Add the new level at the index of the finder string level")] [SerializeField] private bool insertAtIndexFinderString = true;
+    [Tooltip("Add the new level at the index of the finder string level")] [SerializeField] private bool insertAtIndexFinderString = false;
     [Tooltip("Level name so that the script knows where the custom levels are")] [SerializeField] private string extremeLevelsIndexFinderString = "Lumberjack";
 
     /*[Header("Description Stuff")]*/
@@ -58,6 +59,11 @@ public static class BoomSettingsRegister
     [SettingsProvider]
     public static SettingsProvider CreateSettingsProvider()
     {
+        if (BoomSettings.shouldfocus)
+        {
+            EditorUtility.FocusProjectWindow();
+            BoomSettings.shouldfocus = false;
+        }
         var targetsFoldout = true;
         var plistFoldout = true;
         var descriptionFoldout = false;
@@ -86,7 +92,7 @@ public static class BoomSettingsRegister
 
                 if (plistFoldout)
                 {
-                    EditorGUILayout.PropertyField(serialized.FindProperty("insertAtIndexFinderString"), new GUIContent("insert new level at finder string"));
+                    EditorGUILayout.PropertyField(serialized.FindProperty("insertAtIndexFinderString"), new GUIContent("insert new level before finder string"));
                     EditorGUILayout.PropertyField(serialized.FindProperty("extremeLevelsIndexFinderString"), new GUIContent("finder string"));
                     EditorGUILayout.PropertyField(serialized.FindProperty("defaultPlistPath"), new GUIContent("default plist path"));
                 }
@@ -102,7 +108,7 @@ public static class BoomSettingsRegister
                 }
                 EditorGUILayout.EndFoldoutHeaderGroup();
 
-                EditorGUILayout.HelpBox("To reset settings, delete the asset file (in editor folder) and go to BOOM -> Regenerate Settings", MessageType.Info);
+                EditorGUILayout.HelpBox("To reset settings, delete the asset file (in editor folder) and go to BOOM -> Add to Ipa", MessageType.Info);
 
                 if (EditorGUI.EndChangeCheck())
                 {
@@ -115,8 +121,8 @@ public static class BoomSettingsRegister
         };
     }
 
-    [MenuItem("Boom/Regenerate Settings", false, 55)]
-    static BoomSettings Load()
+    //[MenuItem("Boom/Regenerate Settings", false, 55)]
+    public static BoomSettings Load()
     {
         var settings = AssetDatabase.LoadAssetAtPath<BoomSettings>(SettingsPath);
         
