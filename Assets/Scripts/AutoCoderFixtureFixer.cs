@@ -11,6 +11,7 @@ public class AutoCoderFixtureFixer : MonoBehaviour
     static StreamWriter sw;
     static readonly string fileWriteLocation = "Levels/AutoCode.txt";
     static bool firstNumber = true;
+    static bool haveFunction = false;
     static bool pshsFile;
     static bool referenceMode;
 
@@ -73,9 +74,9 @@ public class AutoCoderFixtureFixer : MonoBehaviour
         sw = File.CreateText(fileWriteLocation);
         try
         {
-            if (referenceMode)
+            if (referenceMode && haveFunction) 
             {
-                sw.WriteLine("public static Dictionary<string, float[]> gameObjectsReferenceSheet = new Dictionary<string, float[]>");
+                sw.WriteLine("public static Dictionary<string, decimal[]> gameObjectsReferenceSheet = new Dictionary<string, decimal[]>");
                 sw.WriteLine("\t{");
             }
             for (int index = 0; index < sprites.Count; index++)
@@ -110,7 +111,7 @@ public class AutoCoderFixtureFixer : MonoBehaviour
              
                 }
             }
-            if (referenceMode) { sw.WriteLine("\t};\n"); }
+            if (referenceMode  && haveFunction) { sw.WriteLine("\t};\n"); }
         }
         finally
         {
@@ -128,11 +129,11 @@ public class AutoCoderFixtureFixer : MonoBehaviour
         float type = (float)(NSNumber)physicProperties[typeWord];
         if(index == spriteCount - 1) 
         { 
-            sw.WriteLine($"\t\t{{ \"{name}\" , new float[] {{ { density }f, { restitution }f, { angularVelocity }f, { friction }f, { type }f}} }}"); 
+            sw.WriteLine($"\t\t{{ \"{name}\" , new decimal[] {{ { density }m, { restitution }m, { angularVelocity }m, { friction }m, { type }m}} }}"); 
         }
         else
         {
-            sw.WriteLine($"\t\t{{ \"{name}\" , new float[] {{ { density }f, { restitution }f, { angularVelocity }f, { friction }f, { type }f}} }},");
+            sw.WriteLine($"\t\t{{ \"{name}\" , new decimal[] {{ { density }m, { restitution }m, { angularVelocity }m, { friction }m, { type }m}} }},");
         }
     }
 

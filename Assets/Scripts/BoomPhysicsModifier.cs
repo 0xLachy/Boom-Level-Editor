@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Claunia.PropertyList;
 public class BoomPhysicsModifier : MonoBehaviour
 {
+    private static int multiplier = 50;
     //This actually does nothing but I like the reminder of how to add them
     [Tooltip("add _trigger (start when pressed) or leave blank for auto, add _to for second one ALWAYS")]
     public bool isMovingPlatform = false;
@@ -42,6 +43,7 @@ public class BoomPhysicsModifier : MonoBehaviour
 
 
     [Header("Other/Debug")]
+    public bool customShapeFixtures = false;
     [Tooltip("bomb and ball will default to circle, unless 0DRAFT is true")]
     public bool isCircle = false;
     public float linearDampening = 0.000000f;
@@ -54,5 +56,37 @@ public class BoomPhysicsModifier : MonoBehaviour
     public bool canSleep = true;
     public bool isSensor = false;
     //public float DRFTvalue { get { return density + restitution + friction + type; } }
+
+    public NSDictionary CreateCustomFixtures(NSDictionary physProps)
+    {
+        //public static void moving_flat_xl(NSDictionary physProps)
+        //{
+        //    physProps.Add("ShapeFixtures", new NSArray(1) {
+        //new NSArray(4) {
+        //    new NSArray(2) {-59.959999,7.4550171},
+        //    new NSArray(2) {-59.959999,-7.4500122},
+        //    new NSArray(2) {59.949997,-7.4500122},
+        //    new NSArray(2) {59.949997,7.4550171}
+        //}
+        //});
+        //}
+        var polygonPaths = gameObject.GetComponent<PolygonCollider2D>();
+        for(int i = 0; i < polygonPaths.pathCount; i++)
+        {
+            Vector2[] polygonPointsArray = polygonPaths.GetPath(i);
+            physProps.Add("ShapeFixtures", new NSArray(polygonPaths.pathCount));
+            NSArray shapeFixtures = (NSArray)physProps["ShapeFixtures"];
+            shapeFixtures.Add(new NSArray(polygonPointsArray.Length));
+            //shapeFixtures[i] = new NSArray(polygonPointsArray.Length);
+            NSArray nestedShapeFixturesArr = (NSArray)shapeFixtures[i];
+            for (int i1 = 0; i1 < polygonPointsArray.Length; i1++)
+            {
+                Vector2 point = polygonPointsArray[i1]; 
+                nestedShapeFixturesArr.Add(new NSArray(2) { point.x * multiplier, point.y * multiplier});
+                //nestedShapeFixturesArr[i1] = new NSArray(2) { point.x, point.y };               
+            }
+        }
+        return physProps;
+    }
    
 }

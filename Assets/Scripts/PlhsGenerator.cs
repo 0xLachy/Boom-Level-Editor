@@ -76,6 +76,7 @@ public class PlhsGenerator : MonoBehaviour
         string sceneName = SceneManager.GetActiveScene().name;
         Directory.CreateDirectory("./Levels");
         PropertyListParser.SaveAsXml(root, new FileInfo("Levels/" + sceneName + ".plhs"));
+        Debug.Log("Saving level to: Levels/" + sceneName + ".plhs");
     }
 
     private static NSDictionary BezierToNSDictionary(GameObject gameObject)
@@ -188,7 +189,7 @@ public class PlhsGenerator : MonoBehaviour
             var newY = -(gameObject.transform.position.y + spline.GetPosition(i).y) * multiplier;
             points[i] = new Vector2(newX, newY);
         }
-
+        //testing with a debug.Log statement here, it seems that the infinte load happens before this
         Polygon2D polygon = Polygon2D.Contour(points);
         Triangulation2D triangulation = new Triangulation2D(polygon, triangulationThreshold);
         var triangles = triangulation.Triangles;
@@ -400,20 +401,27 @@ public class PlhsGenerator : MonoBehaviour
             if (BPM.ShapePositionOffsett) { physProps.Add("ShapePositionOffset", new NSArray(2) { 0.000000, 0.000000 }); }
             if (BPM.ShapeBorder) { physProps.Add("ShapeBorder", new NSArray(2) { 0.000000, 0.000000 }); }
 
-            //adding shapefixtures by name
-            Type type = typeof(ShapeFixtures);
-            MethodInfo method = type.GetMethod(sprite.name);
-            ShapeFixtures shapeFixtures = new ShapeFixtures();
-            try 
-            { 
-                method.Invoke(shapeFixtures, new object[] { physProps }); 
-            }
-            catch (NullReferenceException)
+            if (BPM.customShapeFixtures)
             {
-                Debug.Log($"{sprite.name} is missing a shape fixtures reference, the border will be rectangle and may not fit properly");
+                BPM.CreateCustomFixtures(physProps);
             }
-                       
-
+            else
+            {
+                //adding shapefixtures by name
+                Type type = typeof(ShapeFixtures);
+                MethodInfo method = type.GetMethod(sprite.name);
+                ShapeFixtures shapeFixtures = new ShapeFixtures();
+                try
+                {
+                    method.Invoke(shapeFixtures, new object[] { physProps });
+                }
+                catch (NullReferenceException)
+                {
+                    Debug.Log($"{sprite.name} is missing a shape fixtures reference, the border will be" +
+                        $" rectangle and may not fit properly, Unity editor name {gameObject.name}");
+                }
+            }
+            
             dict.Add("PhysicProperties", physProps);
         }
 
@@ -463,7 +471,7 @@ public class PlhsGenerator : MonoBehaviour
                 Debug.Log($"couldn't add {ValueNameToAdd} to GORS with spritename {spriteName} index {retrievingIndex}");
                 return;
         }
-        physProps.Add(ValueNameToAdd, /*String.Format("{0:0.000000}"makes string :(,*/ DefaultValuesReferences.GORS[spriteName][retrievingIndex]);//); 
+        physProps.Add(ValueNameToAdd, /*String.Format("{0:0.000000}"makes string :(,*/ (double)DefaultValuesReferences.GORS[spriteName][retrievingIndex]);//); 
     }
 
     private static void UnityTagToBoomTagInGame(GameObject gameObject, NSDictionary genProps, Sprite sprite, Color color)

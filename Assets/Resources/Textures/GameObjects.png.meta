@@ -300,7 +300,7 @@ TextureImporter:
     second: dino
   - first:
       213: 4134492550651945424
-    second: big_rocket
+    second: factory_bit_cube
   - first:
       213: 1709075981183930642
     second: merry_christmas
@@ -997,27 +997,6 @@ TextureImporter:
       bones: []
       spriteID: 2e1a71da9ec5afd4981b3eeed9d462a6
       internalID: 21300052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: factory_bit_cube
-      rect:
-        serializedVersion: 2
-        x: 853
-        y: 1066
-        width: 138
-        height: 155
-      alignment: 9
-      pivot: {x: 0.50131047, y: 0.46252206}
-      border: {x: 0, y: 0, z: 0, w: 10}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7df9899716ea9f4a8e7941fa6cd4023
-      internalID: 21300054
       vertices: []
       indices: 
       edges: []
@@ -2593,6 +2572,27 @@ TextureImporter:
       bones: []
       spriteID: 8af28ec5f8ff21144804d557ad477492
       internalID: 698866057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: factory_bit_cube
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1068
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1ab10c11ba06930800000000000000
+      internalID: 4134492550651945424
       vertices: []
       indices: 
       edges: []

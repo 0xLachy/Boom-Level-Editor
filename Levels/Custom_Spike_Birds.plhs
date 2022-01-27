@@ -1103,11 +1103,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -1232,11 +1232,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -1565,11 +1565,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -1762,11 +1762,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -1891,11 +1891,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -2020,11 +2020,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -2149,11 +2149,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -2344,15 +2344,15 @@
 			<key>PhysicProperties</key>
 			<dict>
 				<key>Density</key>
-				<string>1.000000</string>
+				<real>1</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>1.000000</string>
+				<real>1</real>
 				<key>Type</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Mask</key>
 				<real>65539</real>
 				<key>Group</key>
@@ -2683,11 +2683,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -2878,13 +2878,13 @@
 			<key>PhysicProperties</key>
 			<dict>
 				<key>Density</key>
-				<string>2.000000</string>
+				<real>2</real>
 				<key>Restitution</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>2.000000</string>
+				<real>2</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>IsCircle</key>
@@ -3198,11 +3198,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -3325,13 +3325,13 @@
 			<key>PhysicProperties</key>
 			<dict>
 				<key>Density</key>
-				<string>0.500000</string>
+				<real>0.5</real>
 				<key>Restitution</key>
-				<string>0.500000</string>
+				<real>0.5</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>1.000000</string>
+				<real>1</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -3714,11 +3714,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -3911,11 +3911,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -4720,11 +4720,11 @@
 				<key>Density</key>
 				<real>500</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>1.000000</string>
+				<real>1</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -4849,11 +4849,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -5046,11 +5046,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -5583,11 +5583,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
@@ -6256,11 +6256,11 @@
 				<key>Density</key>
 				<real>200</real>
 				<key>Restitution</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>AngularVelocity</key>
-				<string>0.000000</string>
+				<real>0.0</real>
 				<key>Friction</key>
-				<string>0.200000</string>
+				<real>0.200000002980232</real>
 				<key>Type</key>
 				<integer>2</integer>
 				<key>Mask</key>
