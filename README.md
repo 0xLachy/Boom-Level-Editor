@@ -1,5 +1,6 @@
 # Boom Level Editor
 This project is a way for making custom levels for the app "Boom!" by Happy Sprites which is an ios game [Boom Fandom Wiki](https://boomhappysprites.fandom.com/wiki/BOOM!_Wiki)
+>**You need the app to play and test the level** 
 
 For help or to show us your level join our discord! 😄
 
@@ -9,13 +10,14 @@ For help or to show us your level join our discord! 😄
 ![https://www.happysprites.com/wp-content/uploads/2013/05/boom_feature.jpg](https://www.happysprites.com/wp-content/uploads/2013/05/boom_feature.jpg) 
 -->
 ## Installation Guide
-1. Download Unity Hub from [https://store.unity.com/download](https://store.unity.com/download)
+1. [Have the Boom app installed on your ios device](https://boom.markstam.eu/install)
+2. Download Unity Hub from [https://store.unity.com/download](https://store.unity.com/download)
 
-2. Clone this repository or download as a zip (then unzip) and put it in a folder where you want to keep your Unity projects e.g \<yourname>\Unity\Projects
+3. Clone this repository or download as a zip (then unzip) and put it in a folder where you want to keep your Unity projects e.g \<yourname>\Unity\Projects
 
-3. In Unity Hub on the projects tab, click on *add* then go to wherever you saved this repo and double-click on the repo folder, then press enter.
-4. Once it is added, it may tell you that you are missing the unity version required, choose any version that is above 2020, if you don't have any, unity hub will help you download one, or go to the installs tab on the left, then click on *add* and then choose a 2020 version, you don't *need* any extra modules, but having visual studio may come in handy.
-5. Now that you have all the requirements ready, double-click on the project in the projects window in unity hub and you should be good to go! 😀
+4. In Unity Hub on the projects tab, click on *add* then go to wherever you saved this repo and double-click on the repo folder, then press enter.
+5. Once it is added, it may tell you that you are missing the unity version required, choose any version that is above 2020, if you don't have any, unity hub will help you download one, or go to the installs tab on the left, then click on *add* and then choose a 2020 version, you don't *need* any extra modules, but having visual studio may come in handy.
+6. Now that you have all the requirements ready, double-click on the project in the projects window in unity hub and you should be good to go! 😀
    
 ---
 
@@ -44,7 +46,7 @@ Drag them in just like you would the other sprites.
 ### Ground
 Adding ground to the level is a bit different to using other sprites. The SpriteShapeController that we use to make it in the scene is a bit buggy and if your points are too close together it will cause the export script to infinitely load the Unity Editor and you will have to stop Unity using task manager (ctrl+shift+escape, right click on unity and then end task)
 
-To preven losing your progress, save before you export the level if you are using the SpriteShapeController in your level. If it exports fine, which it usually does, you don't have to save untill the next time you edit the spline again
+To prevent losing your progress, save before you export the level if you are using the SpriteShapeController in your level. If it exports fine, which it usually does, you don't have to save untill the next time you edit the spline again
 
 To use the ground, drag in one of the ground prefabs, then to resize the ground **don't use the rect tool** but instead click on the button next to "Edit Spline" in the inspector window, then click on a point to move it, or click on the line between two points to create a new point. If you want to delete a point, click on the point, then press delete on your keyboard
 
