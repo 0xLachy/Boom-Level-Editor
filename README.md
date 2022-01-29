@@ -69,7 +69,7 @@ In the inspecter right under the name, where it says "Tag Untagged" if you click
 Quicksand and the Big Wheel powerup were in the games files but unreleased, because of that they are a bit buggy and big wheel doesn't actually have a sprite image. To use them just drag in the prefab like you would the other stuff.
 
 ### Exporting the level
-Currently you can't play the level in the unity editor just yet. To play and test the level out, you need to play it in the custom ipa from github or the discord. Go to [https://boom.markstam.eu/](https://boom.markstam.eu/) to get the app.
+Currently you can't play the level in the unity editor just yet. To play and test the level out, you need to play it in the custom ipa.
 
 First thing you need to do is export the level, up in the top, go to boom >> export PLHS. Or you can press ctrl+g
 
