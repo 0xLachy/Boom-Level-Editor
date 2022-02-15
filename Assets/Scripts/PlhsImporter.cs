@@ -298,6 +298,9 @@ public class PlhsImporter : MonoBehaviour
                     
                 }
             }
+
+            SplinePointCounter SPC = groundObject.AddComponent<SplinePointCounter>();
+            SPC.pointCount = curves.Count;
         }
     }
 

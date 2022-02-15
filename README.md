@@ -148,5 +148,6 @@ The sprites just below the add to plist are just there to help visualise the tar
 
 ### Settings
 ![BoomSettings](Assets/Resources/Github%20Guide%20Images/BoomSettings%20Window.png) 
+
 The default settings should work just fine, but if you want to add the level to a certain spot you will need to turn on insert new level before finder string (which may or may not be enabled by default). Then change the string to the name of the level before it. If you don't have it enabled it will just add the level to the end of extreme levels. 
 

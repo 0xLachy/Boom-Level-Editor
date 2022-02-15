@@ -179,7 +179,17 @@ public class PlhsGenerator : MonoBehaviour
         bezier.Add("IsDrawable", true);
 
         var spline = spriteShapeController.spline;
-        var points = new Vector2[spline.GetPointCount()];
+        Vector2[] points;
+        var SPC = gameObject.GetComponent<SplinePointCounter>();
+        if(SPC != null)
+        {
+            points = new Vector2[SPC.pointCount];
+        }
+        else
+        {
+            points = new Vector2[spline.GetPointCount()];
+        }
+
         for (int i = 0; i < spline.GetPointCount(); i++)
         {
             //Vector3 vekkie = gameObject.transform.TransformPoint(spline.GetPosition(i));
