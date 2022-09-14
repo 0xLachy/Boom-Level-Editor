@@ -232,7 +232,6 @@ public class PlhsGenerator : MonoBehaviour
         }
         // Connect last point with first
         curves.Add(PointsToCurve(points[points.Length - 1], points[0]));
-        Debug.Log(triangles.Length);
         bezier.Add("Curves", curves);
         bezier.Add("LineColor", bezier.Get("Color"));
         bezier.Add("Restitution", 0.0);
