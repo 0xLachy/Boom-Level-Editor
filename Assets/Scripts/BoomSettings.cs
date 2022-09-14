@@ -117,7 +117,7 @@ public static class BoomSettingsRegister
                 }
             },
 
-            keywords = new HashSet<string>(new[] { "Boom Settigngs", "default target" })
+            keywords = new HashSet<string>(new[] { "Boom Settings", "default target" })
         };
     }
 

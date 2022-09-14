@@ -74,7 +74,7 @@ public class PlhsGenerator : MonoBehaviour
         root.Add("ScenePreference", GetScenePreferences());
         // Save the property list
         string sceneName = SceneManager.GetActiveScene().name;
-        root.Add("CustomLevelName", sceneName)
+        root.Add("CustomLevelName", sceneName);
         Directory.CreateDirectory("./Levels");
         PropertyListParser.SaveAsXml(root, new FileInfo("Levels/" + sceneName + ".plhs"));
         Debug.Log("Saving level to: Levels/" + sceneName + ".plhs");

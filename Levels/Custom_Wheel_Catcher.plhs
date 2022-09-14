@@ -33,24 +33,24 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>spring_board_box</string>
+				<string>bomb_normal_1</string>
 				<key>Image</key>
-				<string>GameObjectsFG.png</string>
+				<string>GameObjects.png</string>
 				<key>SHScene</key>
-				<string>GameObjectsFG.pshs</string>
+				<string>GameObjects.pshs</string>
 				<key>Angle</key>
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>73.5</real>
-					<real>30.5</real>
+					<real>29.3546657562256</real>
+					<real>29.3451671600342</real>
 				</array>
 				<key>UniqueName</key>
-				<string>spring_board_box (1)</string>
+				<string>bomb (1)</string>
 				<key>Position</key>
 				<array>
-					<real>-430.000030517578</real>
-					<real>330.299987792969</real>
+					<real>296.399963378906</real>
+					<real>296.999969482422</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -62,7 +62,143 @@
 					<real>1</real>
 				</array>
 				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
 				<integer>1</integer>
+				<key>AnimAtStart</key>
+				<true/>
+				<key>AnimSpeed</key>
+				<real>0.1</real>
+				<key>AnimName</key>
+				<string>BombNormal</string>
+				<key>AnimLoop</key>
+				<true/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>coin_1</string>
+				<key>Image</key>
+				<string>GameObjectsBG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsBG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>40</real>
+					<real>38</real>
+				</array>
+				<key>UniqueName</key>
+				<string>coin (3)</string>
+				<key>Position</key>
+				<array>
+					<real>55.5</real>
+					<real>279</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>1</integer>
+				<key>AnimAtStart</key>
+				<true/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string>RotatingCoin_1</string>
+				<key>AnimLoop</key>
+				<true/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>23</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>PU_ice_wheel_1</string>
+				<key>Image</key>
+				<string>GameObjects.png</string>
+				<key>SHScene</key>
+				<string>GameObjects.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>45.0559997558594</real>
+					<real>45.0414199829102</real>
+				</array>
+				<key>UniqueName</key>
+				<string>bigwheel</string>
+				<key>Position</key>
+				<array>
+					<real>271.499969482422</real>
+					<real>71.9999847412109</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>2</real>
+					<real>2</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
 				<key>Locked</key>
 				<false/>
 				<key>AnimRepetitions</key>
@@ -101,24 +237,24 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>spring_board_box</string>
+				<string>bomb_normal_1</string>
 				<key>Image</key>
-				<string>GameObjectsFG.png</string>
+				<string>GameObjects.png</string>
 				<key>SHScene</key>
-				<string>GameObjectsFG.pshs</string>
+				<string>GameObjects.pshs</string>
 				<key>Angle</key>
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>73.5</real>
-					<real>30.5</real>
+					<real>29.3546657562256</real>
+					<real>29.3451671600342</real>
 				</array>
 				<key>UniqueName</key>
-				<string>spring_board_box</string>
+				<string>bomb (1)</string>
 				<key>Position</key>
 				<array>
-					<real>463.600006103516</real>
-					<real>330.299987792969</real>
+					<real>-131.500030517578</real>
+					<real>297.499969482422</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -130,19 +266,19 @@
 					<real>1</real>
 				</array>
 				<key>ZOrder</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>Locked</key>
 				<false/>
 				<key>AnimRepetitions</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>AnimAtStart</key>
-				<false/>
+				<true/>
 				<key>AnimSpeed</key>
-				<real>0.0</real>
+				<real>0.1</real>
 				<key>AnimName</key>
-				<string></string>
+				<string>BombNormal</string>
 				<key>AnimLoop</key>
-				<false/>
+				<true/>
 			</dict>
 		</dict>
 		<dict>
@@ -185,76 +321,8 @@
 				<string>bomb (2)</string>
 				<key>Position</key>
 				<array>
-					<real>40</real>
-					<real>279</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.1</real>
-				<key>AnimName</key>
-				<string>BombNormal</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>bomb_normal_1</string>
-				<key>Image</key>
-				<string>GameObjects.png</string>
-				<key>SHScene</key>
-				<string>GameObjects.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>29.3546657562256</real>
-					<real>29.3451671600342</real>
-				</array>
-				<key>UniqueName</key>
-				<string>bomb (5)</string>
-				<key>Position</key>
-				<array>
-					<real>39.9770736694336</real>
-					<real>55.1491508483887</real>
+					<real>-158.500030517578</real>
+					<real>269.999969482422</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -318,283 +386,11 @@
 					<real>38</real>
 				</array>
 				<key>UniqueName</key>
-				<string>coin (8)</string>
+				<string>coin (1)</string>
 				<key>Position</key>
 				<array>
-					<real>273.927032470703</real>
-					<real>-151.099990844727</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (5)</string>
-				<key>Position</key>
-				<array>
-					<real>257.427032470703</real>
-					<real>-255.100006103516</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (4)</string>
-				<key>Position</key>
-				<array>
-					<real>172.42707824707</real>
-					<real>-305.100006103516</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (10)</string>
-				<key>Position</key>
-				<array>
-					<real>371.927062988281</real>
-					<real>72.3999938964844</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (16)</string>
-				<key>Position</key>
-				<array>
-					<real>-286.072937011719</real>
-					<real>140.400009155273</real>
+					<real>276</real>
+					<real>134</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -661,8 +457,8 @@
 				<string>bomb</string>
 				<key>Position</key>
 				<array>
-					<real>-42.7619934082031</real>
-					<real>278.75</real>
+					<real>242.399948120117</real>
+					<real>297.499969482422</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -729,8 +525,8 @@
 				<string>ball</string>
 				<key>Position</key>
 				<array>
-					<real>-137.290863037109</real>
-					<real>288.399993896484</real>
+					<real>754.5</real>
+					<real>295.5</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -797,212 +593,8 @@
 				<string>coin (2)</string>
 				<key>Position</key>
 				<array>
-					<real>-141.572952270508</real>
-					<real>-317.600006103516</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>ball_1</string>
-				<key>Image</key>
-				<string>GameObjects.png</string>
-				<key>SHScene</key>
-				<string>GameObjects.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>34.1333312988281</real>
-					<real>34.1222877502441</real>
-				</array>
-				<key>UniqueName</key>
-				<string>ball (1)</string>
-				<key>Position</key>
-				<array>
-					<real>171.427062988281</real>
-					<real>288.899993896484</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>wheel</string>
-				<key>Image</key>
-				<string>GameObjects.png</string>
-				<key>SHScene</key>
-				<string>GameObjects.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>32.7679977416992</real>
-					<real>32.757396697998</real>
-				</array>
-				<key>UniqueName</key>
-				<string>wheel_0</string>
-				<key>Position</key>
-				<array>
-					<real>-206.52294921875</real>
-					<real>141.75</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (15)</string>
-				<key>Position</key>
-				<array>
-					<real>-197.072982788086</real>
-					<real>194.899993896484</real>
+					<real>-25.5</real>
+					<real>257</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1066,11 +658,11 @@
 					<real>29.3451671600342</real>
 				</array>
 				<key>UniqueName</key>
-				<string>bomb (4)</string>
+				<string>bomb (2)</string>
 				<key>Position</key>
 				<array>
-					<real>-10.0229263305664</real>
-					<real>55.1491508483887</real>
+					<real>269.399963378906</real>
+					<real>269.999969482422</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1134,11 +726,11 @@
 					<real>38</real>
 				</array>
 				<key>UniqueName</key>
-				<string>coin (14)</string>
+				<string>coin (4)</string>
 				<key>Position</key>
 				<array>
-					<real>-51.5728950500488</real>
-					<real>202.900009155273</real>
+					<real>135.5</real>
+					<real>257</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1189,296 +781,24 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (6)</string>
-				<key>Position</key>
-				<array>
-					<real>149.427032470703</real>
-					<real>-83.5999984741211</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (3)</string>
-				<key>Position</key>
-				<array>
-					<real>-214.072891235352</real>
-					<real>-263.600006103516</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin</string>
-				<key>Position</key>
-				<array>
-					<real>135.927108764648</real>
-					<real>-213.100006103516</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (1)</string>
-				<key>Position</key>
-				<array>
-					<real>-104.072952270508</real>
-					<real>-215.600006103516</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>PU_rocket_4</string>
+				<string>wheel</string>
 				<key>Image</key>
 				<string>GameObjects.png</string>
 				<key>SHScene</key>
 				<string>GameObjects.pshs</string>
 				<key>Angle</key>
-				<integer>270</integer>
+				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>67.2426681518555</real>
-					<real>18.4260349273682</real>
+					<real>32.7679977416992</real>
+					<real>32.757396697998</real>
 				</array>
 				<key>UniqueName</key>
-				<string>rocket (1)</string>
+				<string>wheel_0</string>
 				<key>Position</key>
 				<array>
-					<real>11.4270210266113</real>
-					<real>-214.599990844727</real>
+					<real>-501.000030517578</real>
+					<real>295.5</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1494,15 +814,15 @@
 				<key>Locked</key>
 				<false/>
 				<key>AnimRepetitions</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>AnimAtStart</key>
-				<true/>
+				<false/>
 				<key>AnimSpeed</key>
-				<real>0.12</real>
+				<real>0.0</real>
 				<key>AnimName</key>
-				<string>RocketPU</string>
+				<string></string>
 				<key>AnimLoop</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
 		<dict>
@@ -1529,24 +849,24 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>coin_1</string>
+				<string>bomb_normal_1</string>
 				<key>Image</key>
-				<string>GameObjectsBG.png</string>
+				<string>GameObjects.png</string>
 				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
+				<string>GameObjects.pshs</string>
 				<key>Angle</key>
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>40</real>
-					<real>38</real>
+					<real>29.3546657562256</real>
+					<real>29.3451671600342</real>
 				</array>
 				<key>UniqueName</key>
-				<string>coin (7)</string>
+				<string>bomb</string>
 				<key>Position</key>
 				<array>
-					<real>-127.072906494141</real>
-					<real>-91.0999984741211</real>
+					<real>-185.500045776367</real>
+					<real>297.499969482422</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1566,77 +886,9 @@
 				<key>AnimAtStart</key>
 				<true/>
 				<key>AnimSpeed</key>
-				<real>0.0</real>
+				<real>0.1</real>
 				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (13)</string>
-				<key>Position</key>
-				<array>
-					<real>85.4270935058594</real>
-					<real>202.900009155273</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
+				<string>BombNormal</string>
 				<key>AnimLoop</key>
 				<true/>
 			</dict>
@@ -1681,8 +933,8 @@
 				<string>cage_hook</string>
 				<key>Position</key>
 				<array>
-					<real>19.4270133972168</real>
-					<real>-737.100036621094</real>
+					<real>580</real>
+					<real>-546</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1733,7 +985,75 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>bomb_normal_1</string>
+				<string>coin_1</string>
+				<key>Image</key>
+				<string>GameObjectsBG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsBG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>40</real>
+					<real>38</real>
+				</array>
+				<key>UniqueName</key>
+				<string>coin</string>
+				<key>Position</key>
+				<array>
+					<real>-159.800003051758</real>
+					<real>134</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>1</integer>
+				<key>AnimAtStart</key>
+				<true/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string>RotatingCoin_1</string>
+				<key>AnimLoop</key>
+				<true/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>23</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>PU_ice_wheel_1</string>
 				<key>Image</key>
 				<string>GameObjects.png</string>
 				<key>SHScene</key>
@@ -1742,15 +1062,15 @@
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>29.3546657562256</real>
-					<real>29.3451671600342</real>
+					<real>45.0559997558594</real>
+					<real>45.0414199829102</real>
 				</array>
 				<key>UniqueName</key>
-				<string>bomb (1)</string>
+				<string>bigwheel</string>
 				<key>Position</key>
 				<array>
-					<real>-0.600242614746094</real>
-					<real>277.5</real>
+					<real>-161.000030517578</real>
+					<real>70.9999847412109</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1758,91 +1078,23 @@
 				<false/>
 				<key>Scale</key>
 				<array>
-					<real>1</real>
-					<real>1</real>
+					<real>2</real>
+					<real>2</real>
 				</array>
 				<key>ZOrder</key>
 				<integer>0</integer>
 				<key>Locked</key>
 				<false/>
 				<key>AnimRepetitions</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.1</real>
-				<key>AnimName</key>
-				<string>BombNormal</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (9)</string>
-				<key>Position</key>
-				<array>
-					<real>-255.572982788086</real>
-					<real>-165.599990844727</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
 				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
 				<key>AnimSpeed</key>
 				<real>0.0</real>
 				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
+				<string></string>
 				<key>AnimLoop</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
 		<dict>
@@ -1869,24 +1121,24 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>coin_1</string>
+				<string>wood_curve_fourth_xl</string>
 				<key>Image</key>
-				<string>GameObjectsBG.png</string>
+				<string>Tracks.png</string>
 				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
+				<string>Tracks.pshs</string>
 				<key>Angle</key>
-				<integer>0</integer>
+				<integer>135</integer>
 				<key>Size</key>
 				<array>
-					<real>40</real>
-					<real>38</real>
+					<real>122</real>
+					<real>122</real>
 				</array>
 				<key>UniqueName</key>
-				<string>coin (12)</string>
+				<string>wood_curve_fourth_xl (2)</string>
 				<key>Position</key>
 				<array>
-					<real>211.927032470703</real>
-					<real>202.900009155273</real>
+					<real>-245.000045776367</real>
+					<real>78.9999847412109</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -1902,15 +1154,15 @@
 				<key>Locked</key>
 				<false/>
 				<key>AnimRepetitions</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>AnimAtStart</key>
-				<true/>
+				<false/>
 				<key>AnimSpeed</key>
 				<real>0.0</real>
 				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
+				<string></string>
 				<key>AnimLoop</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
 		<dict>
@@ -1937,211 +1189,7 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (11)</string>
-				<key>Position</key>
-				<array>
-					<real>315.927032470703</real>
-					<real>155.400009155273</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>bomb_normal_1</string>
-				<key>Image</key>
-				<string>GameObjects.png</string>
-				<key>SHScene</key>
-				<string>GameObjects.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>29.3546657562256</real>
-					<real>29.3451671600342</real>
-				</array>
-				<key>UniqueName</key>
-				<string>bomb (3)</string>
-				<key>Position</key>
-				<array>
-					<real>83.4270477294922</real>
-					<real>276.899993896484</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.1</real>
-				<key>AnimName</key>
-				<string>BombNormal</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>coin_1</string>
-				<key>Image</key>
-				<string>GameObjectsBG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsBG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>40</real>
-					<real>38</real>
-				</array>
-				<key>UniqueName</key>
-				<string>coin (17)</string>
-				<key>Position</key>
-				<array>
-					<real>-334.072937011719</real>
-					<real>59.3999977111816</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>1</integer>
-				<key>AnimAtStart</key>
-				<true/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string>RotatingCoin_1</string>
-				<key>AnimLoop</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>egypt_flat_l</string>
+				<string>jungle_flat_l</string>
 				<key>Image</key>
 				<string>GameObjectsFG.png</string>
 				<key>SHScene</key>
@@ -2151,14 +1199,14 @@
 				<key>Size</key>
 				<array>
 					<real>84</real>
-					<real>17</real>
+					<real>20</real>
 				</array>
 				<key>UniqueName</key>
-				<string>egypt_flat_l (11)</string>
+				<string>jungle_flat_l (13)</string>
 				<key>Position</key>
 				<array>
-					<real>354.477020263672</real>
-					<real>322.900024414063</real>
+					<real>434.649932861328</real>
+					<real>328.199981689453</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -2209,7 +1257,7 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>egypt_flat_l</string>
+				<string>jungle_flat_l</string>
 				<key>Image</key>
 				<string>GameObjectsFG.png</string>
 				<key>SHScene</key>
@@ -2219,14 +1267,14 @@
 				<key>Size</key>
 				<array>
 					<real>84</real>
-					<real>17</real>
+					<real>20</real>
 				</array>
 				<key>UniqueName</key>
-				<string>egypt_flat_l (10)</string>
+				<string>jungle_flat_l (15)</string>
 				<key>Position</key>
 				<array>
-					<real>276.727020263672</real>
-					<real>322.900024414063</real>
+					<real>590.699951171875</real>
+					<real>328.199981689453</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -2277,7 +1325,7 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>egypt_flat_l</string>
+				<string>jungle_flat_l</string>
 				<key>Image</key>
 				<string>GameObjectsFG.png</string>
 				<key>SHScene</key>
@@ -2287,14 +1335,14 @@
 				<key>Size</key>
 				<array>
 					<real>84</real>
-					<real>17</real>
+					<real>20</real>
 				</array>
 				<key>UniqueName</key>
-				<string>egypt_flat_l (1)</string>
+				<string>jungle_flat_l (12)</string>
 				<key>Position</key>
 				<array>
-					<real>-418.672943115234</real>
-					<real>322.900024414063</real>
+					<real>356.050018310547</real>
+					<real>328.199981689453</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -2345,483 +1393,7 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>sandstone_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>345</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>122</real>
-				</array>
-				<key>UniqueName</key>
-				<string>sandstone_curve_fourth_xl (3)</string>
-				<key>Position</key>
-				<array>
-					<real>-85.5729064941406</real>
-					<real>-212.599990844727</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>sandstone_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>290</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>122</real>
-				</array>
-				<key>UniqueName</key>
-				<string>sandstone_curve_fourth_xl (4)</string>
-				<key>Position</key>
-				<array>
-					<real>262.326995849609</real>
-					<real>-270.049987792969</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>sandstone_flat_xxl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>242</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>sandstone_flat_xxl (1)</string>
-				<key>Position</key>
-				<array>
-					<real>16.7770385742188</real>
-					<real>248.25</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>wood_flat_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>wood_flat_xl</string>
-				<key>Position</key>
-				<array>
-					<real>15.8770561218262</real>
-					<real>308.050018310547</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1.25</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>sandstone_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>200</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>122</real>
-				</array>
-				<key>UniqueName</key>
-				<string>sandstone_curve_fourth_xl (5)</string>
-				<key>Position</key>
-				<array>
-					<real>149.72705078125</real>
-					<real>-311.200012207031</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>sandstone_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>20</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>122</real>
-				</array>
-				<key>UniqueName</key>
-				<string>sandstone_curve_fourth_xl (1)</string>
-				<key>Position</key>
-				<array>
-					<real>-108.572959899902</real>
-					<real>-77.7499694824219</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>sandstone_flat_xxl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>345</integer>
-				<key>Size</key>
-				<array>
-					<real>242</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>sandstone_flat_xxl</string>
-				<key>Position</key>
-				<array>
-					<real>-222.522918701172</real>
-					<real>-121.350006103516</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>0.800000071525574</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>egypt_flat_l</string>
+				<string>jungle_flat_l</string>
 				<key>Image</key>
 				<string>GameObjectsFG.png</string>
 				<key>SHScene</key>
@@ -2831,14 +1403,14 @@
 				<key>Size</key>
 				<array>
 					<real>84</real>
-					<real>17</real>
+					<real>20</real>
 				</array>
 				<key>UniqueName</key>
-				<string>egypt_flat_l (15)</string>
+				<string>jungle_flat_l (21)</string>
 				<key>Position</key>
 				<array>
-					<real>656.427124023438</real>
-					<real>322.900024414063</real>
+					<real>1031.5</real>
+					<real>328.199981689453</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -2889,208 +1461,7 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>sandstone_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>250</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>122</real>
-				</array>
-				<key>UniqueName</key>
-				<string>sandstone_curve_fourth_xl (4)</string>
-				<key>Position</key>
-				<array>
-					<real>-120.572952270508</real>
-					<real>-321.600006103516</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>PhysicProperties</key>
-			<dict>
-				<key>Density</key>
-				<real>1</real>
-				<key>Restitution</key>
-				<real>0.2</real>
-				<key>AngularVelocity</key>
-				<real>0.0</real>
-				<key>Friction</key>
-				<real>1</real>
-				<key>Type</key>
-				<real>0.0</real>
-				<key>Mask</key>
-				<real>65539</real>
-				<key>Group</key>
-				<real>0.0</real>
-				<key>CanSleep</key>
-				<true/>
-				<key>Category</key>
-				<real>1</real>
-				<key>IsSensor</key>
-				<false/>
-				<key>FixedRot</key>
-				<false/>
-				<key>GravityScale</key>
-				<real>1</real>
-				<key>LinearVelocity</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>LinearDamping</key>
-				<real>0.0</real>
-				<key>ShapePositionOffset</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>ShapeBorder</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>ShapeFixtures</key>
-				<array>
-					<array>
-						<array>
-							<integer>-60</integer>
-							<real>7.5</real>
-						</array>
-						<array>
-							<integer>-60</integer>
-							<real>-7.5</real>
-						</array>
-						<array>
-							<integer>60</integer>
-							<real>-7.5</real>
-						</array>
-						<array>
-							<integer>60</integer>
-							<real>7.5</real>
-						</array>
-					</array>
-				</array>
-			</dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>0.498039215803146</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>sandstone_flat_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>sandstone_flat_xl</string>
-				<key>Position</key>
-				<array>
-					<real>15.9770965576172</real>
-					<real>86.3800735473633</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>egypt_flat_l</string>
+				<string>jungle_flat_l</string>
 				<key>Image</key>
 				<string>GameObjectsFG.png</string>
 				<key>SHScene</key>
@@ -3100,14 +1471,14 @@
 				<key>Size</key>
 				<array>
 					<real>84</real>
-					<real>17</real>
+					<real>20</real>
 				</array>
 				<key>UniqueName</key>
-				<string>egypt_flat_l (5)</string>
+				<string>jungle_flat_l</string>
 				<key>Position</key>
 				<array>
-					<real>-110.372924804688</real>
-					<real>322.900024414063</real>
+					<real>-547.900024414063</real>
+					<real>328.199981689453</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -3158,279 +1529,7 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>sandstone_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>180</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>122</real>
-				</array>
-				<key>UniqueName</key>
-				<string>sandstone_curve_fourth_xl (1)</string>
-				<key>Position</key>
-				<array>
-					<real>-370.572937011719</real>
-					<real>-122.600006103516</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>sandstone_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>70</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>122</real>
-				</array>
-				<key>UniqueName</key>
-				<string>sandstone_curve_fourth_xl</string>
-				<key>Position</key>
-				<array>
-					<real>121.127128601074</real>
-					<real>-70.2000122070313</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>sandstone_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>105</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>122</real>
-				</array>
-				<key>UniqueName</key>
-				<string>sandstone_curve_fourth_xl (3)</string>
-				<key>Position</key>
-				<array>
-					<real>115.427017211914</real>
-					<real>-202.099990844727</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>sandstone_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>272</integer>
-				<key>Size</key>
-				<array>
-					<real>122</real>
-					<real>122</real>
-				</array>
-				<key>UniqueName</key>
-				<string>sandstone_curve_fourth_xl</string>
-				<key>Position</key>
-				<array>
-					<real>401.427062988281</real>
-					<real>-124.600006103516</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>egypt_flat_l</string>
+				<string>jungle_flat_l</string>
 				<key>Image</key>
 				<string>GameObjectsFG.png</string>
 				<key>SHScene</key>
@@ -3440,14 +1539,14 @@
 				<key>Size</key>
 				<array>
 					<real>84</real>
-					<real>17</real>
+					<real>20</real>
 				</array>
 				<key>UniqueName</key>
-				<string>egypt_flat_l</string>
+				<string>jungle_flat_l (7)</string>
 				<key>Position</key>
 				<array>
-					<real>-498.350006103516</real>
-					<real>322.900024414063</real>
+					<real>-31.950044631958</real>
+					<real>328.199981689453</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -3498,7 +1597,755 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>wood_flat_m</string>
+				<string>wood_curve_eighth_xxl</string>
+				<key>Image</key>
+				<string>Tracks.png</string>
+				<key>SHScene</key>
+				<string>Tracks.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>172</real>
+					<real>83</real>
+				</array>
+				<key>UniqueName</key>
+				<string>wood_curve_eighth_xxl</string>
+				<key>Position</key>
+				<array>
+					<real>-285.400024414063</real>
+					<real>279.75</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>jungle_flat_l</string>
+				<key>Image</key>
+				<string>GameObjectsFG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsFG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>84</real>
+					<real>20</real>
+				</array>
+				<key>UniqueName</key>
+				<string>jungle_flat_l (16)</string>
+				<key>Position</key>
+				<array>
+					<real>668.449951171875</real>
+					<real>328.199981689453</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>jungle_flat_l</string>
+				<key>Image</key>
+				<string>GameObjectsFG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsFG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>84</real>
+					<real>20</real>
+				</array>
+				<key>UniqueName</key>
+				<string>jungle_flat_l (1)</string>
+				<key>Position</key>
+				<array>
+					<real>-497.100006103516</real>
+					<real>328.199981689453</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>wood_curve_fourth_xl</string>
+				<key>Image</key>
+				<string>Tracks.png</string>
+				<key>SHScene</key>
+				<string>Tracks.pshs</string>
+				<key>Angle</key>
+				<integer>315</integer>
+				<key>Size</key>
+				<array>
+					<real>122</real>
+					<real>122</real>
+				</array>
+				<key>UniqueName</key>
+				<string>wood_curve_fourth_xl</string>
+				<key>Position</key>
+				<array>
+					<real>-75.0000457763672</real>
+					<real>78.4999847412109</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>jungle_right_end_m</string>
+				<key>Image</key>
+				<string>GameObjectsFG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsFG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>33</real>
+					<real>36</real>
+				</array>
+				<key>UniqueName</key>
+				<string>jungle_right_end_m</string>
+				<key>Position</key>
+				<array>
+					<real>1070.5</real>
+					<real>335.472045898438</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>jungle_flat_l</string>
+				<key>Image</key>
+				<string>GameObjectsFG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsFG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>84</real>
+					<real>20</real>
+				</array>
+				<key>UniqueName</key>
+				<string>jungle_flat_l (17)</string>
+				<key>Position</key>
+				<array>
+					<real>747.10009765625</real>
+					<real>328.199981689453</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>jungle_flat_l</string>
+				<key>Image</key>
+				<string>GameObjectsFG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsFG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>84</real>
+					<real>20</real>
+				</array>
+				<key>UniqueName</key>
+				<string>jungle_flat_l (20)</string>
+				<key>Position</key>
+				<array>
+					<real>977.60009765625</real>
+					<real>328.199981689453</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>jungle_flat_l</string>
+				<key>Image</key>
+				<string>GameObjectsFG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsFG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>84</real>
+					<real>20</real>
+				</array>
+				<key>UniqueName</key>
+				<string>jungle_flat_l (19)</string>
+				<key>Position</key>
+				<array>
+					<real>903.150085449219</real>
+					<real>328.199981689453</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>wood_curve_fourth_xl</string>
+				<key>Image</key>
+				<string>Tracks.png</string>
+				<key>SHScene</key>
+				<string>Tracks.pshs</string>
+				<key>Angle</key>
+				<integer>135</integer>
+				<key>Size</key>
+				<array>
+					<real>122</real>
+					<real>122</real>
+				</array>
+				<key>UniqueName</key>
+				<string>wood_curve_fourth_xl (2)</string>
+				<key>Position</key>
+				<array>
+					<real>188.499954223633</real>
+					<real>78.9999847412109</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>jungle_flat_l</string>
+				<key>Image</key>
+				<string>GameObjectsFG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsFG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>84</real>
+					<real>20</real>
+				</array>
+				<key>UniqueName</key>
+				<string>jungle_flat_l (11)</string>
+				<key>Position</key>
+				<array>
+					<real>281.600006103516</real>
+					<real>328.199981689453</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>jungle_flat_l</string>
+				<key>Image</key>
+				<string>GameObjectsFG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsFG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>84</real>
+					<real>20</real>
+				</array>
+				<key>UniqueName</key>
+				<string>jungle_flat_l (18)</string>
+				<key>Position</key>
+				<array>
+					<real>824.550048828125</real>
+					<real>328.199981689453</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>wood_ramp_xs_left</string>
 				<key>Image</key>
 				<string>Tracks.png</string>
 				<key>SHScene</key>
@@ -3511,11 +2358,11 @@
 					<real>17</real>
 				</array>
 				<key>UniqueName</key>
-				<string>wood_flat_m (1)</string>
+				<string>wood_ramp_xs_left</string>
 				<key>Position</key>
 				<array>
-					<real>167.427062988281</real>
-					<real>248</real>
+					<real>514.499938964844</real>
+					<real>312.899963378906</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -3566,24 +2413,24 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>wood_curve_fourth_m</string>
+				<string>wood_ramp_xs_right</string>
 				<key>Image</key>
 				<string>Tracks.png</string>
 				<key>SHScene</key>
 				<string>Tracks.pshs</string>
 				<key>Angle</key>
-				<integer>90</integer>
+				<integer>0</integer>
 				<key>Size</key>
 				<array>
 					<real>62</real>
-					<real>62</real>
+					<real>17</real>
 				</array>
 				<key>UniqueName</key>
-				<string>wood_curve_fourth_m (1)</string>
+				<string>wood_ramp_xs_right</string>
 				<key>Position</key>
 				<array>
-					<real>-88.5229110717773</real>
-					<real>284.75</real>
+					<real>-400.111022949219</real>
+					<real>312.962585449219</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -3634,92 +2481,160 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>sandstone_flat_xxl</string>
+				<string>jungle_flat_l</string>
+				<key>Image</key>
+				<string>GameObjectsFG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsFG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>84</real>
+					<real>20</real>
+				</array>
+				<key>UniqueName</key>
+				<string>jungle_flat_l (6)</string>
+				<key>Position</key>
+				<array>
+					<real>-110.550018310547</real>
+					<real>328.199981689453</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>jungle_flat_l</string>
+				<key>Image</key>
+				<string>GameObjectsFG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsFG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>84</real>
+					<real>20</real>
+				</array>
+				<key>UniqueName</key>
+				<string>jungle_flat_l (8)</string>
+				<key>Position</key>
+				<array>
+					<real>45.7999725341797</real>
+					<real>328.199981689453</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>wood_curve_eighth_xxl</string>
 				<key>Image</key>
 				<string>Tracks.png</string>
 				<key>SHScene</key>
 				<string>Tracks.pshs</string>
 				<key>Angle</key>
-				<integer>196</integer>
+				<integer>44</integer>
 				<key>Size</key>
 				<array>
-					<real>242</real>
-					<real>17</real>
+					<real>172</real>
+					<real>83</real>
 				</array>
 				<key>UniqueName</key>
-				<string>sandstone_flat_xxl</string>
+				<string>wood_curve_eighth_xxl (1)</string>
 				<key>Position</key>
 				<array>
-					<real>250.427062988281</real>
-					<real>-110.099983215332</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>0.800000071525574</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>egypt_flat_l</string>
-				<key>Image</key>
-				<string>GameObjectsFG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsFG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>84</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>egypt_flat_l (4)</string>
-				<key>Position</key>
-				<array>
-					<real>-188.122940063477</real>
-					<real>322.900024414063</real>
+					<real>402.849975585938</real>
+					<real>283</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -3770,296 +2685,24 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>sandstone_curve_eighth_xl</string>
+				<string>wood_curve_fourth_xl</string>
 				<key>Image</key>
 				<string>Tracks.png</string>
 				<key>SHScene</key>
 				<string>Tracks.pshs</string>
 				<key>Angle</key>
-				<integer>70</integer>
-				<key>Size</key>
-				<array>
-					<real>87</real>
-					<real>48</real>
-				</array>
-				<key>UniqueName</key>
-				<string>sandstone_curve_eighth_xl</string>
-				<key>Position</key>
-				<array>
-					<real>-211.572937011719</real>
-					<real>-77.0999908447266</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>egypt_flat_l</string>
-				<key>Image</key>
-				<string>GameObjectsFG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsFG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>84</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>egypt_flat_l (12)</string>
-				<key>Position</key>
-				<array>
-					<real>423.127075195313</real>
-					<real>322.900024414063</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>egypt_flat_l</string>
-				<key>Image</key>
-				<string>GameObjectsFG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsFG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>84</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>egypt_flat_l (6)</string>
-				<key>Position</key>
-				<array>
-					<real>-32.5729370117188</real>
-					<real>322.900024414063</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>egypt_flat_l</string>
-				<key>Image</key>
-				<string>GameObjectsFG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsFG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>84</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>egypt_flat_l (13)</string>
-				<key>Position</key>
-				<array>
-					<real>500.877105712891</real>
-					<real>322.900024414063</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>sandstone_curve_fourth_xl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>160</integer>
+				<integer>225</integer>
 				<key>Size</key>
 				<array>
 					<real>122</real>
 					<real>122</real>
 				</array>
 				<key>UniqueName</key>
-				<string>sandstone_curve_fourth_xl (5)</string>
+				<string>wood_curve_fourth_xl (1)</string>
 				<key>Position</key>
 				<array>
-					<real>-233.222961425781</real>
-					<real>-280.200012207031</real>
+					<real>-160.500045776367</real>
+					<real>-6.50001764297485</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -4110,24 +2753,24 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>wood_curve_fourth_m</string>
+				<string>jungle_left_end_m</string>
 				<key>Image</key>
-				<string>Tracks.png</string>
+				<string>GameObjectsFG.png</string>
 				<key>SHScene</key>
-				<string>Tracks.pshs</string>
+				<string>GameObjectsFG.pshs</string>
 				<key>Angle</key>
 				<integer>0</integer>
 				<key>Size</key>
 				<array>
-					<real>62</real>
-					<real>62</real>
+					<real>33</real>
+					<real>36</real>
 				</array>
 				<key>UniqueName</key>
-				<string>wood_curve_fourth_m</string>
+				<string>jungle_left_end_m</string>
 				<key>Position</key>
 				<array>
-					<real>121.314331054688</real>
-					<real>285.25</real>
+					<real>-604.250061035156</real>
+					<real>336</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -4178,24 +2821,296 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>sandstone_curve_eighth_xl</string>
+				<string>wood_curve_fourth_xl</string>
 				<key>Image</key>
 				<string>Tracks.png</string>
 				<key>SHScene</key>
 				<string>Tracks.pshs</string>
 				<key>Angle</key>
-				<integer>340</integer>
+				<integer>315</integer>
 				<key>Size</key>
 				<array>
-					<real>87</real>
-					<real>48</real>
+					<real>122</real>
+					<real>122</real>
 				</array>
 				<key>UniqueName</key>
-				<string>sandstone_curve_eighth_xl (1)</string>
+				<string>wood_curve_fourth_xl</string>
 				<key>Position</key>
 				<array>
-					<real>229.427047729492</real>
-					<real>-70.6000061035156</real>
+					<real>358.499969482422</real>
+					<real>78.4999847412109</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>jungle_flat_l</string>
+				<key>Image</key>
+				<string>GameObjectsFG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsFG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>84</real>
+					<real>20</real>
+				</array>
+				<key>UniqueName</key>
+				<string>jungle_flat_l (14)</string>
+				<key>Position</key>
+				<array>
+					<real>512.099914550781</real>
+					<real>328.199981689453</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>wood_curve_fourth_xl</string>
+				<key>Image</key>
+				<string>Tracks.png</string>
+				<key>SHScene</key>
+				<string>Tracks.pshs</string>
+				<key>Angle</key>
+				<integer>225</integer>
+				<key>Size</key>
+				<array>
+					<real>122</real>
+					<real>122</real>
+				</array>
+				<key>UniqueName</key>
+				<string>wood_curve_fourth_xl (1)</string>
+				<key>Position</key>
+				<array>
+					<real>272.999938964844</real>
+					<real>-6.50001764297485</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>jungle_flat_l</string>
+				<key>Image</key>
+				<string>GameObjectsFG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsFG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>84</real>
+					<real>20</real>
+				</array>
+				<key>UniqueName</key>
+				<string>jungle_flat_l (3)</string>
+				<key>Position</key>
+				<array>
+					<real>-341.050048828125</real>
+					<real>328.199981689453</real>
+				</array>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Scale</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+				</array>
+				<key>ZOrder</key>
+				<integer>0</integer>
+				<key>Locked</key>
+				<false/>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimLoop</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>Color</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<real>1</real>
+					<real>0.0</real>
+				</array>
+				<key>UV</key>
+				<array>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+					<real>0.0</real>
+				</array>
+				<key>SHName</key>
+				<string>jungle_flat_l</string>
+				<key>Image</key>
+				<string>GameObjectsFG.png</string>
+				<key>SHScene</key>
+				<string>GameObjectsFG.pshs</string>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>Size</key>
+				<array>
+					<real>84</real>
+					<real>20</real>
+				</array>
+				<key>UniqueName</key>
+				<string>jungle_flat_l (4)</string>
+				<key>Position</key>
+				<array>
+					<real>-266.600036621094</real>
+					<real>328.199981689453</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -4252,7 +3167,7 @@
 				<key>SHScene</key>
 				<string>Tracks.pshs</string>
 				<key>Angle</key>
-				<integer>0</integer>
+				<integer>44</integer>
 				<key>Size</key>
 				<array>
 					<real>242</real>
@@ -4262,8 +3177,8 @@
 				<string>wood_curve_fourth_xxl</string>
 				<key>Position</key>
 				<array>
-					<real>307.927032470703</real>
-					<real>135.250015258789</real>
+					<real>58.4999542236328</real>
+					<real>252.499984741211</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -4314,7 +3229,7 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>egypt_flat_l</string>
+				<string>jungle_flat_l</string>
 				<key>Image</key>
 				<string>GameObjectsFG.png</string>
 				<key>SHScene</key>
@@ -4324,14 +3239,14 @@
 				<key>Size</key>
 				<array>
 					<real>84</real>
-					<real>17</real>
+					<real>20</real>
 				</array>
 				<key>UniqueName</key>
-				<string>egypt_flat_l (9)</string>
+				<string>jungle_flat_l (10)</string>
 				<key>Position</key>
 				<array>
-					<real>198.927017211914</real>
-					<real>322.900024414063</real>
+					<real>202.999969482422</real>
+					<real>328.199981689453</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -4382,7 +3297,7 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>egypt_flat_l</string>
+				<string>jungle_flat_l</string>
 				<key>Image</key>
 				<string>GameObjectsFG.png</string>
 				<key>SHScene</key>
@@ -4392,14 +3307,14 @@
 				<key>Size</key>
 				<array>
 					<real>84</real>
-					<real>17</real>
+					<real>20</real>
 				</array>
 				<key>UniqueName</key>
-				<string>egypt_flat_l (14)</string>
+				<string>jungle_flat_l (5)</string>
 				<key>Position</key>
 				<array>
-					<real>578.677062988281</real>
-					<real>322.900024414063</real>
+					<real>-188.000030517578</real>
+					<real>328.199981689453</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -4450,143 +3365,7 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>wood_flat_m</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>62</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>wood_flat_m</string>
-				<key>Position</key>
-				<array>
-					<real>-134.522918701172</real>
-					<real>248</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>wood_curve_fourth_xxl</string>
-				<key>Image</key>
-				<string>Tracks.png</string>
-				<key>SHScene</key>
-				<string>Tracks.pshs</string>
-				<key>Angle</key>
-				<integer>90</integer>
-				<key>Size</key>
-				<array>
-					<real>242</real>
-					<real>242</real>
-				</array>
-				<key>UniqueName</key>
-				<string>wood_curve_fourth_xxl (1)</string>
-				<key>Position</key>
-				<array>
-					<real>-277.072967529297</real>
-					<real>135.250015258789</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>egypt_flat_l</string>
+				<string>jungle_flat_l</string>
 				<key>Image</key>
 				<string>GameObjectsFG.png</string>
 				<key>SHScene</key>
@@ -4596,14 +3375,14 @@
 				<key>Size</key>
 				<array>
 					<real>84</real>
-					<real>17</real>
+					<real>20</real>
 				</array>
 				<key>UniqueName</key>
-				<string>egypt_flat_l (7)</string>
+				<string>jungle_flat_l (2)</string>
 				<key>Position</key>
 				<array>
-					<real>45.1770782470703</real>
-					<real>322.900024414063</real>
+					<real>-419.650024414063</real>
+					<real>328.199981689453</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -4654,7 +3433,7 @@
 					<real>0.0</real>
 				</array>
 				<key>SHName</key>
-				<string>egypt_flat_l</string>
+				<string>jungle_flat_l</string>
 				<key>Image</key>
 				<string>GameObjectsFG.png</string>
 				<key>SHScene</key>
@@ -4664,150 +3443,14 @@
 				<key>Size</key>
 				<array>
 					<real>84</real>
-					<real>17</real>
+					<real>20</real>
 				</array>
 				<key>UniqueName</key>
-				<string>egypt_flat_l (3)</string>
+				<string>jungle_flat_l (9)</string>
 				<key>Position</key>
 				<array>
-					<real>-263.122924804688</real>
-					<real>322.900024414063</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>egypt_flat_l</string>
-				<key>Image</key>
-				<string>GameObjectsFG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsFG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>84</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>egypt_flat_l (2)</string>
-				<key>Position</key>
-				<array>
-					<real>-340.872955322266</real>
-					<real>322.900024414063</real>
-				</array>
-				<key>IsDrawable</key>
-				<true/>
-				<key>IsInParallax</key>
-				<false/>
-				<key>Scale</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-				</array>
-				<key>ZOrder</key>
-				<integer>0</integer>
-				<key>Locked</key>
-				<false/>
-				<key>AnimRepetitions</key>
-				<integer>0</integer>
-				<key>AnimAtStart</key>
-				<false/>
-				<key>AnimSpeed</key>
-				<real>0.0</real>
-				<key>AnimName</key>
-				<string></string>
-				<key>AnimLoop</key>
-				<false/>
-			</dict>
-		</dict>
-		<dict>
-			<key>GeneralProperties</key>
-			<dict>
-				<key>TagName</key>
-				<string>DEFAULT</string>
-				<key>Tag</key>
-				<integer>0</integer>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>Color</key>
-				<array>
-					<real>1</real>
-					<real>1</real>
-					<real>1</real>
-					<real>0.0</real>
-				</array>
-				<key>UV</key>
-				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<key>SHName</key>
-				<string>egypt_flat_l</string>
-				<key>Image</key>
-				<string>GameObjectsFG.png</string>
-				<key>SHScene</key>
-				<string>GameObjectsFG.pshs</string>
-				<key>Angle</key>
-				<integer>0</integer>
-				<key>Size</key>
-				<array>
-					<real>84</real>
-					<real>17</real>
-				</array>
-				<key>UniqueName</key>
-				<string>egypt_flat_l (8)</string>
-				<key>Position</key>
-				<array>
-					<real>121.177001953125</real>
-					<real>322.900024414063</real>
+					<real>125.549987792969</real>
+					<real>328.199981689453</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -4874,8 +3517,8 @@
 				<string>cage</string>
 				<key>Position</key>
 				<array>
-					<real>17.9224967956543</real>
-					<real>-424.100006103516</real>
+					<real>580.499938964844</real>
+					<real>229</real>
 				</array>
 				<key>IsDrawable</key>
 				<true/>
@@ -5034,7 +3677,7 @@
 			<key>Friction</key>
 			<real>1</real>
 			<key>Image</key>
-			<string>EgyptGround.png</string>
+			<string>JungleGround.png</string>
 			<key>PhysicType</key>
 			<integer>0</integer>
 			<key>IsSimpleLine</key>
@@ -5064,119 +3707,119 @@
 			<array>
 				<array>
 					<array>
-						<real>-538.572937011719</real>
-						<real>521.610046386719</real>
+						<real>-617.5</real>
+						<real>520.5</real>
 					</array>
 					<array>
-						<real>-538.572937011719</real>
-						<real>315.050018310547</real>
+						<real>-617.5</real>
+						<real>320.5</real>
 					</array>
 					<array>
-						<real>-229.337356567383</real>
-						<real>520.7900390625</real>
-					</array>
-				</array>
-				<array>
-					<array>
-						<real>-229.609634399414</real>
-						<real>315.050018310547</real>
-					</array>
-					<array>
-						<real>-538.572937011719</real>
-						<real>315.050018310547</real>
-					</array>
-					<array>
-						<real>-229.337356567383</real>
-						<real>520.7900390625</real>
+						<real>-192.5</real>
+						<real>320.5</real>
 					</array>
 				</array>
 				<array>
 					<array>
-						<real>79.3536682128906</real>
-						<real>315.050018310547</real>
+						<real>232.5</real>
+						<real>320.5</real>
 					</array>
 					<array>
-						<real>79.8982238769531</real>
-						<real>519.970092773438</real>
+						<real>232.5</real>
+						<real>520.5</real>
 					</array>
 					<array>
-						<real>-229.337356567383</real>
-						<real>520.7900390625</real>
-					</array>
-				</array>
-				<array>
-					<array>
-						<real>79.3536682128906</real>
-						<real>315.050018310547</real>
-					</array>
-					<array>
-						<real>-229.609634399414</real>
-						<real>315.050018310547</real>
-					</array>
-					<array>
-						<real>-229.337356567383</real>
-						<real>520.7900390625</real>
+						<real>-192.5</real>
+						<real>320.5</real>
 					</array>
 				</array>
 				<array>
 					<array>
-						<real>79.3536682128906</real>
-						<real>315.050018310547</real>
+						<real>232.5</real>
+						<real>520.5</real>
 					</array>
 					<array>
-						<real>79.8982238769531</real>
-						<real>519.970092773438</real>
+						<real>-192.5</real>
+						<real>320.5</real>
 					</array>
 					<array>
-						<real>388.316955566406</real>
-						<real>315.050018310547</real>
-					</array>
-				</array>
-				<array>
-					<array>
-						<real>697.2802734375</real>
-						<real>315.050018310547</real>
-					</array>
-					<array>
-						<real>698.369384765625</real>
-						<real>518.330078125</real>
-					</array>
-					<array>
-						<real>389.1337890625</real>
-						<real>519.150085449219</real>
+						<real>-192.5</real>
+						<real>520.5</real>
 					</array>
 				</array>
 				<array>
 					<array>
-						<real>388.316955566406</real>
-						<real>315.050018310547</real>
+						<real>-192.5</real>
+						<real>320.5</real>
 					</array>
 					<array>
-						<real>697.2802734375</real>
-						<real>315.050018310547</real>
+						<real>-617.5</real>
+						<real>520.5</real>
 					</array>
 					<array>
-						<real>389.1337890625</real>
-						<real>519.150085449219</real>
+						<real>-192.5</real>
+						<real>520.5</real>
 					</array>
 				</array>
 				<array>
 					<array>
-						<real>79.8982238769531</real>
-						<real>519.970092773438</real>
+						<real>1082.5</real>
+						<real>320.5</real>
 					</array>
 					<array>
-						<real>388.316955566406</real>
-						<real>315.050018310547</real>
+						<real>1082.5</real>
+						<real>520.5</real>
 					</array>
 					<array>
-						<real>389.1337890625</real>
-						<real>519.150085449219</real>
+						<real>657.5</real>
+						<real>320.5</real>
+					</array>
+				</array>
+				<array>
+					<array>
+						<real>232.5</real>
+						<real>320.5</real>
+					</array>
+					<array>
+						<real>232.5</real>
+						<real>520.5</real>
+					</array>
+					<array>
+						<real>657.5</real>
+						<real>320.5</real>
+					</array>
+				</array>
+				<array>
+					<array>
+						<real>232.5</real>
+						<real>520.5</real>
+					</array>
+					<array>
+						<real>657.5</real>
+						<real>320.5</real>
+					</array>
+					<array>
+						<real>657.5</real>
+						<real>520.5</real>
+					</array>
+				</array>
+				<array>
+					<array>
+						<real>1082.5</real>
+						<real>520.5</real>
+					</array>
+					<array>
+						<real>657.5</real>
+						<real>320.5</real>
+					</array>
+					<array>
+						<real>657.5</real>
+						<real>520.5</real>
 					</array>
 				</array>
 			</array>
 			<key>UniqueName</key>
-			<string>EgyptGround</string>
+			<string>JungleGround</string>
 			<key>CanSleep</key>
 			<true/>
 			<key>LineWidth</key>
@@ -5190,89 +3833,89 @@
 				<dict>
 					<key>EndControlPoint</key>
 					<array>
-						<real>-538.572937011719</real>
-						<real>418.330017089844</real>
+						<real>-617.5</real>
+						<real>420.5</real>
 					</array>
 					<key>StartControlPoint</key>
 					<array>
-						<real>-538.572937011719</real>
-						<real>418.330017089844</real>
+						<real>-617.5</real>
+						<real>420.5</real>
 					</array>
 					<key>EndPoint</key>
 					<array>
-						<real>-538.572937011719</real>
-						<real>315.050018310547</real>
+						<real>-617.5</real>
+						<real>320.5</real>
 					</array>
 					<key>StartPoint</key>
 					<array>
-						<real>-538.572937011719</real>
-						<real>521.610046386719</real>
+						<real>-617.5</real>
+						<real>520.5</real>
 					</array>
 				</dict>
 				<dict>
 					<key>EndControlPoint</key>
 					<array>
-						<real>79.3536682128906</real>
-						<real>315.050018310547</real>
+						<real>232.5</real>
+						<real>320.5</real>
 					</array>
 					<key>StartControlPoint</key>
 					<array>
-						<real>79.3536682128906</real>
-						<real>315.050018310547</real>
+						<real>232.5</real>
+						<real>320.5</real>
 					</array>
 					<key>EndPoint</key>
 					<array>
-						<real>697.2802734375</real>
-						<real>315.050018310547</real>
+						<real>1082.5</real>
+						<real>320.5</real>
 					</array>
 					<key>StartPoint</key>
 					<array>
-						<real>-538.572937011719</real>
-						<real>315.050018310547</real>
+						<real>-617.5</real>
+						<real>320.5</real>
 					</array>
 				</dict>
 				<dict>
 					<key>EndControlPoint</key>
 					<array>
-						<real>697.824829101563</real>
-						<real>416.690063476563</real>
+						<real>1082.5</real>
+						<real>420.5</real>
 					</array>
 					<key>StartControlPoint</key>
 					<array>
-						<real>697.824829101563</real>
-						<real>416.690063476563</real>
+						<real>1082.5</real>
+						<real>420.5</real>
 					</array>
 					<key>EndPoint</key>
 					<array>
-						<real>698.369384765625</real>
-						<real>518.330078125</real>
+						<real>1082.5</real>
+						<real>520.5</real>
 					</array>
 					<key>StartPoint</key>
 					<array>
-						<real>697.2802734375</real>
-						<real>315.050018310547</real>
+						<real>1082.5</real>
+						<real>320.5</real>
 					</array>
 				</dict>
 				<dict>
 					<key>EndControlPoint</key>
 					<array>
-						<real>79.8982238769531</real>
-						<real>519.970092773438</real>
+						<real>232.5</real>
+						<real>520.5</real>
 					</array>
 					<key>StartControlPoint</key>
 					<array>
-						<real>79.8982238769531</real>
-						<real>519.970092773438</real>
+						<real>232.5</real>
+						<real>520.5</real>
 					</array>
 					<key>EndPoint</key>
 					<array>
-						<real>-538.572937011719</real>
-						<real>521.610046386719</real>
+						<real>-617.5</real>
+						<real>520.5</real>
 					</array>
 					<key>StartPoint</key>
 					<array>
-						<real>698.369384765625</real>
-						<real>518.330078125</real>
+						<real>1082.5</real>
+						<real>520.5</real>
 					</array>
 				</dict>
 			</array>
@@ -5333,6 +3976,6 @@
 		<string>Boom!</string>
 	</dict>
 	<key>CustomLevelName</key>
-	<string>Smile Sandstone</string>
+	<string>Custom_Wheel_Catcher</string>
 </dict>
 </plist>

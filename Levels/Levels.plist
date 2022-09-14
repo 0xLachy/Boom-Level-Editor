@@ -9808,6 +9808,50 @@
 					<key>Targets</key>
 					<array>
 						<dict>
+							<key>Type</key>
+							<string>All pickups</string>
+						</dict>
+						<dict>
+							<key>Type</key>
+							<string>Rockets</string>
+						</dict>
+						<dict>
+							<key>Group</key>
+							<array>
+								<dict>
+									<key>Target</key>
+									<integer>5</integer>
+									<key>Type</key>
+									<string>Pickups</string>
+								</dict>
+								<dict>
+									<key>Type</key>
+									<string>All bombs</string>
+								</dict>
+							</array>
+							<key>Description</key>
+							<string>5 coins and explode a bomb</string>
+						</dict>
+						<dict>
+							<key>Type</key>
+							<string>All bombs</string>
+						</dict>
+					</array>
+					<key>bgName</key>
+					<string>EgyptBG.plist</string>
+					<key>LevelName</key>
+					<string>Sandstone Smile</string>
+					<key>Version</key>
+					<string>1</string>
+					<key>LevelId</key>
+					<string>Custom_Sandstone_Smile</string>
+				</dict>
+				<dict>
+					<key>RequiredSuperStars</key>
+					<integer>0</integer>
+					<key>Targets</key>
+					<array>
+						<dict>
 							<key>Target</key>
 							<integer>1</integer>
 							<key>Type</key>

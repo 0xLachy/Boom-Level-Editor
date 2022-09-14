@@ -5,9 +5,12 @@ using System.IO;
 using UnityEngine;
 using UnityEditor;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class TargetsEditorWindow : EditorWindow
 {
+    //BoomSettings.Refresh()
+    //! there is an error where they return nothing!!!
     public static bool singlesCanHaveDescription = BoomSettings.SinglesCanHaveDescription;
     public static bool addSuperStarLevel;
 
@@ -355,6 +358,12 @@ public class TargetsEditorWindow : EditorWindow
 
     private void IncrementLists(int i, int addIndex)
     {
+        // increase the capacity if it is too small
+        //targetIndexesListList.Capacity = i > targetIndexesListList.Capacity ? i : targetIndexesListList.Capacity;
+        if (targetIndexesListList[i] == null)
+        {
+            targetIndexesListList[i] = new List<int>();
+        }
         if(targetIndexesListList[i].Count > addIndex)
         {
             targetIndexesListList[i].Insert(addIndex + 1, defaultIndexes[i]);

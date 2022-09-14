@@ -41,18 +41,16 @@ public class AddLevelToBoomIPA : MonoBehaviour
     {
         string levelsDir = Path.GetDirectoryName(levelsPlistPath);       
         string plhsInBoomPath = levelsDir + Path.DirectorySeparatorChar + Path.GetFileName(levelPlhsPath);
-        if (!File.Exists(plhsInBoomPath))
+        if (File.Exists(plhsInBoomPath))
         {
-            File.Copy(levelPlhsPath, plhsInBoomPath);
-            Debug.Log($"copied {levelPlhsPath} into {plhsInBoomPath}");
-        } 
-        else
-        {
-            if(EditorUtility.DisplayDialog("Level File Exists", $"the level \"{levelPlhsPath}\" \"{plhsInBoomPath}\" already exists, do you want to replace it?", "yes", "no"))
+            // if they say no don't continue
+            if(!EditorUtility.DisplayDialog("Level File Exists", $"the level \"{levelPlhsPath}\" \"{plhsInBoomPath}\" already exists, do you want to replace it?", "yes", "no"))
             {
-                File.Copy(levelPlhsPath, plhsInBoomPath, true);
+                return;
             }
         }
+        // copy the level from the editor, and put that into the ipa itself
+        File.Copy(levelPlhsPath, plhsInBoomPath, true);
     }
 
     //The index should always be 7 generally, but with different ipa's and stuff, it's safer this way
