@@ -44,11 +44,16 @@ Drag them in just like you would the other sprites.
 ![Prefabs](Assets/Resources/Github%20Guide%20Images/Prefabs.png)
 
 ### Ground
-Adding ground to the level is a bit different to using other sprites. The SpriteShapeController that we use to make it in the scene is a bit buggy and if your points are too close together it will cause the export script to infinitely load the Unity Editor and you will have to stop Unity using task manager (ctrl+shift+escape, right click on unity and then end task)
+> Adding ground to the level is different to adding other sprites. 
 
-To prevent losing your progress, save before you export the level if you are using the SpriteShapeController in your level. If it exports fine, which it usually does, you don't have to save untill the next time you edit the spline again
+The SpriteShapeController can be a bit buggy and if your points are too close together it will cause the export script to infinitely pause the Unity Editor. The only way to stop Unity is by using task manager (ctrl+shift+escape, right click on unity and then end task)
 
-To use the ground, drag in one of the ground prefabs, then to resize the ground **don't use the rect tool** but instead click on the button next to "Edit Spline" in the inspector window, then click on a point to move it, or click on the line between two points to create a new point. If you want to delete a point, click on the point, then press delete on your keyboard
+To prevent losing your progress, save before you export the level (if you are using the SpriteShapeController). If it exports fine, which it usually does, you don't have to save untill the next time you edit the spline again
+
+After dragging in the ground to the scene **do not use the rect tool!** We use the spline points to export into the game (unity scale won't work in game)
+![Edit Spline Example](Assets/Resources/Github%20Guide%20Images/EditSpline.png)
+
+Click on a point to move it, or click on the line between two points to create a new point! If you want to delete a point, click on the point, then press delete on your keyboard. Also you can select multiple at once by dragging your mouse across the wanted points. (or you can ctrl+click to do multiple points at once)
 
 ### Physics Modifier
 We have created a script that can create custom physics for objects, in order to use it, in the inspector pannel of the object you want to modify click on "Add Component" then search for the Boom Physics Modifier
