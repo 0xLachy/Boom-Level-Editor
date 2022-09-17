@@ -298,7 +298,7 @@ public class PlhsGenerator : MonoBehaviour
             genProps.Add("Opacity", color.a);
         }
         else UnityTagToBoomTagInGame(gameObject, genProps, sprite, color);
-        genProps.Add("Color", new NSArray(4) { 1.0, 1.0, 1.0, 0.0 });
+        genProps.Add("Color", new NSArray(4) { color.r, color.g, color.b, 0.0 });
         genProps.Add("UV", new NSArray(4) { 0.0, 0.0, 0.0, 0.0 });
 
 
@@ -392,7 +392,7 @@ public class PlhsGenerator : MonoBehaviour
                     physProps.Add("Type", BPM.type);
                 }
 
-                if (sprite.name.Length >= 4 && sprite.name.Substring(0, 4) == "bomb" || sprite.name.Length >= 4 && sprite.name.Substring(0, 4) == "ball")
+                if ((sprite.name.Length >= 4) && (sprite.name.Substring(0, 4) == "bomb" || sprite.name.Substring(0, 4) == "ball" || sprite.name.Substring(0, 4) == "coin"))
                 {
                     physProps.Add("IsCircle", true);
                 }
@@ -583,6 +583,24 @@ public class PlhsGenerator : MonoBehaviour
         {
             genProps.Add("TagName", "LHTAG_SPRINGBOARD");
             genProps.Add("Tag", 27);
+            genProps.Add("Opacity", color.a);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "glassball" || gameObject.tag == "glassball")
+        {
+            genProps.Add("TagName", "LHTAG_GLASS_BALL");
+            genProps.Add("Tag", 50);
+            genProps.Add("Opacity", color.a);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "firebowl" || gameObject.tag == "firebowl")
+        {
+            genProps.Add("TagName", "LHTAG_FIRE_BOWL");
+            genProps.Add("Tag", 43);
+            genProps.Add("Opacity", color.a);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "coin" || gameObject.tag == "coin")
+        {
+            genProps.Add("TagName", "LHTAG_PICKUP");
+            genProps.Add("Tag", 4);
             genProps.Add("Opacity", color.a);
         }
         else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "ball" || gameObject.tag == "ball")

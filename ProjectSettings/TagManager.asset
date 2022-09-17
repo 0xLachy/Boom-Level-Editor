@@ -22,6 +22,9 @@ TagManager:
   - ball
   - gate
   - bigWheel
+  - coin
+  - firebowl
+  - glassball
   layers:
   - Default
   - TransparentFX
