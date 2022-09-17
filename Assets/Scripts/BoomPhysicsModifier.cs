@@ -71,10 +71,10 @@ public class BoomPhysicsModifier : MonoBehaviour
         //});
         //}
         var polygonPaths = gameObject.GetComponent<PolygonCollider2D>();
+        physProps.Add("ShapeFixtures", new NSArray(polygonPaths.pathCount));
         for(int i = 0; i < polygonPaths.pathCount; i++)
         {
             Vector2[] polygonPointsArray = polygonPaths.GetPath(i);
-            physProps.Add("ShapeFixtures", new NSArray(polygonPaths.pathCount));
             NSArray shapeFixtures = (NSArray)physProps["ShapeFixtures"];
             shapeFixtures.Add(new NSArray(polygonPointsArray.Length));
             //shapeFixtures[i] = new NSArray(polygonPointsArray.Length);

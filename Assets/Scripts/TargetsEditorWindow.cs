@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEditor;
 using System.Linq;
 using UnityEngine.SceneManagement;
-
 public class TargetsEditorWindow : EditorWindow
 {
     //BoomSettings.Refresh()
@@ -36,7 +35,6 @@ public class TargetsEditorWindow : EditorWindow
     public List<List<string>> targetValuesListList = new List<List<string>>(targetListCapacity);
     public static Dictionary<int, string> targetDescriptions = new Dictionary<int, string>();
 
-
     public string inGameName = "";
     bool showDrWolfenstein = true;
     [SerializeField] Texture2D coin;
@@ -62,6 +60,7 @@ public class TargetsEditorWindow : EditorWindow
 
     static string[] levelsPlhsfilters = { "Boom Level", "plhs", "All Files", "*" };
     string levelPlhsPath;
+
     static void Init()
     {
         TargetsEditorWindow window = ScriptableObject.CreateInstance<TargetsEditorWindow>();
@@ -195,6 +194,7 @@ public class TargetsEditorWindow : EditorWindow
             for (int i1 = 0; i1 < targetIndexesListList[i2].Count; i1++)
             {
                 //int i = listInt[i1];
+                // Surely there is a better way to do this
                 switch (targets[targetIndexesListList[i2][i1]])
                 {
                     case "coin":

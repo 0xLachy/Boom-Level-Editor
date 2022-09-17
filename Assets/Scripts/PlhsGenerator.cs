@@ -459,6 +459,7 @@ public class PlhsGenerator : MonoBehaviour
 
     private static void AddDefaultValueFromRefScript(NSDictionary physProps, string spriteName, string ValueNameToAdd)
     {
+        //TODO why not just use dictionary???
         int retrievingIndex = 1;
         switch (ValueNameToAdd)
         {
@@ -481,7 +482,14 @@ public class PlhsGenerator : MonoBehaviour
                 Debug.Log($"couldn't add {ValueNameToAdd} to GORS with spritename {spriteName} index {retrievingIndex}");
                 return;
         }
-        physProps.Add(ValueNameToAdd, /*String.Format("{0:0.000000}"makes string :(,*/ (double)DefaultValuesReferences.GORS[spriteName][retrievingIndex]);//); 
+        if (DefaultValuesReferences.GORS.TryGetValue(spriteName, out decimal[] spriteInfo))
+        {
+            physProps.Add(ValueNameToAdd, /*String.Format("{0:0.000000}"makes string :(,*/ (double)spriteInfo[retrievingIndex]);//); 
+        } 
+        else
+        {
+            Debug.Log($"The Reference in GORS for {spriteName} doesn't exist");
+        }
     }
 
     private static void UnityTagToBoomTagInGame(GameObject gameObject, NSDictionary genProps, Sprite sprite, Color color)
