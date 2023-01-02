@@ -105,7 +105,8 @@ Once understand how to do it, it is definitely the easiest way to test your leve
 
 1. In Powershell, to make sure you can use the function every time you open a new powershell window, you need a profile, to check if you have a profile already run `Test-Path $Profile` if it returns false then run `New-Item -Path $Profile -ItemType File -Force` to create one. 
 2. Open your profile with a text editor `notepad $Profile`
-3. Paste this code into your profile, replace \<Path-To-Levels-Folder> with the path from explorer (leave the apostrophes) and save, In .bash_aliasas it is almost the same, but swap Set-Location with cd and Select-String with grep.
+3. Paste this code into your profile, replace \<Path-To-Levels-Folder> with the path from explorer (leave the apostrophes) and save.
+>If you are using bash, then `vim` (or `nano` if you can't use `vim`, but do learn it) into **~/.bash_aliasas** and it is almost the same, but swap `Set-Location` with `cd` and `Select-String` with `grep`. 
 ```Powershell
 function boomserv()
 {
