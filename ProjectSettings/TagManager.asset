@@ -25,6 +25,7 @@ TagManager:
   - coin
   - firebowl
   - glassball
+  - movingplatform
   layers:
   - Default
   - TransparentFX

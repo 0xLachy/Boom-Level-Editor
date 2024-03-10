@@ -17,7 +17,7 @@ public class PlhsGenerator : MonoBehaviour
     public static float triangulationThreshold = 20.5f;
     public static float zoomValue = 1.0f;
     
-    [MenuItem("Boom/Export PLHS %g", false, 5)]
+    [MenuItem("Boom/Export PLHS %g", false, 0)]
     static void ExportPlhs()
     {
         Debug.Log("Exporting Scene to PLHS...");
@@ -26,6 +26,7 @@ public class PlhsGenerator : MonoBehaviour
 
     private static void CreatePlist()
     {
+        //HttpListenerExample.HttpServer.listener?.Close();
         // Creating the root object
         var root = new NSDictionary();
         root.Add("Author", "Bogdan Vladu");
@@ -34,6 +35,10 @@ public class PlhsGenerator : MonoBehaviour
         var beziers = new NSArray();
         // Convert all scene game objects to an array of sprites
         GameObject[] allObjects = FindObjectsOfType<GameObject>();
+
+        // Not sure if doable
+        //ConvertMovingPlatformParentNames(allObjects);
+
         foreach (GameObject gameObject in allObjects)
         {
             if (gameObject.activeInHierarchy)
@@ -78,6 +83,32 @@ public class PlhsGenerator : MonoBehaviour
         Directory.CreateDirectory("./Levels");
         PropertyListParser.SaveAsXml(root, new FileInfo("Levels/" + sceneName + ".plhs"));
         Debug.Log("Saving level to: Levels/" + sceneName + ".plhs");
+    }
+
+    //TODO maybe add this in the outer for loop because it seems unoptimised
+    // if there are grouping objects (ones without sprite renderers) then give the children unique names, and give them the _trigger and _to endings
+    private static void ConvertMovingPlatformParentNames(GameObject[] allObjects)
+    {
+        foreach (GameObject gameObject in allObjects)
+        {
+            // if it isn't a sprite, then loop through it's children and stuff
+            if(!gameObject.TryGetComponent<SpriteRenderer>(out var sr))
+            {
+                int endIndex = gameObject.name.LastIndexOf('_');
+                if (endIndex == -1) continue;
+
+                String append = gameObject.name.Substring(endIndex).ToLower();
+                for (int i = 0; i < gameObject.transform.childCount; i++)
+                {
+                    if(i == 0)
+                    {
+                        // if they already have the append, the other children probably will have too
+                        if (gameObject.transform.GetChild(i).name.Contains(append)) break;
+                    }
+                    gameObject.transform.GetChild(i).name += $"{i}{append}";
+                }
+            }
+        }
     }
 
     private static NSDictionary BezierToNSDictionary(GameObject gameObject)
@@ -180,18 +211,17 @@ public class PlhsGenerator : MonoBehaviour
         bezier.Add("IsDrawable", true);
 
         var spline = spriteShapeController.spline;
-        Vector2[] points;
-        var SPC = gameObject.GetComponent<SplinePointCounter>();
-        if(SPC != null)
-        {
-            points = new Vector2[SPC.pointCount];
-        }
-        else
-        {
-            points = new Vector2[spline.GetPointCount()];
-        }
 
-        for (int i = 0; i < spline.GetPointCount(); i++)
+
+        //Calling Spline.GetPointCount can crash unity
+        //however it may only occur on the second call, so SPC may be redundant now.
+        // error if SPC count != Actual spline count!!
+        spline.GetPointCount();
+        int pointCount = gameObject.TryGetComponent<SplinePointCounter>(out var SPC) ? SPC.pointCount : spline.GetPointCount();
+        Vector2[] points = new Vector2[pointCount];
+
+        //int testing = spline
+        for (int i = 0; i < pointCount; i++)
         {
             //Vector3 vekkie = gameObject.transform.TransformPoint(spline.GetPosition(i));
             //Debug.Log("X:" + vekkie.x + " Y:" + vekkie.y);
@@ -348,9 +378,21 @@ public class PlhsGenerator : MonoBehaviour
             }
 
         }
-        var BPM = gameObject.GetComponent<BoomPhysicsModifier>();
-        if (BPM != null)
+        if (!gameObject.TryGetComponent<BoomPhysicsModifier>(out var BPM))
         {
+            BPM = gameObject.GetComponentInParent<BoomPhysicsModifier>();
+        }
+
+        if (BPM)
+        {
+            // give it the moving platform effect if ticked, tag method will also work
+            if (BPM.isMovingPlatform)
+            {
+                genProps["TagName"] = new NSString("LHTAG_MOVING_FLAT");
+                genProps["Tag"] = new NSNumber(46);
+                genProps["Opacity"] = new NSNumber(color.a);
+            }
+
             if (BPM.use0DRAFT)
             {
                 physProps.Add("Density", BPM.density);
@@ -607,6 +649,12 @@ public class PlhsGenerator : MonoBehaviour
         {
             genProps.Add("TagName", "LHTAG_BALL");
             genProps.Add("Tag", 22);
+            genProps.Add("Opacity", color.a);
+        }
+        else if (gameObject.transform.parent != null && gameObject.transform.parent.tag == "movingplatform" || gameObject.tag == "movingplatform")
+        {
+            genProps.Add("TagName", "LHTAG_MOVING_FLAT");
+            genProps.Add("Tag", 46);
             genProps.Add("Opacity", color.a);
         }
         else if (gameObject.name.Length >= 5 && sprite.name.Substring(0, 5) == "water")

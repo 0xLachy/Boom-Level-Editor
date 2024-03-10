@@ -28,7 +28,7 @@ public class PlhsImporter : MonoBehaviour
     [SerializeField] static GameObject WaterFillPrefab;
     [SerializeField] static GameObject QuicksandFillPrefab;
 
-    [MenuItem("Boom/Import PLHS", false, 20)]
+    [MenuItem("Boom/Import PLHS", false, 5)]
     static void ImportPlhs()
     {
         Debug.Log("Importing PLHS to Scene...");

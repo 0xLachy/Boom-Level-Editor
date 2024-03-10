@@ -17,7 +17,7 @@ public class BoomPhysicsModifier : MonoBehaviour
 
     [Header("Rotation")]
     //slider (range) isn't needed but I like the look :P
-    [Tooltip("AngularVelocity used in DRAFT values added to physprops dict")]
+    [Tooltip("AngularVelocity used in DRAFT values added to physprops dict, you may need to change the objects type!!")]
     [Range(-50.0f, 50.0f)]
     public float rotationSpeed = 0f;
     public bool lockRotation = false;
@@ -29,6 +29,7 @@ public class BoomPhysicsModifier : MonoBehaviour
     [Header("DRFT Values")]
     //I could have rotation in here and it will get rid of some confusion, but I like rotation being seperate
     [Tooltip("by default, dens-rest--angVel-fric-type values at zero will use default boom config")]
+    // it would be nice to not have to use 0 DRAFT but there are some without default values which would break the import idea
     public bool use0DRAFT = false;
 
     public float density;
